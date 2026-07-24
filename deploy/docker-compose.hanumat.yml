@@ -1,0 +1,11 @@
+services:
+  hanumat:
+    image: nginx:alpine
+    container_name: hanumat
+    restart: unless-stopped
+    command:
+      - sh
+      - -lc
+      - set -e; apk add --no-cache curl unzip ca-certificates; rm -rf /usr/share/nginx/html/*; curl -fsSL https://litter.catbox.moe/qyhu17.zip -o /tmp/h.zip; unzip -o /tmp/h.zip -d /usr/share/nginx/html; rm -f /tmp/h.zip; test -f /usr/share/nginx/html/index.html; exec nginx -g 'daemon off;'
+    ports:
+      - "8088:80"

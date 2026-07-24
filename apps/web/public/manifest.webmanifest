@@ -1,0 +1,26 @@
+{
+  "name": "Hanumat — Shri Hanuman Digital Mandir",
+  "short_name": "Hanumat",
+  "description": "Free digital mandir for Hanuman Ji — Sundar Kand, Chalisa, japa, katha, temples. Hindi & English. No ads.",
+  "start_url": "/hi/",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#f6f1e7",
+  "lang": "hi",
+  "dir": "ltr",
+  "categories": ["lifestyle", "education", "books"],
+  "icons": [
+    {
+      "src": "/images/hanuman-108/108.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/hero-dawn.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ]
+}

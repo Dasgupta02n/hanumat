@@ -1,0 +1,700 @@
+{
+  "packs": [
+    {
+      "id": "pack-sk-sk-s01-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s01",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s01/sk_sk-s01.m4a",
+          "role": "audio",
+          "bytes": 2447301,
+          "sha256": "71f3faff62b3531251ebe0db67c5bddfa50f62280bfd146f316f5e53fcb4e99f"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s01/sk_sk-s01_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "9427b85696aa030132b4355e3a74bf5e24b03bd744882ede633dbf0a579d7273"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.526Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s02-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s02",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s02/sk_sk-s02.m4a",
+          "role": "audio",
+          "bytes": 2948121,
+          "sha256": "4f67e5ac6d7bfdd009e6095f372c50bfb53cc81cd4517fd577410d10de4e3bf0"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s02/sk_sk-s02_cues.json",
+          "role": "cues",
+          "bytes": 2655,
+          "sha256": "8a14c7895dc30205734cc77132aa876e77ec0a62e6cbdc4a149411edb67bb290"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.529Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s03-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s03",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s03/sk_sk-s03.m4a",
+          "role": "audio",
+          "bytes": 2755101,
+          "sha256": "fdab814d938c7aaed79f458580d910c2e891e1b17cd83d875d0db0e239be9cb9"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s03/sk_sk-s03_cues.json",
+          "role": "cues",
+          "bytes": 2659,
+          "sha256": "61dd6c8fd797a3625ecdcd6fbbce4e09135930357f8ad7676a5a8db48604e4c9"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.532Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s04-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s04",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s04/sk_sk-s04.m4a",
+          "role": "audio",
+          "bytes": 2603794,
+          "sha256": "f9b88f66b958a5bef9fcd93ee6c5656c68a93113170a9bc27cfc7ef810ca5221"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s04/sk_sk-s04_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "3204ded1944614dca42a6a50e77e1e86705e6d9234c44c3b154214156157c6d7"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.535Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s05-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s05",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s05/sk_sk-s05.m4a",
+          "role": "audio",
+          "bytes": 2542024,
+          "sha256": "f31e87ac342bbeba3de16bf83746eedfaed8d22fa9c22c3383aad6473a6eace4"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s05/sk_sk-s05_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "a5460dde8e0407063eb38e0f8ed6cbb53548818548edb00265784e5504aeafcb"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.538Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s06-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s06",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s06/sk_sk-s06.m4a",
+          "role": "audio",
+          "bytes": 2536361,
+          "sha256": "7349bc852f61157f94158ea88abd0232c077977a00af7a2d3f3d7dd0aab7f2f3"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s06/sk_sk-s06_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "0d4545536b68184e088a094b38f67dd80aa4eec74f06a9b03921ac20d552dafc"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.541Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s07-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s07",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s07/sk_sk-s07.m4a",
+          "role": "audio",
+          "bytes": 2755760,
+          "sha256": "a2d4358406d95bae9c5f069c2099bc5323f1de5a69119c1b5d3b18b2bfbbfa3a"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s07/sk_sk-s07_cues.json",
+          "role": "cues",
+          "bytes": 2655,
+          "sha256": "1022f0c12ea6f26d725b5bc114158ad7c4b9250d612d8e7bd304d2f402b1a0b3"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.544Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s08-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s08",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s08/sk_sk-s08.m4a",
+          "role": "audio",
+          "bytes": 2626565,
+          "sha256": "3fea58ce6a2cd4c971762547d506b0e9cf64c71ba1e613a91ee478b730dd8dbb"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s08/sk_sk-s08_cues.json",
+          "role": "cues",
+          "bytes": 2657,
+          "sha256": "e491cf2e0bd4f9768066e81a492f503bc29a66969067a6d8ff10f67b29316ea0"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.547Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s09-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s09",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s09/sk_sk-s09.m4a",
+          "role": "audio",
+          "bytes": 2637097,
+          "sha256": "970427b3f192d1951fb1851c73d604fc8b45a3b36b4e94857fa2b664ec37112f"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s09/sk_sk-s09_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "0a6d59bac5ad8725bb3b360f6a17139e968f56bbb4bd9b67c11276538f6f78be"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.550Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s10-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s10",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s10/sk_sk-s10.m4a",
+          "role": "audio",
+          "bytes": 2488452,
+          "sha256": "de8de640583ad88d0cd478d69dc44a2a7d8e3427524e51abc0e9786f59d96e12"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s10/sk_sk-s10_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "767a6e74ae9c2abec693f8ca632afa2157cddaca8eef9ff3732bbbdfd01e791e"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.553Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s11-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s11",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s11/sk_sk-s11.m4a",
+          "role": "audio",
+          "bytes": 2580851,
+          "sha256": "c871986957a92f34ab6f54960618232da515e558258de445d17523b0825410fe"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s11/sk_sk-s11_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "aa0df5bd6daeb15ec70333f9faf530bbc16974f6a0217d58e37a99a1d82a2723"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.556Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s12-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s12",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s12/sk_sk-s12.m4a",
+          "role": "audio",
+          "bytes": 2936728,
+          "sha256": "c32fb40b67e4b543facbacc5912f74500660c7196cc3e0964d1561f19371941a"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s12/sk_sk-s12_cues.json",
+          "role": "cues",
+          "bytes": 2657,
+          "sha256": "6dffa52ee6794deabfbcabcc419117e4b0005d9549beebd88612b106c54f55df"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.559Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s13-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s13",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s13/sk_sk-s13.m4a",
+          "role": "audio",
+          "bytes": 2545539,
+          "sha256": "32656ea7ecd7f279156c4621093cf08926e68b2c70b83dac5547bdf47588a478"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s13/sk_sk-s13_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "83cc47d69456f0f8a87c63db5d388e873b7502b49ff864c4b3b5980b71ffdb9e"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.562Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s14-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s14",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s14/sk_sk-s14.m4a",
+          "role": "audio",
+          "bytes": 2620361,
+          "sha256": "2cbe67d96db30ea00fd3e58fb33c9080b1b357c55aeee20ce770039d2ac86a1d"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s14/sk_sk-s14_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "88526f95d7eb3e3cee1bc7bf0ac5ddc412c82e6a7efb7c804f806c9553c4fb18"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.565Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s15-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s15",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s15/sk_sk-s15.m4a",
+          "role": "audio",
+          "bytes": 2923465,
+          "sha256": "217086eb07661af4fc9b8ca04065445c755ac644900da6642942614be10c9d87"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s15/sk_sk-s15_cues.json",
+          "role": "cues",
+          "bytes": 2655,
+          "sha256": "5944494cbcba912eea90144c19301df57702b1e37ed50762f1f85d8817b96ade"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.568Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s16-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s16",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s16/sk_sk-s16.m4a",
+          "role": "audio",
+          "bytes": 2608132,
+          "sha256": "1b044613b55e370c108690bce1b11f404238ef9ad5e66fa88823b0c26b94f683"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s16/sk_sk-s16_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "14bf786424d1028b642108f297e9f218b5bb18597b904c857763d9e033f6870a"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.571Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s17-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s17",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s17/sk_sk-s17.m4a",
+          "role": "audio",
+          "bytes": 2552774,
+          "sha256": "511a41695195503c592522d552f9a2149dd9c16bd78d87e1ce88ce86f38c8432"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s17/sk_sk-s17_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "41219290ed84bf472f52da4635a2660d4a9a8b671c6fc0f92ccc3bfad6b21bb8"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.574Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s18-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s18",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s18/sk_sk-s18.m4a",
+          "role": "audio",
+          "bytes": 2690598,
+          "sha256": "384e4fd251e84786e076d4e38be19974ee8fb8790eb70c355a3d693201d360b3"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s18/sk_sk-s18_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "e45e7a09a58328122d2576dee83c6db9e685f005f2995209c7b6d9f131c882f7"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.576Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s19-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s19",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s19/sk_sk-s19.m4a",
+          "role": "audio",
+          "bytes": 2547597,
+          "sha256": "f688d68f5fd7d73b75e91b4e696fe12906dbb99f873b1d6ca05a190bfdad2e4c"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s19/sk_sk-s19_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "70d206a89660a24fc7253e5e0950e100474b201b27fc9433a126fa057b1a01e1"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.579Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s20-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s20",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s20/sk_sk-s20.m4a",
+          "role": "audio",
+          "bytes": 2654836,
+          "sha256": "280e851b40a6e75513b7a5f7542243c077ac6565f60f2568b19c6d7583c6a9f0"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s20/sk_sk-s20_cues.json",
+          "role": "cues",
+          "bytes": 2655,
+          "sha256": "fc9eb17ca834f7b94ca5db024812f643e472191f3d234aabb71cfbbbe5e39388"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.582Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s21-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s21",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s21/sk_sk-s21.m4a",
+          "role": "audio",
+          "bytes": 2587926,
+          "sha256": "8f93e8a52676df3ab27b5bfefd6d1e124f314dfb84969ca52dbfa5b0da2f620e"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s21/sk_sk-s21_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "890c774505bc7296a6259051e989020ee9645b89bebcba9ea346173e5b84ac0a"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.585Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s22-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s22",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s22/sk_sk-s22.m4a",
+          "role": "audio",
+          "bytes": 2573877,
+          "sha256": "a7aa0e02b1db63572f789b9dc5a87b34700c35c28ee320934af54cbb56e05ad6"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s22/sk_sk-s22_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "ac2f19db89c6bf77af39870998191c5f824d3906a4e6c40b037dfcb7d3ed897e"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.588Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s23-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s23",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s23/sk_sk-s23.m4a",
+          "role": "audio",
+          "bytes": 2530962,
+          "sha256": "a46f884cc9f522c6e934e86fc0bbb1dc933399280d6070aea8885a8bf2306b63"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s23/sk_sk-s23_cues.json",
+          "role": "cues",
+          "bytes": 2653,
+          "sha256": "8b887f2b793c86d75e7cf7dbbe826979bffc862d790d40abd1ff08890df4e109"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.591Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    },
+    {
+      "id": "pack-sk-sk-s24-v1",
+      "textId": "sundar-kand-manas",
+      "sectionId": "sk-s24",
+      "version": 1,
+      "maxBytes": 40000000,
+      "assets": [
+        {
+          "path": "/audio/sundar-kand/sk-s24/sk_sk-s24.m4a",
+          "role": "audio",
+          "bytes": 2613494,
+          "sha256": "1a0f43958a9ec129d80484de501feafe02a75b71fb6f9b422482b46849d8ab66"
+        },
+        {
+          "path": "/audio/sundar-kand/sk-s24/sk_sk-s24_cues.json",
+          "role": "cues",
+          "bytes": 2556,
+          "sha256": "db666bb2e2c56c2aa45ab3a0d98784914acd9e7d72b2d5cf0836c728e54f4bb7"
+        }
+      ],
+      "createdAt": "2026-07-21T20:04:29.593Z",
+      "locales": [
+        "hi",
+        "en"
+      ],
+      "transliterationSchemes": [
+        "iast"
+      ]
+    }
+  ]
+}

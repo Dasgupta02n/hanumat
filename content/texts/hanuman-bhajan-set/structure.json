@@ -1,0 +1,27 @@
+{
+  "sections": [
+    {
+      "id": "hb-full",
+      "kind": "full",
+      "title": {
+        "hi": "हनुमान द्वादश नामावली",
+        "en": "Twelve Names"
+      },
+      "order": 1,
+      "verseIds": [
+        "hb-01",
+        "hb-02",
+        "hb-03",
+        "hb-04",
+        "hb-05",
+        "hb-06",
+        "hb-07",
+        "hb-08",
+        "hb-09",
+        "hb-10",
+        "hb-11",
+        "hb-12"
+      ]
+    }
+  ]
+}

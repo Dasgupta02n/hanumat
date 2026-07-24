@@ -1,0 +1,108 @@
+/**
+ * Hanumat design tokens — Mandir Ivory v3
+ * Cream marble · soft gold · sandalwood · temple vermillion (subtle)
+ * Luxury, symmetric, quiet sacred space
+ */
+
+:root {
+  /* ── Core palette ── */
+  --hanumat-ivory: #f6f1e7;
+  --hanumat-cream: #fbf7f0;
+  --hanumat-marble: #efe8db;
+  --hanumat-marble-deep: #dccfb8;
+  --hanumat-marble-dark: #c9b89a;
+  --hanumat-shadow: #14110e;
+  --hanumat-charcoal: #1a1612;
+  --hanumat-stone: #2c2620;
+  --hanumat-stone-light: #3f3830;
+  --hanumat-gold: #b8923f;
+  --hanumat-gold-deep: #7a5f24;
+  --hanumat-gold-pale: #e0c988;
+  --hanumat-gold-wash: rgba(184, 146, 63, 0.12);
+  --hanumat-gold-line: rgba(122, 95, 36, 0.35);
+  --hanumat-vermillion: #8f2f24;
+  --hanumat-vermillion-deep: #6b221a;
+  --hanumat-vermillion-glow: rgba(107, 34, 26, 0.12);
+  --hanumat-sandalwood: #a67c52;
+  --hanumat-sacred-ash: #5c554c;
+  --hanumat-lotus: #d9a3b0;
+  --hanumat-lotus-soft: #f3e0e6;
+
+  /* ── Semantic tokens (high contrast on cream) ── */
+  --background: var(--hanumat-ivory);
+  --foreground: var(--hanumat-charcoal);
+  --muted: #efe6d6;
+  --muted-foreground: var(--hanumat-stone-light);
+  --card: rgba(255, 252, 247, 0.92);
+  --card-border: var(--hanumat-gold-line);
+  --primary: var(--hanumat-vermillion-deep);
+  --primary-foreground: var(--hanumat-cream);
+  --accent: var(--hanumat-gold);
+  --accent-foreground: var(--hanumat-shadow);
+  --ring: var(--hanumat-gold);
+  --danger: var(--hanumat-vermillion);
+
+  /* ── Surfaces ── */
+  --glass: rgba(255, 252, 247, 0.9);
+  --glass-border: rgba(196, 163, 90, 0.18);
+  --hero-scrim: linear-gradient(
+    180deg,
+    rgba(28, 24, 20, 0.35) 0%,
+    rgba(28, 24, 20, 0.08) 42%,
+    rgba(246, 241, 231, 0.96) 100%
+  );
+  --temple-frame: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--hanumat-gold-pale) 20%,
+    var(--hanumat-gold) 50%,
+    var(--hanumat-gold-pale) 80%,
+    transparent 100%
+  );
+
+  /* ── Layout rhythm ── */
+  --shell-max: 72rem; /* 1152px — symmetric center */
+  --shell-gutter: clamp(1rem, 3vw, 1.75rem);
+  --section-y: clamp(3rem, 6vw, 5rem);
+  --radius-card: 1rem;
+  --radius-pill: 999px;
+
+  /* ── Motion ── */
+  --motion-duration: 280ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ── Type ── */
+  --font-display: var(--font-display), "Cormorant Garamond", "Noto Serif Devanagari",
+    ui-serif, Georgia, serif;
+  --font-body: var(--font-body), "Source Serif 4", "Noto Serif Devanagari", ui-serif,
+    Georgia, serif;
+  --font-deva: var(--font-deva), "Mukta", "Noto Sans Devanagari", ui-sans-serif, sans-serif;
+}
+
+[data-theme="lamp"] {
+  --background: #1c1814;
+  --foreground: #f6f1e7;
+  --muted: #2a241e;
+  --muted-foreground: #c9b89a;
+  --card: rgba(42, 36, 30, 0.9);
+  --card-border: rgba(196, 163, 90, 0.2);
+  --primary: var(--hanumat-vermillion);
+  --primary-foreground: var(--hanumat-cream);
+  --glass: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-duration: 0.01ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

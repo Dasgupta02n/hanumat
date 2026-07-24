@@ -1,0 +1,42 @@
+{
+  "id": "bajrang-baan",
+  "slug": "bajrang-baan",
+  "title": {
+    "hi": "बजरंग बाण",
+    "en": "Bajrang Baan"
+  },
+  "subtitle": {
+    "hi": "तुलसीदास · संकट-नाशक बाण",
+    "en": "Tulsidas · Arrow of protection"
+  },
+  "description": {
+    "hi": "गोस्वामी तुलसीदास कृत पारंपरिक बजरंग बाण — दोहा, चौपाई और बीज-मंत्र सहित पूर्ण पाठ।",
+    "en": "Traditional Bajrang Baan attributed to Tulsidas — full path with opening/closing dohas, chaupais, and seed mantras."
+  },
+  "category": "stotra",
+  "wave": 1,
+  "edition": {
+    "pin": "TRAD-BAJRANG-BAAN-TULSI-V3",
+    "publisher": "Traditional Awadhi path (Tulsidas tradition)",
+    "notes": "Corrected 2026-07-23 V3: aligned to traditional path (Kavita Kosh / Bharat Discovery). Opening doha निश्चय प्रेम प्रतीति ते… through closing उर प्रतीति दृढ़ शरण… Meanings are plain-language Hanumat originals. Dual-review owner-only."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "wave": 1,
+    "needsDualReview": true
+  },
+  "audio": {
+    "src": "/audio/bajrang-baan/bajrang_baan.m4a",
+    "cueMapSrc": "/audio/bajrang-baan/bajrang_baan_cues.json",
+    "lowDataSrc": "/audio/bajrang-baan/bajrang_baan_low.m4a",
+    "credits": "TTS path-assist (hi-IN-MadhurNeural) — not classical pāṭh. Regenerated 2026-07-23 with corrected traditional text (V3).",
+    "trackId": "track-bajrang_baan",
+    "engine": "edge-tts",
+    "voice": "hi-IN-MadhurNeural"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 34
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "hanuman-bhajan-set",
+  "slug": "hanuman-bhajan-set",
+  "title": {
+    "hi": "हनुमान द्वादश नाम",
+    "en": "Hanuman Dwadasha Nama"
+  },
+  "subtitle": {
+    "hi": "बारह नामों की नामावली",
+    "en": "Twelve traditional names"
+  },
+  "description": {
+    "hi": "पारंपरिक हनुमान द्वादश-नामावली — बारह संक्षिप्त नाम-मंत्र।",
+    "en": "Traditional twelve-name namavali of Hanuman (replaces incorrect Chalisa/jaya stub pack)."
+  },
+  "category": "namavali",
+  "wave": 2,
+  "edition": {
+    "pin": "TRAD-DWADASHA-NAMA-V2-3SRC",
+    "publisher": "Traditional dwadasha namavali (Drik + classical stotra form)",
+    "notes": "Corrected 2026-07-23: former pack was Chalisa fragments + jaya stubs. Replaced with authentic 12-name path."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true,
+    "placeholderAudio": false
+  },
+  "audio": {
+    "src": "/audio/bhajan/hanuman_dwadasha_nama.m4a",
+    "cueMapSrc": "/audio/bhajan/hanuman_dwadasha_nama_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-hanuman_dwadasha_nama"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 12
+  }
+}

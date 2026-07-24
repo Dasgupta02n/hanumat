@@ -1,0 +1,40 @@
+{
+  "id": "panchmukhi-kavach",
+  "slug": "panchmukhi-kavach",
+  "title": {
+    "hi": "पञ्चमुख हनुमत्कवच",
+    "en": "Panchmukhi Hanumat Kavach"
+  },
+  "subtitle": {
+    "hi": "सुदर्शनसंहिता · पारंपरिक",
+    "en": "Sudarshana Samhita tradition"
+  },
+  "description": {
+    "hi": "श्रीपञ्चमुखहनुमत्कवचम् — विनियोग, ध्यान, पञ्चमुख-मन्त्र, न्यास, फलश्रुति।",
+    "en": "Panchmukha Hanumat Kavacam — viniyoga, dhyana, five-face mantras, nyasa, phalashruti."
+  },
+  "category": "kavach",
+  "wave": 2,
+  "edition": {
+    "pin": "TRAD-KAVACH-SUDARSHANA-V2-3SRC",
+    "publisher": "Sudarshana Samhita tradition (Vignanam/Webdunia/Ishtadev consensus)",
+    "notes": "Corrected 2026-07-23: replaced wrong-bija pseudo-kavach with traditional structure (ह्रीं/श्रीं/क्रौं seeds, five-face mantras, phala)."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true,
+    "placeholderAudio": false
+  },
+  "audio": {
+    "src": "/audio/kavach/panchmukhi_kavach.m4a",
+    "cueMapSrc": "/audio/kavach/panchmukhi_kavach_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-panchmukhi_kavach",
+    "lowDataSrc": "/audio/kavach/panchmukhi_kavach_low.m4a"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 36
+  }
+}

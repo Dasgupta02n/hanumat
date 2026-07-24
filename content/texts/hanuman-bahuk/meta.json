@@ -1,0 +1,40 @@
+{
+  "id": "hanuman-bahuk",
+  "slug": "hanuman-bahuk",
+  "title": {
+    "hi": "हनुमान बाहुक",
+    "en": "Hanuman Bahuk"
+  },
+  "subtitle": {
+    "hi": "तुलसीदास · ४४ पद्य",
+    "en": "Tulsidas · 44 padya"
+  },
+  "description": {
+    "hi": "गोस्वामी तुलसीदास कृत हनुमान बाहुक — बाहु-पीड़ा निवारण हेतु ४४ पद्य (छप्पय, झूलना, घनाक्षरी, सवैया)।",
+    "en": "Tulsidas Hanuman Bahuk — 44 multi-metre padya for relief from arm pain and disease."
+  },
+  "category": "stotra",
+  "wave": 2,
+  "edition": {
+    "pin": "TRAD-BAHUK-44-V2-3SRC",
+    "publisher": "Traditional Tulsidas (Drik/BhaktiBharat/GP 44-padya recension)",
+    "notes": "Corrected 2026-07-23: replaced Chalisa/mantra garbage mix with full 44-padya traditional Bahuk."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true,
+    "placeholderAudio": false
+  },
+  "audio": {
+    "src": "/audio/bahuk/hanuman_bahuk.m4a",
+    "cueMapSrc": "/audio/bahuk/hanuman_bahuk_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-hanuman_bahuk",
+    "lowDataSrc": "/audio/bahuk/hanuman_bahuk_low.m4a"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 44
+  }
+}

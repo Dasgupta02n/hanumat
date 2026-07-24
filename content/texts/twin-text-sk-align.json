@@ -1,0 +1,61 @@
+{
+  "id": "align-manas-valmiki-sk-v2-expanded",
+  "manasTextId": "sundar-kand-manas",
+  "valmikiTextId": "valmiki-sundarakanda",
+  "editionPin": "VALMIKI-SK-PD-W2-EXPANDED",
+  "pairs": [
+    {
+      "manasHint": "leap resolve / ocean",
+      "valmikiVerseIds": [
+        "vl-s01-v01",
+        "vl-s01-v09",
+        "vl-s02-v01",
+        "vl-s03-v01"
+      ]
+    },
+    {
+      "manasHint": "Mainaka Surasa Simhika",
+      "valmikiVerseIds": [
+        "vl-s04-v01",
+        "vl-s05-v01",
+        "vl-s05-v07",
+        "vl-s06-v01"
+      ]
+    },
+    {
+      "manasHint": "Lanka search",
+      "valmikiVerseIds": [
+        "vl-s07-v01",
+        "vl-s08-v01",
+        "vl-s09-v01",
+        "vl-s10-v01"
+      ]
+    },
+    {
+      "manasHint": "Sita ring",
+      "valmikiVerseIds": [
+        "vl-s12-v04",
+        "vl-s12-v09",
+        "vl-s13-v01",
+        "vl-s14-v01"
+      ]
+    },
+    {
+      "manasHint": "Lanka fire / return",
+      "valmikiVerseIds": [
+        "vl-s16-v05",
+        "vl-s16-v06",
+        "vl-s17-v03"
+      ]
+    },
+    {
+      "manasHint": "return report",
+      "valmikiVerseIds": [
+        "vl-s17-v09",
+        "vl-s18-v02",
+        "vl-s18-v05",
+        "vl-s18-v12"
+      ]
+    }
+  ]
+}

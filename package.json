@@ -1,0 +1,20 @@
+{
+  "name": "hanumat",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Hanumat — digital mandir for Hanuman ji's devotees",
+  "scripts": {
+    "dev": "pnpm --filter @hanumat/web dev",
+    "build": "pnpm validate && pnpm --filter @hanumat/web build",
+    "start": "pnpm --filter @hanumat/web start",
+    "lint": "pnpm --filter @hanumat/web lint",
+    "validate": "node scripts/validate-content.mjs"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  }
+}

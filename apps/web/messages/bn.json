@@ -1,0 +1,139 @@
+{
+  "brand": "Hanumat",
+  "tagline": "One mandir · every path · every wave · bn",
+  "nav": {
+    "home": "হোম",
+    "path": "পাঠ",
+    "myPath": "আমার পথ",
+    "learn": "জানুন",
+    "chalisa": "চালিসা",
+    "listen": "শ্রবণ",
+    "sankat": "সঙ্কট",
+    "japa": "জপ",
+    "calendar": "ক্যালেন্ডার",
+    "katha": "কথা",
+    "parayan": "পারায়ণ",
+    "temples": "ক্ষেত্র",
+    "kids": "শিশু পথ",
+    "gallery": "108 Images",
+    "radio": "Radio",
+    "glossary": "Glossary",
+    "faq": "FAQ"
+  },
+  "home": {
+    "eyebrow": "hanumat.life · waves 0–3",
+    "title": "Complete digital mandir of Hanuman bhakti",
+    "body": "Sundar Kand, Chalisa, stotras, japa, katha, parayan, kshetras — text, meaning, listening. No ads.",
+    "ctaSk": "Sundar Kand",
+    "ctaCh": "Chalisa",
+    "ctaMy": "My Path",
+    "sectionTitle": "Path library",
+    "waveLabel": "Wave"
+  },
+  "path": {
+    "title": "Path library",
+    "intro": "From Wave 0 flagship to Wave 2 stotras — one mandir.",
+    "wave1note": "Filter by wave.",
+    "all": "All",
+    "wave0": "Wave 0",
+    "wave1": "Wave 1",
+    "wave2": "Wave 2"
+  },
+  "studio": {
+    "section": "Section",
+    "full": "Full",
+    "listen": "Listen only",
+    "episodes": "Episodes",
+    "meaning": "Meaning",
+    "hideMeaning": "Hide meaning",
+    "iast": "IAST",
+    "audio": "Audio",
+    "reportError": "Report a textual error",
+    "live": "live",
+    "twinText": "Twin-text",
+    "twinNote": "Valmiki–Manas alignment (sample)",
+    "provisionalTitle": "Provisional / MT meanings:",
+    "provisionalBody": "Machine-assisted draft for this locale + owner responsibility. Not scholarly ṭīkā. TTS ≠ classical pāṭh. OCR mūla ≠ Gita Press digital license."
+  },
+  "myPath": {
+    "title": "My Path",
+    "intro": "Resume, bookmarks, offline, export/import.",
+    "continue": "Continue",
+    "bookmarks": "Bookmarks",
+    "offline": "Chalisa offline",
+    "offlineBody": "Download pack for offline listening.",
+    "downloadPack": "Offline pack",
+    "packReady": "Pack ready",
+    "skPacks": "Sundar Kand section packs",
+    "skPacksBody": "Wave 1 — offline listen per section.",
+    "clear": "Clear local data",
+    "empty": "Nothing yet.",
+    "export": "Export data (JSON)",
+    "import": "Import data",
+    "importOk": "Import OK",
+    "importFail": "Import failed"
+  },
+  "learn": {
+    "title": "Learn · Sources",
+    "intro": "Edition, audio, principles."
+  },
+  "japa": {
+    "title": "Japa mala",
+    "mantra": "Om Hanumate Namah",
+    "reset": "Reset",
+    "session": "Session complete",
+    "loop": "Mantra loop",
+    "stop": "Stop"
+  },
+  "calendar": {
+    "title": "Bhakti calendar",
+    "intro": "Tuesday · Saturday · Jayanti traditions",
+    "tue": "Tuesday",
+    "sat": "Saturday",
+    "jayanti": "Hanuman Jayanti",
+    "traditionsVary": "Traditions vary — check local panchang."
+  },
+  "katha": {
+    "title": "Katha · Leela",
+    "intro": "Major arcs in plain language.",
+    "minutes": "min"
+  },
+  "listen": {
+    "title": "Listen",
+    "intro": "Neural Hindi TTS path-assist · not classical path · credits on Learn."
+  },
+  "sankat": {
+    "title": "Refuge room",
+    "body": "Breathe gently. No fear language — only the Name and a short path.",
+    "open": "Open"
+  },
+  "parayan": {
+    "title": "Parayan planner",
+    "intro": "Simple 1 / 7 / 40 day plans over Sundar Kand sections.",
+    "days1": "1 day (full)",
+    "days7": "7 days",
+    "days40": "40 days",
+    "start": "Begin path",
+    "day": "Day"
+  },
+  "temples": {
+    "title": "Kshetras · Temples",
+    "intro": "Famous Hanuman places — travel notes, not ritual instruction."
+  },
+  "kids": {
+    "title": "Kids path",
+    "intro": "Larger type · short paths · safe links.",
+    "chalisa": "Gentle Chalisa",
+    "mantra": "Mantra japa",
+    "katha": "Simple katha"
+  },
+  "footer": {
+    "blurb": "One mandir · every path. Seva — no ads in path.",
+    "ttsNote": "Audio: neural TTS path-assist — not classical pāṭh. Meanings: machine-assisted draft for this locale."
+  },
+  "common": {
+    "episodes": "episodes",
+    "verses": "verses",
+    "edition": "edition"
+  }
+}

@@ -1,0 +1,1931 @@
+[
+  {
+    "id": "bajrang-baan",
+    "titleEn": "Bajrang Baan",
+    "titleHi": "बजरंग बाण",
+    "edition": "TRAD-BAJRANG-BAAN-TULSI-V3",
+    "category": "stotra",
+    "wave": 1,
+    "verseCount": 34,
+    "iastCount": 34,
+    "structCount": 34,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 34,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 34,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 34,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 34,
+        "audioBytes": 3364320,
+        "lowBytes": 1331648,
+        "cueRel": "audio/bajrang-baan/bajrang_baan_cues.json",
+        "srcRel": "audio/bajrang-baan/bajrang_baan.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "bb-doha-1",
+        "kind": "doha",
+        "text": "निश्चय प्रेम प्रतीति ते, विनय करैं सनमान। तेहि के कारज सकल शुभ, सिद्ध करैं हनुमान॥"
+      },
+      {
+        "index": 2,
+        "id": "bb-01",
+        "kind": "chaupai",
+        "text": "जय हनुमंत संत हितकारी। सुन लीजै प्रभु अरज हमारी॥"
+      },
+      {
+        "index": 3,
+        "id": "bb-02",
+        "kind": "chaupai",
+        "text": "जन के काज बिलम्ब न कीजै। आतुर दौरि महा सुख दीजै॥"
+      },
+      {
+        "index": 18,
+        "id": "bb-17",
+        "kind": "chaupai",
+        "text": "इन्हें मारू तोहि शपथ राम की। राखु नाथ मरजाद नाम की॥"
+      },
+      {
+        "index": 32,
+        "id": "bb-31",
+        "kind": "chaupai",
+        "text": "यह बजरंग बाण जो जापै। तासौं भूत प्रेत सब कांपै॥"
+      },
+      {
+        "index": 33,
+        "id": "bb-32",
+        "kind": "chaupai",
+        "text": "धूप देय जो जपै हमेशा। ताके तन नहि रहे कलेशा॥"
+      },
+      {
+        "index": 34,
+        "id": "bb-doha-2",
+        "kind": "doha",
+        "text": "उर प्रतीति दृढ़ शरण ह्वै, पाठ करै धरि ध्यान। बाधा सब हरि करै सब, काम सफल हनुमान॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "bb-doha-1",
+        "kind": "doha",
+        "text": "निश्चय प्रेम प्रतीति ते, विनय करैं सनमान। तेहि के कारज सकल शुभ, सिद्ध करैं हनुमान॥"
+      },
+      {
+        "id": "bb-01",
+        "kind": "chaupai",
+        "text": "जय हनुमंत संत हितकारी। सुन लीजै प्रभु अरज हमारी॥"
+      },
+      {
+        "id": "bb-02",
+        "kind": "chaupai",
+        "text": "जन के काज बिलम्ब न कीजै। आतुर दौरि महा सुख दीजै॥"
+      },
+      {
+        "id": "bb-03",
+        "kind": "chaupai",
+        "text": "जैसे कूदि सिन्धु महि पारा। सुरसा बदन पैठि विस्तारा॥"
+      },
+      {
+        "id": "bb-04",
+        "kind": "chaupai",
+        "text": "आगे जाय लंकिनी रोका। मारेहु लात गई सुरलोका॥"
+      },
+      {
+        "id": "bb-05",
+        "kind": "chaupai",
+        "text": "जाय विभीषण को सुख दीन्हा। सीता निरखि परम पद लीन्हा॥"
+      },
+      {
+        "id": "bb-06",
+        "kind": "chaupai",
+        "text": "बाग उजारि सिन्धु महं बोरा। अति आतुर यम कातर तोरा॥"
+      },
+      {
+        "id": "bb-07",
+        "kind": "chaupai",
+        "text": "अक्षयकुमार को मारि संहारा। लूम लपेटि लंक को जारा॥"
+      },
+      {
+        "id": "bb-30",
+        "kind": "chaupai",
+        "text": "पाठ करै बजरंग बाण की। हनुमत रक्षा करै प्राण की॥"
+      },
+      {
+        "id": "bb-31",
+        "kind": "chaupai",
+        "text": "यह बजरंग बाण जो जापै। तासौं भूत प्रेत सब कांपै॥"
+      },
+      {
+        "id": "bb-32",
+        "kind": "chaupai",
+        "text": "धूप देय जो जपै हमेशा। ताके तन नहि रहे कलेशा॥"
+      },
+      {
+        "id": "bb-doha-2",
+        "kind": "doha",
+        "text": "उर प्रतीति दृढ़ शरण ह्वै, पाठ करै धरि ध्यान। बाधा सब हरि करै सब, काम सफल हनुमान॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": "edge-tts",
+    "audioVoice": "hi-IN-MadhurNeural"
+  },
+  {
+    "id": "hanuman-108-names",
+    "titleEn": "108 Names of Hanuman",
+    "titleHi": "हनुमान अष्टोत्तर शतनामावली",
+    "edition": "TRAD-108-ASHTOTTARA-V2-3SRC",
+    "category": "namavali",
+    "wave": 1,
+    "verseCount": 108,
+    "iastCount": 108,
+    "structCount": 108,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 108,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 108,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 108,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 108,
+        "audioBytes": 4927584,
+        "lowBytes": 1962303,
+        "cueRel": "audio/names/hanuman_108_names_cues.json",
+        "srcRel": "audio/names/hanuman_108_names.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "n001",
+        "kind": "name",
+        "text": "ॐ आञ्जनेयाय नमः"
+      },
+      {
+        "index": 2,
+        "id": "n002",
+        "kind": "name",
+        "text": "ॐ महावीराय नमः"
+      },
+      {
+        "index": 3,
+        "id": "n003",
+        "kind": "name",
+        "text": "ॐ हनुमते नमः"
+      },
+      {
+        "index": 55,
+        "id": "n055",
+        "kind": "name",
+        "text": "ॐ दैत्यकार्यविघातकाय नमः"
+      },
+      {
+        "index": 106,
+        "id": "n106",
+        "kind": "name",
+        "text": "ॐ लोकपूज्याय नमः"
+      },
+      {
+        "index": 107,
+        "id": "n107",
+        "kind": "name",
+        "text": "ॐ जाम्बवत्प्रीतिवर्धनाय नमः"
+      },
+      {
+        "index": 108,
+        "id": "n108",
+        "kind": "name",
+        "text": "ॐ सीतासमेतश्रीरामपादसेवाधुरन्धराय नमः"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "n001",
+        "kind": "name",
+        "text": "ॐ आञ्जनेयाय नमः"
+      },
+      {
+        "id": "n002",
+        "kind": "name",
+        "text": "ॐ महावीराय नमः"
+      },
+      {
+        "id": "n003",
+        "kind": "name",
+        "text": "ॐ हनुमते नमः"
+      },
+      {
+        "id": "n004",
+        "kind": "name",
+        "text": "ॐ मारुतात्मजाय नमः"
+      },
+      {
+        "id": "n005",
+        "kind": "name",
+        "text": "ॐ तत्वज्ञानप्रदाय नमः"
+      },
+      {
+        "id": "n006",
+        "kind": "name",
+        "text": "ॐ सीतादेवीमुद्राप्रदायकाय नमः"
+      },
+      {
+        "id": "n007",
+        "kind": "name",
+        "text": "ॐ अशोकवनिकाच्छेत्रे नमः"
+      },
+      {
+        "id": "n008",
+        "kind": "name",
+        "text": "ॐ सर्वमायाविभञ्जनाय नमः"
+      },
+      {
+        "id": "n105",
+        "kind": "name",
+        "text": "ॐ दशबाहवे नमः"
+      },
+      {
+        "id": "n106",
+        "kind": "name",
+        "text": "ॐ लोकपूज्याय नमः"
+      },
+      {
+        "id": "n107",
+        "kind": "name",
+        "text": "ॐ जाम्बवत्प्रीतिवर्धनाय नमः"
+      },
+      {
+        "id": "n108",
+        "kind": "name",
+        "text": "ॐ सीतासमेतश्रीरामपादसेवाधुरन्धराय नमः"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  },
+  {
+    "id": "hanuman-aarti",
+    "titleEn": "Hanuman Aarti",
+    "titleHi": "हनुमान आरती",
+    "edition": "TRAD-AARTI-V2-3SRC",
+    "category": "aarti",
+    "wave": 1,
+    "verseCount": 14,
+    "iastCount": 14,
+    "structCount": 14,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 14,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 14,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 14,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 14,
+        "audioBytes": 1298506,
+        "lowBytes": 519203,
+        "cueRel": "audio/aarti/hanuman_aarti_cues.json",
+        "srcRel": "audio/aarti/hanuman_aarti.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "ha-01",
+        "kind": "line",
+        "text": "आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की॥"
+      },
+      {
+        "index": 2,
+        "id": "ha-02",
+        "kind": "line",
+        "text": "जाके बल से गिरिवर काँपे। रोग दोष जाके निकट न झाँके॥"
+      },
+      {
+        "index": 3,
+        "id": "ha-03",
+        "kind": "line",
+        "text": "अंजनि पुत्र महा बलदाई। संतन के प्रभु सदा सहाई॥"
+      },
+      {
+        "index": 8,
+        "id": "ha-08",
+        "kind": "line",
+        "text": "पैठि पताल तोरि जमकारे। अहिरावण की भुजा उखारे॥"
+      },
+      {
+        "index": 12,
+        "id": "ha-12",
+        "kind": "line",
+        "text": "जो हनुमान जी की आरती गावे। बसहिं बैकुंठ परम पद पावे॥"
+      },
+      {
+        "index": 13,
+        "id": "ha-13",
+        "kind": "line",
+        "text": "लंक विध्वंस किये रघुराई। तुलसीदास स्वामी कीर्ति गाई॥"
+      },
+      {
+        "index": 14,
+        "id": "ha-14",
+        "kind": "line",
+        "text": "आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "ha-01",
+        "kind": "line",
+        "text": "आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की॥"
+      },
+      {
+        "id": "ha-02",
+        "kind": "line",
+        "text": "जाके बल से गिरिवर काँपे। रोग दोष जाके निकट न झाँके॥"
+      },
+      {
+        "id": "ha-03",
+        "kind": "line",
+        "text": "अंजनि पुत्र महा बलदाई। संतन के प्रभु सदा सहाई॥"
+      },
+      {
+        "id": "ha-04",
+        "kind": "line",
+        "text": "दे वीरा रघुनाथ पठाए। लंका जारि सिया सुधि लाये॥"
+      },
+      {
+        "id": "ha-05",
+        "kind": "line",
+        "text": "लंका सो कोट समुद्र सी खाई। जात पवनसुत बार न लाई॥"
+      },
+      {
+        "id": "ha-06",
+        "kind": "line",
+        "text": "लंका जारि असुर संहारे। सियाराम जी के काज सँवारे॥"
+      },
+      {
+        "id": "ha-07",
+        "kind": "line",
+        "text": "लक्ष्मण मूर्छित पड़े सकारे। लाये संजीवन प्राण उबारे॥"
+      },
+      {
+        "id": "ha-08",
+        "kind": "line",
+        "text": "पैठि पताल तोरि जमकारे। अहिरावण की भुजा उखारे॥"
+      },
+      {
+        "id": "ha-11",
+        "kind": "line",
+        "text": "कंचन थार कपूर लौ छाई। आरती करत अंजना माई॥"
+      },
+      {
+        "id": "ha-12",
+        "kind": "line",
+        "text": "जो हनुमान जी की आरती गावे। बसहिं बैकुंठ परम पद पावे॥"
+      },
+      {
+        "id": "ha-13",
+        "kind": "line",
+        "text": "लंक विध्वंस किये रघुराई। तुलसीदास स्वामी कीर्ति गाई॥"
+      },
+      {
+        "id": "ha-14",
+        "kind": "line",
+        "text": "आरती कीजै हनुमान लला की। दुष्ट दलन रघुनाथ कला की॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": "edge-tts",
+    "audioVoice": "hi-IN-MadhurNeural"
+  },
+  {
+    "id": "hanuman-bahuk",
+    "titleEn": "Hanuman Bahuk",
+    "titleHi": "हनुमान बाहुक",
+    "edition": "TRAD-BAHUK-44-V2-3SRC",
+    "category": "stotra",
+    "wave": 2,
+    "verseCount": 44,
+    "iastCount": 44,
+    "structCount": 44,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 44,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 44,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 44,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 44,
+        "audioBytes": 19834498,
+        "lowBytes": 7699639,
+        "cueRel": "audio/bahuk/hanuman_bahuk_cues.json",
+        "srcRel": "audio/bahuk/hanuman_bahuk.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "bh-01",
+        "kind": "chhappay",
+        "text": "सिंधु तरन, सिय-सोच हरन, रबि बाल बरन तनु। भुज बिसाल, मूरति कराल कालहु को काल जनु॥ गहन-दहन-निरदहन लंक निःसंक, बंक-भुव। जातुधान-बलवान, मान-मद-दवन पवनसुव॥ कह तुलसिदास सेवत सुलभ, सेवक हित सन्तत निकट। गुन ग"
+      },
+      {
+        "index": 2,
+        "id": "bh-02",
+        "kind": "chhappay",
+        "text": "स्वर्न-सैल-संकास कोटि-रवि, तरुन तेज घन। उर विसाल भुज दण्ड, चण्ड नख-वज्रतन॥ पिंग नयन, भृकुटी कराल, रसना दसनानन। कपिस केस करकस लंगूर, खल-दल-बल-भानन॥ कह तुलसिदास बस जासु उर, मारुतसुत मूरति विकट। संताप पा"
+      },
+      {
+        "index": 3,
+        "id": "bh-03",
+        "kind": "jhulna",
+        "text": "पञ्चमुख-छःमुख भृगु मुख्य भट असुर सुर, सर्व सरि समर समरत्थ सूरो। बांकुरो बीर बिरुदैत बिरुदावली, बेद बंदी बदत पैजपूरो॥ जासु गुनगाथ रघुनाथ कह जासुबल, बिपुल जल भरित जग जलधि झूरो। दुवन दल दमन को कौन तुलसीस"
+      },
+      {
+        "index": 23,
+        "id": "bh-23",
+        "kind": "ghanakshari",
+        "text": "राम को सनेह, राम साहस लखन सिय, राम की भगति, सोच संकट निवारिये। मुद मरकट रोग बारिनिधि हेरि हारे, जीव जामवंत को भरोसो तेरो भारिये॥ कूदिये कृपाल तुलसी सुप्रेम पब्बयतें, सुथल सुबेल भालू बैठि कै विचारिये। "
+      },
+      {
+        "index": 42,
+        "id": "bh-42",
+        "kind": "ghanakshari",
+        "text": "जीओ जग जानकीजीवन को कहाइ जन, मरिबे को बारानसी बारि सुरसरि को। तुलसी के दोहूँ हाथ मोदक हैं ऐसे ठाँऊ, जाके जिये मुये सोच करिहैं न लरि को॥ मोको झूँटो साँचो लोग राम कौ कहत सब, मेरे मन मान है न हर को न हरि"
+      },
+      {
+        "index": 43,
+        "id": "bh-43",
+        "kind": "ghanakshari",
+        "text": "सीतापति साहेब सहाय हनुमान नित, हित उपदेश को महेस मानो गुरु कै। मानस बचन काय सरन तिहारे पाँय, तुम्हरे भरोसे सुर मैं न जाने सुर कै॥ ब्याधि भूत जनित उपाधि काहु खल की, समाधि कीजै तुलसी को जानि जन फुर कै। "
+      },
+      {
+        "index": 44,
+        "id": "bh-44",
+        "kind": "ghanakshari",
+        "text": "कहों हनुमान सों सुजान राम राय सों, कृपानिधान संकर सों सावधान सुनिये। हरष विषाद राग रोष गुन दोष मई, बिरची बिरञ्ची सब देखियत दुनिये॥ माया जीव काल के करम के सुभाय के, करैया राम बेद कहैं साँची मन गुनिये। "
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "bh-01",
+        "kind": "chhappay",
+        "text": "सिंधु तरन, सिय-सोच हरन, रबि बाल बरन तनु। भुज बिसाल, मूरति कराल कालहु को काल जनु॥ गहन-दहन-निरदहन लंक निःसंक, बंक-भुव। जातुधान-बलवान, मान-मद-दवन पवनसुव॥ कह तुलसिदास सेवत सुलभ, सेवक हित सन्तत निकट। गुन गनत, नमत, सुमिरत जपत, समन सकल-संकट-विकट॥"
+      },
+      {
+        "id": "bh-02",
+        "kind": "chhappay",
+        "text": "स्वर्न-सैल-संकास कोटि-रवि, तरुन तेज घन। उर विसाल भुज दण्ड, चण्ड नख-वज्रतन॥ पिंग नयन, भृकुटी कराल, रसना दसनानन। कपिस केस करकस लंगूर, खल-दल-बल-भानन॥ कह तुलसिदास बस जासु उर, मारुतसुत मूरति विकट। संताप पाप तेहि पुरुष पहि, सपनेहुँ नहिं आवत निकट॥"
+      },
+      {
+        "id": "bh-03",
+        "kind": "jhulna",
+        "text": "पञ्चमुख-छःमुख भृगु मुख्य भट असुर सुर, सर्व सरि समर समरत्थ सूरो। बांकुरो बीर बिरुदैत बिरुदावली, बेद बंदी बदत पैजपूरो॥ जासु गुनगाथ रघुनाथ कह जासुबल, बिपुल जल भरित जग जलधि झूरो। दुवन दल दमन को कौन तुलसीस है, पवन को पूत रजपूत रुरो॥"
+      },
+      {
+        "id": "bh-04",
+        "kind": "ghanakshari",
+        "text": "भानुसों पढ़न हनुमान गए भानुमन, अनुमानि सिसु केलि कियो फेर फारसो। पाछिले पगनि गम गगन मगन मन, क्रम को न भ्रम कपि बालक बिहार सो॥ कौतुक बिलोकि लोकपाल हरिहर विधि, लोचननि चकाचौंधी चित्तनि खबार सो। बल कैंधो बीर रस धीरज कै, साहस कै, तुलसी सरीर धरे सबनि सार सो॥"
+      },
+      {
+        "id": "bh-05",
+        "kind": "ghanakshari",
+        "text": "भारत में पारथ के रथ केथू कपिराज, गाज्यो सुनि कुरुराज दल हल बल भो। कह्यो द्रोन भीषम समीर सुत महाबीर, बीर-रस-बारि-निधि जाको बल जल भो॥ बानर सुभाय बाल केलि भूमि भानु लागि, फलँग फलाँग हूतें घाटि नभ तल भो। नाई-नाई-माथ जोरि-जोरि हाथ जोधा जो हैं, हनुमान देखे जगजीवन को फल भो॥"
+      },
+      {
+        "id": "bh-06",
+        "kind": "ghanakshari",
+        "text": "गो-पद पयोधि करि, होलिका ज्यों लाई लंक, निपट निःसंक पर पुर गल बल भो। द्रोन सो पहार लियो ख्याल ही उखारि कर, कंदुक ज्यों कपि खेल बेल कैसो फल भो॥ संकट समाज असमंजस भो राम राज, काज जुग पूगनि को करतल पल भो। साहसी समत्थ तुलसी को नाई जा की बाँह, लोक पाल पालन को फिर थिर थल भो॥"
+      },
+      {
+        "id": "bh-07",
+        "kind": "ghanakshari",
+        "text": "कमठ की पीठि जाके गोडनि की गाड़ैं मानो, नाप के भाजन भरि जल निधि जल भो। जातुधान दावन परावन को दुर्ग भयो, महा मीन बास तिमि तोमनि को थल भो॥ कुम्भकरन रावन पयोद नाद ईधन को, तुलसी प्रताप जाको प्रबल अनल भो। भीषम कहत मेरे अनुमान हनुमान, सारिखो त्रिकाल न त्रिलोक महाबल भो॥"
+      },
+      {
+        "id": "bh-08",
+        "kind": "ghanakshari",
+        "text": "दूत राम राय को सपूत पूत पौनको तू, अंजनी को नन्दन प्रताप भूरि भानु सो। सीय-सोच-समन, दुरित दोष दमन, सरन आये अवन लखन प्रिय प्राण सो॥ दसमुख दुसह दरिद्र दरिबे को भयो, प्रकट तिलोक ओक तुलसी निधान सो। ज्ञान गुनवान बलवान सेवा सावधान, साहेब सुजान उर आनु हनुमान सो॥"
+      },
+      {
+        "id": "bh-41",
+        "kind": "ghanakshari",
+        "text": "असन बसन हीन बिषम बिषाद लीन, देखि दीन दूबरो करै न हाय हाय को। तुलसी अनाथ सो सनाथ रघुनाथ कियो, दियो फल सील सिंधु आपने सुभाय को॥ नीच यहि बीच पति पाइ भरु हाईगो, बिहाइ प्रभु भजन बचन मन काय को। ता तें तनु पेषियत घोर बरतोर मिस, फूटि फूटि निकसत लोन राम राय को॥"
+      },
+      {
+        "id": "bh-42",
+        "kind": "ghanakshari",
+        "text": "जीओ जग जानकीजीवन को कहाइ जन, मरिबे को बारानसी बारि सुरसरि को। तुलसी के दोहूँ हाथ मोदक हैं ऐसे ठाँऊ, जाके जिये मुये सोच करिहैं न लरि को॥ मोको झूँटो साँचो लोग राम कौ कहत सब, मेरे मन मान है न हर को न हरि को। भारी पीर दुसह सरीर तें बिहाल होत, सोऊ रघुबीर बिनु सकै दूर करि को॥"
+      },
+      {
+        "id": "bh-43",
+        "kind": "ghanakshari",
+        "text": "सीतापति साहेब सहाय हनुमान नित, हित उपदेश को महेस मानो गुरु कै। मानस बचन काय सरन तिहारे पाँय, तुम्हरे भरोसे सुर मैं न जाने सुर कै॥ ब्याधि भूत जनित उपाधि काहु खल की, समाधि कीजै तुलसी को जानि जन फुर कै। कपिनाथ रघुनाथ भोलानाथ भूतनाथ, रोग सिंधु क्यों न डारियत गाय खुर कै॥"
+      },
+      {
+        "id": "bh-44",
+        "kind": "ghanakshari",
+        "text": "कहों हनुमान सों सुजान राम राय सों, कृपानिधान संकर सों सावधान सुनिये। हरष विषाद राग रोष गुन दोष मई, बिरची बिरञ्ची सब देखियत दुनिये॥ माया जीव काल के करम के सुभाय के, करैया राम बेद कहैं साँची मन गुनिये। तुम्ह तें कहा न होय हा हा सो बुझैये मोहिं, हौं हूँ रहों मौनही बयो सो जानि लुनिये॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  },
+  {
+    "id": "hanuman-bhajan-set",
+    "titleEn": "Hanuman Dwadasha Nama",
+    "titleHi": "हनुमान द्वादश नाम",
+    "edition": "TRAD-DWADASHA-NAMA-V2-3SRC",
+    "category": "namavali",
+    "wave": 2,
+    "verseCount": 12,
+    "iastCount": 12,
+    "structCount": 12,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 12,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 3
+    },
+    "en": {
+      "count": 12,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 1
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [
+      "bn:2",
+      "en:1",
+      "gu:2",
+      "hi:3",
+      "kn:2",
+      "ml:2",
+      "mr:2",
+      "or:1",
+      "pa:2",
+      "ta:2",
+      "te:1"
+    ],
+    "totalCues": 12,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 12,
+        "audioBytes": 473743,
+        "lowBytes": 0,
+        "cueRel": "audio/bhajan/hanuman_dwadasha_nama_cues.json",
+        "srcRel": "audio/bhajan/hanuman_dwadasha_nama.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "hb-01",
+        "kind": "name",
+        "text": "ॐ हनुमते नमः"
+      },
+      {
+        "index": 2,
+        "id": "hb-02",
+        "kind": "name",
+        "text": "ॐ आञ्जनेयाय नमः"
+      },
+      {
+        "index": 3,
+        "id": "hb-03",
+        "kind": "name",
+        "text": "ॐ वायुपुत्राय नमः"
+      },
+      {
+        "index": 7,
+        "id": "hb-07",
+        "kind": "name",
+        "text": "ॐ पिङ्गाक्षाय नमः"
+      },
+      {
+        "index": 10,
+        "id": "hb-10",
+        "kind": "name",
+        "text": "ॐ सीताशोकविनाशनाय नमः"
+      },
+      {
+        "index": 11,
+        "id": "hb-11",
+        "kind": "name",
+        "text": "ॐ लक्ष्मणप्राणदात्रे नमः"
+      },
+      {
+        "index": 12,
+        "id": "hb-12",
+        "kind": "name",
+        "text": "ॐ दशग्रीवदर्पहन्त्रे नमः"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "hb-01",
+        "kind": "name",
+        "text": "ॐ हनुमते नमः"
+      },
+      {
+        "id": "hb-02",
+        "kind": "name",
+        "text": "ॐ आञ्जनेयाय नमः"
+      },
+      {
+        "id": "hb-03",
+        "kind": "name",
+        "text": "ॐ वायुपुत्राय नमः"
+      },
+      {
+        "id": "hb-04",
+        "kind": "name",
+        "text": "ॐ महाबलाय नमः"
+      },
+      {
+        "id": "hb-05",
+        "kind": "name",
+        "text": "ॐ रामेष्टाय नमः"
+      },
+      {
+        "id": "hb-06",
+        "kind": "name",
+        "text": "ॐ फाल्गुनसखाय नमः"
+      },
+      {
+        "id": "hb-07",
+        "kind": "name",
+        "text": "ॐ पिङ्गाक्षाय नमः"
+      },
+      {
+        "id": "hb-08",
+        "kind": "name",
+        "text": "ॐ अमितविक्रमाय नमः"
+      },
+      {
+        "id": "hb-09",
+        "kind": "name",
+        "text": "ॐ उदधिक्रमणाय नमः"
+      },
+      {
+        "id": "hb-10",
+        "kind": "name",
+        "text": "ॐ सीताशोकविनाशनाय नमः"
+      },
+      {
+        "id": "hb-11",
+        "kind": "name",
+        "text": "ॐ लक्ष्मणप्राणदात्रे नमः"
+      },
+      {
+        "id": "hb-12",
+        "kind": "name",
+        "text": "ॐ दशग्रीवदर्पहन्त्रे नमः"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  },
+  {
+    "id": "hanuman-chalisa",
+    "titleEn": "Hanuman Chalisa",
+    "titleHi": "हनुमान चालीसा",
+    "edition": "GP-MANAS-81-2025-CHALISA",
+    "category": "chalisa",
+    "wave": 0,
+    "verseCount": 43,
+    "iastCount": 43,
+    "structCount": 43,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 43,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 43,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 43,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "chalisa-full",
+        "cueCount": 43,
+        "audioBytes": 4068964,
+        "lowBytes": 1728040,
+        "cueRel": "audio/chalisa/hanuman_chalisa_cues.json",
+        "srcRel": "audio/chalisa/hanuman_chalisa.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "hc-doha-1",
+        "kind": "doha",
+        "text": "श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि। बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि॥"
+      },
+      {
+        "index": 2,
+        "id": "hc-doha-2",
+        "kind": "doha",
+        "text": "बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार। बल बुधि बिद्या देहु मोहिं, हरहु कलेस बिकार॥"
+      },
+      {
+        "index": 3,
+        "id": "hc-01",
+        "kind": "chaupai",
+        "text": "जय हनुमान ज्ञान गुन सागर। जय कपीस तिहुँ लोक उजागर॥"
+      },
+      {
+        "index": 22,
+        "id": "hc-20",
+        "kind": "chaupai",
+        "text": "दुर्गम काज जगत के जेते। सुगम अनुग्रह तुम्हरे तेते॥"
+      },
+      {
+        "index": 41,
+        "id": "hc-39",
+        "kind": "chaupai",
+        "text": "जो यह पढ़ै हनुमान चालीसा। होय सिद्धि साखी गौरीसा॥"
+      },
+      {
+        "index": 42,
+        "id": "hc-40",
+        "kind": "chaupai",
+        "text": "तुलसीदास सदा हरि चेरा। कीजै नाथ हृदय महँ डेरा॥"
+      },
+      {
+        "index": 43,
+        "id": "hc-doha-3",
+        "kind": "doha",
+        "text": "पवनतनय संकट हरन, मंगल मूरति रूप। राम लखन सीता सहित, हृदय बसहु सुर भूप॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "hc-doha-1",
+        "kind": "doha",
+        "text": "श्रीगुरु चरन सरोज रज, निज मनु मुकुरु सुधारि। बरनउँ रघुबर बिमल जसु, जो दायकु फल चारि॥"
+      },
+      {
+        "id": "hc-doha-2",
+        "kind": "doha",
+        "text": "बुद्धिहीन तनु जानिके, सुमिरौं पवन-कुमार। बल बुधि बिद्या देहु मोहिं, हरहु कलेस बिकार॥"
+      },
+      {
+        "id": "hc-01",
+        "kind": "chaupai",
+        "text": "जय हनुमान ज्ञान गुन सागर। जय कपीस तिहुँ लोक उजागर॥"
+      },
+      {
+        "id": "hc-02",
+        "kind": "chaupai",
+        "text": "राम दूत अतुलित बल धामा। अंजनि-पुत्र पवनसुत नामा॥"
+      },
+      {
+        "id": "hc-03",
+        "kind": "chaupai",
+        "text": "महाबीर बिक्रम बजरंगी। कुमति निवार सुमति के संगी॥"
+      },
+      {
+        "id": "hc-04",
+        "kind": "chaupai",
+        "text": "कंचन बरन बिराज सुबेसा। कानन कुंडल कुंचित केसा॥"
+      },
+      {
+        "id": "hc-05",
+        "kind": "chaupai",
+        "text": "हाथ बज्र औ ध्वजा बिराजै। काँधे मूँज जनेउ साजै॥"
+      },
+      {
+        "id": "hc-06",
+        "kind": "chaupai",
+        "text": "शंकर सुवन केसरी नंदन। तेज प्रताप महा जग बंदन॥"
+      },
+      {
+        "id": "hc-38",
+        "kind": "chaupai",
+        "text": "जो सत बार पाठ कर कोई। छूटहि बंदि महा सुख होई॥"
+      },
+      {
+        "id": "hc-39",
+        "kind": "chaupai",
+        "text": "जो यह पढ़ै हनुमान चालीसा। होय सिद्धि साखी गौरीसा॥"
+      },
+      {
+        "id": "hc-40",
+        "kind": "chaupai",
+        "text": "तुलसीदास सदा हरि चेरा। कीजै नाथ हृदय महँ डेरा॥"
+      },
+      {
+        "id": "hc-doha-3",
+        "kind": "doha",
+        "text": "पवनतनय संकट हरन, मंगल मूरति रूप। राम लखन सीता सहित, हृदय बसहु सुर भूप॥"
+      }
+    ],
+    "needsDualReview": false,
+    "tts": true,
+    "hasOffline": true,
+    "audioEngine": "edge-tts",
+    "audioVoice": "hi-IN-MadhurNeural"
+  },
+  {
+    "id": "maruti-stotra",
+    "titleEn": "Hanumat Trikala Smaranam",
+    "titleHi": "हनुमत् त्रिकाल स्मरण",
+    "edition": "TRAD-TRIKALA-SMARANAM-V2-3SRC",
+    "category": "stotra",
+    "wave": 2,
+    "verseCount": 3,
+    "iastCount": 3,
+    "structCount": 3,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 3,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 3,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 3,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 3,
+        "audioBytes": 596248,
+        "lowBytes": 232397,
+        "cueRel": "audio/maruti/maruti_stotra_cues.json",
+        "srcRel": "audio/maruti/maruti_stotra.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "mr-01",
+        "kind": "shloka",
+        "text": "प्रातः स्मरामि हनुमन्तमनन्तवीर्यं श्रीरामचन्द्रचरणाम्बुजचञ्चरीकम्। लङ्कापुरीदहननन्दितदेववृन्दं सर्वार्थसिद्धिसदनं प्रथितप्रभावम्॥"
+      },
+      {
+        "index": 2,
+        "id": "mr-02",
+        "kind": "shloka",
+        "text": "माध्यं नमामि वृजिनार्णवतारणैकाधारं शरण्यमुदितानुपमप्रभवम्। सीताऽऽधिसिन्धुपरिशोषणकर्मदक्षं वन्दारुकल्पतरुमव्ययमाञ्जनेयम्॥"
+      },
+      {
+        "index": 3,
+        "id": "mr-03",
+        "kind": "shloka",
+        "text": "सायं भजामि शरणोपसृताखिलार्तिपुञ्जप्रणाशनविधौ प्रथितप्रतापम्। अक्षान्तकं सकलराक्षसवंशधूमकेतुं प्रमोदितविदेहसुतं दयालुम्॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "mr-01",
+        "kind": "shloka",
+        "text": "प्रातः स्मरामि हनुमन्तमनन्तवीर्यं श्रीरामचन्द्रचरणाम्बुजचञ्चरीकम्। लङ्कापुरीदहननन्दितदेववृन्दं सर्वार्थसिद्धिसदनं प्रथितप्रभावम्॥"
+      },
+      {
+        "id": "mr-02",
+        "kind": "shloka",
+        "text": "माध्यं नमामि वृजिनार्णवतारणैकाधारं शरण्यमुदितानुपमप्रभवम्। सीताऽऽधिसिन्धुपरिशोषणकर्मदक्षं वन्दारुकल्पतरुमव्ययमाञ्जनेयम्॥"
+      },
+      {
+        "id": "mr-03",
+        "kind": "shloka",
+        "text": "सायं भजामि शरणोपसृताखिलार्तिपुञ्जप्रणाशनविधौ प्रथितप्रतापम्। अक्षान्तकं सकलराक्षसवंशधूमकेतुं प्रमोदितविदेहसुतं दयालुम्॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  },
+  {
+    "id": "panchmukhi-kavach",
+    "titleEn": "Panchmukhi Hanumat Kavach",
+    "titleHi": "पञ्चमुख हनुमत्कवच",
+    "edition": "TRAD-KAVACH-SUDARSHANA-V2-3SRC",
+    "category": "kavach",
+    "wave": 2,
+    "verseCount": 36,
+    "iastCount": 36,
+    "structCount": 36,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 36,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 36,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 36,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 36,
+        "audioBytes": 5556270,
+        "lowBytes": 2167311,
+        "cueRel": "audio/kavach/panchmukhi_kavach_cues.json",
+        "srcRel": "audio/kavach/panchmukhi_kavach.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "kv-01",
+        "kind": "viniyoga",
+        "text": "ॐ अस्य श्रीपञ्चमुखहनुमन्मन्त्रस्य ब्रह्मा ऋषिः गायत्री छन्दः पञ्चमुखविराट् हनुमान् देवता। ह्रीं बीजं श्रीं शक्तिः क्रौं कीलकं क्रूं कवचं क्रैं अस्त्राय फट् इति दिग्बन्धः॥"
+      },
+      {
+        "index": 2,
+        "id": "kv-02",
+        "kind": "dhyana",
+        "text": "श्रीगरुड उवाच — अथ ध्यानं प्रवक्ष्यामि शृणु सर्वाङ्गसुन्दरि। यत्कृतं देवदेवेन ध्यानं हनुमतः प्रियम्॥"
+      },
+      {
+        "index": 3,
+        "id": "kv-03",
+        "kind": "dhyana",
+        "text": "पञ्चवक्त्रं महाभीमं त्रिपञ्चनयनैर्युतम्। बाहुभिर्दशभिर्युक्तं सर्वकामार्थसिद्धिदम्॥"
+      },
+      {
+        "index": 19,
+        "id": "kv-19",
+        "kind": "nyasa",
+        "text": "ॐ अस्य श्रीपञ्चमुखहनुमन्मन्त्रस्य श्रीरामचन्द्र ऋषिः अनुष्टुप् छन्दः पञ्चमुखवीरहनुमान् देवता। हनुमान् इति बीजं वायुपुत्र इति शक्तिः अञ्जनीसुत इति कीलकम्॥"
+      },
+      {
+        "index": 34,
+        "id": "kv-34",
+        "kind": "phala",
+        "text": "नववारं पठेन्नित्यं राजभोगमवाप्नुयात्। दशवारं पठेन्नित्यं त्रैलोक्यज्ञानदर्शनम्॥"
+      },
+      {
+        "index": 35,
+        "id": "kv-35",
+        "kind": "phala",
+        "text": "रुद्रावृत्तिं पठेन्नित्यं सर्वसिद्धिर्भवेद्ध्रुवम्। निर्बलो रोगयुक्तश्च कवचस्मरणेनैव महाबलमवाप्नुयात्॥"
+      },
+      {
+        "index": 36,
+        "id": "kv-36",
+        "kind": "colophon",
+        "text": "इति सुदर्शनसंहितायां श्रीरामचन्द्रसीताप्रोक्तं श्रीपञ्चमुखहनुमत्कवचम् सम्पूर्णम्॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "kv-01",
+        "kind": "viniyoga",
+        "text": "ॐ अस्य श्रीपञ्चमुखहनुमन्मन्त्रस्य ब्रह्मा ऋषिः गायत्री छन्दः पञ्चमुखविराट् हनुमान् देवता। ह्रीं बीजं श्रीं शक्तिः क्रौं कीलकं क्रूं कवचं क्रैं अस्त्राय फट् इति दिग्बन्धः॥"
+      },
+      {
+        "id": "kv-02",
+        "kind": "dhyana",
+        "text": "श्रीगरुड उवाच — अथ ध्यानं प्रवक्ष्यामि शृणु सर्वाङ्गसुन्दरि। यत्कृतं देवदेवेन ध्यानं हनुमतः प्रियम्॥"
+      },
+      {
+        "id": "kv-03",
+        "kind": "dhyana",
+        "text": "पञ्चवक्त्रं महाभीमं त्रिपञ्चनयनैर्युतम्। बाहुभिर्दशभिर्युक्तं सर्वकामार्थसिद्धिदम्॥"
+      },
+      {
+        "id": "kv-04",
+        "kind": "dhyana",
+        "text": "पूर्वं तु वानरं वक्त्रं कोटिसूर्यसमप्रभम्। दंष्ट्राकरालवदनं भृकुटीकुटिलेक्षणम्॥"
+      },
+      {
+        "id": "kv-05",
+        "kind": "dhyana",
+        "text": "अस्यैव दक्षिणं वक्त्रं नारसिंहं महाद्भुतम्। अत्युग्रतेजोवपुषं भीषणं भयनाशनम्॥"
+      },
+      {
+        "id": "kv-06",
+        "kind": "dhyana",
+        "text": "पश्चिमं गारुडं वक्त्रं वक्रतुण्डं महाबलम्। सर्वनागप्रशमनं विषभूतादिकृन्तनम्॥"
+      },
+      {
+        "id": "kv-07",
+        "kind": "dhyana",
+        "text": "उत्तरं सौकरं वक्त्रं कृष्णं दीप्तं नभोपमम्। पातालसिंहवेतालज्वररोगादिकृन्तनम्॥"
+      },
+      {
+        "id": "kv-08",
+        "kind": "dhyana",
+        "text": "ऊर्ध्वं हयाननं घोरं दानवान्तकं परम्। येन वक्त्रेण तारकाख्यं महासुरं जघान॥"
+      },
+      {
+        "id": "kv-33",
+        "kind": "phala",
+        "text": "सप्तवारं पठेन्नित्यं सर्वसौभाग्यदायकम्। अष्टवारं पठेन्नित्यमिष्टकामार्थसिद्धिदम्॥"
+      },
+      {
+        "id": "kv-34",
+        "kind": "phala",
+        "text": "नववारं पठेन्नित्यं राजभोगमवाप्नुयात्। दशवारं पठेन्नित्यं त्रैलोक्यज्ञानदर्शनम्॥"
+      },
+      {
+        "id": "kv-35",
+        "kind": "phala",
+        "text": "रुद्रावृत्तिं पठेन्नित्यं सर्वसिद्धिर्भवेद्ध्रुवम्। निर्बलो रोगयुक्तश्च कवचस्मरणेनैव महाबलमवाप्नुयात्॥"
+      },
+      {
+        "id": "kv-36",
+        "kind": "colophon",
+        "text": "इति सुदर्शनसंहितायां श्रीरामचन्द्रसीताप्रोक्तं श्रीपञ्चमुखहनुमत्कवचम् सम्पूर्णम्॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  },
+  {
+    "id": "sankatmochan-ashtak",
+    "titleEn": "Sankatmochan Ashtak",
+    "titleHi": "संकटमोचन हनुमानाष्टक",
+    "edition": "TRAD-ASHTAK-V2-3SRC",
+    "category": "stotra",
+    "wave": 1,
+    "verseCount": 9,
+    "iastCount": 9,
+    "structCount": 9,
+    "sections": 1,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 9,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 9,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 9,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 9,
+        "audioBytes": 2976639,
+        "lowBytes": 1160663,
+        "cueRel": "audio/ashtak/sankatmochan_ashtak_cues.json",
+        "srcRel": "audio/ashtak/sankatmochan_ashtak.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "sa-01",
+        "kind": "stanza",
+        "text": "बाल समय रबि भक्षि लियो तब तीनहुँ लोक भयो अँधियारो। ताहि सों त्रास भयो जग को यह संकट काहू सों जात न टारो॥ देवन आनि करी बिनती तब छाँड़ि दियो रबि कष्ट निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहा"
+      },
+      {
+        "index": 2,
+        "id": "sa-02",
+        "kind": "stanza",
+        "text": "बालि की त्रास कपीस बसै गिरि जात महाप्रभु पंथ निहारो। चैंकि महामुनि शाप दियो तब चाहिय कौन बिचार बिचारो॥ कै द्विज रूप लिवाय महाप्रभु सो तुम दास को सोक निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिह"
+      },
+      {
+        "index": 3,
+        "id": "sa-03",
+        "kind": "stanza",
+        "text": "अंगद के संग लेन गये सिय खोज कपीस यह बैन उचारो। जीवत ना बचिहौ हम सो जु बिना सुधि लाये इहाँ पगु धारो॥ हेरि थके तट सिन्धु सबै तब लाय सिया-सुधि प्रान उबारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "index": 5,
+        "id": "sa-05",
+        "kind": "stanza",
+        "text": "बान लग्यो उर लछिमन के तब प्रान तजे सुत रावन मारो। लै गृह बैद्य सुषेन समेत तबै गिरि द्रोण सु बीर उपारो॥ आनि सजीवन हाथ दई तब लछिमन के तुम प्रान उबारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "index": 7,
+        "id": "sa-07",
+        "kind": "stanza",
+        "text": "बंधु समेत जबै अहिरावन लै रघुनाथ पाताल सिधारो। देबिहिं पूजि भली बिधि सों बलि देउ सबै मिलि मंत्र बिचारो॥ जाय सहाय भयो तब ही अहिरावन सैन्य समेत सँहारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "index": 8,
+        "id": "sa-08",
+        "kind": "stanza",
+        "text": "काज किये बड़ देवन के तुम बीर महाप्रभु देखि बिचारो। कौन सो संकट मोर गरीब को जो तुमसों नहिं जात है टारो॥ बेगि हरो हनुमान महाप्रभु जो कछु संकट होय हमारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "index": 9,
+        "id": "sa-doha",
+        "kind": "doha",
+        "text": "लाल देह लाली लसे, अरु धरि लाल लँगूर। वज्र देह दानव दलन, जय जय जय कपि सूर॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "sa-01",
+        "kind": "stanza",
+        "text": "बाल समय रबि भक्षि लियो तब तीनहुँ लोक भयो अँधियारो। ताहि सों त्रास भयो जग को यह संकट काहू सों जात न टारो॥ देवन आनि करी बिनती तब छाँड़ि दियो रबि कष्ट निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-02",
+        "kind": "stanza",
+        "text": "बालि की त्रास कपीस बसै गिरि जात महाप्रभु पंथ निहारो। चैंकि महामुनि शाप दियो तब चाहिय कौन बिचार बिचारो॥ कै द्विज रूप लिवाय महाप्रभु सो तुम दास को सोक निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-03",
+        "kind": "stanza",
+        "text": "अंगद के संग लेन गये सिय खोज कपीस यह बैन उचारो। जीवत ना बचिहौ हम सो जु बिना सुधि लाये इहाँ पगु धारो॥ हेरि थके तट सिन्धु सबै तब लाय सिया-सुधि प्रान उबारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-04",
+        "kind": "stanza",
+        "text": "रावन त्रास दई सिय को सब राक्षसि सों कहि सोक निवारो। ताहि समय हनुमान महाप्रभु जाय महा रजनीचर मारो॥ चाहत सीय असोक सों आगि सु दै प्रभु मुद्रिका सोक निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-05",
+        "kind": "stanza",
+        "text": "बान लग्यो उर लछिमन के तब प्रान तजे सुत रावन मारो। लै गृह बैद्य सुषेन समेत तबै गिरि द्रोण सु बीर उपारो॥ आनि सजीवन हाथ दई तब लछिमन के तुम प्रान उबारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-06",
+        "kind": "stanza",
+        "text": "रावन जुद्ध अजान कियो तब नाग कि फाँस सबै सिर डारो। श्रीरघुनाथ समेत सबै दल मोह भयो यह संकट भारो॥ आनि खगेस तबै हनुमान जु बंधन काटि सुत्रास निवारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-07",
+        "kind": "stanza",
+        "text": "बंधु समेत जबै अहिरावन लै रघुनाथ पाताल सिधारो। देबिहिं पूजि भली बिधि सों बलि देउ सबै मिलि मंत्र बिचारो॥ जाय सहाय भयो तब ही अहिरावन सैन्य समेत सँहारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-08",
+        "kind": "stanza",
+        "text": "काज किये बड़ देवन के तुम बीर महाप्रभु देखि बिचारो। कौन सो संकट मोर गरीब को जो तुमसों नहिं जात है टारो॥ बेगि हरो हनुमान महाप्रभु जो कछु संकट होय हमारो। को नहिं जानत है जग में कपि संकटमोचन नाम तिहारो॥"
+      },
+      {
+        "id": "sa-doha",
+        "kind": "doha",
+        "text": "लाल देह लाली लसे, अरु धरि लाल लँगूर। वज्र देह दानव दलन, जय जय जय कपि सूर॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": "edge-tts",
+    "audioVoice": "hi-IN-MadhurNeural"
+  },
+  {
+    "id": "sundar-kand-manas",
+    "titleEn": "Sundar Kand",
+    "titleHi": "सुंदरकांड",
+    "edition": "GP-MANAS-81-2025-V2",
+    "category": "kand",
+    "wave": 0,
+    "verseCount": 575,
+    "iastCount": 575,
+    "structCount": 575,
+    "sections": 24,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 575,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 575,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 575,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "sk-s01",
+        "cueCount": 24,
+        "audioBytes": 2447301,
+        "lowBytes": 966437,
+        "cueRel": "audio/sundar-kand/sk-s01/sk_sk-s01_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s01/sk_sk-s01.m4a"
+      },
+      {
+        "seg": "sk-s02",
+        "cueCount": 24,
+        "audioBytes": 2948121,
+        "lowBytes": 1230784,
+        "cueRel": "audio/sundar-kand/sk-s02/sk_sk-s02_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s02/sk_sk-s02.m4a"
+      },
+      {
+        "seg": "sk-s03",
+        "cueCount": 24,
+        "audioBytes": 2755101,
+        "lowBytes": 1153946,
+        "cueRel": "audio/sundar-kand/sk-s03/sk_sk-s03_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s03/sk_sk-s03.m4a"
+      },
+      {
+        "seg": "sk-s04",
+        "cueCount": 24,
+        "audioBytes": 2603794,
+        "lowBytes": 1094230,
+        "cueRel": "audio/sundar-kand/sk-s04/sk_sk-s04_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s04/sk_sk-s04.m4a"
+      },
+      {
+        "seg": "sk-s05",
+        "cueCount": 24,
+        "audioBytes": 2542024,
+        "lowBytes": 1074761,
+        "cueRel": "audio/sundar-kand/sk-s05/sk_sk-s05_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s05/sk_sk-s05.m4a"
+      },
+      {
+        "seg": "sk-s06",
+        "cueCount": 24,
+        "audioBytes": 2536361,
+        "lowBytes": 1069073,
+        "cueRel": "audio/sundar-kand/sk-s06/sk_sk-s06_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s06/sk_sk-s06.m4a"
+      },
+      {
+        "seg": "sk-s07",
+        "cueCount": 24,
+        "audioBytes": 2755760,
+        "lowBytes": 1156308,
+        "cueRel": "audio/sundar-kand/sk-s07/sk_sk-s07_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s07/sk_sk-s07.m4a"
+      },
+      {
+        "seg": "sk-s08",
+        "cueCount": 24,
+        "audioBytes": 2626565,
+        "lowBytes": 1103955,
+        "cueRel": "audio/sundar-kand/sk-s08/sk_sk-s08_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s08/sk_sk-s08.m4a"
+      },
+      {
+        "seg": "sk-s09",
+        "cueCount": 24,
+        "audioBytes": 2637097,
+        "lowBytes": 1110618,
+        "cueRel": "audio/sundar-kand/sk-s09/sk_sk-s09_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s09/sk_sk-s09.m4a"
+      },
+      {
+        "seg": "sk-s10",
+        "cueCount": 24,
+        "audioBytes": 2488452,
+        "lowBytes": 1050998,
+        "cueRel": "audio/sundar-kand/sk-s10/sk_sk-s10_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s10/sk_sk-s10.m4a"
+      },
+      {
+        "seg": "sk-s11",
+        "cueCount": 24,
+        "audioBytes": 2580851,
+        "lowBytes": 1083005,
+        "cueRel": "audio/sundar-kand/sk-s11/sk_sk-s11_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s11/sk_sk-s11.m4a"
+      },
+      {
+        "seg": "sk-s12",
+        "cueCount": 24,
+        "audioBytes": 2936728,
+        "lowBytes": 1228832,
+        "cueRel": "audio/sundar-kand/sk-s12/sk_sk-s12_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s12/sk_sk-s12.m4a"
+      },
+      {
+        "seg": "sk-s13",
+        "cueCount": 24,
+        "audioBytes": 2545539,
+        "lowBytes": 1074496,
+        "cueRel": "audio/sundar-kand/sk-s13/sk_sk-s13_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s13/sk_sk-s13.m4a"
+      },
+      {
+        "seg": "sk-s14",
+        "cueCount": 24,
+        "audioBytes": 2620361,
+        "lowBytes": 1103712,
+        "cueRel": "audio/sundar-kand/sk-s14/sk_sk-s14_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s14/sk_sk-s14.m4a"
+      },
+      {
+        "seg": "sk-s15",
+        "cueCount": 24,
+        "audioBytes": 2923465,
+        "lowBytes": 1218465,
+        "cueRel": "audio/sundar-kand/sk-s15/sk_sk-s15_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s15/sk_sk-s15.m4a"
+      },
+      {
+        "seg": "sk-s16",
+        "cueCount": 24,
+        "audioBytes": 2608132,
+        "lowBytes": 1095441,
+        "cueRel": "audio/sundar-kand/sk-s16/sk_sk-s16_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s16/sk_sk-s16.m4a"
+      },
+      {
+        "seg": "sk-s17",
+        "cueCount": 24,
+        "audioBytes": 2552774,
+        "lowBytes": 1075229,
+        "cueRel": "audio/sundar-kand/sk-s17/sk_sk-s17_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s17/sk_sk-s17.m4a"
+      },
+      {
+        "seg": "sk-s18",
+        "cueCount": 24,
+        "audioBytes": 2690598,
+        "lowBytes": 1129806,
+        "cueRel": "audio/sundar-kand/sk-s18/sk_sk-s18_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s18/sk_sk-s18.m4a"
+      },
+      {
+        "seg": "sk-s19",
+        "cueCount": 24,
+        "audioBytes": 2547597,
+        "lowBytes": 1073933,
+        "cueRel": "audio/sundar-kand/sk-s19/sk_sk-s19_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s19/sk_sk-s19.m4a"
+      },
+      {
+        "seg": "sk-s20",
+        "cueCount": 24,
+        "audioBytes": 2654836,
+        "lowBytes": 1116409,
+        "cueRel": "audio/sundar-kand/sk-s20/sk_sk-s20_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s20/sk_sk-s20.m4a"
+      },
+      {
+        "seg": "sk-s21",
+        "cueCount": 24,
+        "audioBytes": 2587926,
+        "lowBytes": 1086031,
+        "cueRel": "audio/sundar-kand/sk-s21/sk_sk-s21_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s21/sk_sk-s21.m4a"
+      },
+      {
+        "seg": "sk-s22",
+        "cueCount": 24,
+        "audioBytes": 2573877,
+        "lowBytes": 1085299,
+        "cueRel": "audio/sundar-kand/sk-s22/sk_sk-s22_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s22/sk_sk-s22.m4a"
+      },
+      {
+        "seg": "sk-s23",
+        "cueCount": 24,
+        "audioBytes": 2530962,
+        "lowBytes": 1068761,
+        "cueRel": "audio/sundar-kand/sk-s23/sk_sk-s23_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s23/sk_sk-s23.m4a"
+      },
+      {
+        "seg": "sk-s24",
+        "cueCount": 23,
+        "audioBytes": 2613494,
+        "lowBytes": 1096156,
+        "cueRel": "audio/sundar-kand/sk-s24/sk_sk-s24_cues.json",
+        "srcRel": "audio/sundar-kand/sk-s24/sk_sk-s24.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "sk-s01-v001",
+        "kind": "shloka",
+        "text": "श्रीजानकीवल्लभो विजयते॥ रामचरितमानस सुंदरकाण्ड॥"
+      },
+      {
+        "index": 2,
+        "id": "sk-s01-v002",
+        "kind": "doha",
+        "text": "जामवंत के बचन सुहाए। सुनि हनुमंत हृदय अति भाए॥"
+      },
+      {
+        "index": 3,
+        "id": "sk-s01-v003",
+        "kind": "doha",
+        "text": "जब लगि आवौं सीतहि देखी । होइहि काजु मोहि हरष बिसेषी॥"
+      },
+      {
+        "index": 288,
+        "id": "sk-s12-v024",
+        "kind": "chaupai",
+        "text": "दो०-प्रीति सहित सब भेटे रघुपति करुना पुंज। पूँछी कुसल नाथ अब कुसल देखि पद कंज॥"
+      },
+      {
+        "index": 573,
+        "id": "sk-s24-v021",
+        "kind": "doha",
+        "text": "सकल चरित कहि प्रभुहि सुनावा। चरन बंदि पाथोधि सिधावा॥"
+      },
+      {
+        "index": 574,
+        "id": "sk-s24-v022",
+        "kind": "chaupai",
+        "text": "छं०- निज भवन गवनेउ सिंधु श्रीरघुपतिहि यह मत भायऊ। यह चरित कलि मलहर जथामति दास तुलसी गायऊ॥"
+      },
+      {
+        "index": 575,
+        "id": "sk-s24-v023",
+        "kind": "chaupai",
+        "text": "सुख भवन संसय समन दवन निषाद रघुपति गुन गना। तजि सकल आस भरोस गावहि सुनहि संतत सठ मना॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "sk-s01-v001",
+        "kind": "shloka",
+        "text": "श्रीजानकीवल्लभो विजयते॥ रामचरितमानस सुंदरकाण्ड॥"
+      },
+      {
+        "id": "sk-s01-v002",
+        "kind": "doha",
+        "text": "जामवंत के बचन सुहाए। सुनि हनुमंत हृदय अति भाए॥"
+      },
+      {
+        "id": "sk-s01-v003",
+        "kind": "doha",
+        "text": "जब लगि आवौं सीतहि देखी । होइहि काजु मोहि हरष बिसेषी॥"
+      },
+      {
+        "id": "sk-s01-v004",
+        "kind": "doha",
+        "text": "यह कहि नाइ सबन्हि कहुँ माथा । चलेउ हरषि हियँ धरि रघुनाथा॥"
+      },
+      {
+        "id": "sk-s01-v005",
+        "kind": "doha",
+        "text": "सिंधु तीर एक भूधर सुंदर। कौतुक कूदि चढ़ेउ ता ऊपर॥"
+      },
+      {
+        "id": "sk-s01-v006",
+        "kind": "doha",
+        "text": "बार बार रघुबीर सँभारी। तरकेउ पवनतनय बल भारी॥"
+      },
+      {
+        "id": "sk-s01-v007",
+        "kind": "doha",
+        "text": "जेहिं गिरि चरन देइ हनुमंता। चलेउ सो गा पाताल तुरंता॥"
+      },
+      {
+        "id": "sk-s01-v008",
+        "kind": "doha",
+        "text": "जिमि अमोघ रघुपति कर बाना। एही भाँति चलेउ हनुमाना॥"
+      },
+      {
+        "id": "sk-s24-v020",
+        "kind": "doha",
+        "text": "देखि राम बल पौरुष भारी। हरषि पयोनिधि भयउ सुखारी॥"
+      },
+      {
+        "id": "sk-s24-v021",
+        "kind": "doha",
+        "text": "सकल चरित कहि प्रभुहि सुनावा। चरन बंदि पाथोधि सिधावा॥"
+      },
+      {
+        "id": "sk-s24-v022",
+        "kind": "chaupai",
+        "text": "छं०- निज भवन गवनेउ सिंधु श्रीरघुपतिहि यह मत भायऊ। यह चरित कलि मलहर जथामति दास तुलसी गायऊ॥"
+      },
+      {
+        "id": "sk-s24-v023",
+        "kind": "chaupai",
+        "text": "सुख भवन संसय समन दवन निषाद रघुपति गुन गना। तजि सकल आस भरोस गावहि सुनहि संतत सठ मना॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": "edge-tts",
+    "audioVoice": "hi-IN-MadhurNeural"
+  },
+  {
+    "id": "valmiki-sundarakanda",
+    "titleEn": "Valmiki Sundarakanda",
+    "titleHi": "वाल्मीकि सुन्दरकाण्ड",
+    "edition": "VALMIKI-SK-PD-V2",
+    "category": "kand",
+    "wave": 2,
+    "verseCount": 216,
+    "iastCount": 216,
+    "structCount": 216,
+    "sections": 18,
+    "missingInStruct": 0,
+    "orphanVerses": 0,
+    "dupStruct": 0,
+    "missingIast": 0,
+    "emptyText": 0,
+    "contaminationHits": [],
+    "hi": {
+      "count": 216,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 0,
+      "mt": 0,
+      "short": 0
+    },
+    "en": {
+      "count": 216,
+      "missingVerses": 0,
+      "empty": 0,
+      "provisional": 216,
+      "mt": 0,
+      "short": 0
+    },
+    "trLocales": 11,
+    "localeGaps": [],
+    "provisionalAny": [
+      "en:216"
+    ],
+    "mtTagged": [],
+    "shortMeanings": [],
+    "totalCues": 216,
+    "cueParity": "MATCH",
+    "cueMissingVerses": 0,
+    "cueExtra": 0,
+    "cueChecks": [
+      {
+        "seg": "full",
+        "cueCount": 216,
+        "audioBytes": 29902838,
+        "lowBytes": 11693207,
+        "cueRel": "audio/valmiki/valmiki_sundarakanda_cues.json",
+        "srcRel": "audio/valmiki/valmiki_sundarakanda.m4a"
+      }
+    ],
+    "audioIssues": [],
+    "samples": [
+      {
+        "index": 1,
+        "id": "vl-s01-v01",
+        "kind": "shloka",
+        "text": "ततो रावणनीतायाः सीतायाः शत्रुकर्शनः। इयेष पदमन्वेष्टुं चारणाचरिते पथि॥"
+      },
+      {
+        "index": 2,
+        "id": "vl-s01-v02",
+        "kind": "shloka",
+        "text": "दुष्करं निष्प्रतिद्वन्द्वं चिकीर्षन् कर्म वानरः। समुदग्रशिरोग्रीवो गवां पतिरिवाबभौ॥"
+      },
+      {
+        "index": 3,
+        "id": "vl-s01-v03",
+        "kind": "shloka",
+        "text": "अथ वैडूर्यवर्णेषु शाद्वलेषु महाबलः। धीरः सलिलकल्पेषु विचचार यथासुखम्॥"
+      },
+      {
+        "index": 109,
+        "id": "vl-s10-v01",
+        "kind": "shloka",
+        "text": "अशोकवनिकां रम्यां ददर्श स महाकपिः। यत्र सीता महाभागा निवसत्यार्तरूपिणी॥"
+      },
+      {
+        "index": 214,
+        "id": "vl-s18-v10",
+        "kind": "shloka",
+        "text": "ततः सुग्रीवसहितो रामो राजीवलोचनः। सेनां समादिदेशाशु गमनाय महाबलः॥"
+      },
+      {
+        "index": 215,
+        "id": "vl-s18-v11",
+        "kind": "shloka",
+        "text": "हनूमत्प्रमुखाः सर्वे वानराः प्लवगर्षभाः। हृष्टाः प्रतस्थिरे सर्वे लङ्काभिमुखमुद्यताः॥"
+      },
+      {
+        "index": 216,
+        "id": "vl-s18-v12",
+        "kind": "shloka",
+        "text": "इति श्रीवाल्मीकिरामायणे सुन्दरकाण्डे पारंपरिकः पाठसङ्ग्रहः संपूर्णः॥ पूर्णरेसेंशनः पृथक् अनुवर्तते॥"
+      }
+    ],
+    "fullSamples": [
+      {
+        "id": "vl-s01-v01",
+        "kind": "shloka",
+        "text": "ततो रावणनीतायाः सीतायाः शत्रुकर्शनः। इयेष पदमन्वेष्टुं चारणाचरिते पथि॥"
+      },
+      {
+        "id": "vl-s01-v02",
+        "kind": "shloka",
+        "text": "दुष्करं निष्प्रतिद्वन्द्वं चिकीर्षन् कर्म वानरः। समुदग्रशिरोग्रीवो गवां पतिरिवाबभौ॥"
+      },
+      {
+        "id": "vl-s01-v03",
+        "kind": "shloka",
+        "text": "अथ वैडूर्यवर्णेषु शाद्वलेषु महाबलः। धीरः सलिलकल्पेषु विचचार यथासुखम्॥"
+      },
+      {
+        "id": "vl-s01-v04",
+        "kind": "shloka",
+        "text": "द्विजान् वित्रासयन् सर्वानुरसा पादपान् हरन्। मृगांश्च सुबहून् निघ्नन् प्रवृद्ध इव केसरी॥"
+      },
+      {
+        "id": "vl-s01-v05",
+        "kind": "shloka",
+        "text": "नीललोहितमाञ्जिष्ठपत्रवर्णैः सितासितैः। स्वभावविहितैश्चित्रैर्धातुभिः समलंकृतम्॥"
+      },
+      {
+        "id": "vl-s01-v06",
+        "kind": "shloka",
+        "text": "कामरूपिभिराविष्टमभीक्ष्णं सपरिच्छदैः। यक्षकिन्नरगन्धर्वैर्देवकल्पैश्च पन्नगैः॥"
+      },
+      {
+        "id": "vl-s01-v07",
+        "kind": "shloka",
+        "text": "स तस्य गिरिशृङ्गस्थः कपिः कुञ्जरविक्रमः। बभूव रसनाविद्धो भोगीव गिरिसानुषु॥"
+      },
+      {
+        "id": "vl-s01-v08",
+        "kind": "shloka",
+        "text": "आरुरोह गिरिश्रेष्ठं महेन्द्रं पर्वतोत्तमम्। वृतः स मन्त्रिभिः सार्धं सुग्रीवप्रियकाम्यया॥"
+      },
+      {
+        "id": "vl-s18-v09",
+        "kind": "shloka",
+        "text": "सेतुं बद्ध्वा महार्णवे वानरैः सह सानुजः। हत्वा रावणमासाद्य सीतां प्राप्स्यामि मैथिलीम्॥"
+      },
+      {
+        "id": "vl-s18-v10",
+        "kind": "shloka",
+        "text": "ततः सुग्रीवसहितो रामो राजीवलोचनः। सेनां समादिदेशाशु गमनाय महाबलः॥"
+      },
+      {
+        "id": "vl-s18-v11",
+        "kind": "shloka",
+        "text": "हनूमत्प्रमुखाः सर्वे वानराः प्लवगर्षभाः। हृष्टाः प्रतस्थिरे सर्वे लङ्काभिमुखमुद्यताः॥"
+      },
+      {
+        "id": "vl-s18-v12",
+        "kind": "shloka",
+        "text": "इति श्रीवाल्मीकिरामायणे सुन्दरकाण्डे पारंपरिकः पाठसङ्ग्रहः संपूर्णः॥ पूर्णरेसेंशनः पृथक् अनुवर्तते॥"
+      }
+    ],
+    "needsDualReview": true,
+    "tts": true,
+    "hasOffline": false,
+    "audioEngine": null,
+    "audioVoice": null
+  }
+]

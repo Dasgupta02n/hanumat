@@ -1,0 +1,82 @@
+{
+  "stories": [
+    {
+      "slug": "janm",
+      "wave": 2,
+      "title": {
+        "hi": "अंजनी नंदन का जन्म",
+        "en": "Birth of Anjani’s son"
+      },
+      "minutes": 4,
+      "body": {
+        "hi": "अंजना और केसरी के पुत्र, पवन-कृपा से — बाल-लीला में सूर्य-ग्रहण प्रसंग, शिव-आशीष, और राम-कार्य के लिए अवतरण की कथा।",
+        "en": "Son of Anjana and Kesari by Wind’s grace — childhood sun episode, Shiva’s blessing, and descent for Rama’s work."
+      }
+    },
+    {
+      "slug": "sagar-langhan",
+      "wave": 2,
+      "title": {
+        "hi": "सागर लंघन",
+        "en": "Crossing the ocean"
+      },
+      "minutes": 5,
+      "body": {
+        "hi": "जामवंत के वचन से शक्ति स्मरण, मैनाक-सुरसा-सिंहिका, और अतुल छलांग — विश्वास और बल की कथा।",
+        "en": "Power recalled by Jambavan’s words, Mainaka-Surasa-Simhika, and the great leap — faith and strength."
+      }
+    },
+    {
+      "slug": "ashok-vatika",
+      "wave": 2,
+      "title": {
+        "hi": "अशोक वाटिका में सीता",
+        "en": "Sita in Ashoka grove"
+      },
+      "minutes": 5,
+      "body": {
+        "hi": "सूक्ष्म रूप, सीता-दर्शन, राम-नाम और मुद्रिका — आशा का संदेश।",
+        "en": "Subtle form, sight of Sita, Rama’s name and ring — a message of hope."
+      }
+    },
+    {
+      "slug": "lanka-dahan",
+      "wave": 2,
+      "title": {
+        "hi": "लंका दहन",
+        "en": "Burning of Lanka"
+      },
+      "minutes": 4,
+      "body": {
+        "hi": "पुच्छ-अग्नि, नगर-ज्वाला, और धर्म की ज्योति — रावण-गर्व पर प्रहार।",
+        "en": "Tail of fire, city aflame, light of dharma — strike on Ravana’s pride."
+      }
+    },
+    {
+      "slug": "sanjeevani",
+      "wave": 2,
+      "title": {
+        "hi": "संजीवनी",
+        "en": "Sanjeevani"
+      },
+      "minutes": 4,
+      "body": {
+        "hi": "लक्ष्मण मूर्छित, हिमालय-यात्रा, पर्वत उठाना — प्राण-रक्षा की लीला।",
+        "en": "Lakshmana fallen, Himalayan journey, lifting the mountain — life-saving leela."
+      }
+    },
+    {
+      "slug": "bhima-darshan",
+      "wave": 2,
+      "title": {
+        "hi": "भीम से भेंट",
+        "en": "Meeting Bhima"
+      },
+      "minutes": 3,
+      "body": {
+        "hi": "महाभारत काल — भीम और हनुमान का मिलन, अभिमान-शमन, और भक्ति का पाठ।",
+        "en": "Mahabharata age — Bhima meets Hanuman, pride humbled, lesson in devotion."
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "pack-chalisa-v1",
+  "textId": "hanuman-chalisa",
+  "version": 2,
+  "title": {
+    "hi": "चालीसा ऑफ़लाइन",
+    "en": "Chalisa offline"
+  },
+  "maxBytes": 26214400,
+  "locales": [
+    "hi",
+    "en"
+  ],
+  "transliterationSchemes": [
+    "iast"
+  ],
+  "segmentIds": [
+    "chalisa-full"
+  ],
+  "cueMapIds": [
+    "hanuman_chalisa_cues"
+  ],
+  "trackId": "track-hanuman_chalisa",
+  "assets": [
+    {
+      "path": "/audio/chalisa/hanuman_chalisa.m4a",
+      "role": "audio",
+      "bytes": 4068964,
+      "sha256": "6be2865feeb9508cbf1b7415f679b2b6f7f47ce9a9b107513c4f096ba3a5387e"
+    },
+    {
+      "path": "/audio/chalisa/hanuman_chalisa_cues.json",
+      "role": "cues",
+      "bytes": 4255,
+      "sha256": "d21a7c54eb38210232d318aa29021207fde30785cf1fd8af4c39e9f1f50b4cdb"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/meta.json",
+      "role": "meta",
+      "bytes": 1973,
+      "sha256": "ab107c3dd45e89569e436b22a0397840c8b9fce0e84db2b03795a69c2fc60ecc"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/structure.json",
+      "role": "structure",
+      "bytes": 1050,
+      "sha256": "430d3b9fd63a632a34e8869fef356805af7091a675d51ba990743dfd57054413"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/verses.json",
+      "role": "verses",
+      "bytes": 10670,
+      "sha256": "57ef633b8b0d73a78740536c1047a1eccc9a752387659bb06d8d1f5257c285aa"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/translations/hi.json",
+      "role": "translation",
+      "bytes": 7076,
+      "sha256": "4ee1947eb4f3be5bcadb7945727ec2adf6a13e91caf056223f97e651ae63e63d",
+      "locale": "hi"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/translations/en.json",
+      "role": "translation",
+      "bytes": 4126,
+      "sha256": "f09581b0e7c46b8e95d3064377de8e554b01e72b35350073dd95a50b1e7031b8",
+      "locale": "en"
+    },
+    {
+      "path": "/content/texts/hanuman-chalisa/transliteration/iast.json",
+      "role": "transliteration",
+      "bytes": 3816,
+      "sha256": "1f38e2342cc7b60fb01e494272b03260af139861b641448d69d733032d1390e5",
+      "scheme": "iast"
+    }
+  ],
+  "createdAt": "2026-07-22T00:00:00Z",
+  "notes": "Full OfflinePackManifest roles: audio, cues, meta, structure, verses, translations, iast"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "maruti-stotra",
+  "slug": "maruti-stotra",
+  "title": {
+    "hi": "हनुमत् त्रिकाल स्मरण",
+    "en": "Hanumat Trikala Smaranam"
+  },
+  "subtitle": {
+    "hi": "प्रातः · माध्य · सायं",
+    "en": "Morning · noon · evening remembrance"
+  },
+  "description": {
+    "hi": "श्रीहनुमत् त्रिकाल स्मरणम् — तीन काल के तीन श्लोक (गीताप्रेस कल्याण हनुमान-अंक परंपरा)।",
+    "en": "Three Sanskrit shlokas for morning, noon, and evening remembrance of Hanuman (Gita Press Kalyan Hanuman anka tradition)."
+  },
+  "category": "stotra",
+  "wave": 2,
+  "edition": {
+    "pin": "TRAD-TRIKALA-SMARANAM-V2-3SRC",
+    "publisher": "Traditional Sanskrit (GP Kalyan / ioustotra / bhaktibharatki)",
+    "notes": "Corrected 2026-07-23: previous pack was Sanskrit collage under wrong Maruti Stotra title. Replaced with authentic Hanumat Trikala Smaranam (3 shlokas). Note: Samarth Ramdas Marathi Maruti Stotra is a separate work."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true,
+    "placeholderAudio": false
+  },
+  "audio": {
+    "src": "/audio/maruti/maruti_stotra.m4a",
+    "cueMapSrc": "/audio/maruti/maruti_stotra_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-maruti_stotra",
+    "lowDataSrc": "/audio/maruti/maruti_stotra_low.m4a"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 3
+  }
+}

@@ -1,0 +1,319 @@
+@import "tailwindcss";
+@import "@hanumat/ui/tokens.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-card-border: var(--card-border);
+  --font-sans: var(--font-deva);
+  --font-serif: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  color: var(--hanumat-charcoal);
+  font-family: var(--font-deva), var(--font-body), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(184, 146, 63, 0.07), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 100% 20%, rgba(107, 34, 26, 0.03), transparent 45%),
+    radial-gradient(ellipse 50% 35% at 0% 80%, rgba(184, 146, 63, 0.04), transparent 50%),
+    linear-gradient(180deg, var(--hanumat-cream) 0%, var(--hanumat-ivory) 40%, var(--hanumat-marble) 100%);
+  background-attachment: fixed;
+}
+
+/* Default readable text on cream surfaces */
+p,
+li,
+span,
+label,
+td,
+th,
+figcaption {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+.seo-summary,
+.section-body,
+.muted-text {
+  color: var(--hanumat-stone) !important;
+}
+
+/* ── Symmetric shell ── */
+.shell {
+  width: min(100% - 2 * var(--shell-gutter), var(--shell-max));
+  margin-inline: auto;
+}
+
+.section-pad {
+  padding-block: var(--section-y);
+}
+
+/* ── Temple gold divider ── */
+.temple-rule {
+  height: 1px;
+  width: 100%;
+  max-width: 16rem;
+  margin-inline: auto;
+  background: var(--temple-frame);
+  border: 0;
+}
+
+.temple-rule-wide {
+  max-width: 100%;
+  opacity: 0.65;
+}
+
+/* ── Ornamental section heading ── */
+.section-kicker {
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--hanumat-vermillion-deep);
+  font-weight: 700;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--hanumat-shadow);
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+.nav-link {
+  color: var(--hanumat-stone) !important;
+}
+
+.nav-link:hover {
+  color: var(--hanumat-shadow) !important;
+}
+
+/* ── Glass / marble card ── */
+.glass-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  border-radius: var(--radius-card);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.7) inset,
+    0 12px 40px rgba(28, 24, 20, 0.06);
+}
+
+.temple-card {
+  background: linear-gradient(165deg, rgba(255, 252, 247, 0.98) 0%, rgba(246, 241, 231, 0.95) 100%);
+  border: 1px solid var(--hanumat-gold-line);
+  border-radius: var(--radius-card);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.85) inset,
+    0 10px 36px rgba(28, 24, 20, 0.05);
+  transition:
+    transform var(--motion-duration) var(--motion-ease),
+    box-shadow var(--motion-duration) var(--motion-ease),
+    border-color var(--motion-duration) var(--motion-ease);
+  overflow: hidden;
+}
+
+.temple-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(196, 163, 90, 0.45);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 18px 48px rgba(28, 24, 20, 0.09);
+}
+
+/* Gold corner frame (subtle) */
+.temple-card-frame {
+  position: relative;
+}
+
+.temple-card-frame::before,
+.temple-card-frame::after {
+  content: "";
+  position: absolute;
+  width: 1.1rem;
+  height: 1.1rem;
+  pointer-events: none;
+  z-index: 2;
+  border-color: var(--hanumat-gold);
+  border-style: solid;
+  opacity: 0.55;
+}
+
+.temple-card-frame::before {
+  top: 0.45rem;
+  left: 0.45rem;
+  border-width: 1px 0 0 1px;
+}
+
+.temple-card-frame::after {
+  right: 0.45rem;
+  bottom: 0.45rem;
+  border-width: 0 1px 1px 0;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, #8f3328 0%, var(--hanumat-vermillion-deep) 100%);
+  color: var(--primary-foreground);
+  font-weight: 600;
+  padding: 0.8rem 1.4rem;
+  letter-spacing: 0.02em;
+  transition:
+    transform var(--motion-duration) var(--motion-ease),
+    box-shadow var(--motion-duration) var(--motion-ease);
+  box-shadow: 0 4px 16px rgba(125, 43, 33, 0.18);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(125, 43, 33, 0.22);
+}
+
+.btn-primary:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+.btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(180deg, var(--hanumat-gold-pale) 0%, var(--hanumat-gold) 100%);
+  color: var(--hanumat-shadow);
+  font-weight: 600;
+  padding: 0.8rem 1.35rem;
+  transition: transform var(--motion-duration) var(--motion-ease);
+  box-shadow: 0 4px 14px rgba(154, 122, 50, 0.18);
+}
+
+.btn-gold:hover {
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid var(--hanumat-gold-line);
+  background: rgba(255, 252, 247, 0.55);
+  color: var(--foreground);
+  font-weight: 500;
+  padding: 0.8rem 1.25rem;
+  transition:
+    background var(--motion-duration) var(--motion-ease),
+    border-color var(--motion-duration) var(--motion-ease);
+}
+
+.btn-ghost:hover {
+  background: var(--hanumat-gold-wash);
+  border-color: var(--hanumat-gold);
+}
+
+.btn-ghost:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+/* ── Pillar grid (symmetric 2/3/4) ── */
+.pillar-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .pillar-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .pillar-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .pillar-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* ── Om watermark ── */
+.om-mark {
+  font-family: var(--font-display);
+  color: var(--hanumat-gold);
+  opacity: 0.14;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ── AI / SEO readable summary block ── */
+.seo-summary {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--hanumat-stone);
+  max-width: 48rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* ── Nav ── */
+.nav-link {
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.875rem;
+  color: var(--hanumat-stone);
+  font-weight: 500;
+  transition:
+    color var(--motion-duration) var(--motion-ease),
+    background var(--motion-duration) var(--motion-ease);
+}
+
+.nav-link:hover {
+  color: var(--hanumat-shadow);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* ── Focus ── */
+:focus-visible {
+  outline: 2px solid var(--hanumat-gold);
+  outline-offset: 2px;
+}
+
+/* Screen-reader only (SEO h1 without visual noise) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

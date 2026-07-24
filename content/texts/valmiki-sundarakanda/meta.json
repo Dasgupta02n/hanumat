@@ -1,0 +1,1083 @@
+{
+  "id": "valmiki-sundarakanda",
+  "slug": "valmiki-sundarakanda",
+  "title": {
+    "hi": "वाल्मीकि सुन्दरकाण्ड",
+    "en": "Valmiki Sundarakanda"
+  },
+  "subtitle": {
+    "hi": "वाल्मीकि रामायण · सुन्दरकाण्ड · पूर्ण ६८ सर्ग",
+    "en": "Vālmīki Rāmāyaṇa · Sundarakāṇḍa · full 68 sargas"
+  },
+  "description": {
+    "hi": "वाल्मीकि रामायण के सुन्दरकाण्ड का पूर्ण पारंपरिक पाठ (६८ सर्ग)। स्रोत: सार्वजनिक MIT डिजिटल ट्रांसक्रिप्शन; आलोचनात्मक संस्करण का दावा नहीं।",
+    "en": "Full traditional Sundarakāṇḍa of the Vālmīki Rāmāyaṇa (68 sargas). Source: public MIT-licensed digital transcription; not a critical-edition claim."
+  },
+  "category": "kand",
+  "wave": 2,
+  "edition": {
+    "pin": "VALMIKI-SK-FULL-PD-V3",
+    "kanda": 5,
+    "sargaCount": 68,
+    "notes": "Expanded 2026-07-23 from sample 216 → full 68-sarga pack. Mūla Devanagari from imradhe/ramayanam MIT digital lines (IITK-style numbering). EN translations from same pack; HI provisional from EN gloss. Cross-checked opening against Griffith Book V PD English (pdf copy/valmiki_ramayanam.pdf). Not a claim of Baroda Critical Edition text. | te/kn/pa meanings: Devanagari HI transliterated to regional scripts (HI-equivalent stopgap after Google MT rate-limit); mr/gu/bn/ta/or/ml are true MT. Full TTS 68 sargas complete.",
+    "sources": [
+      "imradhe/ramayanam (MIT)",
+      "pdf copy/valmiki_ramayanam.pdf (Griffith PD English Book V narrative)"
+    ]
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "partialAudio": false,
+    "placeholderAudio": false,
+    "hasTwinText": true,
+    "ff_twin_text": true,
+    "needsDualReview": false,
+    "samplePack": false,
+    "pdfDualReviewed": true,
+    "fullCanon": true,
+    "audioCoverage": "full-68-sargas"
+  },
+  "audio": {
+    "src": "/audio/valmiki/valmiki_sundarakanda.m4a",
+    "cueMapSrc": "/audio/valmiki/valmiki_sundarakanda_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-valmiki_sundarakanda",
+    "lowDataSrc": "/audio/valmiki/valmiki_sundarakanda_low.m4a",
+    "note": "Audio cues may not cover all expanded verses until re-TTS",
+    "segments": [
+      {
+        "id": "vl-s01",
+        "sectionId": "vl-s01",
+        "src": "/audio/valmiki/vl-s01/vl_vl-s01.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s01/vl_vl-s01_cues.json",
+        "durationMs": 2586136,
+        "lowDataSrc": "/audio/valmiki/vl-s01/vl_vl-s01_low.m4a"
+      },
+      {
+        "id": "vl-s02",
+        "sectionId": "vl-s02",
+        "src": "/audio/valmiki/vl-s02/vl_vl-s02.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s02/vl_vl-s02_cues.json",
+        "durationMs": 1132920,
+        "lowDataSrc": "/audio/valmiki/vl-s02/vl_vl-s02_low.m4a"
+      },
+      {
+        "id": "vl-s03",
+        "sectionId": "vl-s03",
+        "src": "/audio/valmiki/vl-s03/vl_vl-s03.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s03/vl_vl-s03_cues.json",
+        "durationMs": 924808,
+        "lowDataSrc": "/audio/valmiki/vl-s03/vl_vl-s03_low.m4a"
+      },
+      {
+        "id": "vl-s04",
+        "sectionId": "vl-s04",
+        "src": "/audio/valmiki/vl-s04/vl_vl-s04.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s04/vl_vl-s04_cues.json",
+        "durationMs": 688592,
+        "lowDataSrc": "/audio/valmiki/vl-s04/vl_vl-s04_low.m4a"
+      },
+      {
+        "id": "vl-s05",
+        "sectionId": "vl-s05",
+        "src": "/audio/valmiki/vl-s05/vl_vl-s05.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s05/vl_vl-s05_cues.json",
+        "durationMs": 346144,
+        "lowDataSrc": "/audio/valmiki/vl-s05/vl_vl-s05_low.m4a"
+      },
+      {
+        "id": "vl-s06",
+        "sectionId": "vl-s06",
+        "src": "/audio/valmiki/vl-s06/vl_vl-s06.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s06/vl_vl-s06_cues.json",
+        "durationMs": 659896,
+        "lowDataSrc": "/audio/valmiki/vl-s06/vl_vl-s06_low.m4a"
+      },
+      {
+        "id": "vl-s07",
+        "sectionId": "vl-s07",
+        "src": "/audio/valmiki/vl-s07/vl_vl-s07.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s07/vl_vl-s07_cues.json",
+        "durationMs": 214256,
+        "lowDataSrc": "/audio/valmiki/vl-s07/vl_vl-s07_low.m4a"
+      },
+      {
+        "id": "vl-s08",
+        "sectionId": "vl-s08",
+        "src": "/audio/valmiki/vl-s08/vl_vl-s08.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s08/vl_vl-s08_cues.json",
+        "durationMs": 88872,
+        "lowDataSrc": "/audio/valmiki/vl-s08/vl_vl-s08_low.m4a"
+      },
+      {
+        "id": "vl-s09",
+        "sectionId": "vl-s09",
+        "src": "/audio/valmiki/vl-s09/vl_vl-s09.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s09/vl_vl-s09_cues.json",
+        "durationMs": 828048,
+        "lowDataSrc": "/audio/valmiki/vl-s09/vl_vl-s09_low.m4a"
+      },
+      {
+        "id": "vl-s10",
+        "sectionId": "vl-s10",
+        "src": "/audio/valmiki/vl-s10/vl_vl-s10.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s10/vl_vl-s10_cues.json",
+        "durationMs": 1372696,
+        "lowDataSrc": "/audio/valmiki/vl-s10/vl_vl-s10_low.m4a"
+      },
+      {
+        "id": "vl-s11",
+        "sectionId": "vl-s11",
+        "src": "/audio/valmiki/vl-s11/vl_vl-s11.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s11/vl_vl-s11_cues.json",
+        "durationMs": 565736,
+        "lowDataSrc": "/audio/valmiki/vl-s11/vl_vl-s11_low.m4a"
+      },
+      {
+        "id": "vl-s12",
+        "sectionId": "vl-s12",
+        "src": "/audio/valmiki/vl-s12/vl_vl-s12.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s12/vl_vl-s12_cues.json",
+        "durationMs": 299472,
+        "lowDataSrc": "/audio/valmiki/vl-s12/vl_vl-s12_low.m4a"
+      },
+      {
+        "id": "vl-s13",
+        "sectionId": "vl-s13",
+        "src": "/audio/valmiki/vl-s13/vl_vl-s13.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s13/vl_vl-s13_cues.json",
+        "durationMs": 816784,
+        "lowDataSrc": "/audio/valmiki/vl-s13/vl_vl-s13_low.m4a"
+      },
+      {
+        "id": "vl-s14",
+        "sectionId": "vl-s14",
+        "src": "/audio/valmiki/vl-s14/vl_vl-s14.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s14/vl_vl-s14_cues.json",
+        "durationMs": 967944,
+        "lowDataSrc": "/audio/valmiki/vl-s14/vl_vl-s14_low.m4a"
+      },
+      {
+        "id": "vl-s15",
+        "sectionId": "vl-s15",
+        "src": "/audio/valmiki/vl-s15/vl_vl-s15.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s15/vl_vl-s15_cues.json",
+        "durationMs": 1192720,
+        "lowDataSrc": "/audio/valmiki/vl-s15/vl_vl-s15_low.m4a"
+      },
+      {
+        "id": "vl-s16",
+        "sectionId": "vl-s16",
+        "src": "/audio/valmiki/vl-s16/vl_vl-s16.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s16/vl_vl-s16_cues.json",
+        "durationMs": 403352,
+        "lowDataSrc": "/audio/valmiki/vl-s16/vl_vl-s16_low.m4a"
+      },
+      {
+        "id": "vl-s17",
+        "sectionId": "vl-s17",
+        "src": "/audio/valmiki/vl-s17/vl_vl-s17.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s17/vl_vl-s17_cues.json",
+        "durationMs": 1300544,
+        "lowDataSrc": "/audio/valmiki/vl-s17/vl_vl-s17_low.m4a"
+      },
+      {
+        "id": "vl-s18",
+        "sectionId": "vl-s18",
+        "src": "/audio/valmiki/vl-s18/vl_vl-s18.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s18/vl_vl-s18_cues.json",
+        "durationMs": 407576,
+        "lowDataSrc": "/audio/valmiki/vl-s18/vl_vl-s18_low.m4a"
+      },
+      {
+        "id": "vl-s19",
+        "sectionId": "vl-s19",
+        "src": "/audio/valmiki/vl-s19/vl_vl-s19.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s19/vl_vl-s19_cues.json",
+        "durationMs": 240800,
+        "lowDataSrc": "/audio/valmiki/vl-s19/vl_vl-s19_low.m4a"
+      },
+      {
+        "id": "vl-s20",
+        "sectionId": "vl-s20",
+        "src": "/audio/valmiki/vl-s20/vl_vl-s20.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s20/vl_vl-s20_cues.json",
+        "durationMs": 400312,
+        "lowDataSrc": "/audio/valmiki/vl-s20/vl_vl-s20_low.m4a"
+      },
+      {
+        "id": "vl-s21",
+        "sectionId": "vl-s21",
+        "src": "/audio/valmiki/vl-s21/vl_vl-s21.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s21/vl_vl-s21_cues.json",
+        "durationMs": 342696,
+        "lowDataSrc": "/audio/valmiki/vl-s21/vl_vl-s21_low.m4a"
+      },
+      {
+        "id": "vl-s22",
+        "sectionId": "vl-s22",
+        "src": "/audio/valmiki/vl-s22/vl_vl-s22.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s22/vl_vl-s22_cues.json",
+        "durationMs": 529608,
+        "lowDataSrc": "/audio/valmiki/vl-s22/vl_vl-s22_low.m4a"
+      },
+      {
+        "id": "vl-s23",
+        "sectionId": "vl-s23",
+        "src": "/audio/valmiki/vl-s23/vl_vl-s23.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s23/vl_vl-s23_cues.json",
+        "durationMs": 220728,
+        "lowDataSrc": "/audio/valmiki/vl-s23/vl_vl-s23_low.m4a"
+      },
+      {
+        "id": "vl-s24",
+        "sectionId": "vl-s24",
+        "src": "/audio/valmiki/vl-s24/vl_vl-s24.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s24/vl_vl-s24_cues.json",
+        "durationMs": 572872,
+        "lowDataSrc": "/audio/valmiki/vl-s24/vl_vl-s24_low.m4a"
+      },
+      {
+        "id": "vl-s25",
+        "sectionId": "vl-s25",
+        "src": "/audio/valmiki/vl-s25/vl_vl-s25.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s25/vl_vl-s25_cues.json",
+        "durationMs": 219152,
+        "lowDataSrc": "/audio/valmiki/vl-s25/vl_vl-s25_low.m4a"
+      },
+      {
+        "id": "vl-s26",
+        "sectionId": "vl-s26",
+        "src": "/audio/valmiki/vl-s26/vl_vl-s26.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s26/vl_vl-s26_cues.json",
+        "durationMs": 418952,
+        "lowDataSrc": "/audio/valmiki/vl-s26/vl_vl-s26_low.m4a"
+      },
+      {
+        "id": "vl-s27",
+        "sectionId": "vl-s27",
+        "src": "/audio/valmiki/vl-s27/vl_vl-s27.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s27/vl_vl-s27_cues.json",
+        "durationMs": 584728,
+        "lowDataSrc": "/audio/valmiki/vl-s27/vl_vl-s27_low.m4a"
+      },
+      {
+        "id": "vl-s28",
+        "sectionId": "vl-s28",
+        "src": "/audio/valmiki/vl-s28/vl_vl-s28.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s28/vl_vl-s28_cues.json",
+        "durationMs": 248112,
+        "lowDataSrc": "/audio/valmiki/vl-s28/vl_vl-s28_low.m4a"
+      },
+      {
+        "id": "vl-s29",
+        "sectionId": "vl-s29",
+        "src": "/audio/valmiki/vl-s29/vl_vl-s29.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s29/vl_vl-s29_cues.json",
+        "durationMs": 99608,
+        "lowDataSrc": "/audio/valmiki/vl-s29/vl_vl-s29_low.m4a"
+      },
+      {
+        "id": "vl-s30",
+        "sectionId": "vl-s30",
+        "src": "/audio/valmiki/vl-s30/vl_vl-s30.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s30/vl_vl-s30_cues.json",
+        "durationMs": 462704,
+        "lowDataSrc": "/audio/valmiki/vl-s30/vl_vl-s30_low.m4a"
+      },
+      {
+        "id": "vl-s31",
+        "sectionId": "vl-s31",
+        "src": "/audio/valmiki/vl-s31/vl_vl-s31.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s31/vl_vl-s31_cues.json",
+        "durationMs": 198792,
+        "lowDataSrc": "/audio/valmiki/vl-s31/vl_vl-s31_low.m4a"
+      },
+      {
+        "id": "vl-s32",
+        "sectionId": "vl-s32",
+        "src": "/audio/valmiki/vl-s32/vl_vl-s32.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s32/vl_vl-s32_cues.json",
+        "durationMs": 173192,
+        "lowDataSrc": "/audio/valmiki/vl-s32/vl_vl-s32_low.m4a"
+      },
+      {
+        "id": "vl-s33",
+        "sectionId": "vl-s33",
+        "src": "/audio/valmiki/vl-s33/vl_vl-s33.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s33/vl_vl-s33_cues.json",
+        "durationMs": 331488,
+        "lowDataSrc": "/audio/valmiki/vl-s33/vl_vl-s33_low.m4a"
+      },
+      {
+        "id": "vl-s34",
+        "sectionId": "vl-s34",
+        "src": "/audio/valmiki/vl-s34/vl_vl-s34.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s34/vl_vl-s34_cues.json",
+        "durationMs": 440240,
+        "lowDataSrc": "/audio/valmiki/vl-s34/vl_vl-s34_low.m4a"
+      },
+      {
+        "id": "vl-s35",
+        "sectionId": "vl-s35",
+        "src": "/audio/valmiki/vl-s35/vl_vl-s35.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s35/vl_vl-s35_cues.json",
+        "durationMs": 940328,
+        "lowDataSrc": "/audio/valmiki/vl-s35/vl_vl-s35_low.m4a"
+      },
+      {
+        "id": "vl-s36",
+        "sectionId": "vl-s36",
+        "src": "/audio/valmiki/vl-s36/vl_vl-s36.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s36/vl_vl-s36_cues.json",
+        "durationMs": 497600,
+        "lowDataSrc": "/audio/valmiki/vl-s36/vl_vl-s36_low.m4a"
+      },
+      {
+        "id": "vl-s37",
+        "sectionId": "vl-s37",
+        "src": "/audio/valmiki/vl-s37/vl_vl-s37.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s37/vl_vl-s37_cues.json",
+        "durationMs": 645776,
+        "lowDataSrc": "/audio/valmiki/vl-s37/vl_vl-s37_low.m4a"
+      },
+      {
+        "id": "vl-s38",
+        "sectionId": "vl-s38",
+        "src": "/audio/valmiki/vl-s38/vl_vl-s38.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s38/vl_vl-s38_cues.json",
+        "durationMs": 880656,
+        "lowDataSrc": "/audio/valmiki/vl-s38/vl_vl-s38_low.m4a"
+      },
+      {
+        "id": "vl-s39",
+        "sectionId": "vl-s39",
+        "src": "/audio/valmiki/vl-s39/vl_vl-s39.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s39/vl_vl-s39_cues.json",
+        "durationMs": 554896,
+        "lowDataSrc": "/audio/valmiki/vl-s39/vl_vl-s39_low.m4a"
+      },
+      {
+        "id": "vl-s40",
+        "sectionId": "vl-s40",
+        "src": "/audio/valmiki/vl-s40/vl_vl-s40.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s40/vl_vl-s40_cues.json",
+        "durationMs": 267576,
+        "lowDataSrc": "/audio/valmiki/vl-s40/vl_vl-s40_low.m4a"
+      },
+      {
+        "id": "vl-s41",
+        "sectionId": "vl-s41",
+        "src": "/audio/valmiki/vl-s41/vl_vl-s41.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s41/vl_vl-s41_cues.json",
+        "durationMs": 256624,
+        "lowDataSrc": "/audio/valmiki/vl-s41/vl_vl-s41_low.m4a"
+      },
+      {
+        "id": "vl-s42",
+        "sectionId": "vl-s42",
+        "src": "/audio/valmiki/vl-s42/vl_vl-s42.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s42/vl_vl-s42_cues.json",
+        "durationMs": 452904,
+        "lowDataSrc": "/audio/valmiki/vl-s42/vl_vl-s42_low.m4a"
+      },
+      {
+        "id": "vl-s43",
+        "sectionId": "vl-s43",
+        "src": "/audio/valmiki/vl-s43/vl_vl-s43.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s43/vl_vl-s43_cues.json",
+        "durationMs": 362928,
+        "lowDataSrc": "/audio/valmiki/vl-s43/vl_vl-s43_low.m4a"
+      },
+      {
+        "id": "vl-s44",
+        "sectionId": "vl-s44",
+        "src": "/audio/valmiki/vl-s44/vl_vl-s44.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s44/vl_vl-s44_cues.json",
+        "durationMs": 251504,
+        "lowDataSrc": "/audio/valmiki/vl-s44/vl_vl-s44_low.m4a"
+      },
+      {
+        "id": "vl-s45",
+        "sectionId": "vl-s45",
+        "src": "/audio/valmiki/vl-s45/vl_vl-s45.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s45/vl_vl-s45_cues.json",
+        "durationMs": 287600,
+        "lowDataSrc": "/audio/valmiki/vl-s45/vl_vl-s45_low.m4a"
+      },
+      {
+        "id": "vl-s46",
+        "sectionId": "vl-s46",
+        "src": "/audio/valmiki/vl-s46/vl_vl-s46.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s46/vl_vl-s46_cues.json",
+        "durationMs": 539680,
+        "lowDataSrc": "/audio/valmiki/vl-s46/vl_vl-s46_low.m4a"
+      },
+      {
+        "id": "vl-s47",
+        "sectionId": "vl-s47",
+        "src": "/audio/valmiki/vl-s47/vl_vl-s47.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s47/vl_vl-s47_cues.json",
+        "durationMs": 493376,
+        "lowDataSrc": "/audio/valmiki/vl-s47/vl_vl-s47_low.m4a"
+      },
+      {
+        "id": "vl-s48",
+        "sectionId": "vl-s48",
+        "src": "/audio/valmiki/vl-s48/vl_vl-s48.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s48/vl_vl-s48_cues.json",
+        "durationMs": 687840,
+        "lowDataSrc": "/audio/valmiki/vl-s48/vl_vl-s48_low.m4a"
+      },
+      {
+        "id": "vl-s49",
+        "sectionId": "vl-s49",
+        "src": "/audio/valmiki/vl-s49/vl_vl-s49.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s49/vl_vl-s49_cues.json",
+        "durationMs": 238880,
+        "lowDataSrc": "/audio/valmiki/vl-s49/vl_vl-s49_low.m4a"
+      },
+      {
+        "id": "vl-s50",
+        "sectionId": "vl-s50",
+        "src": "/audio/valmiki/vl-s50/vl_vl-s50.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s50/vl_vl-s50_cues.json",
+        "durationMs": 235872,
+        "lowDataSrc": "/audio/valmiki/vl-s50/vl_vl-s50_low.m4a"
+      },
+      {
+        "id": "vl-s51",
+        "sectionId": "vl-s51",
+        "src": "/audio/valmiki/vl-s51/vl_vl-s51.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s51/vl_vl-s51_cues.json",
+        "durationMs": 547656,
+        "lowDataSrc": "/audio/valmiki/vl-s51/vl_vl-s51_low.m4a"
+      },
+      {
+        "id": "vl-s52",
+        "sectionId": "vl-s52",
+        "src": "/audio/valmiki/vl-s52/vl_vl-s52.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s52/vl_vl-s52_cues.json",
+        "durationMs": 287984,
+        "lowDataSrc": "/audio/valmiki/vl-s52/vl_vl-s52_low.m4a"
+      },
+      {
+        "id": "vl-s53",
+        "sectionId": "vl-s53",
+        "src": "/audio/valmiki/vl-s53/vl_vl-s53.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s53/vl_vl-s53_cues.json",
+        "durationMs": 483176,
+        "lowDataSrc": "/audio/valmiki/vl-s53/vl_vl-s53_low.m4a"
+      },
+      {
+        "id": "vl-s54",
+        "sectionId": "vl-s54",
+        "src": "/audio/valmiki/vl-s54/vl_vl-s54.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s54/vl_vl-s54_cues.json",
+        "durationMs": 778376,
+        "lowDataSrc": "/audio/valmiki/vl-s54/vl_vl-s54_low.m4a"
+      },
+      {
+        "id": "vl-s55",
+        "sectionId": "vl-s55",
+        "src": "/audio/valmiki/vl-s55/vl_vl-s55.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s55/vl_vl-s55_cues.json",
+        "durationMs": 351072,
+        "lowDataSrc": "/audio/valmiki/vl-s55/vl_vl-s55_low.m4a"
+      },
+      {
+        "id": "vl-s56",
+        "sectionId": "vl-s56",
+        "src": "/audio/valmiki/vl-s56/vl_vl-s56.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s56/vl_vl-s56_cues.json",
+        "durationMs": 340128,
+        "lowDataSrc": "/audio/valmiki/vl-s56/vl_vl-s56_low.m4a"
+      },
+      {
+        "id": "vl-s57",
+        "sectionId": "vl-s57",
+        "src": "/audio/valmiki/vl-s57/vl_vl-s57.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s57/vl_vl-s57_cues.json",
+        "durationMs": 739192,
+        "lowDataSrc": "/audio/valmiki/vl-s57/vl_vl-s57_low.m4a"
+      },
+      {
+        "id": "vl-s58",
+        "sectionId": "vl-s58",
+        "src": "/audio/valmiki/vl-s58/vl_vl-s58.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s58/vl_vl-s58_cues.json",
+        "durationMs": 1926888,
+        "lowDataSrc": "/audio/valmiki/vl-s58/vl_vl-s58_low.m4a"
+      },
+      {
+        "id": "vl-s59",
+        "sectionId": "vl-s59",
+        "src": "/audio/valmiki/vl-s59/vl_vl-s59.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s59/vl_vl-s59_cues.json",
+        "durationMs": 491776,
+        "lowDataSrc": "/audio/valmiki/vl-s59/vl_vl-s59_low.m4a"
+      },
+      {
+        "id": "vl-s60",
+        "sectionId": "vl-s60",
+        "src": "/audio/valmiki/vl-s60/vl_vl-s60.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s60/vl_vl-s60_cues.json",
+        "durationMs": 65584,
+        "lowDataSrc": "/audio/valmiki/vl-s60/vl_vl-s60_low.m4a"
+      },
+      {
+        "id": "vl-s61",
+        "sectionId": "vl-s61",
+        "src": "/audio/valmiki/vl-s61/vl_vl-s61.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s61/vl_vl-s61_cues.json",
+        "durationMs": 449936,
+        "lowDataSrc": "/audio/valmiki/vl-s61/vl_vl-s61_low.m4a"
+      },
+      {
+        "id": "vl-s62",
+        "sectionId": "vl-s62",
+        "src": "/audio/valmiki/vl-s62/vl_vl-s62.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s62/vl_vl-s62_cues.json",
+        "durationMs": 413656,
+        "lowDataSrc": "/audio/valmiki/vl-s62/vl_vl-s62_low.m4a"
+      },
+      {
+        "id": "vl-s63",
+        "sectionId": "vl-s63",
+        "src": "/audio/valmiki/vl-s63/vl_vl-s63.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s63/vl_vl-s63_cues.json",
+        "durationMs": 327392,
+        "lowDataSrc": "/audio/valmiki/vl-s63/vl_vl-s63_low.m4a"
+      },
+      {
+        "id": "vl-s64",
+        "sectionId": "vl-s64",
+        "src": "/audio/valmiki/vl-s64/vl_vl-s64.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s64/vl_vl-s64_cues.json",
+        "durationMs": 427480,
+        "lowDataSrc": "/audio/valmiki/vl-s64/vl_vl-s64_low.m4a"
+      },
+      {
+        "id": "vl-s65",
+        "sectionId": "vl-s65",
+        "src": "/audio/valmiki/vl-s65/vl_vl-s65.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s65/vl_vl-s65_cues.json",
+        "durationMs": 379120,
+        "lowDataSrc": "/audio/valmiki/vl-s65/vl_vl-s65_low.m4a"
+      },
+      {
+        "id": "vl-s66",
+        "sectionId": "vl-s66",
+        "src": "/audio/valmiki/vl-s66/vl_vl-s66.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s66/vl_vl-s66_cues.json",
+        "durationMs": 148312,
+        "lowDataSrc": "/audio/valmiki/vl-s66/vl_vl-s66_low.m4a"
+      },
+      {
+        "id": "vl-s67",
+        "sectionId": "vl-s67",
+        "src": "/audio/valmiki/vl-s67/vl_vl-s67.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s67/vl_vl-s67_cues.json",
+        "durationMs": 375696,
+        "lowDataSrc": "/audio/valmiki/vl-s67/vl_vl-s67_low.m4a"
+      },
+      {
+        "id": "vl-s68",
+        "sectionId": "vl-s68",
+        "src": "/audio/valmiki/vl-s68/vl_vl-s68.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s68/vl_vl-s68_cues.json",
+        "durationMs": 311600,
+        "lowDataSrc": "/audio/valmiki/vl-s68/vl_vl-s68_low.m4a"
+      }
+    ],
+    "lowDataSegments": [
+      {
+        "id": "vl-s01",
+        "sectionId": "vl-s01",
+        "src": "/audio/valmiki/vl-s01/vl_vl-s01_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s01/vl_vl-s01_cues.json",
+        "durationMs": 2586136
+      },
+      {
+        "id": "vl-s02",
+        "sectionId": "vl-s02",
+        "src": "/audio/valmiki/vl-s02/vl_vl-s02_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s02/vl_vl-s02_cues.json",
+        "durationMs": 1132920
+      },
+      {
+        "id": "vl-s03",
+        "sectionId": "vl-s03",
+        "src": "/audio/valmiki/vl-s03/vl_vl-s03_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s03/vl_vl-s03_cues.json",
+        "durationMs": 924808
+      },
+      {
+        "id": "vl-s04",
+        "sectionId": "vl-s04",
+        "src": "/audio/valmiki/vl-s04/vl_vl-s04_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s04/vl_vl-s04_cues.json",
+        "durationMs": 688592
+      },
+      {
+        "id": "vl-s05",
+        "sectionId": "vl-s05",
+        "src": "/audio/valmiki/vl-s05/vl_vl-s05_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s05/vl_vl-s05_cues.json",
+        "durationMs": 346144
+      },
+      {
+        "id": "vl-s06",
+        "sectionId": "vl-s06",
+        "src": "/audio/valmiki/vl-s06/vl_vl-s06_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s06/vl_vl-s06_cues.json",
+        "durationMs": 659896
+      },
+      {
+        "id": "vl-s07",
+        "sectionId": "vl-s07",
+        "src": "/audio/valmiki/vl-s07/vl_vl-s07_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s07/vl_vl-s07_cues.json",
+        "durationMs": 214256
+      },
+      {
+        "id": "vl-s08",
+        "sectionId": "vl-s08",
+        "src": "/audio/valmiki/vl-s08/vl_vl-s08_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s08/vl_vl-s08_cues.json",
+        "durationMs": 88872
+      },
+      {
+        "id": "vl-s09",
+        "sectionId": "vl-s09",
+        "src": "/audio/valmiki/vl-s09/vl_vl-s09_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s09/vl_vl-s09_cues.json",
+        "durationMs": 828048
+      },
+      {
+        "id": "vl-s10",
+        "sectionId": "vl-s10",
+        "src": "/audio/valmiki/vl-s10/vl_vl-s10_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s10/vl_vl-s10_cues.json",
+        "durationMs": 1372696
+      },
+      {
+        "id": "vl-s11",
+        "sectionId": "vl-s11",
+        "src": "/audio/valmiki/vl-s11/vl_vl-s11_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s11/vl_vl-s11_cues.json",
+        "durationMs": 565736
+      },
+      {
+        "id": "vl-s12",
+        "sectionId": "vl-s12",
+        "src": "/audio/valmiki/vl-s12/vl_vl-s12_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s12/vl_vl-s12_cues.json",
+        "durationMs": 299472
+      },
+      {
+        "id": "vl-s13",
+        "sectionId": "vl-s13",
+        "src": "/audio/valmiki/vl-s13/vl_vl-s13_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s13/vl_vl-s13_cues.json",
+        "durationMs": 816784
+      },
+      {
+        "id": "vl-s14",
+        "sectionId": "vl-s14",
+        "src": "/audio/valmiki/vl-s14/vl_vl-s14_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s14/vl_vl-s14_cues.json",
+        "durationMs": 967944
+      },
+      {
+        "id": "vl-s15",
+        "sectionId": "vl-s15",
+        "src": "/audio/valmiki/vl-s15/vl_vl-s15_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s15/vl_vl-s15_cues.json",
+        "durationMs": 1192720
+      },
+      {
+        "id": "vl-s16",
+        "sectionId": "vl-s16",
+        "src": "/audio/valmiki/vl-s16/vl_vl-s16_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s16/vl_vl-s16_cues.json",
+        "durationMs": 403352
+      },
+      {
+        "id": "vl-s17",
+        "sectionId": "vl-s17",
+        "src": "/audio/valmiki/vl-s17/vl_vl-s17_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s17/vl_vl-s17_cues.json",
+        "durationMs": 1300544
+      },
+      {
+        "id": "vl-s18",
+        "sectionId": "vl-s18",
+        "src": "/audio/valmiki/vl-s18/vl_vl-s18_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s18/vl_vl-s18_cues.json",
+        "durationMs": 407576
+      },
+      {
+        "id": "vl-s19",
+        "sectionId": "vl-s19",
+        "src": "/audio/valmiki/vl-s19/vl_vl-s19_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s19/vl_vl-s19_cues.json",
+        "durationMs": 240800
+      },
+      {
+        "id": "vl-s20",
+        "sectionId": "vl-s20",
+        "src": "/audio/valmiki/vl-s20/vl_vl-s20_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s20/vl_vl-s20_cues.json",
+        "durationMs": 400312
+      },
+      {
+        "id": "vl-s21",
+        "sectionId": "vl-s21",
+        "src": "/audio/valmiki/vl-s21/vl_vl-s21_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s21/vl_vl-s21_cues.json",
+        "durationMs": 342696
+      },
+      {
+        "id": "vl-s22",
+        "sectionId": "vl-s22",
+        "src": "/audio/valmiki/vl-s22/vl_vl-s22_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s22/vl_vl-s22_cues.json",
+        "durationMs": 529608
+      },
+      {
+        "id": "vl-s23",
+        "sectionId": "vl-s23",
+        "src": "/audio/valmiki/vl-s23/vl_vl-s23_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s23/vl_vl-s23_cues.json",
+        "durationMs": 220728
+      },
+      {
+        "id": "vl-s24",
+        "sectionId": "vl-s24",
+        "src": "/audio/valmiki/vl-s24/vl_vl-s24_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s24/vl_vl-s24_cues.json",
+        "durationMs": 572872
+      },
+      {
+        "id": "vl-s25",
+        "sectionId": "vl-s25",
+        "src": "/audio/valmiki/vl-s25/vl_vl-s25_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s25/vl_vl-s25_cues.json",
+        "durationMs": 219152
+      },
+      {
+        "id": "vl-s26",
+        "sectionId": "vl-s26",
+        "src": "/audio/valmiki/vl-s26/vl_vl-s26_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s26/vl_vl-s26_cues.json",
+        "durationMs": 418952
+      },
+      {
+        "id": "vl-s27",
+        "sectionId": "vl-s27",
+        "src": "/audio/valmiki/vl-s27/vl_vl-s27_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s27/vl_vl-s27_cues.json",
+        "durationMs": 584728
+      },
+      {
+        "id": "vl-s28",
+        "sectionId": "vl-s28",
+        "src": "/audio/valmiki/vl-s28/vl_vl-s28_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s28/vl_vl-s28_cues.json",
+        "durationMs": 248112
+      },
+      {
+        "id": "vl-s29",
+        "sectionId": "vl-s29",
+        "src": "/audio/valmiki/vl-s29/vl_vl-s29_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s29/vl_vl-s29_cues.json",
+        "durationMs": 99608
+      },
+      {
+        "id": "vl-s30",
+        "sectionId": "vl-s30",
+        "src": "/audio/valmiki/vl-s30/vl_vl-s30_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s30/vl_vl-s30_cues.json",
+        "durationMs": 462704
+      },
+      {
+        "id": "vl-s31",
+        "sectionId": "vl-s31",
+        "src": "/audio/valmiki/vl-s31/vl_vl-s31_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s31/vl_vl-s31_cues.json",
+        "durationMs": 198792
+      },
+      {
+        "id": "vl-s32",
+        "sectionId": "vl-s32",
+        "src": "/audio/valmiki/vl-s32/vl_vl-s32_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s32/vl_vl-s32_cues.json",
+        "durationMs": 173192
+      },
+      {
+        "id": "vl-s33",
+        "sectionId": "vl-s33",
+        "src": "/audio/valmiki/vl-s33/vl_vl-s33_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s33/vl_vl-s33_cues.json",
+        "durationMs": 331488
+      },
+      {
+        "id": "vl-s34",
+        "sectionId": "vl-s34",
+        "src": "/audio/valmiki/vl-s34/vl_vl-s34_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s34/vl_vl-s34_cues.json",
+        "durationMs": 440240
+      },
+      {
+        "id": "vl-s35",
+        "sectionId": "vl-s35",
+        "src": "/audio/valmiki/vl-s35/vl_vl-s35_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s35/vl_vl-s35_cues.json",
+        "durationMs": 940328
+      },
+      {
+        "id": "vl-s36",
+        "sectionId": "vl-s36",
+        "src": "/audio/valmiki/vl-s36/vl_vl-s36_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s36/vl_vl-s36_cues.json",
+        "durationMs": 497600
+      },
+      {
+        "id": "vl-s37",
+        "sectionId": "vl-s37",
+        "src": "/audio/valmiki/vl-s37/vl_vl-s37_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s37/vl_vl-s37_cues.json",
+        "durationMs": 645776
+      },
+      {
+        "id": "vl-s38",
+        "sectionId": "vl-s38",
+        "src": "/audio/valmiki/vl-s38/vl_vl-s38_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s38/vl_vl-s38_cues.json",
+        "durationMs": 880656
+      },
+      {
+        "id": "vl-s39",
+        "sectionId": "vl-s39",
+        "src": "/audio/valmiki/vl-s39/vl_vl-s39_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s39/vl_vl-s39_cues.json",
+        "durationMs": 554896
+      },
+      {
+        "id": "vl-s40",
+        "sectionId": "vl-s40",
+        "src": "/audio/valmiki/vl-s40/vl_vl-s40_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s40/vl_vl-s40_cues.json",
+        "durationMs": 267576
+      },
+      {
+        "id": "vl-s41",
+        "sectionId": "vl-s41",
+        "src": "/audio/valmiki/vl-s41/vl_vl-s41_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s41/vl_vl-s41_cues.json",
+        "durationMs": 256624
+      },
+      {
+        "id": "vl-s42",
+        "sectionId": "vl-s42",
+        "src": "/audio/valmiki/vl-s42/vl_vl-s42_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s42/vl_vl-s42_cues.json",
+        "durationMs": 452904
+      },
+      {
+        "id": "vl-s43",
+        "sectionId": "vl-s43",
+        "src": "/audio/valmiki/vl-s43/vl_vl-s43_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s43/vl_vl-s43_cues.json",
+        "durationMs": 362928
+      },
+      {
+        "id": "vl-s44",
+        "sectionId": "vl-s44",
+        "src": "/audio/valmiki/vl-s44/vl_vl-s44_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s44/vl_vl-s44_cues.json",
+        "durationMs": 251504
+      },
+      {
+        "id": "vl-s45",
+        "sectionId": "vl-s45",
+        "src": "/audio/valmiki/vl-s45/vl_vl-s45_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s45/vl_vl-s45_cues.json",
+        "durationMs": 287600
+      },
+      {
+        "id": "vl-s46",
+        "sectionId": "vl-s46",
+        "src": "/audio/valmiki/vl-s46/vl_vl-s46_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s46/vl_vl-s46_cues.json",
+        "durationMs": 539680
+      },
+      {
+        "id": "vl-s47",
+        "sectionId": "vl-s47",
+        "src": "/audio/valmiki/vl-s47/vl_vl-s47_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s47/vl_vl-s47_cues.json",
+        "durationMs": 493376
+      },
+      {
+        "id": "vl-s48",
+        "sectionId": "vl-s48",
+        "src": "/audio/valmiki/vl-s48/vl_vl-s48_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s48/vl_vl-s48_cues.json",
+        "durationMs": 687840
+      },
+      {
+        "id": "vl-s49",
+        "sectionId": "vl-s49",
+        "src": "/audio/valmiki/vl-s49/vl_vl-s49_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s49/vl_vl-s49_cues.json",
+        "durationMs": 238880
+      },
+      {
+        "id": "vl-s50",
+        "sectionId": "vl-s50",
+        "src": "/audio/valmiki/vl-s50/vl_vl-s50_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s50/vl_vl-s50_cues.json",
+        "durationMs": 235872
+      },
+      {
+        "id": "vl-s51",
+        "sectionId": "vl-s51",
+        "src": "/audio/valmiki/vl-s51/vl_vl-s51_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s51/vl_vl-s51_cues.json",
+        "durationMs": 547656
+      },
+      {
+        "id": "vl-s52",
+        "sectionId": "vl-s52",
+        "src": "/audio/valmiki/vl-s52/vl_vl-s52_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s52/vl_vl-s52_cues.json",
+        "durationMs": 287984
+      },
+      {
+        "id": "vl-s53",
+        "sectionId": "vl-s53",
+        "src": "/audio/valmiki/vl-s53/vl_vl-s53_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s53/vl_vl-s53_cues.json",
+        "durationMs": 483176
+      },
+      {
+        "id": "vl-s54",
+        "sectionId": "vl-s54",
+        "src": "/audio/valmiki/vl-s54/vl_vl-s54_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s54/vl_vl-s54_cues.json",
+        "durationMs": 778376
+      },
+      {
+        "id": "vl-s55",
+        "sectionId": "vl-s55",
+        "src": "/audio/valmiki/vl-s55/vl_vl-s55_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s55/vl_vl-s55_cues.json",
+        "durationMs": 351072
+      },
+      {
+        "id": "vl-s56",
+        "sectionId": "vl-s56",
+        "src": "/audio/valmiki/vl-s56/vl_vl-s56_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s56/vl_vl-s56_cues.json",
+        "durationMs": 340128
+      },
+      {
+        "id": "vl-s57",
+        "sectionId": "vl-s57",
+        "src": "/audio/valmiki/vl-s57/vl_vl-s57_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s57/vl_vl-s57_cues.json",
+        "durationMs": 739192
+      },
+      {
+        "id": "vl-s58",
+        "sectionId": "vl-s58",
+        "src": "/audio/valmiki/vl-s58/vl_vl-s58_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s58/vl_vl-s58_cues.json",
+        "durationMs": 1926888
+      },
+      {
+        "id": "vl-s59",
+        "sectionId": "vl-s59",
+        "src": "/audio/valmiki/vl-s59/vl_vl-s59_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s59/vl_vl-s59_cues.json",
+        "durationMs": 491776
+      },
+      {
+        "id": "vl-s60",
+        "sectionId": "vl-s60",
+        "src": "/audio/valmiki/vl-s60/vl_vl-s60_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s60/vl_vl-s60_cues.json",
+        "durationMs": 65584
+      },
+      {
+        "id": "vl-s61",
+        "sectionId": "vl-s61",
+        "src": "/audio/valmiki/vl-s61/vl_vl-s61_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s61/vl_vl-s61_cues.json",
+        "durationMs": 449936
+      },
+      {
+        "id": "vl-s62",
+        "sectionId": "vl-s62",
+        "src": "/audio/valmiki/vl-s62/vl_vl-s62_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s62/vl_vl-s62_cues.json",
+        "durationMs": 413656
+      },
+      {
+        "id": "vl-s63",
+        "sectionId": "vl-s63",
+        "src": "/audio/valmiki/vl-s63/vl_vl-s63_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s63/vl_vl-s63_cues.json",
+        "durationMs": 327392
+      },
+      {
+        "id": "vl-s64",
+        "sectionId": "vl-s64",
+        "src": "/audio/valmiki/vl-s64/vl_vl-s64_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s64/vl_vl-s64_cues.json",
+        "durationMs": 427480
+      },
+      {
+        "id": "vl-s65",
+        "sectionId": "vl-s65",
+        "src": "/audio/valmiki/vl-s65/vl_vl-s65_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s65/vl_vl-s65_cues.json",
+        "durationMs": 379120
+      },
+      {
+        "id": "vl-s66",
+        "sectionId": "vl-s66",
+        "src": "/audio/valmiki/vl-s66/vl_vl-s66_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s66/vl_vl-s66_cues.json",
+        "durationMs": 148312
+      },
+      {
+        "id": "vl-s67",
+        "sectionId": "vl-s67",
+        "src": "/audio/valmiki/vl-s67/vl_vl-s67_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s67/vl_vl-s67_cues.json",
+        "durationMs": 375696
+      },
+      {
+        "id": "vl-s68",
+        "sectionId": "vl-s68",
+        "src": "/audio/valmiki/vl-s68/vl_vl-s68_low.m4a",
+        "cueMapSrc": "/audio/valmiki/vl-s68/vl_vl-s68_cues.json",
+        "durationMs": 311600
+      }
+    ],
+    "engine": "edge-tts",
+    "voice": "hi-IN-MadhurNeural"
+  },
+  "stats": {
+    "sectionCount": 68,
+    "verseCount": 2780
+  },
+  "twinText": {
+    "pairedTextId": "sundar-kand-manas",
+    "alignmentNote": "Full Valmiki SK; twin-text map remains editorial arc-level in twin-text-sk-align.json"
+  }
+}

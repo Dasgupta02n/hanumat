@@ -1,0 +1,40 @@
+{
+  "id": "hanuman-108-names",
+  "slug": "hanuman-108-names",
+  "title": {
+    "hi": "हनुमान अष्टोत्तर शतनामावली",
+    "en": "108 Names of Hanuman"
+  },
+  "subtitle": {
+    "hi": "पारंपरिक अष्टोत्तर शत",
+    "en": "Traditional ashtottara shatanamavali"
+  },
+  "description": {
+    "hi": "श्री हनुमान की १०८ नामों की पारंपरिक नामावली।",
+    "en": "Traditional 108-name ashtottara of Hanuman."
+  },
+  "category": "namavali",
+  "wave": 1,
+  "edition": {
+    "pin": "TRAD-108-ASHTOTTARA-V2-3SRC",
+    "publisher": "Traditional ashtottara (Drik/BhaktiBharat/Vignanam consensus)",
+    "notes": "Corrected 2026-07-23 after 3-source FAIL: replaced corrupted/duplicate list with standard ashtottara ending सीतासमेतश्रीरामपादसेवाधुरन्धराय."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true,
+    "placeholderAudio": false
+  },
+  "audio": {
+    "src": "/audio/names/hanuman_108_names.m4a",
+    "cueMapSrc": "/audio/names/hanuman_108_names_cues.json",
+    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
+    "trackId": "track-hanuman_108_names",
+    "lowDataSrc": "/audio/names/hanuman_108_names_low.m4a"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 108
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "temples": [
+    {
+      "id": "salasar",
+      "name": {
+        "hi": "सालासर बालाजी",
+        "en": "Salasar Balaji"
+      },
+      "region": "Rajasthan",
+      "note": "Famous Hanuman kshetra"
+    },
+    {
+      "id": "mehndipur",
+      "name": {
+        "hi": "मेहन्दीपुर बालाजी",
+        "en": "Mehndipur Balaji"
+      },
+      "region": "Rajasthan",
+      "note": "Sankatmochan pilgrimage"
+    },
+    {
+      "id": "jakhu",
+      "name": {
+        "hi": "जाखू मंदिर",
+        "en": "Jakhu Temple"
+      },
+      "region": "Himachal",
+      "note": "Shimla peak temple"
+    },
+    {
+      "id": "namakkal",
+      "name": {
+        "hi": "नामक्कल आनजनेयर",
+        "en": "Namakkal Anjaneyar"
+      },
+      "region": "Tamil Nadu",
+      "note": "South Indian Anjaneya"
+    },
+    {
+      "id": "hampi",
+      "name": {
+        "hi": "हम्पी हनुमान",
+        "en": "Hampi Hanuman"
+      },
+      "region": "Karnataka",
+      "note": "Kishkindha association"
+    },
+    {
+      "id": "prayagraj",
+      "name": {
+        "hi": "हनुमान मंदिर प्रयागराज",
+        "en": "Hanuman Temple Prayagraj"
+      },
+      "region": "Uttar Pradesh",
+      "note": "Triveni sangam city"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "hanuman-chalisa",
+  "slug": "hanuman-chalisa",
+  "title": {
+    "hi": "हनुमान चालीसा",
+    "en": "Hanuman Chalisa"
+  },
+  "subtitle": {
+    "hi": "श्री तुलसीदास · ४० चौपाई",
+    "en": "Tulsidas · 40 chaupais"
+  },
+  "originalLang": "awa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GP-MANAS-81-2025-CHALISA",
+    "publisher": "Gita Press, Gorakhpur (same house tradition as Manas code 81)",
+    "productCode": "81",
+    "printYear": 2025,
+    "notes": "Chalisa collated in Gita Press tradition aligned with project edition GP-MANAS-81-2025. Prefer dual-check against a GP Hanuman Chalisa booklet when available."
+  },
+  "flags": {
+    "hasAudio": true,
+    "hasOfflinePack": true,
+    "placeholderAudio": false,
+    "ttsGenerated": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 43
+  },
+  "audio": {
+    "src": "/audio/chalisa/hanuman_chalisa.m4a",
+    "cueMapSrc": "/audio/chalisa/hanuman_chalisa_cues.json",
+    "segments": [
+      {
+        "id": "chalisa-full",
+        "sectionId": "chalisa-full",
+        "src": "/audio/chalisa/hanuman_chalisa.m4a",
+        "cueMapSrc": "/audio/chalisa/hanuman_chalisa_cues.json",
+        "durationMs": 311520,
+        "lowDataSrc": "/audio/chalisa/hanuman_chalisa_low.m4a"
+      }
+    ],
+    "engine": "edge-tts",
+    "voice": "hi-IN-MadhurNeural",
+    "license": "tts-generated-wave0",
+    "credits": "Neural path-assist (hi-IN-MadhurNeural). Replaceable with commissioned recitation.",
+    "lowDataSrc": "/audio/chalisa/hanuman_chalisa_low.m4a"
+  },
+  "wave": 0,
+  "category": "chalisa",
+  "description": {
+    "hi": "प्रभु श्री राम के परम भक्त हनुमान जी की स्तुति — पाठ, अर्थ और श्रवण एक साथ।",
+    "en": "Praise of Hanuman, supreme devotee of the Lord."
+  }
+}

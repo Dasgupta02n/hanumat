@@ -1,0 +1,41 @@
+{
+  "id": "sankatmochan-ashtak",
+  "slug": "sankatmochan-ashtak",
+  "title": {
+    "hi": "संकटमोचन हनुमानाष्टक",
+    "en": "Sankatmochan Ashtak"
+  },
+  "subtitle": {
+    "hi": "तुलसीदास · मत्तगयन्द छन्द",
+    "en": "Tulsidas · eight stanzas of crisis-relief"
+  },
+  "description": {
+    "hi": "गोस्वामी तुलसीदास कृत संकटमोचन हनुमानाष्टक — आठ मत्तगयन्द छन्द और समापन दोहा।",
+    "en": "Sankatmochan Hanuman Ashtak attributed to Tulsidas — eight stanzas plus closing doha."
+  },
+  "category": "stotra",
+  "wave": 1,
+  "edition": {
+    "pin": "TRAD-ASHTAK-V2-3SRC",
+    "publisher": "Traditional path (Tulsidas tradition)",
+    "notes": "Corrected 2026-07-23 after 3-source vet (Kavita Kosh primary; cross-checked popular traditional path). Replaced Chalisa-fragment corruption (sa-08..10) with full 8 stanzas + closing doha."
+  },
+  "flags": {
+    "hasAudio": true,
+    "ttsGenerated": true,
+    "needsDualReview": true
+  },
+  "audio": {
+    "src": "/audio/ashtak/sankatmochan_ashtak.m4a",
+    "cueMapSrc": "/audio/ashtak/sankatmochan_ashtak_cues.json",
+    "lowDataSrc": "/audio/ashtak/sankatmochan_ashtak_low.m4a",
+    "credits": "TTS path-assist (hi-IN-MadhurNeural) — not classical pāṭh. Regenerated 2026-07-23 V2.",
+    "trackId": "track-sankatmochan_ashtak",
+    "engine": "edge-tts",
+    "voice": "hi-IN-MadhurNeural"
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  }
+}

@@ -1,0 +1,3 @@
+# Sacred content requires dual review (design doc)
+/content/texts/**  @hanumat-editor @hanumat-reviewer
+/content/packs/**  @hanumat-editor @hanumat-reviewer

@@ -1,0 +1,29 @@
+{
+  "sections": [
+    {
+      "id": "ha-full",
+      "kind": "full",
+      "title": {
+        "hi": "पूर्ण हनुमान आरती",
+        "en": "Complete Hanuman Aarti"
+      },
+      "order": 1,
+      "verseIds": [
+        "ha-01",
+        "ha-02",
+        "ha-03",
+        "ha-04",
+        "ha-05",
+        "ha-06",
+        "ha-07",
+        "ha-08",
+        "ha-09",
+        "ha-10",
+        "ha-11",
+        "ha-12",
+        "ha-13",
+        "ha-14"
+      ]
+    }
+  ]
+}

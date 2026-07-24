@@ -1,0 +1,19 @@
+{
+  "traditions": [
+    {
+      "region": "North India (common)",
+      "rule": "Chaitra Purnima (often)",
+      "note": "Confirm local panchang"
+    },
+    {
+      "region": "Some South traditions",
+      "rule": "Regional month varies",
+      "note": "Traditions vary"
+    },
+    {
+      "region": "Maharashtra / Maruti",
+      "rule": "Local calendars",
+      "note": "Check local mandir"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "sections": [
+    {
+      "id": "bb-full",
+      "kind": "full",
+      "title": {
+        "hi": "पूर्ण बजरंग बाण",
+        "en": "Complete Bajrang Baan"
+      },
+      "order": 1,
+      "verseIds": [
+        "bb-doha-1",
+        "bb-01",
+        "bb-02",
+        "bb-03",
+        "bb-04",
+        "bb-05",
+        "bb-06",
+        "bb-07",
+        "bb-08",
+        "bb-09",
+        "bb-10",
+        "bb-11",
+        "bb-12",
+        "bb-13",
+        "bb-14",
+        "bb-15",
+        "bb-16",
+        "bb-17",
+        "bb-18",
+        "bb-19",
+        "bb-20",
+        "bb-21",
+        "bb-22",
+        "bb-23",
+        "bb-24",
+        "bb-25",
+        "bb-26",
+        "bb-27",
+        "bb-28",
+        "bb-29",
+        "bb-30",
+        "bb-31",
+        "bb-32",
+        "bb-doha-2"
+      ]
+    }
+  ]
+}

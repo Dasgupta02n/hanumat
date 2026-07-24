@@ -1,0 +1,18 @@
+{
+  "sections": [
+    {
+      "id": "mr-full",
+      "kind": "full",
+      "title": {
+        "hi": "हनुमत् त्रिकाल स्मरणम्",
+        "en": "Trikala Smaranam"
+      },
+      "order": 1,
+      "verseIds": [
+        "mr-01",
+        "mr-02",
+        "mr-03"
+      ]
+    }
+  ]
+}

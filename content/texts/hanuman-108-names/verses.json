@@ -1,0 +1,650 @@
+{
+  "n001": {
+    "id": "n001",
+    "kind": "name",
+    "text": "ॐ आञ्जनेयाय नमः",
+    "sectionId": "n-full"
+  },
+  "n002": {
+    "id": "n002",
+    "kind": "name",
+    "text": "ॐ महावीराय नमः",
+    "sectionId": "n-full"
+  },
+  "n003": {
+    "id": "n003",
+    "kind": "name",
+    "text": "ॐ हनुमते नमः",
+    "sectionId": "n-full"
+  },
+  "n004": {
+    "id": "n004",
+    "kind": "name",
+    "text": "ॐ मारुतात्मजाय नमः",
+    "sectionId": "n-full"
+  },
+  "n005": {
+    "id": "n005",
+    "kind": "name",
+    "text": "ॐ तत्वज्ञानप्रदाय नमः",
+    "sectionId": "n-full"
+  },
+  "n006": {
+    "id": "n006",
+    "kind": "name",
+    "text": "ॐ सीतादेवीमुद्राप्रदायकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n007": {
+    "id": "n007",
+    "kind": "name",
+    "text": "ॐ अशोकवनिकाच्छेत्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n008": {
+    "id": "n008",
+    "kind": "name",
+    "text": "ॐ सर्वमायाविभञ्जनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n009": {
+    "id": "n009",
+    "kind": "name",
+    "text": "ॐ सर्वबन्धविमोक्त्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n010": {
+    "id": "n010",
+    "kind": "name",
+    "text": "ॐ रक्षोविध्वंसकारकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n011": {
+    "id": "n011",
+    "kind": "name",
+    "text": "ॐ परविद्यापरिहाराय नमः",
+    "sectionId": "n-full"
+  },
+  "n012": {
+    "id": "n012",
+    "kind": "name",
+    "text": "ॐ परशौर्यविनाशनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n013": {
+    "id": "n013",
+    "kind": "name",
+    "text": "ॐ परमन्त्रनिराकर्त्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n014": {
+    "id": "n014",
+    "kind": "name",
+    "text": "ॐ परयन्त्रप्रभेदकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n015": {
+    "id": "n015",
+    "kind": "name",
+    "text": "ॐ सर्वग्रहविनाशिने नमः",
+    "sectionId": "n-full"
+  },
+  "n016": {
+    "id": "n016",
+    "kind": "name",
+    "text": "ॐ भीमसेनसहायकृते नमः",
+    "sectionId": "n-full"
+  },
+  "n017": {
+    "id": "n017",
+    "kind": "name",
+    "text": "ॐ सर्वदुःखहराय नमः",
+    "sectionId": "n-full"
+  },
+  "n018": {
+    "id": "n018",
+    "kind": "name",
+    "text": "ॐ सर्वलोकचारिणे नमः",
+    "sectionId": "n-full"
+  },
+  "n019": {
+    "id": "n019",
+    "kind": "name",
+    "text": "ॐ मनोजवाय नमः",
+    "sectionId": "n-full"
+  },
+  "n020": {
+    "id": "n020",
+    "kind": "name",
+    "text": "ॐ पारिजातद्रुमूलस्थाय नमः",
+    "sectionId": "n-full"
+  },
+  "n021": {
+    "id": "n021",
+    "kind": "name",
+    "text": "ॐ सर्वमन्त्रस्वरूपवते नमः",
+    "sectionId": "n-full"
+  },
+  "n022": {
+    "id": "n022",
+    "kind": "name",
+    "text": "ॐ सर्वतन्त्रस्वरूपिणे नमः",
+    "sectionId": "n-full"
+  },
+  "n023": {
+    "id": "n023",
+    "kind": "name",
+    "text": "ॐ सर्वयन्त्रात्मकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n024": {
+    "id": "n024",
+    "kind": "name",
+    "text": "ॐ कपीश्वराय नमः",
+    "sectionId": "n-full"
+  },
+  "n025": {
+    "id": "n025",
+    "kind": "name",
+    "text": "ॐ महाकायाय नमः",
+    "sectionId": "n-full"
+  },
+  "n026": {
+    "id": "n026",
+    "kind": "name",
+    "text": "ॐ सर्वरोगहराय नमः",
+    "sectionId": "n-full"
+  },
+  "n027": {
+    "id": "n027",
+    "kind": "name",
+    "text": "ॐ प्रभवे नमः",
+    "sectionId": "n-full"
+  },
+  "n028": {
+    "id": "n028",
+    "kind": "name",
+    "text": "ॐ बलसिद्धिकराय नमः",
+    "sectionId": "n-full"
+  },
+  "n029": {
+    "id": "n029",
+    "kind": "name",
+    "text": "ॐ सर्वविद्यासम्पत्प्रदायकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n030": {
+    "id": "n030",
+    "kind": "name",
+    "text": "ॐ कपिसेनानायकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n031": {
+    "id": "n031",
+    "kind": "name",
+    "text": "ॐ भविष्यच्चतुराननाय नमः",
+    "sectionId": "n-full"
+  },
+  "n032": {
+    "id": "n032",
+    "kind": "name",
+    "text": "ॐ कुमारब्रह्मचारिणे नमः",
+    "sectionId": "n-full"
+  },
+  "n033": {
+    "id": "n033",
+    "kind": "name",
+    "text": "ॐ रत्नकुण्डलदीप्तिमते नमः",
+    "sectionId": "n-full"
+  },
+  "n034": {
+    "id": "n034",
+    "kind": "name",
+    "text": "ॐ चञ्चलद्बालसन्नद्धलम्बमानशिखोज्ज्वलाय नमः",
+    "sectionId": "n-full"
+  },
+  "n035": {
+    "id": "n035",
+    "kind": "name",
+    "text": "ॐ गन्धर्वविद्यातत्वज्ञाय नमः",
+    "sectionId": "n-full"
+  },
+  "n036": {
+    "id": "n036",
+    "kind": "name",
+    "text": "ॐ महाबलपराक्रमाय नमः",
+    "sectionId": "n-full"
+  },
+  "n037": {
+    "id": "n037",
+    "kind": "name",
+    "text": "ॐ कारागृहविमोक्त्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n038": {
+    "id": "n038",
+    "kind": "name",
+    "text": "ॐ शृङ्खलाबन्धमोचकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n039": {
+    "id": "n039",
+    "kind": "name",
+    "text": "ॐ सागरोत्तारकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n040": {
+    "id": "n040",
+    "kind": "name",
+    "text": "ॐ प्राज्ञाय नमः",
+    "sectionId": "n-full"
+  },
+  "n041": {
+    "id": "n041",
+    "kind": "name",
+    "text": "ॐ रामदूताय नमः",
+    "sectionId": "n-full"
+  },
+  "n042": {
+    "id": "n042",
+    "kind": "name",
+    "text": "ॐ प्रतापवते नमः",
+    "sectionId": "n-full"
+  },
+  "n043": {
+    "id": "n043",
+    "kind": "name",
+    "text": "ॐ वानराय नमः",
+    "sectionId": "n-full"
+  },
+  "n044": {
+    "id": "n044",
+    "kind": "name",
+    "text": "ॐ केसरीसुताय नमः",
+    "sectionId": "n-full"
+  },
+  "n045": {
+    "id": "n045",
+    "kind": "name",
+    "text": "ॐ सीताशोकनिवारकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n046": {
+    "id": "n046",
+    "kind": "name",
+    "text": "ॐ अञ्जनागर्भसम्भूताय नमः",
+    "sectionId": "n-full"
+  },
+  "n047": {
+    "id": "n047",
+    "kind": "name",
+    "text": "ॐ बालार्कसदृशाननाय नमः",
+    "sectionId": "n-full"
+  },
+  "n048": {
+    "id": "n048",
+    "kind": "name",
+    "text": "ॐ विभीषणप्रियकराय नमः",
+    "sectionId": "n-full"
+  },
+  "n049": {
+    "id": "n049",
+    "kind": "name",
+    "text": "ॐ दशग्रीवकुलान्तकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n050": {
+    "id": "n050",
+    "kind": "name",
+    "text": "ॐ लक्ष्मणप्राणदात्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n051": {
+    "id": "n051",
+    "kind": "name",
+    "text": "ॐ वज्रकायाय नमः",
+    "sectionId": "n-full"
+  },
+  "n052": {
+    "id": "n052",
+    "kind": "name",
+    "text": "ॐ महाद्युतये नमः",
+    "sectionId": "n-full"
+  },
+  "n053": {
+    "id": "n053",
+    "kind": "name",
+    "text": "ॐ चिरञ्जीविने नमः",
+    "sectionId": "n-full"
+  },
+  "n054": {
+    "id": "n054",
+    "kind": "name",
+    "text": "ॐ रामभक्ताय नमः",
+    "sectionId": "n-full"
+  },
+  "n055": {
+    "id": "n055",
+    "kind": "name",
+    "text": "ॐ दैत्यकार्यविघातकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n056": {
+    "id": "n056",
+    "kind": "name",
+    "text": "ॐ अक्षहन्त्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n057": {
+    "id": "n057",
+    "kind": "name",
+    "text": "ॐ काञ्चनाभाय नमः",
+    "sectionId": "n-full"
+  },
+  "n058": {
+    "id": "n058",
+    "kind": "name",
+    "text": "ॐ पञ्चवक्त्राय नमः",
+    "sectionId": "n-full"
+  },
+  "n059": {
+    "id": "n059",
+    "kind": "name",
+    "text": "ॐ महातपसे नमः",
+    "sectionId": "n-full"
+  },
+  "n060": {
+    "id": "n060",
+    "kind": "name",
+    "text": "ॐ लङ्किनीभञ्जनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n061": {
+    "id": "n061",
+    "kind": "name",
+    "text": "ॐ श्रीमते नमः",
+    "sectionId": "n-full"
+  },
+  "n062": {
+    "id": "n062",
+    "kind": "name",
+    "text": "ॐ सिंहिकाप्राणभञ्जनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n063": {
+    "id": "n063",
+    "kind": "name",
+    "text": "ॐ गन्धमादनशैलस्थाय नमः",
+    "sectionId": "n-full"
+  },
+  "n064": {
+    "id": "n064",
+    "kind": "name",
+    "text": "ॐ लङ्कापुरविदाहकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n065": {
+    "id": "n065",
+    "kind": "name",
+    "text": "ॐ सुग्रीवसचिवाय नमः",
+    "sectionId": "n-full"
+  },
+  "n066": {
+    "id": "n066",
+    "kind": "name",
+    "text": "ॐ धीराय नमः",
+    "sectionId": "n-full"
+  },
+  "n067": {
+    "id": "n067",
+    "kind": "name",
+    "text": "ॐ शूराय नमः",
+    "sectionId": "n-full"
+  },
+  "n068": {
+    "id": "n068",
+    "kind": "name",
+    "text": "ॐ दैत्यकुलान्तकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n069": {
+    "id": "n069",
+    "kind": "name",
+    "text": "ॐ सुरार्चिताय नमः",
+    "sectionId": "n-full"
+  },
+  "n070": {
+    "id": "n070",
+    "kind": "name",
+    "text": "ॐ महातेजसे नमः",
+    "sectionId": "n-full"
+  },
+  "n071": {
+    "id": "n071",
+    "kind": "name",
+    "text": "ॐ रामचूडामणिप्रदायकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n072": {
+    "id": "n072",
+    "kind": "name",
+    "text": "ॐ कामरूपिणे नमः",
+    "sectionId": "n-full"
+  },
+  "n073": {
+    "id": "n073",
+    "kind": "name",
+    "text": "ॐ पिङ्गलाक्षाय नमः",
+    "sectionId": "n-full"
+  },
+  "n074": {
+    "id": "n074",
+    "kind": "name",
+    "text": "ॐ वार्धिमैनाकपूजिताय नमः",
+    "sectionId": "n-full"
+  },
+  "n075": {
+    "id": "n075",
+    "kind": "name",
+    "text": "ॐ कवलीकृतमार्तण्डमण्डलाय नमः",
+    "sectionId": "n-full"
+  },
+  "n076": {
+    "id": "n076",
+    "kind": "name",
+    "text": "ॐ विजितेन्द्रियाय नमः",
+    "sectionId": "n-full"
+  },
+  "n077": {
+    "id": "n077",
+    "kind": "name",
+    "text": "ॐ रामसुग्रीवसन्धात्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n078": {
+    "id": "n078",
+    "kind": "name",
+    "text": "ॐ महारावणमर्दनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n079": {
+    "id": "n079",
+    "kind": "name",
+    "text": "ॐ स्फटिकाभाय नमः",
+    "sectionId": "n-full"
+  },
+  "n080": {
+    "id": "n080",
+    "kind": "name",
+    "text": "ॐ वागधीशाय नमः",
+    "sectionId": "n-full"
+  },
+  "n081": {
+    "id": "n081",
+    "kind": "name",
+    "text": "ॐ नवव्याकृतिपण्डिताय नमः",
+    "sectionId": "n-full"
+  },
+  "n082": {
+    "id": "n082",
+    "kind": "name",
+    "text": "ॐ चतुर्बाहवे नमः",
+    "sectionId": "n-full"
+  },
+  "n083": {
+    "id": "n083",
+    "kind": "name",
+    "text": "ॐ दीनबन्धवे नमः",
+    "sectionId": "n-full"
+  },
+  "n084": {
+    "id": "n084",
+    "kind": "name",
+    "text": "ॐ महात्मने नमः",
+    "sectionId": "n-full"
+  },
+  "n085": {
+    "id": "n085",
+    "kind": "name",
+    "text": "ॐ भक्तवत्सलाय नमः",
+    "sectionId": "n-full"
+  },
+  "n086": {
+    "id": "n086",
+    "kind": "name",
+    "text": "ॐ सञ्जीवननगाहर्त्रे नमः",
+    "sectionId": "n-full"
+  },
+  "n087": {
+    "id": "n087",
+    "kind": "name",
+    "text": "ॐ शुचये नमः",
+    "sectionId": "n-full"
+  },
+  "n088": {
+    "id": "n088",
+    "kind": "name",
+    "text": "ॐ वाग्मिने नमः",
+    "sectionId": "n-full"
+  },
+  "n089": {
+    "id": "n089",
+    "kind": "name",
+    "text": "ॐ दृढव्रताय नमः",
+    "sectionId": "n-full"
+  },
+  "n090": {
+    "id": "n090",
+    "kind": "name",
+    "text": "ॐ कालनेमिप्रमथनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n091": {
+    "id": "n091",
+    "kind": "name",
+    "text": "ॐ हरिमर्कटमर्कटाय नमः",
+    "sectionId": "n-full"
+  },
+  "n092": {
+    "id": "n092",
+    "kind": "name",
+    "text": "ॐ दान्ताय नमः",
+    "sectionId": "n-full"
+  },
+  "n093": {
+    "id": "n093",
+    "kind": "name",
+    "text": "ॐ शान्ताय नमः",
+    "sectionId": "n-full"
+  },
+  "n094": {
+    "id": "n094",
+    "kind": "name",
+    "text": "ॐ प्रसन्नात्मने नमः",
+    "sectionId": "n-full"
+  },
+  "n095": {
+    "id": "n095",
+    "kind": "name",
+    "text": "ॐ शतकण्ठमदापहृते नमः",
+    "sectionId": "n-full"
+  },
+  "n096": {
+    "id": "n096",
+    "kind": "name",
+    "text": "ॐ योगिने नमः",
+    "sectionId": "n-full"
+  },
+  "n097": {
+    "id": "n097",
+    "kind": "name",
+    "text": "ॐ रामकथालोलाय नमः",
+    "sectionId": "n-full"
+  },
+  "n098": {
+    "id": "n098",
+    "kind": "name",
+    "text": "ॐ सीतान्वेषणपण्डिताय नमः",
+    "sectionId": "n-full"
+  },
+  "n099": {
+    "id": "n099",
+    "kind": "name",
+    "text": "ॐ वज्रदंष्ट्राय नमः",
+    "sectionId": "n-full"
+  },
+  "n100": {
+    "id": "n100",
+    "kind": "name",
+    "text": "ॐ वज्रनखाय नमः",
+    "sectionId": "n-full"
+  },
+  "n101": {
+    "id": "n101",
+    "kind": "name",
+    "text": "ॐ रुद्रवीर्यसमुद्भवाय नमः",
+    "sectionId": "n-full"
+  },
+  "n102": {
+    "id": "n102",
+    "kind": "name",
+    "text": "ॐ इन्द्रजित्प्रहितामोघब्रह्मास्त्रविनिवारकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n103": {
+    "id": "n103",
+    "kind": "name",
+    "text": "ॐ पार्थध्वजाग्रसंवासिने नमः",
+    "sectionId": "n-full"
+  },
+  "n104": {
+    "id": "n104",
+    "kind": "name",
+    "text": "ॐ शरपञ्जरभेदकाय नमः",
+    "sectionId": "n-full"
+  },
+  "n105": {
+    "id": "n105",
+    "kind": "name",
+    "text": "ॐ दशबाहवे नमः",
+    "sectionId": "n-full"
+  },
+  "n106": {
+    "id": "n106",
+    "kind": "name",
+    "text": "ॐ लोकपूज्याय नमः",
+    "sectionId": "n-full"
+  },
+  "n107": {
+    "id": "n107",
+    "kind": "name",
+    "text": "ॐ जाम्बवत्प्रीतिवर्धनाय नमः",
+    "sectionId": "n-full"
+  },
+  "n108": {
+    "id": "n108",
+    "kind": "name",
+    "text": "ॐ सीतासमेतश्रीरामपादसेवाधुरन्धराय नमः",
+    "sectionId": "n-full"
+  }
+}

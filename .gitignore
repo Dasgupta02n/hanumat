@@ -1,0 +1,33 @@
+node_modules
+.pnpm-store
+dist
+.next
+out
+.turbo
+*.log
+.env
+.env.local
+.env*.local
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+next-env.d.ts
+coverage
+.vercel
+
+# large binaries / local media
+media/
+*.zip
+apps/web/out/
+apps/web/public/audio/
+pdf copy/
+.grok/
+scripts/__pycache__/
+**/__pycache__/
+*.pyc
+audit-internal.json
+content/cache/
+content/sources/valmiki-sk-raw/
+content/sources/griffith-sundara-book5.txt
+content/sources/gp-manas*.txt
+apps/web/public/images/hanuman-108/_bak_001-004/

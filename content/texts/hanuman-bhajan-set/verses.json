@@ -1,0 +1,74 @@
+{
+  "hb-01": {
+    "id": "hb-01",
+    "kind": "name",
+    "text": "ॐ हनुमते नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-02": {
+    "id": "hb-02",
+    "kind": "name",
+    "text": "ॐ आञ्जनेयाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-03": {
+    "id": "hb-03",
+    "kind": "name",
+    "text": "ॐ वायुपुत्राय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-04": {
+    "id": "hb-04",
+    "kind": "name",
+    "text": "ॐ महाबलाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-05": {
+    "id": "hb-05",
+    "kind": "name",
+    "text": "ॐ रामेष्टाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-06": {
+    "id": "hb-06",
+    "kind": "name",
+    "text": "ॐ फाल्गुनसखाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-07": {
+    "id": "hb-07",
+    "kind": "name",
+    "text": "ॐ पिङ्गाक्षाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-08": {
+    "id": "hb-08",
+    "kind": "name",
+    "text": "ॐ अमितविक्रमाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-09": {
+    "id": "hb-09",
+    "kind": "name",
+    "text": "ॐ उदधिक्रमणाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-10": {
+    "id": "hb-10",
+    "kind": "name",
+    "text": "ॐ सीताशोकविनाशनाय नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-11": {
+    "id": "hb-11",
+    "kind": "name",
+    "text": "ॐ लक्ष्मणप्राणदात्रे नमः",
+    "sectionId": "hb-full"
+  },
+  "hb-12": {
+    "id": "hb-12",
+    "kind": "name",
+    "text": "ॐ दशग्रीवदर्पहन्त्रे नमः",
+    "sectionId": "hb-full"
+  }
+}

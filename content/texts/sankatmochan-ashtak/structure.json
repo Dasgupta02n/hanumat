@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "sa-full",
+      "kind": "full",
+      "title": {
+        "hi": "पूर्ण संकटमोचन हनुमानाष्टक",
+        "en": "Complete Sankatmochan Hanuman Ashtak"
+      },
+      "order": 1,
+      "verseIds": [
+        "sa-01",
+        "sa-02",
+        "sa-03",
+        "sa-04",
+        "sa-05",
+        "sa-06",
+        "sa-07",
+        "sa-08",
+        "sa-doha"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "id": "sundar-kand-manas",
+  "slug": "sundar-kand",
+  "title": {
+    "hi": "सुंदरकांड",
+    "en": "Sundar Kand"
+  },
+  "subtitle": {
+    "hi": "रामचरितमानस · हनुमान-केंद्रित",
+    "en": "Ramcharitmanas · Hanuman-centred"
+  },
+  "originalLang": "awa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GP-MANAS-81-2025-V2",
+    "publisher": "Gita Press, Gorakhpur",
+    "work": "Śrī Rāmcaritmānas",
+    "kand": "Sundara",
+    "productCode": "81",
+    "printYear": 2025,
+    "scope": "mula-collation-target",
+    "notes": "Full-kand mūla extract from Gita Press Hindi Manas OCR (archive item; code 81 mark in front matter). Verse segmentation heuristic; dual-review checklist in docs/editorial/dual-review.md. Meanings provisional; no ṭīkā copied. Audio segments regenerate after this load. | Corrected 2026-07-23: sk-s01-v001 was non-Manas Sanskrit (Vinaya-style); replaced with standard mangalacharan. Dual-review continues for full GP-81. | 2026-07-23 PDF dual-review: mūla/meanings aligned to GP-style content/sources/sundar-kand-raw.txt (same family as pdf copy/shree-ram-charit-manas.pdf; PDF text layer is CID-garbled so raw extract used). HI gloss from source; EN via MT of HI or provisional. Owner-responsible, not official Gita Press digital license.",
+    "sourceArchive": "archive.org/shri-ramcharitmanas-gita-press-hindi_202505"
+  },
+  "flags": {
+    "hasAudio": true,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": true,
+    "needsDualReview": false,
+    "ocrSource": true,
+    "pdfDualReviewed": true
+  },
+  "stats": {
+    "sectionCount": 24,
+    "verseCount": 575
+  },
+  "audio": {
+    "segments": [
+      {
+        "id": "sk-s01",
+        "sectionId": "sk-s01",
+        "src": "/audio/sundar-kand/sk-s01/sk_sk-s01.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s01/sk_sk-s01_cues.json",
+        "durationMs": 193780,
+        "lowDataSrc": "/audio/sundar-kand/sk-s01/sk_sk-s01_low.m4a"
+      },
+      {
+        "id": "sk-s02",
+        "sectionId": "sk-s02",
+        "src": "/audio/sundar-kand/sk-s02/sk_sk-s02.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s02/sk_sk-s02_cues.json",
+        "durationMs": 216892,
+        "lowDataSrc": "/audio/sundar-kand/sk-s02/sk_sk-s02_low.m4a"
+      },
+      {
+        "id": "sk-s03",
+        "sectionId": "sk-s03",
+        "src": "/audio/sundar-kand/sk-s03/sk_sk-s03.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s03/sk_sk-s03_cues.json",
+        "durationMs": 205468,
+        "lowDataSrc": "/audio/sundar-kand/sk-s03/sk_sk-s03_low.m4a"
+      },
+      {
+        "id": "sk-s04",
+        "sectionId": "sk-s04",
+        "src": "/audio/sundar-kand/sk-s04/sk_sk-s04.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s04/sk_sk-s04_cues.json",
+        "durationMs": 194500,
+        "lowDataSrc": "/audio/sundar-kand/sk-s04/sk_sk-s04_low.m4a"
+      },
+      {
+        "id": "sk-s05",
+        "sectionId": "sk-s05",
+        "src": "/audio/sundar-kand/sk-s05/sk_sk-s05.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s05/sk_sk-s05_cues.json",
+        "durationMs": 192412,
+        "lowDataSrc": "/audio/sundar-kand/sk-s05/sk_sk-s05_low.m4a"
+      },
+      {
+        "id": "sk-s06",
+        "sectionId": "sk-s06",
+        "src": "/audio/sundar-kand/sk-s06/sk_sk-s06.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s06/sk_sk-s06_cues.json",
+        "durationMs": 191596,
+        "lowDataSrc": "/audio/sundar-kand/sk-s06/sk_sk-s06_low.m4a"
+      },
+      {
+        "id": "sk-s07",
+        "sectionId": "sk-s07",
+        "src": "/audio/sundar-kand/sk-s07/sk_sk-s07.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s07/sk_sk-s07_cues.json",
+        "durationMs": 205588,
+        "lowDataSrc": "/audio/sundar-kand/sk-s07/sk_sk-s07_low.m4a"
+      },
+      {
+        "id": "sk-s08",
+        "sectionId": "sk-s08",
+        "src": "/audio/sundar-kand/sk-s08/sk_sk-s08.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s08/sk_sk-s08_cues.json",
+        "durationMs": 196804,
+        "lowDataSrc": "/audio/sundar-kand/sk-s08/sk_sk-s08_low.m4a"
+      },
+      {
+        "id": "sk-s09",
+        "sectionId": "sk-s09",
+        "src": "/audio/sundar-kand/sk-s09/sk_sk-s09.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s09/sk_sk-s09_cues.json",
+        "durationMs": 197764,
+        "lowDataSrc": "/audio/sundar-kand/sk-s09/sk_sk-s09_low.m4a"
+      },
+      {
+        "id": "sk-s10",
+        "sectionId": "sk-s10",
+        "src": "/audio/sundar-kand/sk-s10/sk_sk-s10.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s10/sk_sk-s10_cues.json",
+        "durationMs": 189460,
+        "lowDataSrc": "/audio/sundar-kand/sk-s10/sk_sk-s10_low.m4a"
+      },
+      {
+        "id": "sk-s11",
+        "sectionId": "sk-s11",
+        "src": "/audio/sundar-kand/sk-s11/sk_sk-s11.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s11/sk_sk-s11_cues.json",
+        "durationMs": 193012,
+        "lowDataSrc": "/audio/sundar-kand/sk-s11/sk_sk-s11_low.m4a"
+      },
+      {
+        "id": "sk-s12",
+        "sectionId": "sk-s12",
+        "src": "/audio/sundar-kand/sk-s12/sk_sk-s12.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s12/sk_sk-s12_cues.json",
+        "durationMs": 218572,
+        "lowDataSrc": "/audio/sundar-kand/sk-s12/sk_sk-s12_low.m4a"
+      },
+      {
+        "id": "sk-s13",
+        "sectionId": "sk-s13",
+        "src": "/audio/sundar-kand/sk-s13/sk_sk-s13.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s13/sk_sk-s13_cues.json",
+        "durationMs": 192964,
+        "lowDataSrc": "/audio/sundar-kand/sk-s13/sk_sk-s13_low.m4a"
+      },
+      {
+        "id": "sk-s14",
+        "sectionId": "sk-s14",
+        "src": "/audio/sundar-kand/sk-s14/sk_sk-s14.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s14/sk_sk-s14_cues.json",
+        "durationMs": 197140,
+        "lowDataSrc": "/audio/sundar-kand/sk-s14/sk_sk-s14_low.m4a"
+      },
+      {
+        "id": "sk-s15",
+        "sectionId": "sk-s15",
+        "src": "/audio/sundar-kand/sk-s15/sk_sk-s15.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s15/sk_sk-s15_cues.json",
+        "durationMs": 214708,
+        "lowDataSrc": "/audio/sundar-kand/sk-s15/sk_sk-s15_low.m4a"
+      },
+      {
+        "id": "sk-s16",
+        "sectionId": "sk-s16",
+        "src": "/audio/sundar-kand/sk-s16/sk_sk-s16.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s16/sk_sk-s16_cues.json",
+        "durationMs": 195364,
+        "lowDataSrc": "/audio/sundar-kand/sk-s16/sk_sk-s16_low.m4a"
+      },
+      {
+        "id": "sk-s17",
+        "sectionId": "sk-s17",
+        "src": "/audio/sundar-kand/sk-s17/sk_sk-s17.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s17/sk_sk-s17_cues.json",
+        "durationMs": 192676,
+        "lowDataSrc": "/audio/sundar-kand/sk-s17/sk_sk-s17_low.m4a"
+      },
+      {
+        "id": "sk-s18",
+        "sectionId": "sk-s18",
+        "src": "/audio/sundar-kand/sk-s18/sk_sk-s18.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s18/sk_sk-s18_cues.json",
+        "durationMs": 201244,
+        "lowDataSrc": "/audio/sundar-kand/sk-s18/sk_sk-s18_low.m4a"
+      },
+      {
+        "id": "sk-s19",
+        "sectionId": "sk-s19",
+        "src": "/audio/sundar-kand/sk-s19/sk_sk-s19.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s19/sk_sk-s19_cues.json",
+        "durationMs": 192748,
+        "lowDataSrc": "/audio/sundar-kand/sk-s19/sk_sk-s19_low.m4a"
+      },
+      {
+        "id": "sk-s20",
+        "sectionId": "sk-s20",
+        "src": "/audio/sundar-kand/sk-s20/sk_sk-s20.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s20/sk_sk-s20_cues.json",
+        "durationMs": 198820,
+        "lowDataSrc": "/audio/sundar-kand/sk-s20/sk_sk-s20_low.m4a"
+      },
+      {
+        "id": "sk-s21",
+        "sectionId": "sk-s21",
+        "src": "/audio/sundar-kand/sk-s21/sk_sk-s21.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s21/sk_sk-s21_cues.json",
+        "durationMs": 193588,
+        "lowDataSrc": "/audio/sundar-kand/sk-s21/sk_sk-s21_low.m4a"
+      },
+      {
+        "id": "sk-s22",
+        "sectionId": "sk-s22",
+        "src": "/audio/sundar-kand/sk-s22/sk_sk-s22.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s22/sk_sk-s22_cues.json",
+        "durationMs": 193996,
+        "lowDataSrc": "/audio/sundar-kand/sk-s22/sk_sk-s22_low.m4a"
+      },
+      {
+        "id": "sk-s23",
+        "sectionId": "sk-s23",
+        "src": "/audio/sundar-kand/sk-s23/sk_sk-s23.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s23/sk_sk-s23_cues.json",
+        "durationMs": 191884,
+        "lowDataSrc": "/audio/sundar-kand/sk-s23/sk_sk-s23_low.m4a"
+      },
+      {
+        "id": "sk-s24",
+        "sectionId": "sk-s24",
+        "src": "/audio/sundar-kand/sk-s24/sk_sk-s24.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s24/sk_sk-s24_cues.json",
+        "durationMs": 195248,
+        "lowDataSrc": "/audio/sundar-kand/sk-s24/sk_sk-s24_low.m4a"
+      }
+    ],
+    "lowDataSegments": [
+      {
+        "id": "sk-s01",
+        "sectionId": "sk-s01",
+        "src": "/audio/sundar-kand/sk-s01/sk_sk-s01_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s01/sk_sk-s01_cues.json",
+        "durationMs": 193780
+      },
+      {
+        "id": "sk-s02",
+        "sectionId": "sk-s02",
+        "src": "/audio/sundar-kand/sk-s02/sk_sk-s02_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s02/sk_sk-s02_cues.json",
+        "durationMs": 216892
+      },
+      {
+        "id": "sk-s03",
+        "sectionId": "sk-s03",
+        "src": "/audio/sundar-kand/sk-s03/sk_sk-s03_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s03/sk_sk-s03_cues.json",
+        "durationMs": 205468
+      },
+      {
+        "id": "sk-s04",
+        "sectionId": "sk-s04",
+        "src": "/audio/sundar-kand/sk-s04/sk_sk-s04_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s04/sk_sk-s04_cues.json",
+        "durationMs": 194500
+      },
+      {
+        "id": "sk-s05",
+        "sectionId": "sk-s05",
+        "src": "/audio/sundar-kand/sk-s05/sk_sk-s05_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s05/sk_sk-s05_cues.json",
+        "durationMs": 192412
+      },
+      {
+        "id": "sk-s06",
+        "sectionId": "sk-s06",
+        "src": "/audio/sundar-kand/sk-s06/sk_sk-s06_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s06/sk_sk-s06_cues.json",
+        "durationMs": 191596
+      },
+      {
+        "id": "sk-s07",
+        "sectionId": "sk-s07",
+        "src": "/audio/sundar-kand/sk-s07/sk_sk-s07_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s07/sk_sk-s07_cues.json",
+        "durationMs": 205588
+      },
+      {
+        "id": "sk-s08",
+        "sectionId": "sk-s08",
+        "src": "/audio/sundar-kand/sk-s08/sk_sk-s08_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s08/sk_sk-s08_cues.json",
+        "durationMs": 196804
+      },
+      {
+        "id": "sk-s09",
+        "sectionId": "sk-s09",
+        "src": "/audio/sundar-kand/sk-s09/sk_sk-s09_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s09/sk_sk-s09_cues.json",
+        "durationMs": 197764
+      },
+      {
+        "id": "sk-s10",
+        "sectionId": "sk-s10",
+        "src": "/audio/sundar-kand/sk-s10/sk_sk-s10_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s10/sk_sk-s10_cues.json",
+        "durationMs": 189460
+      },
+      {
+        "id": "sk-s11",
+        "sectionId": "sk-s11",
+        "src": "/audio/sundar-kand/sk-s11/sk_sk-s11_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s11/sk_sk-s11_cues.json",
+        "durationMs": 193012
+      },
+      {
+        "id": "sk-s12",
+        "sectionId": "sk-s12",
+        "src": "/audio/sundar-kand/sk-s12/sk_sk-s12_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s12/sk_sk-s12_cues.json",
+        "durationMs": 218572
+      },
+      {
+        "id": "sk-s13",
+        "sectionId": "sk-s13",
+        "src": "/audio/sundar-kand/sk-s13/sk_sk-s13_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s13/sk_sk-s13_cues.json",
+        "durationMs": 192964
+      },
+      {
+        "id": "sk-s14",
+        "sectionId": "sk-s14",
+        "src": "/audio/sundar-kand/sk-s14/sk_sk-s14_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s14/sk_sk-s14_cues.json",
+        "durationMs": 197140
+      },
+      {
+        "id": "sk-s15",
+        "sectionId": "sk-s15",
+        "src": "/audio/sundar-kand/sk-s15/sk_sk-s15_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s15/sk_sk-s15_cues.json",
+        "durationMs": 214708
+      },
+      {
+        "id": "sk-s16",
+        "sectionId": "sk-s16",
+        "src": "/audio/sundar-kand/sk-s16/sk_sk-s16_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s16/sk_sk-s16_cues.json",
+        "durationMs": 195364
+      },
+      {
+        "id": "sk-s17",
+        "sectionId": "sk-s17",
+        "src": "/audio/sundar-kand/sk-s17/sk_sk-s17_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s17/sk_sk-s17_cues.json",
+        "durationMs": 192676
+      },
+      {
+        "id": "sk-s18",
+        "sectionId": "sk-s18",
+        "src": "/audio/sundar-kand/sk-s18/sk_sk-s18_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s18/sk_sk-s18_cues.json",
+        "durationMs": 201244
+      },
+      {
+        "id": "sk-s19",
+        "sectionId": "sk-s19",
+        "src": "/audio/sundar-kand/sk-s19/sk_sk-s19_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s19/sk_sk-s19_cues.json",
+        "durationMs": 192748
+      },
+      {
+        "id": "sk-s20",
+        "sectionId": "sk-s20",
+        "src": "/audio/sundar-kand/sk-s20/sk_sk-s20_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s20/sk_sk-s20_cues.json",
+        "durationMs": 198820
+      },
+      {
+        "id": "sk-s21",
+        "sectionId": "sk-s21",
+        "src": "/audio/sundar-kand/sk-s21/sk_sk-s21_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s21/sk_sk-s21_cues.json",
+        "durationMs": 193588
+      },
+      {
+        "id": "sk-s22",
+        "sectionId": "sk-s22",
+        "src": "/audio/sundar-kand/sk-s22/sk_sk-s22_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s22/sk_sk-s22_cues.json",
+        "durationMs": 193996
+      },
+      {
+        "id": "sk-s23",
+        "sectionId": "sk-s23",
+        "src": "/audio/sundar-kand/sk-s23/sk_sk-s23_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s23/sk_sk-s23_cues.json",
+        "durationMs": 191884
+      },
+      {
+        "id": "sk-s24",
+        "sectionId": "sk-s24",
+        "src": "/audio/sundar-kand/sk-s24/sk_sk-s24_low.m4a",
+        "cueMapSrc": "/audio/sundar-kand/sk-s24/sk_sk-s24_cues.json",
+        "durationMs": 195248
+      }
+    ],
+    "engine": "edge-tts",
+    "voice": "hi-IN-MadhurNeural",
+    "license": "tts-generated-wave0",
+    "credits": "Neural path-assist. Segment per editorial episode."
+  },
+  "wave": 0,
+  "category": "kand",
+  "description": {
+    "hi": "हनुमान जी के सागर-लंघन से प्रभु-मिलन तक का पावन कांड — खंडों में पाठ, अर्थ और श्रवण।",
+    "en": "The sacred kand from Hanuman’s ocean leap to reunion with the Lord — path, meaning, and listening by episode."
+  }
+}

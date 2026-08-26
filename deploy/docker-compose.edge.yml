@@ -1,0 +1,44 @@
+services:
+  hanumat:
+    image: nginx:alpine
+    container_name: hanumat
+    restart: unless-stopped
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - "set -e; apk add --no-cache curl unzip ca-certificates; rm -rf /usr/share/nginx/html/*; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-07-24-full/hanumat_out_full.zip -o /tmp/h.zip; unzip -o /tmp/h.zip -d /usr/share/nginx/html; rm -f /tmp/h.zip; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-08-26-three-dham/hanumat-overlay-2026-08-26.zip -o /tmp/o.zip; unzip -o /tmp/o.zip -d /usr/share/nginx/html; rm -f /tmp/o.zip; test -f /usr/share/nginx/html/index.html; exec nginx -g 'daemon off;'"
+    expose:
+      - "80"
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: edge-caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command:
+      - sh
+      - -lc
+      - |
+        cat >/tmp/Caddyfile <<'EOF'
+        hanumat.life, www.hanumat.life {
+          encode gzip
+          reverse_proxy hanumat:80
+        }
+        c7xai.in, www.c7xai.in {
+          encode gzip
+          reverse_proxy host.docker.internal:8000
+        }
+        EOF
+        exec caddy run --config /tmp/Caddyfile --adapter caddyfile
+    depends_on:
+      - hanumat
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

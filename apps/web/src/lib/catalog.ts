@@ -13,10 +13,23 @@ import bhajanMeta from "../../../../content/texts/hanuman-bhajan-set/meta.json";
 import marutiMeta from "../../../../content/texts/maruti-stotra/meta.json";
 import kavachMeta from "../../../../content/texts/panchmukhi-kavach/meta.json";
 import valMeta from "../../../../content/texts/valmiki-sundarakanda/meta.json";
+import mmjMeta from "../../../../content/texts/maha-mrityunjaya/meta.json";
+import pnmMeta from "../../../../content/texts/om-namah-shivaya/meta.json";
+import lingMeta from "../../../../content/texts/lingashtakam/meta.json";
+import spsMeta from "../../../../content/texts/shiva-panchakshara-stotram/meta.json";
+import rudraMeta from "../../../../content/texts/rudrashtakam/meta.json";
+import nsMeta from "../../../../content/texts/nirvana-shatkam/meta.json";
+import kbaMeta from "../../../../content/texts/kalabhairava-ashtakam/meta.json";
+import saMeta from "../../../../content/texts/shiv-aarti/meta.json";
+import dkmMeta from "../../../../content/texts/dakshina-kali-mantra/meta.json";
+import kaMeta from "../../../../content/texts/kalika-ashtakam/meta.json";
+import adyaMeta from "../../../../content/texts/adya-stotram/meta.json";
+import klaMeta from "../../../../content/texts/kali-aarti/meta.json";
 
 type MetaLite = {
   id: string;
   slug: string;
+  deity?: string;
   title: { hi: string; en: string };
   subtitle?: { hi?: string; en?: string } | string;
   description?: { hi?: string; en?: string } | string;
@@ -37,11 +50,24 @@ const metas: MetaLite[] = [
   marutiMeta as MetaLite,
   kavachMeta as MetaLite,
   valMeta as MetaLite,
+  mmjMeta as MetaLite,
+  pnmMeta as MetaLite,
+  lingMeta as MetaLite,
+  spsMeta as MetaLite,
+  rudraMeta as MetaLite,
+  nsMeta as MetaLite,
+  kbaMeta as MetaLite,
+  saMeta as MetaLite,
+  dkmMeta as MetaLite,
+  kaMeta as MetaLite,
+  adyaMeta as MetaLite,
+  klaMeta as MetaLite,
 ];
 
 export type CatalogItem = {
   id: string;
   slug: string;
+  deity: string;
   title: { hi: string; en: string };
   subtitle: { hi?: string; en?: string } | string;
   description: { hi?: string; en?: string } | string;
@@ -52,12 +78,14 @@ export type CatalogItem = {
   badge?: string;
 };
 
-export function listCatalogLite(wave?: number): CatalogItem[] {
+export function listCatalogLite(wave?: number, deity = "hanuman"): CatalogItem[] {
   return metas
+    .filter((t) => (t.deity || "hanuman") === deity)
     .filter((t) => wave === undefined || (t.wave ?? 0) === wave)
     .map((t) => ({
       id: t.id,
       slug: t.slug,
+      deity: t.deity || "hanuman",
       title: t.title,
       subtitle: t.subtitle || "",
       description: t.description || "",

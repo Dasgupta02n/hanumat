@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "kla-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण आरती",
+        "en": "Full aarti"
+      },
+      "verseIds": [
+        "kla-01",
+        "kla-02",
+        "kla-03",
+        "kla-04",
+        "kla-05",
+        "kla-06",
+        "kla-07",
+        "kla-08"
+      ],
+      "order": 1
+    }
+  ]
+}

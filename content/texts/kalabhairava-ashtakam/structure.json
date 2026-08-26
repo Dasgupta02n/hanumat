@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "kba-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण अष्टक",
+        "en": "Full ashtakam"
+      },
+      "verseIds": [
+        "kba-01",
+        "kba-02",
+        "kba-03",
+        "kba-04",
+        "kba-05",
+        "kba-06",
+        "kba-07",
+        "kba-08",
+        "kba-09"
+      ],
+      "order": 1
+    }
+  ]
+}

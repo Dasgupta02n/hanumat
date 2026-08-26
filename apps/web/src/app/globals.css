@@ -317,3 +317,252 @@ a {
   white-space: nowrap;
   border: 0;
 }
+
+/* ── Deity tints ── */
+[data-deity="shiva"] {
+  --hanumat-vermillion: #3d5a7a;
+  --hanumat-vermillion-deep: #2a4060;
+  --hanumat-vermillion-glow: rgba(42, 64, 96, 0.12);
+}
+
+[data-deity="kali"] {
+  --hanumat-vermillion: #8b1e2d;
+  --hanumat-vermillion-deep: #5c101c;
+  --hanumat-vermillion-glow: rgba(92, 16, 28, 0.14);
+}
+
+/* ── Three-dham landing ── */
+.landing-root {
+  position: relative;
+  min-height: 100vh;
+  color: #f6efe4;
+  overflow-x: hidden;
+}
+
+.landing-bg {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+  z-index: 0;
+}
+
+.landing-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(20, 12, 8, 0.35), transparent 55%),
+    linear-gradient(180deg, rgba(12, 8, 6, 0.55) 0%, rgba(12, 8, 6, 0.72) 40%, rgba(10, 7, 5, 0.88) 100%);
+}
+
+.landing-head,
+.landing-grid,
+.landing-foot {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-head {
+  text-align: center;
+  padding: 3.5rem 1.25rem 1.5rem;
+}
+
+.landing-kicker {
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  color: #e0c988;
+  font-weight: 700;
+}
+
+.landing-om {
+  margin-top: 0.75rem;
+  font-size: 2rem;
+  color: #e0c988;
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.landing-title {
+  margin-top: 0.25rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 600;
+  color: #fbf7f0;
+}
+
+.landing-sub {
+  margin-top: 0.35rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: #e0c988;
+}
+
+.landing-lead {
+  margin: 1rem auto 0;
+  max-width: 36rem;
+  color: rgba(251, 247, 240, 0.78);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.landing-grid {
+  width: min(100% - 2rem, 72rem);
+  margin: 1.5rem auto 3rem;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .landing-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+.landing-card {
+  border-radius: 1.15rem;
+  overflow: hidden;
+  background: rgba(255, 252, 247, 0.08);
+  border: 1px solid rgba(224, 201, 136, 0.28);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
+  transition:
+    transform 280ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 280ms ease,
+    box-shadow 280ms ease;
+}
+
+.landing-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(224, 201, 136, 0.55);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.45);
+}
+
+.landing-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.landing-card-img {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.landing-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.landing-card:hover .landing-card-img img {
+  transform: scale(1.05);
+}
+
+.landing-card-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(12, 8, 6, 0.72) 0%, transparent 45%);
+}
+
+.landing-card-body {
+  padding: 1.15rem 1.2rem 0.4rem;
+}
+
+.landing-card-kicker {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  color: #e0c988;
+  font-weight: 700;
+}
+
+.landing-card-body h2 {
+  margin-top: 0.35rem;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #fbf7f0;
+  line-height: 1.15;
+}
+
+.landing-card-body h2 small {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(251, 247, 240, 0.62);
+  font-weight: 500;
+}
+
+.landing-mantra {
+  margin-top: 0.45rem;
+  color: #e0c988;
+  font-size: 1.05rem;
+}
+
+.landing-card-copy {
+  margin-top: 0.55rem;
+  font-size: 0.86rem;
+  line-height: 1.5;
+  color: rgba(251, 247, 240, 0.72);
+  min-height: 3.6em;
+}
+
+.landing-enter {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #f6efe4;
+  letter-spacing: 0.04em;
+}
+
+.landing-lang {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1.2rem 1.1rem;
+}
+
+.landing-lang a {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(224, 201, 136, 0.35);
+  color: #e0c988;
+}
+
+.landing-lang a:hover {
+  background: rgba(224, 201, 136, 0.14);
+}
+
+.landing-foot {
+  text-align: center;
+  padding: 0 1.25rem 2.5rem;
+  font-size: 0.78rem;
+  color: rgba(251, 247, 240, 0.55);
+}
+
+.landing-foot a {
+  color: #e0c988;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-card,
+  .landing-card-img img {
+    transition: none;
+  }
+  .landing-card:hover {
+    transform: none;
+  }
+}

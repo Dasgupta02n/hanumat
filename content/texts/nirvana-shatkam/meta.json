@@ -1,0 +1,37 @@
+{
+  "id": "nirvana-shatkam",
+  "slug": "nirvana-shatkam",
+  "deity": "shiva",
+  "title": {
+    "hi": "निर्वाणषट्कम्",
+    "en": "Nirvana Shatkam"
+  },
+  "subtitle": {
+    "hi": "आदि शङ्कर · शिवोऽहम्",
+    "en": "Adi Shankara · Śivo'ham"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "NIRVANA-SHATKAM-SHANKARA",
+    "publisher": "Attributed to Adi Shankara (public domain)",
+    "notes": "Collated from Green Message nirvana_shatkam and standard Advaita recensions. Also called Ātmaṣaṭkam. Six verses; refrain चिदानन्दरूपः शिवोऽहम् शिवोऽहम् is stable across sources."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 6
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "चिदानन्दरूपः शिवोऽहम् — आत्मा का निषेध-विधि से साक्षात्कार।",
+    "en": "Cidānandarūpaḥ śivo'ham — Self-knowledge by neti-neti."
+  }
+}

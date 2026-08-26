@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "rudra-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण अष्टक",
+        "en": "Full ashtakam"
+      },
+      "verseIds": [
+        "rudra-01",
+        "rudra-02",
+        "rudra-03",
+        "rudra-04",
+        "rudra-05",
+        "rudra-06",
+        "rudra-07",
+        "rudra-08",
+        "rudra-09"
+      ],
+      "order": 1
+    }
+  ]
+}

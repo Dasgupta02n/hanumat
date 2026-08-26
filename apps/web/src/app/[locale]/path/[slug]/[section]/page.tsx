@@ -9,7 +9,7 @@ import { PathStudioDynamic } from "../../PathStudioDynamic";
 export function generateStaticParams() {
   const params: { locale: string; slug: string; section: string }[] = [];
   for (const locale of locales) {
-    for (const p of allTexts) {
+    for (const p of allTexts.filter((t) => (t.deity || "hanuman") === "hanuman")) {
       for (const s of p.sections) {
         params.push({ locale, slug: p.slug, section: s.id });
       }
@@ -28,7 +28,7 @@ export default async function PathSectionPage({
   const locale = raw as Locale;
   setRequestLocale(locale);
   const text = getTextBySlug(slug);
-  if (!text) notFound();
+  if (!text || (text.deity || "hanuman") !== "hanuman") notFound();
   const sec = text.sections.find((s) => s.id === section);
   if (!sec) notFound();
 

@@ -1,0 +1,37 @@
+{
+  "id": "om-namah-shivaya",
+  "slug": "om-namah-shivaya",
+  "deity": "shiva",
+  "title": {
+    "hi": "पञ्चाक्षर मन्त्र",
+    "en": "Panchakshara Mantra"
+  },
+  "subtitle": {
+    "hi": "ॐ नमः शिवाय",
+    "en": "Om Namah Shivaya"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "PANCHAKSHARA-TRAD",
+    "publisher": "Śaiva Āgama / popular smārta practice",
+    "notes": "The five syllables namah śivāya are pan-Śaiva (Yajurvedic Śatarudrīya contains namah śivāya). ॐ is the praṇava prefixed in japa. Cross-checked standard recitations; no variant in the five akṣaras."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  },
+  "wave": 0,
+  "category": "mantra",
+  "description": {
+    "hi": "शिव का पञ्चाक्षर — न म शि वा य। जप का मूल नाम।",
+    "en": "Shiva's five-syllable mantra — na ma śi vā ya — the root Name for japa."
+  }
+}

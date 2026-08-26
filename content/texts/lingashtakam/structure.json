@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "ling-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण अष्टक",
+        "en": "Full ashtakam"
+      },
+      "verseIds": [
+        "ling-01",
+        "ling-02",
+        "ling-03",
+        "ling-04",
+        "ling-05",
+        "ling-06",
+        "ling-07",
+        "ling-08",
+        "ling-09"
+      ],
+      "order": 1
+    }
+  ]
+}

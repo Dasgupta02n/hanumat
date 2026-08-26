@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "id": "pnm-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "मूल मन्त्र",
+        "en": "The five syllables"
+      },
+      "verseIds": [
+        "pnm-01"
+      ],
+      "order": 1
+    }
+  ]
+}

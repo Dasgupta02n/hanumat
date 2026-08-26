@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "id": "ns-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "छह श्लोक",
+        "en": "Six verses"
+      },
+      "verseIds": [
+        "ns-01",
+        "ns-02",
+        "ns-03",
+        "ns-04",
+        "ns-05",
+        "ns-06"
+      ],
+      "order": 1
+    }
+  ]
+}

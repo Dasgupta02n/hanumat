@@ -1,0 +1,37 @@
+{
+  "id": "kalabhairava-ashtakam",
+  "slug": "kalabhairava-ashtakam",
+  "deity": "shiva",
+  "title": {
+    "hi": "कालभैरवाष्टकम्",
+    "en": "Kalabhairava Ashtakam"
+  },
+  "subtitle": {
+    "hi": "आदि शङ्कर · काशिकापुराधिनाथ",
+    "en": "Adi Shankara · Lord of Kashi"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "KALABHAIRAVA-SHANKARA-GM",
+    "publisher": "Attributed to Adi Shankara (public domain)",
+    "notes": "Collated from Green Message kalabhairava_ashtakam. Refrain काशिकापुराधिनाथकालभैरवं भजे is stable. Eight stanzas + phalaśruti."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "काशी के अधिनाथ कालभैरव की आठ स्तुतियाँ।",
+    "en": "Eight verses to Kalabhairava, lord of Kashi."
+  }
+}

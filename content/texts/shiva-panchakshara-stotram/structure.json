@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "id": "sps-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण स्तोत्र",
+        "en": "Full stotra"
+      },
+      "verseIds": [
+        "sps-01",
+        "sps-02",
+        "sps-03",
+        "sps-04",
+        "sps-05",
+        "sps-06"
+      ],
+      "order": 1
+    }
+  ]
+}

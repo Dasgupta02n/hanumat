@@ -1,0 +1,37 @@
+{
+  "id": "rudrashtakam",
+  "slug": "rudrashtakam",
+  "deity": "shiva",
+  "title": {
+    "hi": "रुद्राष्टकम्",
+    "en": "Rudrashtakam"
+  },
+  "subtitle": {
+    "hi": "तुलसीदास · रामचरितमानस उत्तरकाण्ड",
+    "en": "Tulsidas · Ramcharitmanas Uttarakanda"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "RUDRASTAKAM-TULSI-MANAS",
+    "publisher": "Goswami Tulsidas, Ramcharitmanas Uttarakanda (public-domain recension)",
+    "notes": "Collated from multiple Devanagari printings (sanatan-dharm, BhajanSangam, India TV GP-style, stotra.in). v1 भजेऽहम्; v8 आपन्नमामीश शम्भो. Phalaśruti (verse 9) included as traditionally appended."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "नमामीशमीशान निर्वाणरूपम् — गोस्वामी तुलसीदास कृत शिव स्तुति।",
+    "en": "Namamisham Ishana — Tulsidas's eight-verse hymn to Rudra."
+  }
+}

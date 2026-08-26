@@ -1,6 +1,8 @@
 # Hanumat
 
-**One mandir. Every path. Every language.**
+**Three dhams. One courtyard.**
+
+Digital mandirs of Hanuman ji, Lord Shiva, and Maa Kali — Sundar Kand, Chalisa, Lingashtakam, Adya Stotram, stotra, japa — with original script, transliteration, and meaning.
 
 Digital mandir for devotees of Hanuman ji — Sundar Kand, Chalisa, stotra, katha, with timed audio and Indian languages first.
 
@@ -22,6 +24,11 @@ pnpm dev
 ```
 
 App: [http://localhost:3000](http://localhost:3000)
+
+- Courtyard landing: `/`
+- Hanumat (Hanuman): `/hi/` · `/en/`
+- Shivayatan: `/shiva/hi/`
+- Kalika Dham: `/kali/hi/`
 
 ## Workspace
 

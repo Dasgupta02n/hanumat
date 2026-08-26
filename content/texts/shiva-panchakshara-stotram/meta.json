@@ -1,0 +1,37 @@
+{
+  "id": "shiva-panchakshara-stotram",
+  "slug": "shiva-panchakshara-stotram",
+  "deity": "shiva",
+  "title": {
+    "hi": "शिवपञ्चाक्षरस्तोत्रम्",
+    "en": "Shiva Panchakshara Stotram"
+  },
+  "subtitle": {
+    "hi": "आदि शङ्कर · नागेन्द्रहाराय",
+    "en": "Adi Shankara · Nagendraharaya"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "SPS-SHANKARA-GM-SRINGERI",
+    "publisher": "Attributed to Adi Shankara (public domain)",
+    "notes": "Collated from Green Message, Sringeri Sharada Peetham stotra page, and Wikipedia hymn text. v2 flower-line: मन्दारपुष्पबहुपुष्पसुपूजिताय (GM) vs मन्दारमुख्यबहुपुष्प (Sringeri) — Sringeri मुख्य kept as matha recension. v5 यज्ञस्वरूपाय (primary; यक्षस्वरूपाय variant noted)."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 6
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "न-म-शि-वा-य — प्रत्येक अक्षर पर एक श्लोक।",
+    "en": "One stanza for each syllable of Na-Ma-Shi-Va-Ya."
+  }
+}

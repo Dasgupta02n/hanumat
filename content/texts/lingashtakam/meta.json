@@ -1,0 +1,37 @@
+{
+  "id": "lingashtakam",
+  "slug": "lingashtakam",
+  "deity": "shiva",
+  "title": {
+    "hi": "लिङ्गाष्टकम्",
+    "en": "Lingashtakam"
+  },
+  "subtitle": {
+    "hi": "ब्रह्ममुरारिसुरार्चितलिङ्गम् · ८ श्लोक + फलश्रुति",
+    "en": "Eight verses + phalaśruti"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "LINGASHTAKAM-SD-GM",
+    "publisher": "Traditional (public domain)",
+    "notes": "Collated from Sanskrit Documents (lingashh, proofread Srinivas Sunder) and Green Message lingashtakam. Variant noted: निर्मलभासित vs निर्मलभाषित in v1 — भाषित kept as the majority temple recension (भासित also attested). v7 विनाशन vs विनाशित — विनाशन used (SD primary)."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "सदाशिव लिङ्ग की स्तुति — ब्रह्मा, विष्णु और देवों द्वारा पूजित।",
+    "en": "Hymn to the Sadashiva linga worshipped by Brahma, Vishnu and the gods."
+  }
+}

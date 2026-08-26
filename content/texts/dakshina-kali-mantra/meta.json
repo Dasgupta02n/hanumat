@@ -1,0 +1,37 @@
+{
+  "id": "dakshina-kali-mantra",
+  "slug": "dakshina-kali-mantra",
+  "deity": "kali",
+  "title": {
+    "hi": "दक्षिण काली मन्त्र",
+    "en": "Dakshina Kali Mantra"
+  },
+  "subtitle": {
+    "hi": "ॐ क्रीं कालिकायै नमः",
+    "en": "Om Krim Kalikayai Namah"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "DAKSHINA-KALI-JAPA",
+    "publisher": "Śākta smārta practice (public domain)",
+    "notes": "Short nama-mantra ॐ क्रीं कालिकायै नमः is the common public japa (Woodroffe/Karpuradi discusses the 22-syllable dakṣiṇa-kālikā mūlamantra as tantric uddhāra — not reproduced here as a household recitation). Gayatri from standard Kali-gayatri recensions."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 2
+  },
+  "wave": 0,
+  "category": "mantra",
+  "description": {
+    "hi": "दक्षिण कालिका का सार्वजनिक जप-नाम। दीर्घ बीजमन्त्र केवल दीक्षित साधना में।",
+    "en": "The public japa-name of Dakshina Kalika. Longer bija-mantras belong to initiated sadhana."
+  }
+}

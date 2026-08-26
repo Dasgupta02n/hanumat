@@ -1,0 +1,37 @@
+{
+  "id": "shiv-aarti",
+  "slug": "shiv-aarti",
+  "deity": "shiva",
+  "title": {
+    "hi": "शिव आरती",
+    "en": "Shiva Aarti"
+  },
+  "subtitle": {
+    "hi": "जय शिव ओंकारा",
+    "en": "Jai Shiv Omkara"
+  },
+  "originalLang": "hi",
+  "script": "Deva",
+  "edition": {
+    "pin": "SHIV-AARTI-JAI-SHIV-OMKARA",
+    "publisher": "North-Indian temple recension (public domain)",
+    "notes": "Popular Hindi aarti 'Jai Shiv Omkara'. Collated against common temple booklets; minor line-order variants exist (as with all aartis). This is the widely sung eight-couplet form."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  },
+  "wave": 0,
+  "category": "aarti",
+  "description": {
+    "hi": "सन्ध्या आरती — ब्रह्मा विष्णु सदाशिव अर्द्धाङ्गी धारा।",
+    "en": "Evening aarti — Brahma, Vishnu, Sadashiva, the half-bodied Lord."
+  }
+}

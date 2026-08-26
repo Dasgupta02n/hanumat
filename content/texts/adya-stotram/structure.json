@@ -1,0 +1,37 @@
+{
+  "sections": [
+    {
+      "id": "adya-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण स्तोत्र",
+        "en": "Full stotra"
+      },
+      "verseIds": [
+        "adya-00",
+        "adya-01",
+        "adya-02",
+        "adya-03",
+        "adya-04",
+        "adya-05",
+        "adya-06",
+        "adya-07",
+        "adya-08",
+        "adya-09",
+        "adya-10",
+        "adya-11",
+        "adya-12",
+        "adya-13",
+        "adya-14",
+        "adya-15",
+        "adya-16",
+        "adya-17",
+        "adya-18",
+        "adya-19",
+        "adya-20",
+        "adya-21"
+      ],
+      "order": 1
+    }
+  ]
+}

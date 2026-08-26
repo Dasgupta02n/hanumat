@@ -1,0 +1,26 @@
+{
+  "sections": [
+    {
+      "id": "ka-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "ध्यान व स्तुति",
+        "en": "Dhyana and stuti"
+      },
+      "verseIds": [
+        "ka-d1",
+        "ka-d2",
+        "ka-d3",
+        "ka-01",
+        "ka-02",
+        "ka-03",
+        "ka-04",
+        "ka-05",
+        "ka-06",
+        "ka-07",
+        "ka-08"
+      ],
+      "order": 1
+    }
+  ]
+}

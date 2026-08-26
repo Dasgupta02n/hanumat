@@ -75,6 +75,8 @@ import bhajanHi from "../../../../content/texts/hanuman-bhajan-set/translations/
 import bhajanEn from "../../../../content/texts/hanuman-bhajan-set/translations/en.json";
 import bhajanIast from "../../../../content/texts/hanuman-bhajan-set/transliteration/iast.json";
 
+import { deityTexts } from "./content-deity";
+
 import kathaData from "../../../../content/katha/stories.json";
 import templesData from "../../../../content/places/temples.json";
 import jayantiData from "../../../../content/calendar/jayanti.json";
@@ -115,6 +117,7 @@ export type AudioSegment = {
 export type TextPackage = {
   id: string;
   slug: string;
+  deity?: string;
   title: { hi: string; en: string };
   subtitle: { hi?: string; en?: string } | string;
   description: { hi: string; en: string } | string;
@@ -142,10 +145,11 @@ export type TextPackage = {
 
 type LocMap = Record<string, string>;
 
-function pack(
+export function pack(
   meta: {
     id: string;
     slug: string;
+    deity?: string;
     title: { hi: string; en: string };
     subtitle?: { hi?: string; en?: string } | string;
     description?: { hi: string; en: string } | string;
@@ -190,6 +194,7 @@ function pack(
   return {
     id: meta.id,
     slug: meta.slug,
+    deity: meta.deity,
     title: meta.title,
     subtitle: meta.subtitle || "",
     description: meta.description || "",
@@ -213,7 +218,7 @@ function pack(
   };
 }
 
-function L(hi: LocMap, en: LocMap) {
+export function L(hi: LocMap, en: LocMap) {
   return { hi, en };
 }
 
@@ -328,12 +333,17 @@ export const allTexts: TextPackage[] = [
     ),
     bhajanIast as never,
   ),
+  ...deityTexts,
 ];
 
 export const wave0Texts = allTexts.filter((t) => t.wave === 0);
 
 export function getTextBySlug(slug: string): TextPackage | undefined {
   return allTexts.find((t) => t.slug === slug);
+}
+
+export function textsForDeity(deity: string): TextPackage[] {
+  return allTexts.filter((t) => (t.deity || "hanuman") === deity);
 }
 
 export function listCatalog(wave?: number) {

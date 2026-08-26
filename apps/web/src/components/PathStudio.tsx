@@ -647,7 +647,9 @@ export function PathStudio({
                 src={audioSrc}
               />
             ) : (
-              <p className="mt-4 text-sm text-[var(--hanumat-stone)]">ऑडियो शीघ्र…</p>
+              <p className="mt-4 text-sm text-[var(--hanumat-stone)]">
+                Text + meaning · path-assist audio later
+              </p>
             )}
             <p className="mt-3 text-[11px] leading-relaxed text-[var(--hanumat-stone)]">
               {text.audio?.credits ||

@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { ReactNode, useMemo } from "react";
+import { ReactNode, useCallback, useMemo } from "react";
 import { locales, type Locale } from "@/i18n/config";
+import { deityHref } from "@/lib/deities";
+import { useDeity } from "./DeityProvider";
 
 export function SiteShell({
   children,
@@ -14,79 +16,116 @@ export function SiteShell({
 }) {
   const t = useTranslations();
   const locale = useLocale() as Locale;
+  const deity = useDeity();
+  const h = useCallback(
+    (path = "/") => deityHref(deity.id, locale, path),
+    [deity.id, locale],
+  );
+  const brand = locale === "en" ? deity.brand.en : deity.brand.hi;
+  const tagline = locale === "en" ? deity.tagline.en : deity.tagline.hi;
+  const featured = locale === "en" ? deity.featuredLabel.en : deity.featuredLabel.hi;
 
   const primaryNav = useMemo(
-    () => [
-      { href: `/${locale}/`, label: t("nav.home") },
-      { href: `/${locale}/path/`, label: t("nav.path") },
-      { href: `/${locale}/listen/`, label: t("nav.listen") },
-      { href: `/${locale}/japa/`, label: t("nav.japa") },
-      { href: `/${locale}/katha/`, label: t("nav.katha") },
-      { href: `/${locale}/my-path/`, label: t("nav.myPath") },
-    ],
-    [locale, t],
+    () =>
+      deity.id === "hanuman"
+        ? [
+            { href: h("/"), label: t("nav.home") },
+            { href: h("/path/"), label: t("nav.path") },
+            { href: h("/listen/"), label: t("nav.listen") },
+            { href: h("/japa/"), label: t("nav.japa") },
+            { href: h("/katha/"), label: t("nav.katha") },
+            { href: h("/my-path/"), label: t("nav.myPath") },
+          ]
+        : [
+            { href: h("/"), label: t("nav.home") },
+            { href: h("/path/"), label: t("nav.path") },
+            { href: h("/listen/"), label: t("nav.listen") },
+            { href: h("/japa/"), label: t("nav.japa") },
+            { href: h("/learn/"), label: t("nav.learn") },
+            { href: h("/faq/"), label: t("nav.faq") },
+          ],
+    [deity.id, locale, t, h],
   );
 
   const moreNav = useMemo(
-    () => [
-      { href: `/${locale}/gallery/`, label: t("nav.gallery") },
-      { href: `/${locale}/calendar/`, label: t("nav.calendar") },
-      { href: `/${locale}/parayan/`, label: t("nav.parayan") },
-      { href: `/${locale}/radio/`, label: t("nav.radio") },
-      { href: `/${locale}/temples/`, label: t("nav.temples") },
-      { href: `/${locale}/kids/`, label: t("nav.kids") },
-      { href: `/${locale}/sankat/`, label: t("nav.sankat") },
-      { href: `/${locale}/glossary/`, label: t("nav.glossary") },
-      { href: `/${locale}/faq/`, label: t("nav.faq") },
-      { href: `/${locale}/learn/`, label: t("nav.learn") },
-    ],
-    [locale, t],
+    () =>
+      deity.id === "hanuman"
+        ? [
+            { href: h("/gallery/"), label: t("nav.gallery") },
+            { href: h("/calendar/"), label: t("nav.calendar") },
+            { href: h("/parayan/"), label: t("nav.parayan") },
+            { href: h("/radio/"), label: t("nav.radio") },
+            { href: h("/temples/"), label: t("nav.temples") },
+            { href: h("/kids/"), label: t("nav.kids") },
+            { href: h("/sankat/"), label: t("nav.sankat") },
+            { href: h("/glossary/"), label: t("nav.glossary") },
+            { href: h("/faq/"), label: t("nav.faq") },
+            { href: h("/learn/"), label: t("nav.learn") },
+          ]
+        : [
+            { href: h(`/path/${deity.featuredSlug}/`), label: featured },
+            { href: h(`/path/${deity.ctaSecondarySlug}/`), label: locale === "en" ? deity.ctaSecondaryLabel.en : deity.ctaSecondaryLabel.hi },
+            { href: "/", label: locale === "en" ? "Three mandirs" : "तीन धाम" },
+          ],
+    [deity, locale, t, featured, h],
   );
 
   const footerCols = useMemo(
     () => [
       {
         title: locale === "en" ? "Paths" : "Path",
-        links: [
-          { href: `/${locale}/path/`, label: t("nav.path") },
-          { href: `/${locale}/path/sundar-kand/`, label: "Sundar Kand" },
-          { href: `/${locale}/path/hanuman-chalisa/`, label: t("nav.chalisa") },
-          { href: `/${locale}/path/valmiki-sundarakanda/`, label: "Valmiki SK" },
-        ],
+        links:
+          deity.id === "hanuman"
+            ? [
+                { href: h("/path/"), label: t("nav.path") },
+                { href: h("/path/sundar-kand/"), label: "Sundar Kand" },
+                { href: h("/path/hanuman-chalisa/"), label: t("nav.chalisa") },
+                { href: h("/path/valmiki-sundarakanda/"), label: "Valmiki SK" },
+              ]
+            : [
+                { href: h("/path/"), label: t("nav.path") },
+                { href: h(`/path/${deity.featuredSlug}/`), label: featured },
+                { href: h(`/path/${deity.ctaSecondarySlug}/`), label: locale === "en" ? deity.ctaSecondaryLabel.en : deity.ctaSecondaryLabel.hi },
+                { href: h("/japa/"), label: t("nav.japa") },
+              ],
       },
       {
         title: locale === "en" ? "Practice" : "Sadhana",
         links: [
-          { href: `/${locale}/listen/`, label: t("nav.listen") },
-          { href: `/${locale}/japa/`, label: t("nav.japa") },
-          { href: `/${locale}/parayan/`, label: t("nav.parayan") },
-          { href: `/${locale}/radio/`, label: t("nav.radio") },
+          { href: h("/listen/"), label: t("nav.listen") },
+          { href: h("/japa/"), label: t("nav.japa") },
+          { href: h("/learn/"), label: t("nav.learn") },
+          { href: h("/faq/"), label: t("nav.faq") },
         ],
       },
       {
-        title: locale === "en" ? "Mandir" : "Mandir",
+        title: locale === "en" ? "Mandirs" : "धाम",
         links: [
-          { href: `/${locale}/temples/`, label: t("nav.temples") },
-          { href: `/${locale}/gallery/`, label: t("nav.gallery") },
-          { href: `/${locale}/katha/`, label: t("nav.katha") },
-          { href: `/${locale}/learn/`, label: t("nav.learn") },
+          { href: "/", label: locale === "en" ? "Three mandirs" : "तीन धाम" },
+          { href: "/hi/", label: locale === "en" ? "Hanumat" : "हनुमत" },
+          { href: "/shiva/hi/", label: locale === "en" ? "Shivayatan" : "शिवायतन" },
+          { href: "/kali/hi/", label: locale === "en" ? "Kalika Dham" : "कालिका धाम" },
         ],
       },
       {
         title: locale === "en" ? "Help" : "Sahayata",
         links: [
-          { href: `/${locale}/faq/`, label: t("nav.faq") },
-          { href: `/${locale}/glossary/`, label: t("nav.glossary") },
-          { href: `/${locale}/my-path/`, label: t("nav.myPath") },
-          { href: `/${locale}/sankat/`, label: t("nav.sankat") },
+          { href: h("/faq/"), label: t("nav.faq") },
+          { href: h("/learn/"), label: t("nav.learn") },
+          { href: "mailto:hello@hanumat.life", label: "hello@hanumat.life" },
+          { href: "/", label: locale === "en" ? "Home courtyard" : "मुख्य आंगन" },
         ],
       },
     ],
-    [locale, t],
+    [locale, t, deity, featured, h],
   );
 
   return (
-    <div className="min-h-screen" style={{ color: "var(--foreground)" }}>
+    <div
+      className="min-h-screen"
+      data-deity={deity.id}
+      style={{ color: "var(--foreground)" }}
+    >
       {/* Temple gold top filament */}
       <div
         aria-hidden
@@ -102,7 +141,7 @@ export function SiteShell({
         }}
       >
         <div className="shell flex items-center justify-between gap-4 py-3">
-          <Link href={`/${locale}/`} className="flex items-center gap-3">
+          <Link href={h("/")} className="flex items-center gap-3">
             <span
               className="flex h-10 w-10 items-center justify-center rounded-full text-lg"
               style={{
@@ -124,13 +163,13 @@ export function SiteShell({
                   fontWeight: 600,
                 }}
               >
-                {t("brand")}
+                {brand}
               </span>
               <span
                 className="mt-0.5 text-[10px] tracking-[0.14em] uppercase"
                 style={{ color: "var(--hanumat-stone)" }}
               >
-                {t("tagline")}
+                {tagline}
               </span>
             </span>
           </Link>
@@ -155,7 +194,7 @@ export function SiteShell({
               {locales.map((l) => (
                 <Link
                   key={l}
-                  href={`/${l}/`}
+                  href={deityHref(deity.id, l, "/")}
                   className="rounded-full px-2.5 py-1 text-[11px] uppercase tracking-wide font-semibold"
                   style={
                     l === locale
@@ -172,10 +211,20 @@ export function SiteShell({
               ))}
             </div>
             <Link
-              href={`/${locale}/path/hanuman-chalisa/`}
+              href="/"
+              className="hidden rounded-full px-3 py-2 text-[11px] font-medium sm:inline-block"
+              style={{
+                border: "1px solid var(--hanumat-gold-line)",
+                color: "var(--hanumat-stone)",
+              }}
+            >
+              {locale === "en" ? "Three mandirs" : "तीन धाम"}
+            </Link>
+            <Link
+              href={h(`/path/${deity.featuredSlug}/`)}
               className="btn-primary !px-3 !py-2 text-xs sm:text-sm"
             >
-              {t("nav.chalisa")}
+              {featured}
             </Link>
           </div>
         </div>
@@ -247,10 +296,12 @@ export function SiteShell({
                 fontWeight: 600,
               }}
             >
-              {t("brand")}
+              {brand}
             </p>
             <hr className="temple-rule mt-3" />
-            <p className="seo-summary mt-4">{t("footer.blurb")}</p>
+            <p className="seo-summary mt-4">
+              {locale === "en" ? deity.homeBody.en : deity.homeBody.hi}
+            </p>
           </div>
 
           <div className="pillar-grid pillar-grid-4 mt-10 text-left text-sm">
@@ -289,7 +340,7 @@ export function SiteShell({
               Gita Press digital license. TTS is path-assist, not classical pāṭh.
             </p>
             <p className="pt-2" style={{ color: "var(--hanumat-charcoal)" }}>
-              Hanumat.life · Shri Hanuman Digital Dham · India ·{" "}
+              Hanumat.life · {brand} · India ·{" "}
               <a href="mailto:hello@hanumat.life" className="hover:underline">
                 hello@hanumat.life
               </a>

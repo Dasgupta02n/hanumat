@@ -35,11 +35,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://hanumat.life"),
   title: {
-    default: "Hanumat · Shri Hanuman Digital Mandir",
+    default: "Hanumat · Three sacred mandirs",
     template: "%s · Hanumat",
   },
   description:
-    "Free digital mandir for Hanuman Ji — Sundar Kand, Hanuman Chalisa, Valmiki Sundarakanda, stotras, japa, katha & temples. Hindi & English. No ads.",
+    "Digital mandirs of Hanuman, Shiva and Maa Kali — Chalisa, Sundar Kand, Lingashtakam, Adya Stotram, japa. Hindi & English. No ads.",
   applicationName: "Hanumat",
   authors: [{ name: "Hanumat", url: "https://hanumat.life" }],
   creator: "Hanumat",

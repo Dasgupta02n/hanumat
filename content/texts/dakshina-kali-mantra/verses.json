@@ -1,0 +1,14 @@
+{
+  "dkm-01": {
+    "id": "dkm-01",
+    "kind": "mantra",
+    "text": "ॐ क्रीं कालिकायै नमः",
+    "sectionId": "dkm-full"
+  },
+  "dkm-02": {
+    "id": "dkm-02",
+    "kind": "mantra",
+    "text": "ॐ कालीं कालयै विद्महे श्मशानवासिन्यै धीमहि ।\nतन्नो घोरा प्रचोदयात् ॥",
+    "sectionId": "dkm-full"
+  }
+}

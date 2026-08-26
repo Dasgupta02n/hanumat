@@ -17,7 +17,9 @@ export default async function ListenPage({
   const t = await getTranslations("listen");
 
   const withAudio = allTexts.filter(
-    (text) => text.audio?.src || (text.audio?.segments?.length ?? 0) > 0,
+    (text) =>
+      (text.deity || "hanuman") === "hanuman" &&
+      (text.audio?.src || (text.audio?.segments?.length ?? 0) > 0),
   );
 
   return (

@@ -1,0 +1,37 @@
+{
+  "id": "kali-aarti",
+  "slug": "kali-aarti",
+  "deity": "kali",
+  "title": {
+    "hi": "काली आरती",
+    "en": "Kali Aarti"
+  },
+  "subtitle": {
+    "hi": "जय काली माता",
+    "en": "Jai Kali Mata"
+  },
+  "originalLang": "hi",
+  "script": "Deva",
+  "edition": {
+    "pin": "KALI-AARTI-JAI-KALI-MATA",
+    "publisher": "North-Indian / Bengal-adjacent temple recension (public domain)",
+    "notes": "Popular Hindi aarti 'Jai Kali Mata'. Line-order varies by region (as with Hanuman aarti). This is a widely printed eight-couplet temple form, not a tantric paddhati."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 8
+  },
+  "wave": 0,
+  "category": "aarti",
+  "description": {
+    "hi": "माँ काली की सन्ध्या आरती — घर और मन्दिर की लोक-परम्परा।",
+    "en": "Evening aarti of Maa Kali — household and temple folk tradition."
+  }
+}

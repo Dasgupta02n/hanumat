@@ -1,0 +1,37 @@
+{
+  "id": "adya-stotram",
+  "slug": "adya-stotram",
+  "deity": "kali",
+  "title": {
+    "hi": "आद्या स्तोत्रम्",
+    "en": "Adya Stotram"
+  },
+  "subtitle": {
+    "hi": "ब्रह्मयामल · ब्रह्म-नारद संवाद",
+    "en": "Brahma Yamala · Brahma–Narada"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "ADYA-STOTRAM-BRAHMAYAMALA-SD",
+    "publisher": "Brahma Yamala (public domain recension)",
+    "notes": "Collated from Sanskrit Documents AdyA.html (encoded Kunal Mukherjee, proofread Sunder Hattangadi; translation at adyapeath.org/AdyaComb.pdf) and Green Message adya_stotram. Opening ॐ नम आद्यायै. Twenty verses of the vulgate plus closing namaskara."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 22
+  },
+  "wave": 0,
+  "category": "stotra",
+  "description": {
+    "hi": "आद्या शक्ति महामाया काली — बंग देश से काशी तक क्षेत्रों में एक ही माँ।",
+    "en": "Adya Shakti Mahamaya Kali — the same Mother in every kshetra from Bengal to Kashi."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "id": "mmj-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण मन्त्र",
+        "en": "The mantra"
+      },
+      "verseIds": [
+        "mmj-01"
+      ],
+      "order": 1
+    }
+  ]
+}

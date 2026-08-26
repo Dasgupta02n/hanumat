@@ -1,0 +1,17 @@
+{
+  "sections": [
+    {
+      "id": "dkm-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "जप मन्त्र",
+        "en": "Japa mantras"
+      },
+      "verseIds": [
+        "dkm-01",
+        "dkm-02"
+      ],
+      "order": 1
+    }
+  ]
+}

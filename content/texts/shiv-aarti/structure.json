@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "sa-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण आरती",
+        "en": "Full aarti"
+      },
+      "verseIds": [
+        "sa-01",
+        "sa-02",
+        "sa-03",
+        "sa-04",
+        "sa-05",
+        "sa-06",
+        "sa-07",
+        "sa-08",
+        "sa-09"
+      ],
+      "order": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "maha-mrityunjaya",
+  "slug": "maha-mrityunjaya",
+  "deity": "shiva",
+  "title": {
+    "hi": "महामृत्युंजय मन्त्र",
+    "en": "Mahamrityunjaya Mantra"
+  },
+  "subtitle": {
+    "hi": "ऋग्वेद ७.५९.१२ · यजुर्वेद",
+    "en": "Rigveda 7.59.12 · also Yajurveda"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "RV-7.59.12-TS-1.8.6",
+    "publisher": "Vedic saṃhitā (public domain)",
+    "notes": "Verified against Rigveda 7.59.12 (Vasiṣṭha Maitrāvaruṇi), Taittirīya Saṃhitā 1.8.6.i, Vājasaneyi 3.60. Cross-checked Wikipedia (Mahamrityunjaya Mantra) and standard Devanagari recensions. ॐ is a later liturgical prefix, not in the ṛc itself; included as practised."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  },
+  "wave": 0,
+  "category": "mantra",
+  "description": {
+    "hi": "त्र्यम्बक मन्त्र — मृत्यु से मुक्ति की वैदिक ऋचा, रुद्र/शिव को सम्बोधित।",
+    "en": "The Tryambaka verse — Vedic ṛc to Rudra/Shiva seeking release from death, not from immortality."
+  }
+}

@@ -39,10 +39,10 @@ export function SiteShell({
         : [
             { href: h("/"), label: t("nav.home") },
             { href: h("/path/"), label: t("nav.path") },
-            { href: h("/listen/"), label: t("nav.listen") },
+            { href: h("/gallery/"), label: t("nav.gallery") },
             { href: h("/japa/"), label: t("nav.japa") },
+            { href: h("/listen/"), label: t("nav.listen") },
             { href: h("/learn/"), label: t("nav.learn") },
-            { href: h("/faq/"), label: t("nav.faq") },
           ],
     [deity.id, locale, t, h],
   );
@@ -63,6 +63,7 @@ export function SiteShell({
             { href: h("/learn/"), label: t("nav.learn") },
           ]
         : [
+            { href: h("/gallery/"), label: t("nav.gallery") },
             { href: h(`/path/${deity.featuredSlug}/`), label: featured },
             { href: h(`/path/${deity.ctaSecondarySlug}/`), label: locale === "en" ? deity.ctaSecondaryLabel.en : deity.ctaSecondaryLabel.hi },
             { href: "/", label: locale === "en" ? "Three mandirs" : "तीन धाम" },

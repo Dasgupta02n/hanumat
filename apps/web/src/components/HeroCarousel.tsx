@@ -13,18 +13,22 @@ const FADE_MS = 1600;
  */
 export function HeroCarousel({
   fallbackSrc,
-  imageAlt = "Hanuman sacred scene — Hanumat digital mandir",
+  imageAlt = "Sacred scene — digital mandir",
+  slides: slidesProp,
 }: {
   fallbackSrc?: string;
   imageAlt?: string;
+  slides?: { src: string; alt: string }[];
 }) {
   const slides =
-    galleryImages.length > 0
-      ? galleryImages.map((img) => ({
-          src: gallerySrc(img.file),
-          alt: img.scene?.en || imageAlt,
-        }))
-      : [{ src: fallbackSrc || "/images/hanuman-108/006.jpg", alt: imageAlt }];
+    slidesProp && slidesProp.length > 0
+      ? slidesProp
+      : galleryImages.length > 0
+        ? galleryImages.map((img) => ({
+            src: gallerySrc(img.file),
+            alt: img.scene?.en || imageAlt,
+          }))
+        : [{ src: fallbackSrc || "/images/hanuman-108/006.jpg", alt: imageAlt }];
 
   const [index, setIndex] = useState(0);
   const [prev, setPrev] = useState(0);

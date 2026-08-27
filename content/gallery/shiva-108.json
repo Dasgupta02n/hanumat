@@ -1,0 +1,1090 @@
+{
+  "id": "shiva-108-leela",
+  "title": {
+    "hi": "शिव १०८ लीला चित्र",
+    "en": "108 Shiva Leela Images"
+  },
+  "notes": "Devotional digital folk painting. Not classical murti photography. One unique Indian folk/miniature/mural style per leela.",
+  "images": [
+    {
+      "id": "001",
+      "file": "001.jpg",
+      "style": "Rajasthani Phad scroll",
+      "scene": {
+        "hi": "रुद्र प्रादुर्भाव",
+        "en": "Rudra appears from Brahma's fury"
+      },
+      "leela": "rudra-birth"
+    },
+    {
+      "id": "002",
+      "file": "002.jpg",
+      "style": "Nathdwara Pichwai",
+      "scene": {
+        "hi": "कैलास समाधि",
+        "en": "Shiva in samadhi on Kailash"
+      },
+      "leela": "kailash-yoga"
+    },
+    {
+      "id": "003",
+      "file": "003.jpg",
+      "style": "Mithila Madhubani",
+      "scene": {
+        "hi": "सती विवाह",
+        "en": "Marriage of Shiva and Sati"
+      },
+      "leela": "sati-vivah"
+    },
+    {
+      "id": "004",
+      "file": "004.jpg",
+      "style": "Odisha Pattachitra",
+      "scene": {
+        "hi": "दक्ष यज्ञ भंग",
+        "en": "Daksha's sacrifice interrupted"
+      },
+      "leela": "daksha-yajna"
+    },
+    {
+      "id": "005",
+      "file": "005.jpg",
+      "style": "Bengal Kalighat pat",
+      "scene": {
+        "hi": "सती योगाग्नि",
+        "en": "Sati enters the yogic fire"
+      },
+      "leela": "sati-yoga"
+    },
+    {
+      "id": "006",
+      "file": "006.jpg",
+      "style": "Srikalahasti Kalamkari",
+      "scene": {
+        "hi": "वीरभद्र प्रकोप",
+        "en": "Virabhadra sent forth"
+      },
+      "leela": "virabhadra"
+    },
+    {
+      "id": "007",
+      "file": "007.jpg",
+      "style": "Machilipatnam Kalamkari",
+      "scene": {
+        "hi": "शोक ताण्डव",
+        "en": "Tandava of grief"
+      },
+      "leela": "tandava-shok"
+    },
+    {
+      "id": "008",
+      "file": "008.jpg",
+      "style": "Warli mud-wall painting",
+      "scene": {
+        "hi": "सती के बाद तप",
+        "en": "Tapas after Sati"
+      },
+      "leela": "tapas-after"
+    },
+    {
+      "id": "009",
+      "file": "009.jpg",
+      "style": "Gond dot-and-line",
+      "scene": {
+        "hi": "पार्वती तपस्या",
+        "en": "Parvati's austerities"
+      },
+      "leela": "parvati-tapas"
+    },
+    {
+      "id": "010",
+      "file": "010.jpg",
+      "style": "Bhil Pithora",
+      "scene": {
+        "hi": "काम दहन",
+        "en": "The burning of Kama"
+      },
+      "leela": "kama-daha"
+    },
+    {
+      "id": "011",
+      "file": "011.jpg",
+      "style": "Saura ikons",
+      "scene": {
+        "hi": "पार्वती परीक्षा",
+        "en": "Parvati tested in disguise"
+      },
+      "leela": "parvati-pariksha"
+    },
+    {
+      "id": "012",
+      "file": "012.jpg",
+      "style": "Santhal scroll",
+      "scene": {
+        "hi": "गिरिजा कल्याण",
+        "en": "Wedding of Girija and Shiva"
+      },
+      "leela": "girija-vivah"
+    },
+    {
+      "id": "013",
+      "file": "013.jpg",
+      "style": "Cheriyal nakash",
+      "scene": {
+        "hi": "कार्तिकेय जन्म",
+        "en": "Birth of Kartikeya"
+      },
+      "leela": "kartikeya-janma"
+    },
+    {
+      "id": "014",
+      "file": "014.jpg",
+      "style": "Tanjore gold-leaf",
+      "scene": {
+        "hi": "तारकासुर वध आशीष",
+        "en": "Blessing the slayer of Taraka"
+      },
+      "leela": "taraka-vadha"
+    },
+    {
+      "id": "015",
+      "file": "015.jpg",
+      "style": "Mysore classical",
+      "scene": {
+        "hi": "गणेश निर्माण",
+        "en": "Parvati forms Ganesha"
+      },
+      "leela": "ganesha-nirmaan"
+    },
+    {
+      "id": "016",
+      "file": "016.jpg",
+      "style": "Kerala mural (Ettumanoor)",
+      "scene": {
+        "hi": "गजमुख वर",
+        "en": "The elephant-headed blessing"
+      },
+      "leela": "ganesha-shira"
+    },
+    {
+      "id": "017",
+      "file": "017.jpg",
+      "style": "Kangra Pahari",
+      "scene": {
+        "hi": "गङ्गा अवतरण",
+        "en": "Ganga caught in the jata"
+      },
+      "leela": "ganga-avataran"
+    },
+    {
+      "id": "018",
+      "file": "018.jpg",
+      "style": "Basohli Pahari",
+      "scene": {
+        "hi": "भगीरथ तप",
+        "en": "Bhagiratha's penance"
+      },
+      "leela": "bhagiratha"
+    },
+    {
+      "id": "019",
+      "file": "019.jpg",
+      "style": "Guler Pahari",
+      "scene": {
+        "hi": "नीलकण्ठ हलाहल",
+        "en": "Neelkanth drinks halahala"
+      },
+      "leela": "neelkanth"
+    },
+    {
+      "id": "020",
+      "file": "020.jpg",
+      "style": "Chamba rumal painting",
+      "scene": {
+        "hi": "समुद्र मन्थन साक्षी",
+        "en": "Witness of the churning"
+      },
+      "leela": "samudra-manthan"
+    },
+    {
+      "id": "021",
+      "file": "021.jpg",
+      "style": "Garhwal miniature",
+      "scene": {
+        "hi": "त्रिपुर दहन",
+        "en": "Burning of the three cities"
+      },
+      "leela": "tripura-daha"
+    },
+    {
+      "id": "022",
+      "file": "022.jpg",
+      "style": "Mewar miniature",
+      "scene": {
+        "hi": "अन्धक विजय",
+        "en": "Victory over Andhaka"
+      },
+      "leela": "andhaka"
+    },
+    {
+      "id": "023",
+      "file": "023.jpg",
+      "style": "Marwar Jodhpur",
+      "scene": {
+        "hi": "जलन्धर संहार",
+        "en": "Fall of Jalandhara"
+      },
+      "leela": "jalandhara"
+    },
+    {
+      "id": "024",
+      "file": "024.jpg",
+      "style": "Bundi-Kota hunting style",
+      "scene": {
+        "hi": "किरात अर्जुन",
+        "en": "Kirata tests Arjuna"
+      },
+      "leela": "kirata-arjuna"
+    },
+    {
+      "id": "025",
+      "file": "025.jpg",
+      "style": "Kishangarh Bani Thani school",
+      "scene": {
+        "hi": "मार्कण्डेय रक्षा",
+        "en": "Saving young Markandeya"
+      },
+      "leela": "markandeya"
+    },
+    {
+      "id": "026",
+      "file": "026.jpg",
+      "style": "Bikaner Usta gold",
+      "scene": {
+        "hi": "मृत्युंजय लीला",
+        "en": "The death-conquering leela"
+      },
+      "leela": "mrityunjaya-leela"
+    },
+    {
+      "id": "027",
+      "file": "027.jpg",
+      "style": "Deccani Golconda",
+      "scene": {
+        "hi": "भस्मासुर मोहभंग",
+        "en": "Bhasmasura undone"
+      },
+      "leela": "bhasmasura"
+    },
+    {
+      "id": "028",
+      "file": "028.jpg",
+      "style": "Bijapur Deccani",
+      "scene": {
+        "hi": "रावण कैलास उठान",
+        "en": "Ravana lifts Kailash"
+      },
+      "leela": "ravana-kailash"
+    },
+    {
+      "id": "029",
+      "file": "029.jpg",
+      "style": "Mata ni Pachedi",
+      "scene": {
+        "hi": "रावण ताण्डव स्तोत्र",
+        "en": "Ravana sings the Tandava stotra"
+      },
+      "leela": "ravana-stotra"
+    },
+    {
+      "id": "030",
+      "file": "030.jpg",
+      "style": "Rogan cloth painting",
+      "scene": {
+        "hi": "नन्दी वरदान",
+        "en": "Nandi receives his place"
+      },
+      "leela": "nandi-var"
+    },
+    {
+      "id": "031",
+      "file": "031.jpg",
+      "style": "Kavad storytelling box",
+      "scene": {
+        "hi": "चन्द्रशेखर",
+        "en": "The moon set in the jata"
+      },
+      "leela": "chandrashekhar"
+    },
+    {
+      "id": "032",
+      "file": "032.jpg",
+      "style": "Phad of Pabuji school",
+      "scene": {
+        "hi": "लिङ्गोद्भव",
+        "en": "The endless pillar of light"
+      },
+      "leela": "lingodbhava"
+    },
+    {
+      "id": "033",
+      "file": "033.jpg",
+      "style": "Bengal patachitra scroll",
+      "scene": {
+        "hi": "अर्धनारीश्वर",
+        "en": "Ardhanarishvara revealed"
+      },
+      "leela": "ardhanari"
+    },
+    {
+      "id": "034",
+      "file": "034.jpg",
+      "style": "Kalighat bazaar watercolour",
+      "scene": {
+        "hi": "पशुपति नाथ",
+        "en": "Pashupati, lord of beings"
+      },
+      "leela": "pashupati"
+    },
+    {
+      "id": "035",
+      "file": "035.jpg",
+      "style": "Company-school Indian folk",
+      "scene": {
+        "hi": "भैरव ब्रह्मशिर",
+        "en": "Bhairava and Brahma's fifth head"
+      },
+      "leela": "bhairava-brahma"
+    },
+    {
+      "id": "036",
+      "file": "036.jpg",
+      "style": "Palm-leaf chitra pothi",
+      "scene": {
+        "hi": "कालभैरव काशी",
+        "en": "Kalabhairava as kotwal of Kashi"
+      },
+      "leela": "kalabhairava-kashi"
+    },
+    {
+      "id": "037",
+      "file": "037.jpg",
+      "style": "Andhra leather-puppet painting",
+      "scene": {
+        "hi": "नटराज आनन्द ताण्डव",
+        "en": "Ananda tandava of Nataraja"
+      },
+      "leela": "nataraja"
+    },
+    {
+      "id": "038",
+      "file": "038.jpg",
+      "style": "Tholu bommalata panel",
+      "scene": {
+        "hi": "चिदम्बरम् रहस्य",
+        "en": "The secret of Chidambaram"
+      },
+      "leela": "chidambaram"
+    },
+    {
+      "id": "039",
+      "file": "039.jpg",
+      "style": "Kerala Theyyam face-paint as painting",
+      "scene": {
+        "hi": "दक्षिणामूर्ति मौन",
+        "en": "Dakshinamurti's silence"
+      },
+      "leela": "dakshinamurti"
+    },
+    {
+      "id": "040",
+      "file": "040.jpg",
+      "style": "Chhau mask painting",
+      "scene": {
+        "hi": "भिक्षाटन",
+        "en": "Bhikshatana wandering"
+      },
+      "leela": "bhikshatana"
+    },
+    {
+      "id": "041",
+      "file": "041.jpg",
+      "style": "Dokra-inspired metal-line painting",
+      "scene": {
+        "hi": "गजासुर चर्म",
+        "en": "The elephant-hide"
+      },
+      "leela": "gajasura"
+    },
+    {
+      "id": "042",
+      "file": "042.jpg",
+      "style": "Alpana floor-painting",
+      "scene": {
+        "hi": "रति की प्रार्थना",
+        "en": "Rati's prayer after Kama"
+      },
+      "leela": "kama-revive"
+    },
+    {
+      "id": "043",
+      "file": "043.jpg",
+      "style": "Kolam rice-flour painting",
+      "scene": {
+        "hi": "कैलास दाम्पत्य",
+        "en": "Domestic leela on Kailash"
+      },
+      "leela": "shiva-parvati-kailash"
+    },
+    {
+      "id": "044",
+      "file": "044.jpg",
+      "style": "Rangoli pigment painting",
+      "scene": {
+        "hi": "चौपड़ लीला",
+        "en": "The dice game with Parvati"
+      },
+      "leela": "dice-game"
+    },
+    {
+      "id": "045",
+      "file": "045.jpg",
+      "style": "Mandana of Rajasthan",
+      "scene": {
+        "hi": "बिल्व पत्र अर्पण",
+        "en": "Offering of bel leaves"
+      },
+      "leela": "bel-puja"
+    },
+    {
+      "id": "046",
+      "file": "046.jpg",
+      "style": "Lippan kaam relief painting",
+      "scene": {
+        "hi": "रुद्राक्ष वन",
+        "en": "The rudraksha grove"
+      },
+      "leela": "rudraksha-van"
+    },
+    {
+      "id": "047",
+      "file": "047.jpg",
+      "style": "Sanjhi stencil painting",
+      "scene": {
+        "hi": "पञ्चामृत अभिषेक",
+        "en": "Panchamrita abhisheka"
+      },
+      "leela": "abhisheka"
+    },
+    {
+      "id": "048",
+      "file": "048.jpg",
+      "style": "Nakshi kantha embroidered painting",
+      "scene": {
+        "hi": "सोमनाथ ज्योतिर्लिङ्ग",
+        "en": "Somnath jyotirlinga"
+      },
+      "leela": "somnath"
+    },
+    {
+      "id": "049",
+      "file": "049.jpg",
+      "style": "Kantha narrative quilt painting",
+      "scene": {
+        "hi": "मल्लिकार्जुन",
+        "en": "Mallikarjuna of Srisailam"
+      },
+      "leela": "mallikarjuna"
+    },
+    {
+      "id": "050",
+      "file": "050.jpg",
+      "style": "Newari Paubha",
+      "scene": {
+        "hi": "उज्जैन महाकाल",
+        "en": "Mahakaleshwar of Ujjain"
+      },
+      "leela": "mahakal"
+    },
+    {
+      "id": "051",
+      "file": "051.jpg",
+      "style": "Himalayan thangka-influenced",
+      "scene": {
+        "hi": "ओंकारेश्वर",
+        "en": "Omkareshwar on the Narmada"
+      },
+      "leela": "omkareshwar"
+    },
+    {
+      "id": "052",
+      "file": "052.jpg",
+      "style": "Tibetan-inspired Himalayan mural",
+      "scene": {
+        "hi": "केदारनाथ हिम",
+        "en": "Kedarnath in snow"
+      },
+      "leela": "kedarnath"
+    },
+    {
+      "id": "053",
+      "file": "053.jpg",
+      "style": "Ajanta fresco revival",
+      "scene": {
+        "hi": "भीमाशङ्कर",
+        "en": "Bhimashankar"
+      },
+      "leela": "bhimashankar"
+    },
+    {
+      "id": "054",
+      "file": "054.jpg",
+      "style": "Bagh cave revival",
+      "scene": {
+        "hi": "काशी विश्वनाथ",
+        "en": "Vishwanath of Kashi"
+      },
+      "leela": "vishwanath"
+    },
+    {
+      "id": "055",
+      "file": "055.jpg",
+      "style": "Lepakshi mural",
+      "scene": {
+        "hi": "त्र्यम्बकेश्वर",
+        "en": "Trimbakeshwar"
+      },
+      "leela": "trimbakeshwar"
+    },
+    {
+      "id": "056",
+      "file": "056.jpg",
+      "style": "Hampi ceiling painting",
+      "scene": {
+        "hi": "वैद्यनाथ",
+        "en": "Vaidyanath the healer"
+      },
+      "leela": "vaidyanath"
+    },
+    {
+      "id": "057",
+      "file": "057.jpg",
+      "style": "Brihadeeswara fresco",
+      "scene": {
+        "hi": "नागेश्वर",
+        "en": "Nageshwar"
+      },
+      "leela": "nageshwar"
+    },
+    {
+      "id": "058",
+      "file": "058.jpg",
+      "style": "Chola bronze-light painting",
+      "scene": {
+        "hi": "रामेश्वरम्",
+        "en": "Rameshwaram"
+      },
+      "leela": "rameshwaram"
+    },
+    {
+      "id": "059",
+      "file": "059.jpg",
+      "style": "Pallava granite-relief painting",
+      "scene": {
+        "hi": "घृष्णेश्वर",
+        "en": "Grishneshwar"
+      },
+      "leela": "grishneshwar"
+    },
+    {
+      "id": "060",
+      "file": "060.jpg",
+      "style": "Hoysala soapstone-painting",
+      "scene": {
+        "hi": "अमरनाथ हिम लिङ्ग",
+        "en": "Amarnath ice lingam"
+      },
+      "leela": "amarnath"
+    },
+    {
+      "id": "061",
+      "file": "061.jpg",
+      "style": "Jain miniature of Western India",
+      "scene": {
+        "hi": "पशुपतिनाथ नेपाल",
+        "en": "Pashupatinath"
+      },
+      "leela": "pashupatinath"
+    },
+    {
+      "id": "062",
+      "file": "062.jpg",
+      "style": "Gujarat Jain kalpasutra style",
+      "scene": {
+        "hi": "शिवरात्रि जागरण",
+        "en": "Shivaratri night vigil"
+      },
+      "leela": "shivratri-jagar"
+    },
+    {
+      "id": "063",
+      "file": "063.jpg",
+      "style": "Orissan palm-leaf Ganjapa",
+      "scene": {
+        "hi": "प्रदोष आरती",
+        "en": "Pradosha aarti"
+      },
+      "leela": "pradosh"
+    },
+    {
+      "id": "064",
+      "file": "064.jpg",
+      "style": "Dashavatar ganjifa cards",
+      "scene": {
+        "hi": "सोमवार श्रृङ्गार",
+        "en": "Monday adornment"
+      },
+      "leela": "mondays"
+    },
+    {
+      "id": "065",
+      "file": "065.jpg",
+      "style": "Maharashtra Paithan chitrakathi",
+      "scene": {
+        "hi": "नन्दी द्वार सेवा",
+        "en": "Service at Nandi's gate"
+      },
+      "leela": "nandi-seva"
+    },
+    {
+      "id": "066",
+      "file": "066.jpg",
+      "style": "Pinguli chitrakathi",
+      "scene": {
+        "hi": "त्रिशूल तेज",
+        "en": "The trishula's fire"
+      },
+      "leela": "trishula-teja"
+    },
+    {
+      "id": "067",
+      "file": "067.jpg",
+      "style": "Garoda scroll of Gujarat",
+      "scene": {
+        "hi": "डमरु नाद",
+        "en": "Nada of the damaru"
+      },
+      "leela": "damaru-nada"
+    },
+    {
+      "id": "068",
+      "file": "068.jpg",
+      "style": "Jadupatua of Jharkhand",
+      "scene": {
+        "hi": "तृतीय नेत्र",
+        "en": "The third eye opens"
+      },
+      "leela": "third-eye-open"
+    },
+    {
+      "id": "069",
+      "file": "069.jpg",
+      "style": "Bengal jadupatua",
+      "scene": {
+        "hi": "भस्म विभूति",
+        "en": "Vibhuti on the body"
+      },
+      "leela": "ash-smear"
+    },
+    {
+      "id": "070",
+      "file": "070.jpg",
+      "style": "Assam manuscript painting",
+      "scene": {
+        "hi": "जटा में गङ्गा",
+        "en": "Ganga in the matted hair"
+      },
+      "leela": "ganga-jata"
+    },
+    {
+      "id": "071",
+      "file": "071.jpg",
+      "style": "Manipuri Lai Haraoba painting",
+      "scene": {
+        "hi": "नाग हार",
+        "en": "Serpent as garland"
+      },
+      "leela": "serpent-mala"
+    },
+    {
+      "id": "072",
+      "file": "072.jpg",
+      "style": "Tripura royal folk",
+      "scene": {
+        "hi": "व्याघ्र चर्म आसन",
+        "en": "Seat of tiger-skin"
+      },
+      "leela": "tiger-skin"
+    },
+    {
+      "id": "073",
+      "file": "073.jpg",
+      "style": "Naga wood-panel painting",
+      "scene": {
+        "hi": "कैलास परिक्रमा",
+        "en": "Circumambulation of Kailash"
+      },
+      "leela": "kailash-parikrama"
+    },
+    {
+      "id": "074",
+      "file": "074.jpg",
+      "style": "Sikkimese monastery mural",
+      "scene": {
+        "hi": "मानसरोवर ध्यान",
+        "en": "Meditation by Manasarovar"
+      },
+      "leela": "manasarovar"
+    },
+    {
+      "id": "075",
+      "file": "075.jpg",
+      "style": "Ladakhi gompa mural",
+      "scene": {
+        "hi": "मन्दाकिनी स्नान",
+        "en": "Bathing in the Mandakini"
+      },
+      "leela": "mandakini"
+    },
+    {
+      "id": "076",
+      "file": "076.jpg",
+      "style": "Kinnaur wood painting",
+      "scene": {
+        "hi": "गुहा साधना",
+        "en": "Cave sadhana"
+      },
+      "leela": "cave-sadhana"
+    },
+    {
+      "id": "077",
+      "file": "077.jpg",
+      "style": "Kulu rumal painting",
+      "scene": {
+        "hi": "हिमालय उषा",
+        "en": "Himalayan dawn"
+      },
+      "leela": "himalaya-dawn"
+    },
+    {
+      "id": "078",
+      "file": "078.jpg",
+      "style": "Jaipur fresco-secco",
+      "scene": {
+        "hi": "मणिकर्णिका दीप",
+        "en": "Lamps at Manikarnika"
+      },
+      "leela": "varanasi-ghat"
+    },
+    {
+      "id": "079",
+      "file": "079.jpg",
+      "style": "Shekhawati haveli mural",
+      "scene": {
+        "hi": "आनन्दवन काशी",
+        "en": "Kashi the forest of bliss"
+      },
+      "leela": "kashi-anandavan"
+    },
+    {
+      "id": "080",
+      "file": "080.jpg",
+      "style": "Udaipur palace mural",
+      "scene": {
+        "hi": "दक्षिणाभिमुख",
+        "en": "The south-facing teacher"
+      },
+      "leela": "south-facing"
+    },
+    {
+      "id": "081",
+      "file": "081.jpg",
+      "style": "Jaisalmer gold sandstone painting",
+      "scene": {
+        "hi": "पञ्चाक्षर ज्योति",
+        "en": "Light of Na-Ma-Shi-Va-Ya"
+      },
+      "leela": "panchakshara"
+    },
+    {
+      "id": "082",
+      "file": "082.jpg",
+      "style": "Bishnupur terracotta-painting",
+      "scene": {
+        "hi": "लिङ्गाष्टक भाव",
+        "en": "Spirit of Lingashtakam"
+      },
+      "leela": "lingashtakam-bhava"
+    },
+    {
+      "id": "083",
+      "file": "083.jpg",
+      "style": "Bankura temple painting",
+      "scene": {
+        "hi": "रुद्राष्टक भाव",
+        "en": "Spirit of Rudrashtakam"
+      },
+      "leela": "rudrashtakam-bhava"
+    },
+    {
+      "id": "084",
+      "file": "084.jpg",
+      "style": "Konark stone-painting",
+      "scene": {
+        "hi": "शिवोऽहम्",
+        "en": "Śivo'ham"
+      },
+      "leela": "nirvana-shivoham"
+    },
+    {
+      "id": "085",
+      "file": "085.jpg",
+      "style": "Puri Jagannath pata",
+      "scene": {
+        "hi": "भैरवाष्टमी",
+        "en": "Bhairavashtami night"
+      },
+      "leela": "bhairava-ashtami"
+    },
+    {
+      "id": "086",
+      "file": "086.jpg",
+      "style": "Chitrakar pattachitra of Raghurajpur",
+      "scene": {
+        "hi": "कांवड़ यात्रा",
+        "en": "Kanwar yatra"
+      },
+      "leela": "kanwar"
+    },
+    {
+      "id": "087",
+      "file": "087.jpg",
+      "style": "Nirmal painting of Telangana",
+      "scene": {
+        "hi": "सावन श्रृङ्गार",
+        "en": "Shravan adornment"
+      },
+      "leela": "sawan"
+    },
+    {
+      "id": "088",
+      "file": "088.jpg",
+      "style": "Cheriyal scroll night palette",
+      "scene": {
+        "hi": "स्वर्ण सभा नटराज",
+        "en": "Nataraja in the golden hall"
+      },
+      "leela": "nataraja-sabha"
+    },
+    {
+      "id": "089",
+      "file": "089.jpg",
+      "style": "Kalamkari indigo ground",
+      "scene": {
+        "hi": "आनन्द ताण्डव चन्द्र",
+        "en": "Tandava under the moon"
+      },
+      "leela": "ananda-tandava-2"
+    },
+    {
+      "id": "090",
+      "file": "090.jpg",
+      "style": "Kalamkari vermillion ground",
+      "scene": {
+        "hi": "उमा महेश",
+        "en": "Uma-Maheshvara"
+      },
+      "leela": "uma-mahesh"
+    },
+    {
+      "id": "091",
+      "file": "091.jpg",
+      "style": "Madhubani Kohbar",
+      "scene": {
+        "hi": "गङ्गाधर",
+        "en": "Gangadhara"
+      },
+      "leela": "gangadhara"
+    },
+    {
+      "id": "092",
+      "file": "092.jpg",
+      "style": "Madhubani Godna tattoo-line",
+      "scene": {
+        "hi": "व्योमकेश",
+        "en": "Whose hair is the sky"
+      },
+      "leela": "vyomakesha"
+    },
+    {
+      "id": "093",
+      "file": "093.jpg",
+      "style": "Madhubani Bharni filled",
+      "scene": {
+        "hi": "शर्व अस्त्र",
+        "en": "Sharva the archer"
+      },
+      "leela": "sharva"
+    },
+    {
+      "id": "094",
+      "file": "094.jpg",
+      "style": "Warli harvest white",
+      "scene": {
+        "hi": "भव पालन",
+        "en": "Bhava who sustains"
+      },
+      "leela": "bhava"
+    },
+    {
+      "id": "095",
+      "file": "095.jpg",
+      "style": "Warli night indigo",
+      "scene": {
+        "hi": "उग्र रूप",
+        "en": "Ugra, the fierce"
+      },
+      "leela": "ugra"
+    },
+    {
+      "id": "096",
+      "file": "096.jpg",
+      "style": "Gond tree-of-life",
+      "scene": {
+        "hi": "अघोर शान्ति",
+        "en": "Aghora's peace"
+      },
+      "leela": "aghora"
+    },
+    {
+      "id": "097",
+      "file": "097.jpg",
+      "style": "Gond animal-spirit",
+      "scene": {
+        "hi": "सद्योजात",
+        "en": "Sadyojata face"
+      },
+      "leela": "sadyojata"
+    },
+    {
+      "id": "098",
+      "file": "098.jpg",
+      "style": "Kalighat bold outline",
+      "scene": {
+        "hi": "वामदेव",
+        "en": "Vamadeva face"
+      },
+      "leela": "vamadeva"
+    },
+    {
+      "id": "099",
+      "file": "099.jpg",
+      "style": "Kalighat lamp-black wash",
+      "scene": {
+        "hi": "ईशान",
+        "en": "Ishana face"
+      },
+      "leela": "ishana"
+    },
+    {
+      "id": "100",
+      "file": "100.jpg",
+      "style": "Tanjore inlaid gem",
+      "scene": {
+        "hi": "तत्पुरुष",
+        "en": "Tatpurusha face"
+      },
+      "leela": "tatpurusha"
+    },
+    {
+      "id": "101",
+      "file": "101.jpg",
+      "style": "Mysore gesso gold",
+      "scene": {
+        "hi": "पञ्चमुख शिव",
+        "en": "Five-faced Shiva"
+      },
+      "leela": "pancha-mukha"
+    },
+    {
+      "id": "102",
+      "file": "102.jpg",
+      "style": "Kerala mural five-colour",
+      "scene": {
+        "hi": "आकाश ज्योतिर्लिङ्ग",
+        "en": "Jyotirlinga in the sky"
+      },
+      "leela": "jyotirlinga-sky"
+    },
+    {
+      "id": "103",
+      "file": "103.jpg",
+      "style": "Kangra spring garden",
+      "scene": {
+        "hi": "नन्दी उत्सव",
+        "en": "Festival of Nandi"
+      },
+      "leela": "nandi-festival"
+    },
+    {
+      "id": "104",
+      "file": "104.jpg",
+      "style": "Basohli hot mineral colour",
+      "scene": {
+        "hi": "ओंकार ज्योति",
+        "en": "The flame of Omkara"
+      },
+      "leela": "omkara-jyoti"
+    },
+    {
+      "id": "105",
+      "file": "105.jpg",
+      "style": "Pichwai lotus pond",
+      "scene": {
+        "hi": "कैलास हिम रात्रि",
+        "en": "Kailash snow night"
+      },
+      "leela": "kailash-snow-night"
+    },
+    {
+      "id": "106",
+      "file": "106.jpg",
+      "style": "Pichwai night shrine",
+      "scene": {
+        "hi": "अन्नपूर्णा संग",
+        "en": "With Annapurna"
+      },
+      "leela": "parvati-annapurna"
+    },
+    {
+      "id": "107",
+      "file": "107.jpg",
+      "style": "Phad red-ground heroic",
+      "scene": {
+        "hi": "स्कन्द उपदेश",
+        "en": "Teaching Skanda"
+      },
+      "leela": "skanda-upadesha"
+    },
+    {
+      "id": "108",
+      "file": "108.jpg",
+      "style": "Phad indigo heroic",
+      "scene": {
+        "hi": "मोदक प्रसाद",
+        "en": "Modaka prasad"
+      },
+      "leela": "ganesha-modaka"
+    }
+  ]
+}

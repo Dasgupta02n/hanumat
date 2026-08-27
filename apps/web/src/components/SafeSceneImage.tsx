@@ -1,6 +1,8 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import { HeroCarousel } from "@/components/HeroCarousel";
+import { carouselSlides } from "@/lib/gallery";
+import type { DeityId } from "@/lib/deities";
 
 /**
  * Scene image that never sits under opaque text/controls.
@@ -58,15 +60,21 @@ export function SafeSceneImage({
 export function HeroWithSafeText({
   src,
   children,
-  imageAlt = "Hanuman sacred scene — Hanumat digital mandir",
+  imageAlt = "Sacred scene — digital mandir",
+  deity = "hanuman",
 }: {
   src: string;
   children: ReactNode;
   imageAlt?: string;
+  deity?: DeityId;
 }) {
   return (
     <section className="relative min-h-[88vh] overflow-hidden" aria-label="Hero">
-      <HeroCarousel fallbackSrc={src} imageAlt={imageAlt} />
+      <HeroCarousel
+        fallbackSrc={src}
+        imageAlt={imageAlt}
+        slides={carouselSlides(deity)}
+      />
 
       <div className="shell relative z-10 flex min-h-[88vh] flex-col justify-end pb-12 pt-[48vh]">
         <div className="glass-card temple-card-frame p-6 sm:p-9">

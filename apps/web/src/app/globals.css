@@ -339,13 +339,25 @@ a {
   overflow-x: hidden;
 }
 
-.landing-bg {
+.landing-bg,
+.landing-bg-carousel {
   position: fixed;
   inset: 0;
+  z-index: 0;
+}
+
+.landing-bg {
   background-size: cover;
   background-position: center;
   transform: scale(1.04);
-  z-index: 0;
+}
+
+.landing-bg-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  will-change: opacity, transform;
 }
 
 .landing-scrim {

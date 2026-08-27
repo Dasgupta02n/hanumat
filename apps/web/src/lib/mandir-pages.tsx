@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { SiteShell } from "@/components/SiteShell";
 import { MandirHome } from "@/components/MandirHome";
+import { MandirGalleryIndex, MandirGalleryDetail } from "@/components/MandirGallery";
+import { getGallery } from "@/lib/gallery";
 import { PathStudioDynamic } from "@/components/PathStudioDynamic";
 import { listCatalogLite } from "@/lib/catalog";
 import { getTextBySlug, textsForDeity } from "@/lib/content";
@@ -18,6 +20,16 @@ export function deityPathParams(deity: DeityId) {
   for (const locale of locales) {
     for (const p of textsForDeity(deity)) {
       params.push({ locale, slug: p.slug });
+    }
+  }
+  return params;
+}
+
+export function deityGalleryParams(deity: DeityId) {
+  const params: { locale: string; id: string }[] = [];
+  for (const locale of locales) {
+    for (const img of getGallery(deity).images) {
+      params.push({ locale, id: img.id });
     }
   }
   return params;
@@ -206,6 +218,20 @@ export async function renderMandirLearn(deity: DeityId, rawLocale: string) {
       </section>
     </SiteShell>
   );
+}
+
+export async function renderMandirGallery(deity: DeityId, rawLocale: string) {
+  const locale = await parseLocale(rawLocale);
+  return <MandirGalleryIndex deity={deity} locale={locale} />;
+}
+
+export async function renderMandirGalleryDetail(
+  deity: DeityId,
+  rawLocale: string,
+  id: string,
+) {
+  const locale = await parseLocale(rawLocale);
+  return <MandirGalleryDetail deity={deity} locale={locale} id={id} />;
 }
 
 export async function renderMandirFaq(deity: DeityId, rawLocale: string) {

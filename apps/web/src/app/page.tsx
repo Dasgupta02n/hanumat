@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { deities } from "@/lib/deities";
+import { LandingCarousel } from "@/components/LandingCarousel";
 
 export const metadata: Metadata = {
   title: "Hanumat · Three sacred mandirs",
@@ -38,11 +39,7 @@ const PORTALS = [
 export default function LandingPage() {
   return (
     <div className="landing-root">
-      <div
-        className="landing-bg"
-        style={{ backgroundImage: "url(/images/deities/landing-courtyard.jpg)" }}
-        aria-hidden
-      />
+      <LandingCarousel />
       <div className="landing-scrim" aria-hidden />
 
       <header className="landing-head">

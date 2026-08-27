@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     entrypoint: ["/bin/sh", "-c"]
     command:
-      - "set -e; apk add --no-cache curl unzip ca-certificates; rm -rf /usr/share/nginx/html/*; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-07-24-full/hanumat_out_full.zip -o /tmp/h.zip; unzip -o /tmp/h.zip -d /usr/share/nginx/html; rm -f /tmp/h.zip; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-08-26-folk-108/hanumat-overlay-2026-08-26-folk-108.zip -o /tmp/o.zip; unzip -o /tmp/o.zip -d /usr/share/nginx/html; rm -f /tmp/o.zip; test -f /usr/share/nginx/html/index.html; exec nginx -g 'daemon off;'"
+      - "set -e; apk add --no-cache curl unzip ca-certificates; rm -rf /usr/share/nginx/html/*; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-07-24-full/hanumat_out_full.zip -o /tmp/h.zip; unzip -o /tmp/h.zip -d /usr/share/nginx/html; rm -f /tmp/h.zip; curl -fsSL https://github.com/Dasgupta02n/hanumat/releases/download/deploy-2026-08-28-courtyard/hanumat-overlay-2026-08-28-courtyard.zip -o /tmp/o.zip; unzip -o /tmp/o.zip -d /usr/share/nginx/html; rm -f /tmp/o.zip; test -f /usr/share/nginx/html/index.html; exec nginx -g 'daemon off;'"
     expose:
       - "80"
 

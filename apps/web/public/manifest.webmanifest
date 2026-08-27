@@ -1,8 +1,8 @@
 {
-  "name": "Hanumat — Shri Hanuman Digital Mandir",
+  "name": "Hanumat — three sacred mandirs",
   "short_name": "Hanumat",
-  "description": "Free digital mandir for Hanuman Ji — Sundar Kand, Chalisa, japa, katha, temples. Hindi & English. No ads.",
-  "start_url": "/hi/",
+  "description": "Digital mandirs of Hanuman, Shiva and Maa Kali — path, meaning, japa. Hindi & English. No ads.",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#f6f1e7",
   "theme_color": "#f6f1e7",

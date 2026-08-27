@@ -1,7 +1,7 @@
 /* Hanumat SW — pack caches with sha256 verify (Workbox-class integrity)
  * Pack cache keys: pack:{id}:v{version} (design Appendix F)
  */
-const SHELL = "hanumat-shell-v2";
+const SHELL = "hanumat-shell-v3";
 const PACK_PREFIX = "pack:";
 const LEGACY_PACK_PREFIX = "hanumat-pack:";
 
@@ -195,18 +195,22 @@ self.addEventListener("message", (event) => {
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
+  if (req.mode === "navigate") {
+    event.respondWith(
+      fetch(req)
+        .then((res) => {
+          const copy = res.clone();
+          caches.open(SHELL).then((c) => c.put(req, copy));
+          return res;
+        })
+        .catch(() => caches.match(req).then((hit) => hit || caches.match("/") || caches.match("/hi/"))),
+    );
+    return;
+  }
   event.respondWith(
     caches.match(req).then((hit) => {
       if (hit) return hit;
-      return fetch(req)
-        .then((res) => {
-          const copy = res.clone();
-          if (req.mode === "navigate") {
-            caches.open(SHELL).then((c) => c.put(req, copy));
-          }
-          return res;
-        })
-        .catch(() => caches.match("/") || caches.match("/hi/"));
+      return fetch(req);
     }),
   );
 });

@@ -186,6 +186,24 @@ export function SiteShell({
             ))}
           </nav>
 
+          <nav
+            className="flex items-center gap-0.5 overflow-x-auto"
+            aria-label={locale === "en" ? "Mandirs" : "धाम"}
+          >
+            <Link href="/" className="nav-link">
+              {locale === "en" ? "Courtyard" : "आंगन"}
+            </Link>
+            <Link href={deityHref("hanuman", locale, "/")} className="nav-link">
+              {locale === "en" ? "Hanuman" : "हनुमान"}
+            </Link>
+            <Link href={deityHref("shiva", locale, "/")} className="nav-link">
+              {locale === "en" ? "Shiva" : "शिव"}
+            </Link>
+            <Link href={deityHref("kali", locale, "/")} className="nav-link">
+              {locale === "en" ? "Kali" : "काली"}
+            </Link>
+          </nav>
+
           <div className="flex items-center gap-2">
             <div
               className="flex items-center gap-0.5 rounded-full border p-0.5"

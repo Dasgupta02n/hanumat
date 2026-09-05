@@ -16,8 +16,6 @@ services:
     ports:
       - "80:80"
       - "443:443"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
     command:
       - sh
       - -lc
@@ -26,10 +24,6 @@ services:
         hanumat.life, www.hanumat.life {
           encode gzip
           reverse_proxy hanumat:80
-        }
-        c7xai.in, www.c7xai.in {
-          encode gzip
-          reverse_proxy host.docker.internal:8000
         }
         EOF
         exec caddy run --config /tmp/Caddyfile --adapter caddyfile

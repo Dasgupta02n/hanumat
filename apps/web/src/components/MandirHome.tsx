@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
+import { FestivalShell } from "@/components/FestivalShell";
 import { HeroWithSafeText } from "@/components/SafeSceneImage";
 import { listCatalogLite } from "@/lib/catalog";
 import { deityHref, type DeityId, deities } from "@/lib/deities";
@@ -69,6 +70,7 @@ export function MandirHome({
 
   return (
     <SiteShell wide>
+      <FestivalShell />
       <h1 className="sr-only">{en ? d.homeTitle.en : d.homeTitle.hi}</h1>
 
       <HeroWithSafeText
@@ -337,6 +339,15 @@ export function MandirHome({
               : "बिना खाता, ट्रैकर या विज्ञापन।"}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link href={h("/calendar/")} className="btn-ghost text-sm">
+              {en ? "Calendar" : "कैलेंडर"}
+            </Link>
+            <Link href={h("/temples/")} className="btn-ghost text-sm">
+              {en ? "Temples" : "क्षेत्र"}
+            </Link>
+            <Link href={h("/parayan/")} className="btn-ghost text-sm">
+              {en ? "Parayan" : "पारायण"}
+            </Link>
             <Link href={h("/learn/")} className="btn-ghost text-sm">
               {en ? "Learn" : "जानें"}
             </Link>

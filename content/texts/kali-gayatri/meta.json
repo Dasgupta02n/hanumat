@@ -1,0 +1,37 @@
+{
+  "id": "kali-gayatri",
+  "slug": "kali-gayatri",
+  "deity": "kali",
+  "title": {
+    "hi": "काली गायत्री",
+    "en": "Kali Gayatri"
+  },
+  "subtitle": {
+    "hi": "ॐ कालीकाल्यै विद्महे",
+    "en": "Om Kalikalyai vidmahe"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "KALI-GAYATRI-PUBLIC",
+    "publisher": "Public smarta recension",
+    "notes": "Household gayatri in common public recension. A second form (Mahakali / smashana-vasini) exists; this pin keeps the Kalikalyai vidmahe line used in many temple booklets. Not a tantric uddhara."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "mantra",
+  "description": {
+    "hi": "माँ काली की गायत्री — घर जप।",
+    "en": "Kali Gayatri for household japa."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  }
+}

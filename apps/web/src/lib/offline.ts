@@ -95,6 +95,42 @@ const SK_PACKS = (skOfflinePacks as unknown[])
   .map(asManifest)
   .filter((p): p is OfflinePackManifest => p != null);
 
+const DHAM_PACKS: OfflinePackManifest[] = [
+  {
+    id: "pack-shiva-v1",
+    textId: "lingashtakam",
+    version: 1,
+    maxBytes: 2_000_000,
+    title: { hi: "शिवायतन पाठ", en: "Shivayatan texts" },
+    assets: [
+      { path: "/shiva/hi/path/lingashtakam/", role: "html" },
+      { path: "/shiva/hi/path/rudrashtakam/", role: "html" },
+      { path: "/shiva/hi/path/om-namah-shivaya/", role: "html" },
+      { path: "/shiva/hi/path/shiv-aarti/", role: "html" },
+      { path: "/shiva/en/path/lingashtakam/", role: "html" },
+    ],
+    notes: "Dham text pack. Recitation audio later uses the same sha256 verify as Chalisa.",
+  },
+  {
+    id: "pack-kali-v1",
+    textId: "kalika-ashtakam",
+    version: 1,
+    maxBytes: 2_000_000,
+    title: { hi: "कालिका धाम पाठ", en: "Kalika Dham texts" },
+    assets: [
+      { path: "/kali/hi/path/kalika-ashtakam/", role: "html" },
+      { path: "/kali/hi/path/adya-stotram/", role: "html" },
+      { path: "/kali/hi/path/kali-aarti/", role: "html" },
+      { path: "/kali/en/path/kalika-ashtakam/", role: "html" },
+    ],
+    notes: "Dham text pack. Recitation audio later uses the same sha256 verify as Chalisa.",
+  },
+];
+
+export function listDhamPacks() {
+  return DHAM_PACKS;
+}
+
 /** Resolve OfflinePackManifest by id (build-time embed). */
 export function getOfflinePack(packId: string): OfflinePackManifest | null {
   if (!packId) return null;
@@ -102,7 +138,8 @@ export function getOfflinePack(packId: string): OfflinePackManifest | null {
   if (packId === "chalisa-v1" && CHALISA) return CHALISA;
   if (CHALISA && CHALISA.id === packId) return CHALISA;
   const sk = SK_PACKS.find((p) => p.id === packId);
-  return sk ?? null;
+  if (sk) return sk;
+  return DHAM_PACKS.find((p) => p.id === packId) ?? null;
 }
 
 /** True if any versioned (or legacy) cache exists for this pack id. */

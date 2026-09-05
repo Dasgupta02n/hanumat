@@ -1,0 +1,37 @@
+{
+  "id": "kali-aarti-bengal",
+  "slug": "kali-aarti-bengal",
+  "deity": "kali",
+  "title": {
+    "hi": "काली आरती · बंगाल पीठ",
+    "en": "Kali aarti · Bengal pith"
+  },
+  "subtitle": {
+    "hi": "क्षेत्रीय पाठ · कालीघाट / दक्षिणेश्वर भाव",
+    "en": "Regional recension · Kalighat / Dakshineswar mood"
+  },
+  "originalLang": "hi",
+  "script": "Deva",
+  "edition": {
+    "pin": "KALI-AARTI-BENGAL-TEMPLE",
+    "publisher": "Bengal temple booklet class",
+    "notes": "Labeled regional variant. North Indian ‘Jai Kali Mata’ remains kali-aarti. Line-order and refrain vary by pith; this is a short Bengal-mood household aarti, not a critical folk edition."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "aarti",
+  "description": {
+    "hi": "बंगाल पीठ की आरती शैली — जय काली महाकाली।",
+    "en": "Bengal pith aarti style — Jai Kali Mahakali."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 3
+  }
+}

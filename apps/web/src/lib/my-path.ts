@@ -5,13 +5,16 @@
  */
 import type {
   Bookmark,
+  JapaByDeity,
+  JapaSession,
   JapaState,
   MyPathExport,
   ResumePoint,
 } from "./my-path-types";
 import * as idb from "./db";
+import type { DeityId } from "./deities";
 
-export type { Bookmark, JapaState, MyPathExport, ResumePoint };
+export type { Bookmark, JapaSession, JapaState, MyPathExport, ResumePoint };
 
 const RESUME_KEY = "hanumat:resume:v1";
 const BOOKMARKS_KEY = "hanumat:bookmarks:v1";
@@ -23,14 +26,18 @@ type PathCache = {
   resume: ResumePoint[];
   bookmarks: Bookmark[];
   japa: JapaState;
+  japaByDeity: JapaByDeity;
   offlinePacks: string[];
   hydrated: boolean;
 };
 
+const EMPTY_JAPA: JapaState = { count: 0, target: 108 };
+
 const cache: PathCache = {
   resume: [],
   bookmarks: [],
-  japa: { count: 0, target: 108 },
+  japa: { ...EMPTY_JAPA },
+  japaByDeity: {},
   offlinePacks: [],
   hydrated: false,
 };
@@ -136,15 +143,16 @@ export async function hydrateMyPath(): Promise<void> {
   hydratePromise = (async () => {
     try {
       await migrateLocalToIdb();
-      const [resume, bookmarks, japa, offlinePacks] = await Promise.all([
+      const [resume, bookmarks, japaByDeity, offlinePacks] = await Promise.all([
         idb.idbLoadResume(),
         idb.idbLoadBookmarks(),
-        idb.idbLoadJapa(),
+        idb.idbLoadAllJapa(),
         idb.idbLoadOfflinePacks(),
       ]);
       cache.resume = resume;
       cache.bookmarks = bookmarks;
-      cache.japa = japa;
+      cache.japaByDeity = japaByDeity;
+      cache.japa = japaByDeity.hanuman || { ...EMPTY_JAPA };
       cache.offlinePacks = offlinePacks;
       cache.hydrated = true;
     } catch {
@@ -152,6 +160,7 @@ export async function hydrateMyPath(): Promise<void> {
       cache.resume = lsLoadResume();
       cache.bookmarks = lsLoadBookmarks();
       cache.japa = lsLoadJapa();
+      cache.japaByDeity = { hanuman: cache.japa };
       cache.offlinePacks = lsLoadOfflinePackIds();
       cache.hydrated = true;
     }
@@ -216,25 +225,27 @@ export function toggleBookmark(b: Omit<Bookmark, "updatedAt">) {
   return cache.bookmarks;
 }
 
-export function loadJapa(): JapaState {
-  return cache.japa;
+export function loadJapa(deity: DeityId = "hanuman"): JapaState {
+  return cache.japaByDeity[deity] || cache.japa || { ...EMPTY_JAPA };
 }
 
-export async function loadJapaAsync(): Promise<JapaState> {
+export async function loadJapaAsync(deity: DeityId = "hanuman"): Promise<JapaState> {
   try {
     await hydrateMyPath();
-    const j = await idb.idbLoadJapa();
-    cache.japa = j;
+    const j = await idb.idbLoadJapa(deity);
+    cache.japaByDeity[deity] = j;
+    if (deity === "hanuman") cache.japa = j;
     return j;
   } catch {
-    return cache.japa;
+    return loadJapa(deity);
   }
 }
 
-export function saveJapa(state: JapaState) {
+export function saveJapa(state: JapaState, deity: DeityId = "hanuman") {
   const next = { ...state, updatedAt: new Date().toISOString() };
-  cache.japa = next;
-  void idb.idbSaveJapa(next).catch(() => undefined);
+  cache.japaByDeity[deity] = next;
+  if (deity === "hanuman") cache.japa = next;
+  void idb.idbSaveJapa(next, deity).catch(() => undefined);
 }
 
 export function loadOfflinePackIds(): string[] {
@@ -262,11 +273,12 @@ export function markOfflinePack(id: string) {
 /** Sync export from memory cache (prefer exportMyPathAsync). */
 export function exportMyPath(): MyPathExport {
   return {
-    version: 2,
+    version: 3,
     exportedAt: new Date().toISOString(),
     resume: loadResume(),
     bookmarks: loadBookmarks(),
-    japa: loadJapa(),
+    japa: loadJapa("hanuman"),
+    japaByDeity: cache.japaByDeity,
     offlinePacks: loadOfflinePackIds(),
   };
 }
@@ -278,6 +290,7 @@ export async function exportMyPathAsync(): Promise<MyPathExport> {
     cache.resume = data.resume;
     cache.bookmarks = data.bookmarks;
     cache.japa = data.japa;
+    cache.japaByDeity = data.japaByDeity || { hanuman: data.japa };
     cache.offlinePacks = data.offlinePacks;
     return data;
   } catch {
@@ -293,8 +306,12 @@ export function importMyPath(data: MyPathExport | unknown): boolean {
     if (Array.isArray(d.bookmarks)) {
       cache.bookmarks = d.bookmarks.slice(0, 100);
     }
-    if (d.japa && typeof d.japa === "object") {
+    if (d.japaByDeity && typeof d.japaByDeity === "object") {
+      cache.japaByDeity = d.japaByDeity;
+      cache.japa = d.japaByDeity.hanuman || cache.japa;
+    } else if (d.japa && typeof d.japa === "object") {
       cache.japa = { ...(d.japa as JapaState) };
+      cache.japaByDeity = { ...cache.japaByDeity, hanuman: cache.japa };
     }
     if (Array.isArray(d.offlinePacks)) cache.offlinePacks = d.offlinePacks;
     void idb.idbImportAll(d).catch(() => undefined);
@@ -316,8 +333,12 @@ export async function importMyPathAsync(
     cache.bookmarks = Array.isArray(d.bookmarks)
       ? d.bookmarks.slice(0, 100)
       : cache.bookmarks;
-    if (d.japa && typeof d.japa === "object") {
+    if (d.japaByDeity && typeof d.japaByDeity === "object") {
+      cache.japaByDeity = d.japaByDeity;
+      cache.japa = d.japaByDeity.hanuman || cache.japa;
+    } else if (d.japa && typeof d.japa === "object") {
       cache.japa = d.japa as JapaState;
+      cache.japaByDeity = { ...cache.japaByDeity, hanuman: cache.japa };
     }
     if (Array.isArray(d.offlinePacks)) cache.offlinePacks = d.offlinePacks;
     return true;
@@ -329,7 +350,8 @@ export async function importMyPathAsync(
 export function clearMyPath() {
   cache.resume = [];
   cache.bookmarks = [];
-  cache.japa = { count: 0, target: 108 };
+  cache.japa = { ...EMPTY_JAPA };
+  cache.japaByDeity = {};
   cache.offlinePacks = [];
   clearLocalStorageKeys();
   void idb.idbClearAll().catch(() => undefined);
@@ -338,7 +360,8 @@ export function clearMyPath() {
 export async function clearMyPathAsync(): Promise<void> {
   cache.resume = [];
   cache.bookmarks = [];
-  cache.japa = { count: 0, target: 108 };
+  cache.japa = { ...EMPTY_JAPA };
+  cache.japaByDeity = {};
   cache.offlinePacks = [];
   clearLocalStorageKeys();
   try {

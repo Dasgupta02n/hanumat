@@ -1,0 +1,37 @@
+{
+  "id": "kali-sahasranama-selected",
+  "slug": "kali-sahasranama-selected",
+  "deity": "kali",
+  "title": {
+    "hi": "काली सहस्रनाम · चयन",
+    "en": "Kali Sahasranama · selected names"
+  },
+  "subtitle": {
+    "hi": "सूची + २७ नाम · पूर्ण सूची नहीं",
+    "en": "Index + 27 names · not a dump"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "KALI-SAHASRANAMA-INDEX-27",
+    "publisher": "Public name-lists (selected)",
+    "notes": "Not the full Kali Sahasranama. Twenty-seven public names as an index for household remembrance. Tantric paddhati and full thousand-name dump omitted on purpose."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "nama",
+  "description": {
+    "hi": "सहस्रनाम का द्वार — चयनित नाम, पूरी सूची नहीं।",
+    "en": "A doorway to the sahasranama — selected names, not the full list."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 27
+  }
+}

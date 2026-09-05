@@ -1,5 +1,13 @@
 import { openDB, type DBSchema, type IDBPDatabase } from "idb";
-import type { Bookmark, JapaState, ResumePoint } from "./my-path-types";
+import type { Bookmark, JapaByDeity, JapaState, ResumePoint } from "./my-path-types";
+import type { DeityId } from "./deities";
+import { DEITY_IDS } from "./deities";
+
+const EMPTY_JAPA: JapaState = { count: 0, target: 108 };
+
+function japaKey(deity: DeityId = "hanuman") {
+  return `japa:${deity}`;
+}
 
 interface HanumatDB extends DBSchema {
   resume: {
@@ -80,15 +88,35 @@ export async function idbToggleBookmark(
   return db.getAll("bookmarks");
 }
 
-export async function idbLoadJapa(): Promise<JapaState> {
+export async function idbLoadJapa(deity: DeityId = "hanuman"): Promise<JapaState> {
   const db = await getDb();
-  const v = (await db.get("meta", "japa")) as JapaState | undefined;
-  return v || { count: 0, target: 108 };
+  const keyed = (await db.get("meta", japaKey(deity))) as JapaState | undefined;
+  if (keyed) return keyed;
+  if (deity === "hanuman") {
+    const legacy = (await db.get("meta", "japa")) as JapaState | undefined;
+    if (legacy) {
+      await db.put("meta", legacy, japaKey("hanuman"));
+      return legacy;
+    }
+  }
+  return { ...EMPTY_JAPA };
 }
 
-export async function idbSaveJapa(state: JapaState) {
+export async function idbLoadAllJapa(): Promise<JapaByDeity> {
+  const out: JapaByDeity = {};
+  for (const id of DEITY_IDS) {
+    out[id] = await idbLoadJapa(id);
+  }
+  return out;
+}
+
+export async function idbSaveJapa(state: JapaState, deity: DeityId = "hanuman") {
   const db = await getDb();
-  await db.put("meta", { ...state, updatedAt: new Date().toISOString() }, "japa");
+  const next = { ...state, updatedAt: new Date().toISOString() };
+  await db.put("meta", next, japaKey(deity));
+  if (deity === "hanuman") {
+    await db.put("meta", next, "japa");
+  }
 }
 
 export async function idbLoadOfflinePacks(): Promise<string[]> {
@@ -105,12 +133,14 @@ export async function idbMarkOfflinePack(id: string) {
 }
 
 export async function idbExportAll() {
+  const japaByDeity = await idbLoadAllJapa();
   return {
-    version: 2,
+    version: 3,
     exportedAt: new Date().toISOString(),
     resume: await idbLoadResume(),
     bookmarks: await idbLoadBookmarks(),
-    japa: await idbLoadJapa(),
+    japa: japaByDeity.hanuman || { ...EMPTY_JAPA },
+    japaByDeity,
     offlinePacks: await idbLoadOfflinePacks(),
   };
 }
@@ -119,6 +149,7 @@ export async function idbImportAll(data: {
   resume?: ResumePoint[];
   bookmarks?: Bookmark[];
   japa?: JapaState;
+  japaByDeity?: JapaByDeity;
   offlinePacks?: string[];
 }) {
   const db = await getDb();
@@ -137,7 +168,14 @@ export async function idbImportAll(data: {
     }
     await tx.done;
   }
-  if (data.japa) await idbSaveJapa(data.japa);
+  if (data.japaByDeity) {
+    for (const id of DEITY_IDS) {
+      const s = data.japaByDeity[id];
+      if (s) await idbSaveJapa(s, id);
+    }
+  } else if (data.japa) {
+    await idbSaveJapa(data.japa, "hanuman");
+  }
   if (Array.isArray(data.offlinePacks)) {
     await db.put("meta", data.offlinePacks, "offlinePacks");
   }

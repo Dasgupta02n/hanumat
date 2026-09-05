@@ -26,77 +26,58 @@ export function SiteShell({
   const featured = locale === "en" ? deity.featuredLabel.en : deity.featuredLabel.hi;
 
   const primaryNav = useMemo(
-    () =>
-      deity.id === "hanuman"
-        ? [
-            { href: h("/"), label: t("nav.home") },
-            { href: h("/path/"), label: t("nav.path") },
-            { href: h("/listen/"), label: t("nav.listen") },
-            { href: h("/japa/"), label: t("nav.japa") },
-            { href: h("/katha/"), label: t("nav.katha") },
-            { href: h("/my-path/"), label: t("nav.myPath") },
-          ]
-        : [
-            { href: h("/"), label: t("nav.home") },
-            { href: h("/path/"), label: t("nav.path") },
-            { href: h("/gallery/"), label: t("nav.gallery") },
-            { href: h("/japa/"), label: t("nav.japa") },
-            { href: h("/listen/"), label: t("nav.listen") },
-            { href: h("/learn/"), label: t("nav.learn") },
-          ],
-    [deity.id, locale, t, h],
+    () => [
+      { href: h("/"), label: t("nav.home") },
+      { href: h("/path/"), label: t("nav.path") },
+      { href: h("/listen/"), label: t("nav.listen") },
+      { href: h("/japa/"), label: t("nav.japa") },
+      { href: h("/katha/"), label: t("nav.katha") },
+      { href: h("/my-path/"), label: t("nav.myPath") },
+    ],
+    [locale, t, h],
   );
 
   const moreNav = useMemo(
-    () =>
-      deity.id === "hanuman"
-        ? [
-            { href: h("/gallery/"), label: t("nav.gallery") },
-            { href: h("/calendar/"), label: t("nav.calendar") },
-            { href: h("/parayan/"), label: t("nav.parayan") },
-            { href: h("/radio/"), label: t("nav.radio") },
-            { href: h("/temples/"), label: t("nav.temples") },
-            { href: h("/kids/"), label: t("nav.kids") },
-            { href: h("/sankat/"), label: t("nav.sankat") },
-            { href: h("/glossary/"), label: t("nav.glossary") },
-            { href: h("/faq/"), label: t("nav.faq") },
-            { href: h("/learn/"), label: t("nav.learn") },
-          ]
-        : [
-            { href: h("/gallery/"), label: t("nav.gallery") },
-            { href: h(`/path/${deity.featuredSlug}/`), label: featured },
-            { href: h(`/path/${deity.ctaSecondarySlug}/`), label: locale === "en" ? deity.ctaSecondaryLabel.en : deity.ctaSecondaryLabel.hi },
-            { href: "/", label: locale === "en" ? "Three mandirs" : "तीन धाम" },
-          ],
-    [deity, locale, t, featured, h],
+    () => [
+      { href: h("/gallery/"), label: t("nav.gallery") },
+      { href: h("/calendar/"), label: t("nav.calendar") },
+      { href: h("/parayan/"), label: t("nav.parayan") },
+      { href: h("/radio/"), label: t("nav.radio") },
+      { href: h("/temples/"), label: t("nav.temples") },
+      { href: h("/kids/"), label: t("nav.kids") },
+      { href: h("/sankat/"), label: t("nav.sankat") },
+      { href: h("/glossary/"), label: t("nav.glossary") },
+      { href: h("/search/"), label: t("nav.search") },
+      { href: h("/faq/"), label: t("nav.faq") },
+      { href: h("/learn/"), label: t("nav.learn") },
+    ],
+    [locale, t, h],
   );
 
   const footerCols = useMemo(
     () => [
       {
         title: locale === "en" ? "Paths" : "Path",
-        links:
-          deity.id === "hanuman"
-            ? [
-                { href: h("/path/"), label: t("nav.path") },
-                { href: h("/path/sundar-kand/"), label: "Sundar Kand" },
-                { href: h("/path/hanuman-chalisa/"), label: t("nav.chalisa") },
-                { href: h("/path/valmiki-sundarakanda/"), label: "Valmiki SK" },
-              ]
-            : [
-                { href: h("/path/"), label: t("nav.path") },
-                { href: h(`/path/${deity.featuredSlug}/`), label: featured },
-                { href: h(`/path/${deity.ctaSecondarySlug}/`), label: locale === "en" ? deity.ctaSecondaryLabel.en : deity.ctaSecondaryLabel.hi },
-                { href: h("/japa/"), label: t("nav.japa") },
-              ],
+        links: [
+          { href: h("/path/"), label: t("nav.path") },
+          { href: h(`/path/${deity.featuredSlug}/`), label: featured },
+          {
+            href: h(`/path/${deity.ctaSecondarySlug}/`),
+            label:
+              locale === "en"
+                ? deity.ctaSecondaryLabel.en
+                : deity.ctaSecondaryLabel.hi,
+          },
+          { href: h("/parayan/"), label: t("nav.parayan") },
+        ],
       },
       {
         title: locale === "en" ? "Practice" : "Sadhana",
         links: [
           { href: h("/listen/"), label: t("nav.listen") },
           { href: h("/japa/"), label: t("nav.japa") },
-          { href: h("/learn/"), label: t("nav.learn") },
-          { href: h("/faq/"), label: t("nav.faq") },
+          { href: h("/my-path/"), label: t("nav.myPath") },
+          { href: h("/calendar/"), label: t("nav.calendar") },
         ],
       },
       {
@@ -127,6 +108,9 @@ export function SiteShell({
       data-deity={deity.id}
       style={{ color: "var(--foreground)" }}
     >
+      <a href={h(`/path/${deity.featuredSlug}/`)} className="skip-link">
+        {locale === "en" ? "Skip to path" : "पाठ पर जाएँ"}
+      </a>
       {/* Temple gold top filament */}
       <div
         aria-hidden

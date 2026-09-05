@@ -1,0 +1,37 @@
+{
+  "id": "bilvashtakam",
+  "slug": "bilvashtakam",
+  "deity": "shiva",
+  "title": {
+    "hi": "बिल्वाष्टकम्",
+    "en": "Bilvashtakam"
+  },
+  "subtitle": {
+    "hi": "एक बिल्वं शिवार्पणम्",
+    "en": "One bel leaf offered to Shiva"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "BILVASHTAKAM-SD-GM",
+    "publisher": "Traditional (public domain)",
+    "notes": "Eight verses + phalaśruti. Collated from Sanskrit Documents bilvaashhtaka and common temple recension (Green Message / saivism.net class). Line-order of middle verses varies by region."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "बिल्व पत्र शिव को अर्पण — तीन दल, तीन गुण।",
+    "en": "Offering the three-leaved bel to Shiva."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  }
+}

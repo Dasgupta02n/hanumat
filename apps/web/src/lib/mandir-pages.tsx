@@ -1,12 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { SiteShell } from "@/components/SiteShell";
 import { MandirHome } from "@/components/MandirHome";
 import { MandirGalleryIndex, MandirGalleryDetail } from "@/components/MandirGallery";
 import { getGallery, galleryPick } from "@/lib/gallery";
 import { PathStudioDynamic } from "@/components/PathStudioDynamic";
+import { MandirExtraPage, MandirListenPlayer } from "@/components/MandirExtraPages";
+import type { ExtraKind } from "@/lib/mandir-extras";
 import { listCatalogLite } from "@/lib/catalog";
 import { getTextBySlug, textsForDeity } from "@/lib/content";
 import { deityHref, deities, type DeityId } from "@/lib/deities";
@@ -14,6 +17,40 @@ import { isLocale, locales, type Locale } from "@/i18n/config";
 
 export function deityLocaleParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+export function mandirPathMetadata(
+  deity: DeityId,
+  locale: string,
+  slug: string,
+): Metadata {
+  const text = getTextBySlug(slug);
+  const d = deities[deity];
+  const en = locale === "en";
+  const title = text
+    ? `${en ? text.title.en : text.title.hi} · ${en ? d.brand.en : d.brand.hi}`
+    : d.brand.en;
+  const description =
+    !text
+      ? d.homeBody.en
+      : typeof text.description === "string"
+        ? text.description
+        : en
+          ? text.description.en
+          : text.description.hi;
+  const img = galleryPick(deity, slug.length * 7);
+  const url = `https://hanumat.life${deityHref(deity, locale, `/path/${slug}/`)}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      images: [{ url: `https://hanumat.life${img}`, width: 1200, height: 630 }],
+    },
+  };
 }
 
 export function deityPathParams(deity: DeityId) {
@@ -172,51 +209,16 @@ export async function renderMandirPath(
 
 export async function renderMandirListen(deity: DeityId, rawLocale: string) {
   const locale = await parseLocale(rawLocale);
-  const catalog = listCatalogLite(undefined, deity);
-  const h = (p: string) => deityHref(deity, locale, p);
-  const en = locale === "en";
+  return <MandirListenPlayer deity={deity} locale={locale} />;
+}
 
-  return (
-    <SiteShell wide>
-      <div className="shell section-pad">
-      <p className="section-kicker">{en ? deities[deity].eyebrow.en : deities[deity].eyebrow.hi}</p>
-      <h1 className="section-title mt-2 text-4xl">{en ? "Listen / read" : "श्रवण / पाठ"}</h1>
-      <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
-        {en
-          ? "Wave v1 for this dham is text-first (mula + IAST + meaning). Path-assist audio may be added later."
-          : "इस धाम का Wave v1 पाठ-प्रथम है (मूल + IAST + अर्थ)। श्रवण बाद में जुड़ सकता है।"}
-      </p>
-      <hr className="temple-rule mt-6" />
-      <div className="pillar-grid mt-10">
-        {catalog.map((p, i) => (
-          <Link
-            key={p.id}
-            href={h(`/path/${p.slug}/`)}
-            className="temple-card temple-card-frame group"
-          >
-            <div className="relative h-40">
-              <Image
-                src={galleryPick(deity, i * 8 + 12)}
-                alt=""
-                fill
-                className="object-cover transition duration-500 group-hover:scale-105"
-                sizes="50vw"
-              />
-            </div>
-            <div className="flex items-center justify-between px-5 py-4">
-              <span style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}>
-                {en ? p.title.en : p.title.hi}
-              </span>
-              <span className="text-xs" style={{ color: "var(--hanumat-gold-deep)" }}>
-                Path Studio →
-              </span>
-            </div>
-          </Link>
-        ))}
-      </div>
-      </div>
-    </SiteShell>
-  );
+export async function renderMandirExtra(
+  deity: DeityId,
+  rawLocale: string,
+  kind: ExtraKind,
+) {
+  const locale = await parseLocale(rawLocale);
+  return <MandirExtraPage deity={deity} kind={kind} locale={locale} />;
 }
 
 export async function renderMandirLearn(deity: DeityId, rawLocale: string) {
@@ -270,24 +272,56 @@ export async function renderMandirGalleryDetail(
 export async function renderMandirFaq(deity: DeityId, rawLocale: string) {
   const locale = await parseLocale(rawLocale);
   const en = locale === "en";
-  const faqs = [
-    {
-      q: en ? "Are the shlokas verified?" : "क्या श्लोक जाँचे गए हैं?",
-      a: en
-        ? "Yes. Each path names its sources in Path Studio (edition pin). Core hymns were collated against at least two public recensions (Sanskrit Documents, Green Message, Vedic saṃhitā, Tulsidas Manas, Brahma Yamala / Adyapeath)."
-        : "हाँ। प्रत्येक पाठ में स्रोत (edition pin) लिखा है। मूल स्तोत्र कम-से-कम दो सार्वजनिक पाठों से मिलाए गए।",
-    },
-    {
-      q: en ? "Is this a tantric paddhati?" : "क्या यह तान्त्रिक पद्धति है?",
-      a: en
-        ? "No. Public stotra, mantra-nama, and aarti only. Longer bija-mantras of initiated sadhana are not published as household recitation."
-        : "नहीं। सार्वजनिक स्तोत्र, नाम-मन्त्र और आरती मात्र। दीक्षित साधना के दीर्घ बीजमन्त्र घर-पाठ के रूप में नहीं दिए गए।",
-    },
-    {
-      q: en ? "Does this mandir show ads?" : "क्या विज्ञापन हैं?",
-      a: en ? "No. Pure seva — no ads, no accounts, no trackers." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन, खाता या ट्रैकर।",
-    },
-  ];
+  const faqs =
+    deity === "shiva"
+      ? [
+          {
+            q: en ? "Are the shlokas verified?" : "क्या श्लोक जाँचे गए हैं?",
+            a: en
+              ? "Yes. Each path names its sources (edition pin). Hymns were collated against at least two public recensions — Sanskrit Documents, Green Message, Rigveda / Tulsidas / Shankara where they apply."
+              : "हाँ। प्रत्येक पाठ में स्रोत (edition pin) है। मूल कम-से-कम दो सार्वजनिक पाठों से मिलाए गए।",
+          },
+          {
+            q: en ? "What is a jyotirlinga?" : "ज्योतिर्लिङ्ग क्या है?",
+            a: en
+              ? "Twelve light-form lingas of Shiva. This mandir lists principal kshetras (Somnath, Kedarnath, Mahakaleshwar, Kashi, Rameshwaram…) as a quiet map — no trackers."
+              : "शिव के द्वादश ज्योति-रूप लिङ्ग। यहाँ प्रधान क्षेत्र सूची हैं — बिना ट्रैकर।",
+          },
+          {
+            q: en ? "When is Pradosha / Shivaratri?" : "प्रदोष / शिवरात्रि कब?",
+            a: en
+              ? "Pradosha is the trayodashi dusk; Maha Shivaratri is the great night vigil. Windows on the home banner are approximate — local panchang wins."
+              : "प्रदोष त्रयोदशी संध्या है; महाशिवरात्रि जागरण। बैनर अनुमानित है — स्थानीय पंचांग प्रधान।",
+          },
+          {
+            q: en ? "Does this mandir show ads?" : "क्या विज्ञापन हैं?",
+            a: en ? "No. Pure seva — no ads, no accounts, no trackers." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन, खाता या ट्रैकर।",
+          },
+        ]
+      : [
+          {
+            q: en ? "Are the shlokas verified?" : "क्या श्लोक जाँचे गए हैं?",
+            a: en
+              ? "Yes. Adya Stotram (Brahma Yamala / Adyapeath) and Kalika Ashtakam (Shankara recension) were collated against Sanskrit Documents and Green Message. We do not publish Karpuradi paddhati or unverified Kali Chalisa."
+              : "हाँ। आद्या स्तोत्र व कालिकाष्टकम् दो सार्वजनिक पाठों से मिलाए गए। कर्पूरादि पद्धति और असत्यापित काली चालीसा नहीं हैं।",
+          },
+          {
+            q: en ? "Is this a tantric paddhati?" : "क्या यह तान्त्रिक पद्धति है?",
+            a: en
+              ? "No. Public stotra, nama-mantra, and aarti only. Longer initiated bija-mantras are not published as household recitation."
+              : "नहीं। सार्वजनिक स्तोत्र, नाम-मन्त्र और आरती मात्र।",
+          },
+          {
+            q: en ? "Which Kali kshetras are listed?" : "कौन-से काली क्षेत्र हैं?",
+            a: en
+              ? "Kalighat, Dakshineswar, Kamakhya, Tarapith, Adyapeath — as a quiet temple list, no maps that track you."
+              : "कालीघाट, दक्षिणेश्वर, कामाख्या, तारापीठ, आद्यापीठ — शांत सूची, बिना ट्रैकर।",
+          },
+          {
+            q: en ? "Does this mandir show ads?" : "क्या विज्ञापन हैं?",
+            a: en ? "No. Pure seva — no ads, no accounts, no trackers." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन, खाता या ट्रैकर।",
+          },
+        ];
 
   return (
     <SiteShell>

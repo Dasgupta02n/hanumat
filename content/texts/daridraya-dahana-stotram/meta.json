@@ -1,0 +1,37 @@
+{
+  "id": "daridraya-dahana-stotram",
+  "slug": "daridraya-dahana-stotram",
+  "deity": "shiva",
+  "title": {
+    "hi": "दारिद्र्यदहनस्तोत्रम्",
+    "en": "Daridraya Dahana Stotram"
+  },
+  "subtitle": {
+    "hi": "वसिष्ठ-कृत",
+    "en": "Attributed to Vasishtha"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "DARIDRAYA-DAHANA-SD",
+    "publisher": "Traditional (public domain)",
+    "notes": "Public recension (Sanskrit Documents / Green Message class). Household stotra, not a tantric paddhati."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "दारिद्र्य दहन — शिव से अभय और स्थिति की प्रार्थना।",
+    "en": "Burning of want — a prayer to Shiva for refuge and steadiness."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 5
+  }
+}

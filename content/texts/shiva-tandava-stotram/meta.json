@@ -1,0 +1,37 @@
+{
+  "id": "shiva-tandava-stotram",
+  "slug": "shiva-tandava-stotram",
+  "deity": "shiva",
+  "title": {
+    "hi": "शिवताण्डवस्तोत्रम्",
+    "en": "Shiva Tandava Stotram"
+  },
+  "subtitle": {
+    "hi": "रावण-कृत · १५ श्लोक",
+    "en": "Attributed to Ravana · 15 verses"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "SHIVA-TANDAVA-SD-GM",
+    "publisher": "Traditional (public domain)",
+    "notes": "Ravana recension collated from Sanskrit Documents shivTAND_meaning and Green Message. Meanings provisional."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "शिव के ताण्डव की स्तुति — जटा, डमरु, चन्द्रशेखर।",
+    "en": "Hymn of Shiva’s tandava — jata, damaru, moon-crest."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 15
+  }
+}

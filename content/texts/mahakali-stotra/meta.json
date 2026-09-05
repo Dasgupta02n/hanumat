@@ -1,0 +1,37 @@
+{
+  "id": "mahakali-stotra",
+  "slug": "mahakali-stotra",
+  "deity": "kali",
+  "title": {
+    "hi": "महाकाली स्तोत्र",
+    "en": "Mahakali Stotra"
+  },
+  "subtitle": {
+    "hi": "जयन्ती मङ्गला काली",
+    "en": "Jayanti Mangala Kali"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "MAHAKALI-ARGALA-DHYANA",
+    "publisher": "Public recension (Argala / dhyana)",
+    "notes": "Short public verses: dhyana of Dakshina Kali + Argala Stotra opening (Devi Mahatmya tradition). Not Karpuradi, not a dumped sahasranama."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "संक्षिप्त महाकाली स्तुति — ध्यान व अर्गला का सार्वजनिक पद।",
+    "en": "A short Mahakali hymn from public dhyana and Argala verses."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 3
+  }
+}

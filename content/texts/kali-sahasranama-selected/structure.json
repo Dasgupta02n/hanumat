@@ -1,0 +1,42 @@
+{
+  "sections": [
+    {
+      "id": "full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "ks-01",
+        "ks-02",
+        "ks-03",
+        "ks-04",
+        "ks-05",
+        "ks-06",
+        "ks-07",
+        "ks-08",
+        "ks-09",
+        "ks-10",
+        "ks-11",
+        "ks-12",
+        "ks-13",
+        "ks-14",
+        "ks-15",
+        "ks-16",
+        "ks-17",
+        "ks-18",
+        "ks-19",
+        "ks-20",
+        "ks-21",
+        "ks-22",
+        "ks-23",
+        "ks-24",
+        "ks-25",
+        "ks-26",
+        "ks-27"
+      ],
+      "order": 1
+    }
+  ]
+}

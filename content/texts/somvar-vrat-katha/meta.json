@@ -1,0 +1,37 @@
+{
+  "id": "somvar-vrat-katha",
+  "slug": "somvar-vrat-katha",
+  "deity": "shiva",
+  "title": {
+    "hi": "सोमवार व्रत कथा",
+    "en": "Somvar vrata katha"
+  },
+  "subtitle": {
+    "hi": "घर-आँगन पाठ · स्रोत सहित",
+    "en": "Household recension · sourced"
+  },
+  "originalLang": "hi",
+  "script": "Deva",
+  "edition": {
+    "pin": "SOMVAR-KATHA-HOUSEHOLD",
+    "publisher": "North Indian household recension (plain)",
+    "notes": "Not a shastra quote. Short plain katha told in many North Indian homes on Monday vrata. Local tellings vary; this is a compressed seva text, not a critical edition."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "katha",
+  "description": {
+    "hi": "सोमवार व्रत की सरल कथा — बिल्व, जल, नाम जप।",
+    "en": "A plain Monday-vrata story — bel, water, Name."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 4
+  }
+}

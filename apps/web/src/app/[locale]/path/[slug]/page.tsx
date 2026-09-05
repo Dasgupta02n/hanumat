@@ -1,6 +1,8 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
+import { mandirPathMetadata } from "@/lib/mandir-pages";
 import { SiteShell } from "@/components/SiteShell";
 import { allTexts, getTextBySlug } from "@/lib/content";
 import { TwinTextPanel } from "@/components/TwinTextPanel";
@@ -17,6 +19,15 @@ export function generateStaticParams() {
     }
   }
   return params;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  return mandirPathMetadata("hanuman", locale, slug);
 }
 
 export default async function PathPage({

@@ -22,11 +22,24 @@ export type Bookmark = {
   updatedAt: string;
 };
 
+export type JapaSession = {
+  at: string;
+  count: number;
+  target: number;
+};
+
 export type JapaState = {
   count: number;
   target: number;
   sessions?: number;
   updatedAt?: string;
+  history?: JapaSession[];
+};
+
+export type JapaByDeity = {
+  hanuman?: JapaState;
+  shiva?: JapaState;
+  kali?: JapaState;
 };
 
 export type MyPathExport = {
@@ -35,5 +48,6 @@ export type MyPathExport = {
   resume: ResumePoint[];
   bookmarks: Bookmark[];
   japa: JapaState;
+  japaByDeity?: JapaByDeity;
   offlinePacks: string[];
 };

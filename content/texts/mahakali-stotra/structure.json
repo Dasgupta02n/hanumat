@@ -1,0 +1,18 @@
+{
+  "sections": [
+    {
+      "id": "full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "mk-01",
+        "mk-02",
+        "mk-03"
+      ],
+      "order": 1
+    }
+  ]
+}

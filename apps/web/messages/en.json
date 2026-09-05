@@ -18,7 +18,8 @@
     "gallery": "108 Images",
     "radio": "Radio",
     "glossary": "Glossary",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "search": "Search"
   },
   "home": {
     "eyebrow": "hanumat.life · waves 0–3",
@@ -53,7 +54,13 @@
     "twinText": "Twin-text",
     "twinNote": "Valmiki–Manas alignment (sample)",
     "provisionalTitle": "Provisional meanings:",
-    "provisionalBody": "Meanings are provisional / owner-responsible — not scholarly ṭīkā. Available in Hindi and English. Audio is neural TTS path-assist, not classical pāṭh. Mūla is OCR-collated; not a Gita Press digital license claim."
+    "provisionalBody": "Meanings are provisional / owner-responsible — not scholarly ṭīkā. Available in Hindi and English. Audio is neural TTS path-assist, not classical pāṭh. Mūla is OCR-collated; not a Gita Press digital license claim.",
+    "focus": "Focus",
+    "print": "Print / PDF",
+    "share": "Share verse",
+    "scriptAll": "Mula + meaning",
+    "scriptMula": "Hindi only",
+    "scriptIast": "IAST only"
   },
   "myPath": {
     "title": "My Path",

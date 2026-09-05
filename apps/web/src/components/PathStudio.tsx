@@ -50,6 +50,8 @@ export function PathStudio({
   const [karaoke, setKaraoke] = useState(
     flags.ff_karaoke_chalisa && text.id === "hanuman-chalisa",
   );
+  const [focus, setFocus] = useState(false);
+  const [scriptView, setScriptView] = useState<"all" | "mula" | "iast">("all");
 
   const setStoreSection = usePlayerStore((s) => s.setSection);
   const setStoreMode = usePlayerStore((s) => s.setMode);
@@ -61,6 +63,10 @@ export function PathStudio({
   useEffect(() => {
     setStoreText(text.id);
   }, [text.id, setStoreText]);
+  useEffect(() => {
+    document.body.classList.toggle("path-focus", focus);
+    return () => document.body.classList.remove("path-focus");
+  }, [focus]);
   useEffect(() => {
     setStoreSection(sectionId);
   }, [sectionId, setStoreSection]);
@@ -350,22 +356,28 @@ export function PathStudio({
           onClick={() => seekVerse(v)}
           className="w-full text-left"
         >
-          <p
-            className={`font-serif leading-relaxed ${
-              on
-                ? isChalisaKaraoke
-                  ? "text-2xl font-semibold text-[var(--hanumat-shadow)]"
-                  : "text-xl text-[var(--hanumat-shadow)]"
-                : "text-lg text-[var(--hanumat-charcoal)]"
-            }`}
-            lang="hi"
-          >
-            {v.text}
-          </p>
-          {showIast && v.iast && (
-            <p className="mt-1 text-xs italic text-[var(--hanumat-stone-light)]">{v.iast}</p>
+          {scriptView !== "iast" && (
+            <p
+              className={`font-serif leading-relaxed ${
+                focus ? "text-2xl sm:text-3xl" : ""
+              } ${
+                on
+                  ? isChalisaKaraoke
+                    ? "text-2xl font-semibold text-[var(--hanumat-shadow)]"
+                    : "text-xl text-[var(--hanumat-shadow)]"
+                  : "text-lg text-[var(--hanumat-charcoal)]"
+              }`}
+              lang="hi"
+            >
+              {v.text}
+            </p>
           )}
-          {showMeaning && (
+          {(scriptView === "iast" || showIast) && v.iast && (
+            <p className={`mt-1 italic text-[var(--hanumat-stone-light)] ${focus ? "text-base" : "text-xs"}`}>
+              {v.iast}
+            </p>
+          )}
+          {scriptView === "all" && showMeaning && (
             <p className="mt-2 text-sm leading-relaxed text-[var(--hanumat-stone)]">
               {meaningFor(v, lang)}
             </p>
@@ -376,7 +388,7 @@ export function PathStudio({
   }
 
   return (
-    <div>
+    <div className={focus ? "path-studio-focus" : undefined}>
       {provisional && (
         <div
           className="mb-4 rounded-xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-gold-wash)] px-4 py-3 text-xs leading-relaxed text-[var(--hanumat-charcoal)]"
@@ -389,12 +401,12 @@ export function PathStudio({
 
       <div
         className={
-          listenOnly
+          listenOnly || focus
             ? "mx-auto max-w-lg"
             : "grid gap-6 lg:grid-cols-[240px_1fr_min(100%,320px)]"
         }
       >
-        {!listenOnly && (
+        {!listenOnly && !focus && (
           <aside className="hidden lg:block">
             <div className="sticky top-24 rounded-2xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-gold-wash)] p-3">
               <p className="mb-2 text-[10px] uppercase tracking-widest text-[var(--hanumat-vermillion-deep)]">
@@ -483,6 +495,53 @@ export function PathStudio({
                   className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
                 >
                   {t("iast")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setScriptView((v) =>
+                      v === "all" ? "mula" : v === "mula" ? "iast" : "all",
+                    )
+                  }
+                  className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
+                >
+                  {scriptView === "all"
+                    ? t("scriptAll")
+                    : scriptView === "mula"
+                      ? t("scriptMula")
+                      : t("scriptIast")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setFocus((f) => !f)}
+                  className={`rounded-full px-3 py-1.5 text-xs ${
+                    focus
+                      ? "bg-[var(--hanumat-vermillion-deep)] text-[var(--hanumat-cream)]"
+                      : "border border-[var(--hanumat-gold-line)] text-[var(--hanumat-stone)]"
+                  }`}
+                >
+                  {t("focus")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => window.print()}
+                  className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
+                >
+                  {t("print")}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    const url = window.location.href;
+                    if (navigator.share) {
+                      void navigator.share({ title: text.title.en, url });
+                    } else {
+                      void navigator.clipboard.writeText(url);
+                    }
+                  }}
+                  className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
+                >
+                  {t("share")}
                 </button>
               </>
             )}

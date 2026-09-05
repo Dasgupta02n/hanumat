@@ -5,6 +5,7 @@ import { deityHref, type DeityId } from "@/lib/deities";
 import { getGallery, gallerySrc, getGalleryImage } from "@/lib/gallery";
 import type { Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
+import { GalleryBrowser } from "@/components/GalleryBrowser";
 
 export function MandirGalleryIndex({
   deity,
@@ -14,7 +15,6 @@ export function MandirGalleryIndex({
   locale: Locale;
 }) {
   const gallery = getGallery(deity);
-  const h = (p: string) => deityHref(deity, locale, p);
   const en = locale === "en";
   const title = en ? gallery.title.en : gallery.title.hi;
 
@@ -28,36 +28,7 @@ export function MandirGalleryIndex({
             ? "108 folk-style leela paintings, each in a different Indian painting tradition. Tap a card for the full image. Art sits in frames — text never covers it."
             : "१०८ लोक-शैली लीला चित्र — प्रत्येक अलग भारतीय चित्र परंपरा में। पूर्ण देखने के लिए कार्ड चुनें। चित्रों पर पाठ नहीं चढ़ता।"}
         </p>
-        <ul className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {gallery.images.map((img) => {
-            const src = gallerySrc(img.file, deity);
-            const name = en ? img.scene.en : img.scene.hi;
-            return (
-              <li key={img.id}>
-                <article className="temple-card overflow-hidden">
-                  <Link href={h(`/gallery/${img.id}/`)} className="relative block aspect-video">
-                    <Image src={src} alt={name} fill className="object-cover" sizes="33vw" />
-                  </Link>
-                  <div
-                    className="space-y-2 border-t p-4"
-                    style={{ borderColor: "var(--hanumat-gold-line)" }}
-                  >
-                    <p className="section-kicker text-[10px]">
-                      {img.id} · {img.style}
-                    </p>
-                    <h2 className="font-serif text-lg">{name}</h2>
-                    <Link
-                      href={h(`/gallery/${img.id}/`)}
-                      className="btn-gold inline-block !px-3 !py-1.5 text-xs"
-                    >
-                      {en ? "View" : "देखें"}
-                    </Link>
-                  </div>
-                </article>
-              </li>
-            );
-          })}
-        </ul>
+        <GalleryBrowser deity={deity} locale={locale} />
       </div>
     </SiteShell>
   );

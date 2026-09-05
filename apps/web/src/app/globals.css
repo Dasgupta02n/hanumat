@@ -566,4 +566,73 @@ a {
   .landing-card:hover {
     transform: none;
   }
+  .temple-card img,
+  .group:hover img,
+  .temple-card-frame img {
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3.5rem;
+  z-index: 80;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--hanumat-vermillion-deep);
+  color: var(--hanumat-cream);
+  font-size: 0.8rem;
+}
+.skip-link:focus {
+  top: 0.6rem;
+}
+
+body.path-focus header,
+body.path-focus footer,
+body.path-focus .skip-link {
+  display: none !important;
+}
+
+.courtyard-gate {
+  position: relative;
+  z-index: 2;
+  padding: 0 1.25rem 3rem;
+}
+.courtyard-gate-inner {
+  max-width: 1100px;
+  margin-inline: auto;
+}
+.courtyard-last {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.courtyard-today {
+  margin-top: 0.5rem;
+}
+.courtyard-search {
+  margin-top: 2.5rem;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+@media print {
+  header,
+  footer,
+  .skip-link,
+  nav,
+  audio,
+  .studio-toolbar {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  .path-studio-focus,
+  .shell {
+    max-width: 210mm;
+    margin: 0 auto;
+  }
 }

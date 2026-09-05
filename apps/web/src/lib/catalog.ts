@@ -25,6 +25,15 @@ import dkmMeta from "../../../../content/texts/dakshina-kali-mantra/meta.json";
 import kaMeta from "../../../../content/texts/kalika-ashtakam/meta.json";
 import adyaMeta from "../../../../content/texts/adya-stotram/meta.json";
 import klaMeta from "../../../../content/texts/kali-aarti/meta.json";
+import stMeta from "../../../../content/texts/shiva-tandava-stotram/meta.json";
+import bilMeta from "../../../../content/texts/bilvashtakam/meta.json";
+import ddMeta from "../../../../content/texts/daridraya-dahana-stotram/meta.json";
+import jyMeta from "../../../../content/texts/jyotirlinga-stotra/meta.json";
+import svMeta from "../../../../content/texts/somvar-vrat-katha/meta.json";
+import kgMeta from "../../../../content/texts/kali-gayatri/meta.json";
+import mkMeta from "../../../../content/texts/mahakali-stotra/meta.json";
+import ksnMeta from "../../../../content/texts/kali-sahasranama-selected/meta.json";
+import kabMeta from "../../../../content/texts/kali-aarti-bengal/meta.json";
 
 type MetaLite = {
   id: string;
@@ -62,6 +71,15 @@ const metas: MetaLite[] = [
   kaMeta as MetaLite,
   adyaMeta as MetaLite,
   klaMeta as MetaLite,
+  stMeta as MetaLite,
+  bilMeta as MetaLite,
+  ddMeta as MetaLite,
+  jyMeta as MetaLite,
+  svMeta as MetaLite,
+  kgMeta as MetaLite,
+  mkMeta as MetaLite,
+  ksnMeta as MetaLite,
+  kabMeta as MetaLite,
 ];
 
 export type CatalogItem = {

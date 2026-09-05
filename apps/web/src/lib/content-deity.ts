@@ -161,6 +161,69 @@ import klaHi from "../../../../content/texts/kali-aarti/translations/hi.json";
 import klaEn from "../../../../content/texts/kali-aarti/translations/en.json";
 import klaIast from "../../../../content/texts/kali-aarti/transliteration/iast.json";
 
+import stMeta from "../../../../content/texts/shiva-tandava-stotram/meta.json";
+import stStructure from "../../../../content/texts/shiva-tandava-stotram/structure.json";
+import stVerses from "../../../../content/texts/shiva-tandava-stotram/verses.json";
+import stHi from "../../../../content/texts/shiva-tandava-stotram/translations/hi.json";
+import stEn from "../../../../content/texts/shiva-tandava-stotram/translations/en.json";
+import stIast from "../../../../content/texts/shiva-tandava-stotram/transliteration/iast.json";
+
+import bilMeta from "../../../../content/texts/bilvashtakam/meta.json";
+import bilStructure from "../../../../content/texts/bilvashtakam/structure.json";
+import bilVerses from "../../../../content/texts/bilvashtakam/verses.json";
+import bilHi from "../../../../content/texts/bilvashtakam/translations/hi.json";
+import bilEn from "../../../../content/texts/bilvashtakam/translations/en.json";
+import bilIast from "../../../../content/texts/bilvashtakam/transliteration/iast.json";
+
+import ddMeta from "../../../../content/texts/daridraya-dahana-stotram/meta.json";
+import ddStructure from "../../../../content/texts/daridraya-dahana-stotram/structure.json";
+import ddVerses from "../../../../content/texts/daridraya-dahana-stotram/verses.json";
+import ddHi from "../../../../content/texts/daridraya-dahana-stotram/translations/hi.json";
+import ddEn from "../../../../content/texts/daridraya-dahana-stotram/translations/en.json";
+import ddIast from "../../../../content/texts/daridraya-dahana-stotram/transliteration/iast.json";
+
+import jyMeta from "../../../../content/texts/jyotirlinga-stotra/meta.json";
+import jyStructure from "../../../../content/texts/jyotirlinga-stotra/structure.json";
+import jyVerses from "../../../../content/texts/jyotirlinga-stotra/verses.json";
+import jyHi from "../../../../content/texts/jyotirlinga-stotra/translations/hi.json";
+import jyEn from "../../../../content/texts/jyotirlinga-stotra/translations/en.json";
+import jyIast from "../../../../content/texts/jyotirlinga-stotra/transliteration/iast.json";
+
+import svMeta from "../../../../content/texts/somvar-vrat-katha/meta.json";
+import svStructure from "../../../../content/texts/somvar-vrat-katha/structure.json";
+import svVerses from "../../../../content/texts/somvar-vrat-katha/verses.json";
+import svHi from "../../../../content/texts/somvar-vrat-katha/translations/hi.json";
+import svEn from "../../../../content/texts/somvar-vrat-katha/translations/en.json";
+import svIast from "../../../../content/texts/somvar-vrat-katha/transliteration/iast.json";
+
+import kgMeta from "../../../../content/texts/kali-gayatri/meta.json";
+import kgStructure from "../../../../content/texts/kali-gayatri/structure.json";
+import kgVerses from "../../../../content/texts/kali-gayatri/verses.json";
+import kgHi from "../../../../content/texts/kali-gayatri/translations/hi.json";
+import kgEn from "../../../../content/texts/kali-gayatri/translations/en.json";
+import kgIast from "../../../../content/texts/kali-gayatri/transliteration/iast.json";
+
+import mkMeta from "../../../../content/texts/mahakali-stotra/meta.json";
+import mkStructure from "../../../../content/texts/mahakali-stotra/structure.json";
+import mkVerses from "../../../../content/texts/mahakali-stotra/verses.json";
+import mkHi from "../../../../content/texts/mahakali-stotra/translations/hi.json";
+import mkEn from "../../../../content/texts/mahakali-stotra/translations/en.json";
+import mkIast from "../../../../content/texts/mahakali-stotra/transliteration/iast.json";
+
+import ksnMeta from "../../../../content/texts/kali-sahasranama-selected/meta.json";
+import ksnStructure from "../../../../content/texts/kali-sahasranama-selected/structure.json";
+import ksnVerses from "../../../../content/texts/kali-sahasranama-selected/verses.json";
+import ksnHi from "../../../../content/texts/kali-sahasranama-selected/translations/hi.json";
+import ksnEn from "../../../../content/texts/kali-sahasranama-selected/translations/en.json";
+import ksnIast from "../../../../content/texts/kali-sahasranama-selected/transliteration/iast.json";
+
+import kabMeta from "../../../../content/texts/kali-aarti-bengal/meta.json";
+import kabStructure from "../../../../content/texts/kali-aarti-bengal/structure.json";
+import kabVerses from "../../../../content/texts/kali-aarti-bengal/verses.json";
+import kabHi from "../../../../content/texts/kali-aarti-bengal/translations/hi.json";
+import kabEn from "../../../../content/texts/kali-aarti-bengal/translations/en.json";
+import kabIast from "../../../../content/texts/kali-aarti-bengal/transliteration/iast.json";
+
 function P(
   meta: object,
   structure: object,
@@ -191,4 +254,13 @@ export const deityTexts: TextPackage[] = [
   P(kaMeta, kaStructure, kaVerses, kaHi, kaEn, kaIast),
   P(adyaMeta, adyaStructure, adyaVerses, adyaHi, adyaEn, adyaIast),
   P(klaMeta, klaStructure, klaVerses, klaHi, klaEn, klaIast),
+  P(stMeta, stStructure, stVerses, stHi, stEn, stIast),
+  P(bilMeta, bilStructure, bilVerses, bilHi, bilEn, bilIast),
+  P(ddMeta, ddStructure, ddVerses, ddHi, ddEn, ddIast),
+  P(jyMeta, jyStructure, jyVerses, jyHi, jyEn, jyIast),
+  P(svMeta, svStructure, svVerses, svHi, svEn, svIast),
+  P(kgMeta, kgStructure, kgVerses, kgHi, kgEn, kgIast),
+  P(mkMeta, mkStructure, mkVerses, mkHi, mkEn, mkIast),
+  P(ksnMeta, ksnStructure, ksnVerses, ksnHi, ksnEn, ksnIast),
+  P(kabMeta, kabStructure, kabVerses, kabHi, kabEn, kabIast),
 ];

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { deities } from "@/lib/deities";
 import { LandingCarousel } from "@/components/LandingCarousel";
+import { CourtyardGate } from "@/components/CourtyardGate";
 
 export const metadata: Metadata = {
   title: "Hanumat · Three sacred mandirs",
@@ -89,6 +90,8 @@ export default function LandingPage() {
           </article>
         ))}
       </main>
+
+      <CourtyardGate />
 
       <footer className="landing-foot">
         <p>

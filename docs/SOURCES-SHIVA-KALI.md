@@ -14,6 +14,11 @@ All new texts were collated from **at least two independent public recensions**.
 | Nirvana Shatkam | Green Message (Adi Shankara) | Standard Advaita Ātmaṣaṭkam recension. |
 | Kalabhairava Ashtakam | Green Message (Adi Shankara) | Refrain काशिकापुराधिनाथकालभैरवं भजे stable. |
 | Shiv Aarti | Temple booklet recension *Jai Shiv Omkara* | Line-order varies by region (same class of variance as Hanuman aarti). |
+| Shiva Tandava Stotram | Sanskrit Documents `shivTAND_meaning` (Ravana) | Green Message; 15 verses + pradosha phalaśruti. |
+| Bilvashtakam | Sanskrit Documents `bilvaashhtaka` | Common 8+phalaśruti temple recension; middle-verse order varies. |
+| Daridraya Dahana Stotram | Public Vasishtha recension | Green Message / SD class; household stotra. |
+| Jyotirlinga stotra | Traditional *Saurashtra Somanatham cha* | Four-verse twelve-name list, stable across printings. |
+| Somvar vrata katha | North Indian household telling | Plain seva text — not a shastra quote; local custom wins. |
 
 ## Kali
 
@@ -23,6 +28,10 @@ All new texts were collated from **at least two independent public recensions**.
 | Kalika Ashtakam | Green Message (attributed Adi Shankara) | Dhyana 1–3 + stuti 1–8; fierce traditional iconography retained in mula. |
 | Adya Stotram | Sanskrit Documents `AdyA` (Mukherjee / Hattangadi); Brahma Yamala | Green Message; Adyapeath translation PDF. |
 | Kali Aarti | Temple recension *Jai Kali Mata* | Regional line-order variants exist. |
+| Kali Gayatri | Public smarta `kālīkālyai vidmahe` | Second smashana-vasini form noted, not substituted. |
+| Mahakali stotra | Dakshina Kali dhyana + Argala opening | Devi Mahatmya / public dhyana; not Karpuradi. |
+| Kali Sahasranama (selected) | Public name-lists | Index + 27 names only — full thousand not dumped. |
+| Kali aarti · Bengal pith | Bengal temple booklet class | Labeled regional variant beside the North Indian aarti. |
 
 ## Not included (deliberate)
 

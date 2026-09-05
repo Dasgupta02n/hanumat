@@ -1,0 +1,37 @@
+{
+  "id": "jyotirlinga-stotra",
+  "slug": "jyotirlinga-stotra",
+  "deity": "shiva",
+  "title": {
+    "hi": "द्वादश ज्योतिर्लिङ्ग स्तोत्र",
+    "en": "Twelve Jyotirlinga Stotra"
+  },
+  "subtitle": {
+    "hi": "सौराष्ट्रे सोमनाथं च",
+    "en": "Saurashtra Somnatham cha"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "JYOTIRLINGA-DWADASHA-TRAD",
+    "publisher": "Traditional (public domain)",
+    "notes": "Stable four-verse public recension of the twelve names. Cross-checked common Devanagari printings."
+  },
+  "flags": {
+    "hasAudio": false,
+    "hasOfflinePack": false,
+    "placeholderAudio": false,
+    "ttsGenerated": false,
+    "needsDualReview": true
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "बारह ज्योतिर्लिङ्ग के नाम — प्रातः-सायं स्मरण।",
+    "en": "The twelve jyotirlinga names — morning and evening remembrance."
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 4
+  }
+}

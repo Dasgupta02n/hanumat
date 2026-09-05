@@ -77,8 +77,8 @@ export const metadata: Metadata = {
       "Sundar Kand, Hanuman Chalisa & multi-language Hanuman bhakti — free digital temple.",
     url: "https://hanumat.life",
     siteName: "Hanumat",
-    locale: "hi_IN",
-    alternateLocale: ["en_IN"],
+    locale: "en_IN",
+    alternateLocale: ["hi_IN"],
     type: "website",
     images: [
       {
@@ -107,7 +107,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="hi" suppressHydrationWarning suppressContentEditableWarning>
+    <html lang="en" suppressHydrationWarning suppressContentEditableWarning>
       <head>
         <meta
           httpEquiv="Content-Security-Policy"

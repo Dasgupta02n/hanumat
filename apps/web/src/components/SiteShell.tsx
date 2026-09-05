@@ -84,9 +84,9 @@ export function SiteShell({
         title: locale === "en" ? "Mandirs" : "धाम",
         links: [
           { href: "/", label: locale === "en" ? "Three mandirs" : "तीन धाम" },
-          { href: "/hi/", label: locale === "en" ? "Hanumat" : "हनुमत" },
-          { href: "/shiva/hi/", label: locale === "en" ? "Shivayatan" : "शिवायतन" },
-          { href: "/kali/hi/", label: locale === "en" ? "Kalika Dham" : "कालिका धाम" },
+          { href: deityHref("hanuman", locale, "/"), label: locale === "en" ? "Hanumat" : "हनुमत" },
+          { href: deityHref("shiva", locale, "/"), label: locale === "en" ? "Shivayatan" : "शिवायतन" },
+          { href: deityHref("kali", locale, "/"), label: locale === "en" ? "Kalika Dham" : "कालिका धाम" },
         ],
       },
       {

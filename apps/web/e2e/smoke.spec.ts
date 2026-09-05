@@ -2,10 +2,16 @@ import { test, expect } from "@playwright/test";
 
 test("landing shows three mandirs", async ({ page }) => {
   await page.goto("/");
+  await expect(page.getByText("Three sacred mandirs").first()).toBeVisible();
   await expect(page.getByText("तीन धाम").first()).toBeVisible();
   await expect(page.getByRole("link", { name: /Enter Hanumat/i }).first()).toBeVisible();
   await expect(page.getByRole("link", { name: /Enter Shivayatan/i }).first()).toBeVisible();
   await expect(page.getByRole("link", { name: /Enter Kalika Dham/i }).first()).toBeVisible();
+});
+
+test("home en is the default mandir entry", async ({ page }) => {
+  await page.goto("/en/");
+  await expect(page.getByText("Hanumat").first()).toBeVisible();
 });
 
 test("home hi loads brand", async ({ page }) => {

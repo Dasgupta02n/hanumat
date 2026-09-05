@@ -8,7 +8,7 @@ import { JsonLd, siteJsonLd } from "@/components/JsonLd";
 import { SiteShell } from "@/components/SiteShell";
 import { listCatalogLite } from "@/lib/catalog";
 import { galleryImages, gallerySrc, imageForLeela } from "@/lib/gallery";
-import { isLocale, locales, type Locale } from "@/i18n/config";
+import { defaultLocale, isLocale, locales, type Locale } from "@/i18n/config";
 import { notFound } from "next/navigation";
 
 function cardImage(slug: string, category: string) {
@@ -31,7 +31,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale: raw } = await params;
-  const locale = isLocale(raw) ? raw : "hi";
+  const locale = isLocale(raw) ? raw : defaultLocale;
   const title =
     locale === "en"
       ? "Hanumat — Digital Mandir for Hanuman Chalisa, Sundar Kand & Bhakti"

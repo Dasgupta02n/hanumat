@@ -3,7 +3,7 @@ import { extrasFor } from "@/lib/mandir-extras";
 import { getGallery } from "@/lib/gallery";
 import { getTextBySlug } from "@/lib/content";
 import { deities, deityHref, type DeityId, DEITY_IDS } from "@/lib/deities";
-import type { Locale } from "@/i18n/config";
+import { defaultLocale, type Locale } from "@/i18n/config";
 
 const SKIP_VERSE_SLUGS = new Set(["valmiki-sundarakanda", "sundar-kand-manas"]);
 
@@ -30,7 +30,7 @@ function build(): SearchHit[] {
   const hits: SearchHit[] = [];
   for (const deity of DEITY_IDS) {
     const catalog: CatalogItem[] = listCatalogLite(undefined, deity);
-    const extras = extrasFor(deity, "hi");
+    const extras = extrasFor(deity, defaultLocale);
     const gallery = getGallery(deity);
 
     for (const p of catalog) {
@@ -38,7 +38,7 @@ function build(): SearchHit[] {
         id: `path:${p.id}`,
         kind: "path",
         deity,
-        href: deityHref(deity, "hi", `/path/${p.slug}/`),
+        href: deityHref(deity, defaultLocale, `/path/${p.slug}/`),
         title: p.title.en,
         titleHi: p.title.hi,
         snippet: typeof p.description === "string" ? p.description : p.description.en || "",
@@ -53,7 +53,7 @@ function build(): SearchHit[] {
           id: `verse:${p.id}:${v.id}`,
           kind: "verse",
           deity,
-          href: `${deityHref(deity, "hi", `/path/${p.slug}/`)}?verse=${v.id}`,
+          href: `${deityHref(deity, defaultLocale, `/path/${p.slug}/`)}?verse=${v.id}`,
           title: p.title.en,
           titleHi: p.title.hi,
           snippet: v.text.slice(0, 80),
@@ -67,7 +67,7 @@ function build(): SearchHit[] {
         id: `temple:${deity}:${tm.id}`,
         kind: "temple",
         deity,
-        href: deityHref(deity, "hi", "/temples/"),
+        href: deityHref(deity, defaultLocale, "/temples/"),
         title: tm.name.en,
         titleHi: tm.name.hi,
         snippet: tm.region,
@@ -80,7 +80,7 @@ function build(): SearchHit[] {
         id: `gloss:${deity}:${g.term}`,
         kind: "glossary",
         deity,
-        href: deityHref(deity, "hi", "/glossary/"),
+        href: deityHref(deity, defaultLocale, "/glossary/"),
         title: g.term,
         titleHi: g.hi,
         snippet: g.body.en,
@@ -93,7 +93,7 @@ function build(): SearchHit[] {
         id: `leela:${deity}:${img.id}`,
         kind: "leela",
         deity,
-        href: deityHref(deity, "hi", `/gallery/${img.id}/`),
+        href: deityHref(deity, defaultLocale, `/gallery/${img.id}/`),
         title: img.scene.en,
         titleHi: img.scene.hi,
         snippet: img.style,
@@ -117,14 +117,16 @@ export function searchSite(
 ): SearchHit[] {
   const q = query.trim().toLowerCase().normalize("NFKD");
   if (q.length < 2) return [];
-  const locale = opts?.locale || "hi";
+  const locale = opts?.locale || defaultLocale;
   const limit = opts?.limit ?? 24;
   const out: SearchHit[] = [];
   for (const hit of searchIndex()) {
     if (opts?.deity && hit.deity !== opts.deity) continue;
     if (!hit.haystack.includes(q)) continue;
     const href =
-      locale === "en" ? hit.href.replace(/\/hi\//, "/en/") : hit.href;
+      locale === defaultLocale
+        ? hit.href
+        : hit.href.replace(`/${defaultLocale}/`, `/${locale}/`);
     out.push({ ...hit, href });
     if (out.length >= limit) break;
   }

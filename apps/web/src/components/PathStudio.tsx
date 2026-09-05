@@ -483,7 +483,7 @@ export function PathStudio({
                   onChange={(e) => setLang(e.target.value)}
                   aria-label="Meaning locale"
                 >
-                  {(["hi", "en"] as const).map((l) => (
+                  {(["en", "hi"] as const).map((l) => (
                     <option key={l} value={l}>
                       {l}
                     </option>

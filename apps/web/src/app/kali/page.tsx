@@ -11,11 +11,11 @@ export default function KaliRoot() {
       }}
     >
       <p>
-        Opening Kalika Dham… <Link href="/kali/hi/">Continue</Link>
+        Opening Kalika Dham… <Link href="/kali/en/">Continue</Link>
       </p>
       <script
         dangerouslySetInnerHTML={{
-          __html: `location.replace("/kali/hi/");`,
+          __html: `location.replace("/kali/en/");`,
         }}
       />
     </div>

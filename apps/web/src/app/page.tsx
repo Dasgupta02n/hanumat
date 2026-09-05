@@ -48,8 +48,10 @@ export default function LandingPage() {
         <p className="landing-om" aria-hidden>
           ॐ
         </p>
-        <h1 className="landing-title">तीन धाम</h1>
-        <p className="landing-sub">Three sacred mandirs · one courtyard</p>
+        <h1 className="landing-title">Three sacred mandirs</h1>
+        <p className="landing-sub" lang="hi">
+          तीन धाम · one courtyard
+        </p>
         <p className="landing-lead">
           Choose a gate. Hanuman, Shiva, or Maa Kali — path, meaning, and japa.
           No ads.
@@ -59,7 +61,7 @@ export default function LandingPage() {
       <main className="landing-grid">
         {PORTALS.map((p) => (
           <article key={p.id} className={`landing-card landing-card-${p.id}`}>
-            <Link href={p.hrefHi} className="landing-card-link">
+            <Link href={p.hrefEn} className="landing-card-link">
               <div className="landing-card-img">
                 <Image src={p.portalImg} alt={p.brand.en} fill sizes="(max-width: 900px) 100vw, 33vw" />
                 <div className="landing-card-veil" />
@@ -84,8 +86,8 @@ export default function LandingPage() {
               </div>
             </Link>
             <div className="landing-lang">
-              <Link href={p.hrefHi}>हिन्दी</Link>
               <Link href={p.hrefEn}>English</Link>
+              <Link href={p.hrefHi}>हिन्दी</Link>
             </div>
           </article>
         ))}

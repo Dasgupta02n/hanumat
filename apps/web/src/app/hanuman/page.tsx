@@ -11,11 +11,11 @@ export default function HanumanRoot() {
       }}
     >
       <p>
-        Opening Hanumat… <Link href="/hi/">Continue</Link>
+        Opening Hanumat… <Link href="/en/">Continue</Link>
       </p>
       <script
         dangerouslySetInnerHTML={{
-          __html: `location.replace("/hi/");`,
+          __html: `location.replace("/en/");`,
         }}
       />
     </div>

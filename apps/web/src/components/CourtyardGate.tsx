@@ -12,17 +12,19 @@ import { todayForDeity, leelaOfDay } from "@/lib/today";
 import { getGallery, gallerySrc } from "@/lib/gallery";
 import { SiteSearch } from "@/components/SiteSearch";
 import { isDeityId } from "@/lib/deities";
+import { defaultLocale } from "@/i18n/config";
 
 export function CourtyardGate() {
+  const locale = defaultLocale;
   const [last, setLast] = useState<DeityId | null>(null);
   const [recent, setRecent] = useState<{ href: string; label: string }[]>([]);
   const [today, setToday] = useState(() =>
-    DEITY_IDS.map((id) => todayForDeity(id, "hi")),
+    DEITY_IDS.map((id) => todayForDeity(id, locale)),
   );
 
   useEffect(() => {
     setLast(loadLastMandir());
-    setToday(DEITY_IDS.map((id) => todayForDeity(id, "hi", new Date())));
+    setToday(DEITY_IDS.map((id) => todayForDeity(id, locale, new Date())));
     void hydrateMyPath().then(() => {
       const resume = loadResume().slice(0, 4);
       setRecent(
@@ -30,30 +32,30 @@ export function CourtyardGate() {
           const pack = getTextBySlug(r.slug);
           const deity = (pack?.deity && isDeityId(pack.deity) ? pack.deity : "hanuman") as DeityId;
           return {
-            href: `${deityHref(deity, "hi", `/path/${r.slug}/`)}${r.verseId ? `?verse=${r.verseId}` : ""}`,
-            label: pack ? pack.title.hi : r.slug,
+            href: `${deityHref(deity, locale, `/path/${r.slug}/`)}${r.verseId ? `?verse=${r.verseId}` : ""}`,
+            label: pack ? pack.title.en : r.slug,
           };
         }),
       );
     });
-  }, []);
+  }, [locale]);
 
   return (
     <section className="courtyard-gate" aria-label="Today in the three dhams">
       <div className="courtyard-gate-inner">
         {last && (
           <p className="courtyard-last">
-            <Link href={deityHref(last, "hi", "/")} className="landing-enter">
+            <Link href={deityHref(last, locale, "/")} className="landing-enter">
               Open last mandir · {deities[last].brand.en} →
             </Link>
           </p>
         )}
 
         <h2 className="landing-sub" style={{ marginTop: "2.5rem" }}>
-          आज तीन धाम में
-        </h2>
-        <p className="landing-card-copy" style={{ textAlign: "center", marginBottom: "1.25rem" }}>
           Today in the three dhams
+        </h2>
+        <p className="landing-card-copy" style={{ textAlign: "center", marginBottom: "1.25rem" }} lang="hi">
+          आज तीन धाम में
         </p>
 
         <div className="landing-grid courtyard-today">
@@ -66,8 +68,10 @@ export function CourtyardGate() {
                 </div>
                 <div className="landing-card-body">
                   <p className="landing-card-kicker">{c.badge.en}</p>
-                  <h3 lang="hi">{c.title.hi}</h3>
-                  <p className="landing-card-copy">{c.title.en}</p>
+                  <h3>{c.title.en}</h3>
+                  <p className="landing-card-copy" lang="hi">
+                    {c.title.hi}
+                  </p>
                   <span className="landing-enter">Open path →</span>
                 </div>
               </Link>
@@ -76,7 +80,7 @@ export function CourtyardGate() {
         </div>
 
         <h2 className="landing-sub" style={{ marginTop: "2.75rem" }}>
-          लीला of the day
+          Leela of the day
         </h2>
         <div className="landing-grid courtyard-today">
           {DEITY_IDS.map((id) => {
@@ -85,7 +89,7 @@ export function CourtyardGate() {
             const img = gallery.images.find((i) => gallerySrc(i.file, id) === src) || gallery.images[0];
             return (
               <article key={id} className="landing-card">
-                <Link href={deityHref(id, "hi", `/gallery/${img.id}/`)} className="landing-card-link">
+                <Link href={deityHref(id, locale, `/gallery/${img.id}/`)} className="landing-card-link">
                   <div className="landing-card-img" style={{ minHeight: 160 }}>
                     <Image src={src} alt={img.scene.en} fill sizes="33vw" />
                     <div className="landing-card-veil" />
@@ -105,7 +109,7 @@ export function CourtyardGate() {
 
         <div className="courtyard-search">
           <h2 className="landing-sub">Search the courtyard</h2>
-          <SiteSearch locale="hi" compact />
+          <SiteSearch locale={locale} compact />
           {recent.length > 0 && (
             <div className="mt-6">
               <p className="landing-card-kicker">Recent paths</p>

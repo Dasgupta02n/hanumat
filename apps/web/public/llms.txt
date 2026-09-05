@@ -13,7 +13,7 @@ Hanumat is a multi-language spiritual web application and static site for devote
 - Practice: japa mala, parayan planner, listen/radio modes
 - Places: Hanuman temples / kshetras in India
 - Gallery: 108 sacred scenes
-- Locales: Hindi (hi), English (en)
+- Locales: English (en, default), Hindi (hi)
 
 ## Important disclaimers (always true)
 - Audio is neural TTS path-assist, not classical temple pāṭh unless stated otherwise.

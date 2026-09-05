@@ -22,7 +22,7 @@ export function siteJsonLd(locale: string) {
         alternateName: ["Hanumat Digital Mandir", "Shri Hanuman Digital Dham", "हनुमत"],
         description:
           "Digital mandir for devotees of Hanuman Ji — Sundar Kand, Hanuman Chalisa, stotras, japa, katha, temples, and multi-language path study.",
-        inLanguage: ["hi", "en"],
+        inLanguage: ["en", "hi"],
         publisher: { "@id": `${base}/#org` },
         potentialAction: {
           "@type": "SearchAction",

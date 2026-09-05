@@ -11,11 +11,11 @@ export default function ShivaRoot() {
       }}
     >
       <p>
-        Opening Shivayatan… <Link href="/shiva/hi/">Continue</Link>
+        Opening Shivayatan… <Link href="/shiva/en/">Continue</Link>
       </p>
       <script
         dangerouslySetInnerHTML={{
-          __html: `location.replace("/shiva/hi/");`,
+          __html: `location.replace("/shiva/en/");`,
         }}
       />
     </div>

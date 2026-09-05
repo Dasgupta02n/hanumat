@@ -1,8 +1,8 @@
-/** Product: Hindi + English only */
-export const locales = ["hi", "en"] as const;
+/** Product: Hindi + English only. English is the default entry locale. */
+export const locales = ["en", "hi"] as const;
 
 export type Locale = (typeof locales)[number];
-export const defaultLocale: Locale = "hi";
+export const defaultLocale: Locale = "en";
 
 export function isLocale(v: string): v is Locale {
   return (locales as readonly string[]).includes(v);

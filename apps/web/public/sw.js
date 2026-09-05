@@ -1,11 +1,11 @@
 /* Hanumat SW — pack caches with sha256 verify (Workbox-class integrity)
  * Pack cache keys: pack:{id}:v{version} (design Appendix F)
  */
-const SHELL = "hanumat-shell-v5";
+const SHELL = "hanumat-shell-v6";
 const PACK_PREFIX = "pack:";
 const LEGACY_PACK_PREFIX = "hanumat-pack:";
 
-const SHELL_URLS = ["/", "/hi/", "/en/", "/manifest.webmanifest"];
+const SHELL_URLS = ["/", "/en/", "/hi/", "/manifest.webmanifest"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -203,7 +203,7 @@ self.addEventListener("fetch", (event) => {
           caches.open(SHELL).then((c) => c.put(req, copy));
           return res;
         })
-        .catch(() => caches.match(req).then((hit) => hit || caches.match("/") || caches.match("/hi/"))),
+        .catch(() => caches.match(req).then((hit) => hit || caches.match("/") || caches.match("/en/") || caches.match("/hi/"))),
     );
     return;
   }

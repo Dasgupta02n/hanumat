@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { SiteShell } from "@/components/SiteShell";
 import { MandirHome } from "@/components/MandirHome";
 import { MandirGalleryIndex, MandirGalleryDetail } from "@/components/MandirGallery";
-import { getGallery } from "@/lib/gallery";
+import { getGallery, galleryPick } from "@/lib/gallery";
 import { PathStudioDynamic } from "@/components/PathStudioDynamic";
 import { listCatalogLite } from "@/lib/catalog";
 import { getTextBySlug, textsForDeity } from "@/lib/content";
@@ -65,21 +66,40 @@ export async function renderMandirPathIndex(deity: DeityId, rawLocale: string) {
   const en = locale === "en";
 
   return (
-    <SiteShell>
-      <h1 className="section-title text-4xl">{t("path.title")}</h1>
-      <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
-        {en ? deities[deity].homeBody.en : deities[deity].homeBody.hi}
-      </p>
-      <ul className="mt-8 space-y-3">
-        {catalog.map((p) => (
-          <li key={p.id}>
+    <SiteShell wide>
+      <div className="shell section-pad">
+        <p className="section-kicker">{en ? deities[deity].eyebrow.en : deities[deity].eyebrow.hi}</p>
+        <h1 className="section-title mt-2 text-4xl">{t("path.title")}</h1>
+        <p className="mt-3 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
+          {en ? deities[deity].homeBody.en : deities[deity].homeBody.hi}
+        </p>
+        <hr className="temple-rule mt-6" />
+        <div className="pillar-grid mt-10">
+          {catalog.map((p, i) => (
             <Link
+              key={p.id}
               href={h(`/path/${p.slug}/`)}
-              className="temple-card temple-card-frame flex items-center justify-between px-5 py-4"
+              className="temple-card temple-card-frame group"
             >
-              <div>
+              <div className="relative h-44">
+                <Image
+                  src={galleryPick(deity, i * 9 + 5)}
+                  alt=""
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="50vw"
+                />
+                <div
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-20"
+                  style={{
+                    background: "linear-gradient(to top, rgba(246,241,231,0.95), transparent)",
+                  }}
+                />
+              </div>
+              <div className="p-5">
+                <p className="section-kicker text-[10px]">{p.category}</p>
                 <p
-                  className="text-xl"
+                  className="mt-2 text-2xl"
                   style={{
                     fontFamily: "var(--font-display)",
                     color: "var(--hanumat-shadow)",
@@ -88,15 +108,14 @@ export async function renderMandirPathIndex(deity: DeityId, rawLocale: string) {
                 >
                   {en ? p.title.en : p.title.hi}
                 </p>
-                <p className="text-xs" style={{ color: "var(--hanumat-vermillion-deep)" }}>
-                  {p.verseCount} {t("common.verses")} · {p.category}
+                <p className="mt-1 text-xs" style={{ color: "var(--hanumat-vermillion-deep)" }}>
+                  {p.verseCount} {t("common.verses")}
                 </p>
               </div>
-              <span style={{ color: "var(--hanumat-gold-deep)" }}>→</span>
             </Link>
-          </li>
-        ))}
-      </ul>
+          ))}
+        </div>
+      </div>
     </SiteShell>
   );
 }
@@ -158,30 +177,44 @@ export async function renderMandirListen(deity: DeityId, rawLocale: string) {
   const en = locale === "en";
 
   return (
-    <SiteShell>
-      <h1 className="section-title text-4xl">{en ? "Listen / read" : "श्रवण / पाठ"}</h1>
+    <SiteShell wide>
+      <div className="shell section-pad">
+      <p className="section-kicker">{en ? deities[deity].eyebrow.en : deities[deity].eyebrow.hi}</p>
+      <h1 className="section-title mt-2 text-4xl">{en ? "Listen / read" : "श्रवण / पाठ"}</h1>
       <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
         {en
           ? "Wave v1 for this dham is text-first (mula + IAST + meaning). Path-assist audio may be added later."
           : "इस धाम का Wave v1 पाठ-प्रथम है (मूल + IAST + अर्थ)। श्रवण बाद में जुड़ सकता है।"}
       </p>
-      <ul className="mt-8 space-y-3">
-        {catalog.map((p) => (
-          <li key={p.id}>
-            <Link
-              href={h(`/path/${p.slug}/`)}
-              className="temple-card flex items-center justify-between px-5 py-4"
-            >
+      <hr className="temple-rule mt-6" />
+      <div className="pillar-grid mt-10">
+        {catalog.map((p, i) => (
+          <Link
+            key={p.id}
+            href={h(`/path/${p.slug}/`)}
+            className="temple-card temple-card-frame group"
+          >
+            <div className="relative h-40">
+              <Image
+                src={galleryPick(deity, i * 8 + 12)}
+                alt=""
+                fill
+                className="object-cover transition duration-500 group-hover:scale-105"
+                sizes="50vw"
+              />
+            </div>
+            <div className="flex items-center justify-between px-5 py-4">
               <span style={{ fontFamily: "var(--font-display)", fontWeight: 600 }}>
                 {en ? p.title.en : p.title.hi}
               </span>
               <span className="text-xs" style={{ color: "var(--hanumat-gold-deep)" }}>
                 Path Studio →
               </span>
-            </Link>
-          </li>
+            </div>
+          </Link>
         ))}
-      </ul>
+      </div>
+      </div>
     </SiteShell>
   );
 }

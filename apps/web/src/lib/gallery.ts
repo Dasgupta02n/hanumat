@@ -47,6 +47,13 @@ export function gallerySrcFor(deity: DeityId, file: string) {
   return gallerySrc(file, deity);
 }
 
+/** Stable pick from a deity's 108 pack (wraps). */
+export function galleryPick(deity: DeityId, index: number) {
+  const imgs = PACKS[deity].images;
+  const img = imgs[((index % imgs.length) + imgs.length) % imgs.length];
+  return gallerySrc(img.file, deity);
+}
+
 /** Map leela tags to a preferred gallery id for site placement */
 export const leelaImageMap: Record<string, string> = {
   home: "006.jpg",

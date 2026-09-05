@@ -318,18 +318,7 @@ a {
   border: 0;
 }
 
-/* ── Deity tints ── */
-[data-deity="shiva"] {
-  --hanumat-vermillion: #3d5a7a;
-  --hanumat-vermillion-deep: #2a4060;
-  --hanumat-vermillion-glow: rgba(42, 64, 96, 0.12);
-}
-
-[data-deity="kali"] {
-  --hanumat-vermillion: #8b1e2d;
-  --hanumat-vermillion-deep: #5c101c;
-  --hanumat-vermillion-glow: rgba(92, 16, 28, 0.14);
-}
+/* Shiva / Kali keep the same cream–gold–vermillion temple palette as Hanumat. */
 
 /* ── Three-dham landing ── */
 .landing-root {

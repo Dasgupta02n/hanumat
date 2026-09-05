@@ -1,7 +1,7 @@
 /* Hanumat SW — pack caches with sha256 verify (Workbox-class integrity)
  * Pack cache keys: pack:{id}:v{version} (design Appendix F)
  */
-const SHELL = "hanumat-shell-v3";
+const SHELL = "hanumat-shell-v4";
 const PACK_PREFIX = "pack:";
 const LEGACY_PACK_PREFIX = "hanumat-pack:";
 

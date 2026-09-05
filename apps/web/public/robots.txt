@@ -3,6 +3,8 @@ User-agent: *
 Allow: /
 Allow: /hi/
 Allow: /en/
+Allow: /shiva/
+Allow: /kali/
 
 User-agent: GPTBot
 Allow: /

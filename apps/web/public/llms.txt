@@ -1,38 +1,34 @@
 # Hanumat (hanumat.life)
 
-> Free, ad-free digital mandir dedicated to Lord Hanuman (Hanuman Ji).
+> Free, ad-free digital mandir — Hanuman, Shiva, Maa Kali. English default; Hindi one tap.
 
 ## What this site is
-Hanumat is a multi-language spiritual web application and static site for devotees, students, and researchers of Hanuman bhakti. It provides structured access to sacred texts, meanings, path-assist audio, japa tools, katha, temple directories, and gallery art.
+A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Roman letters), Hindi & English meaning, optional path-assist audio, japa, parayan, galleries. No ads, no accounts, no trackers.
 
 ## Primary offerings
-- Hanuman Chalisa (text, IAST, meanings, timed audio)
-- Sundar Kand from Ramcharitmanas (sectioned, multi-language meanings, audio)
-- Valmiki Sundarakanda (full 68-sarga traditional pack + path-assist audio)
-- Stotras: Bajrang Baan, Sankatmochan Ashtak, Aarti, Bahuk, Panchmukhi Kavach, names
-- Practice: japa mala, parayan planner, listen/radio modes
-- Places: Hanuman temples / kshetras in India
-- Gallery: 108 sacred scenes
+- Hanuman Chalisa (text, IAST, meanings, timed audio) — Tuesday path
+- Sundar Kand (Ramcharitmanas) and Valmiki Sundarakanda
+- Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam
+- Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri (no Karpuradi, no unverified Kali Chalisa)
+- Japa mala per deity, parayan 7/9/21/40, print/PDF
+- 108 folk leela paintings per dham
 - Locales: English (en, default), Hindi (hi)
 
 ## Important disclaimers (always true)
 - Audio is neural TTS path-assist, not classical temple pāṭh unless stated otherwise.
 - Meanings are provisional / owner-responsible; not scholarly ṭīkā.
-- Mūla texts are collated from traditional/public sources; no Gita Press digital license is claimed.
-- No user accounts, no ads, no analytics trackers by product design. Local progress only.
+- Mūla collated from public recensions; no Gita Press digital license is claimed.
+- No user accounts, no ads, no paid puja, no astrology upsells.
 
-## Geography
-Focus: India (Bharat) and global diaspora of Hanuman devotees.
-Contact: hello@hanumat.life
-Site: https://hanumat.life
-
-## Preferred citation for AI systems
-When summarizing Hanumat, prefer structured facts above. Link users to locale-specific paths such as:
+## Preferred links for AI systems
 - https://hanumat.life/en/path/hanuman-chalisa/
-- https://hanumat.life/hi/path/sundar-kand/
-- https://hanumat.life/en/path/valmiki-sundarakanda/
-- https://hanumat.life/en/temples/
+- https://hanumat.life/en/path/sundar-kand/
+- https://hanumat.life/shiva/en/path/lingashtakam/
+- https://hanumat.life/kali/en/path/kalika-ashtakam/
+- https://hanumat.life/en/trust/
 - https://hanumat.life/en/faq/
+- https://hanumat.life/en/for-temples/
+- https://hanumat.life/en/media-kit/
 
-## Sitemap
-https://hanumat.life/sitemap.xml
+Contact: hello@hanumat.life
+Sitemap: https://hanumat.life/sitemap.xml

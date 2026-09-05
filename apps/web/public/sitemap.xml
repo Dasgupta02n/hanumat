@@ -5,61 +5,51 @@
     <loc>https://hanumat.life/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://hanumat.life/shiva/hi/</loc>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://hanumat.life/shiva/en/</loc>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hanumat.life/kali/hi/</loc>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://hanumat.life/kali/en/</loc>
-    <priority>0.9</priority>
-  </url>
-  <url><loc>https://hanumat.life/shiva/hi/path/lingashtakam/</loc><priority>0.9</priority></url>
-  <url><loc>https://hanumat.life/shiva/hi/path/maha-mrityunjaya/</loc><priority>0.9</priority></url>
-  <url><loc>https://hanumat.life/shiva/hi/path/rudrashtakam/</loc><priority>0.85</priority></url>
-  <url><loc>https://hanumat.life/kali/hi/path/adya-stotram/</loc><priority>0.9</priority></url>
-  <url><loc>https://hanumat.life/kali/hi/path/kalika-ashtakam/</loc><priority>0.9</priority></url>
-  <url>
-    <loc>https://hanumat.life/hi/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="hi" href="https://hanumat.life/hi/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://hanumat.life/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanumat.life/hi/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hanumat.life/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanumat.life/en/"/>
   </url>
   <url>
     <loc>https://hanumat.life/en/</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanumat.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hanumat.life/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanumat.life/en/"/>
   </url>
-  <url><loc>https://hanumat.life/hi/path/</loc><priority>0.9</priority></url>
-  <url><loc>https://hanumat.life/en/path/</loc><priority>0.9</priority></url>
+  <url>
+    <loc>https://hanumat.life/hi/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hanumat.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://hanumat.life/hi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hanumat.life/en/"/>
+  </url>
+  <url><loc>https://hanumat.life/en/path/hanuman-chalisa/</loc><priority>1.0</priority></url>
   <url><loc>https://hanumat.life/hi/path/hanuman-chalisa/</loc><priority>0.95</priority></url>
-  <url><loc>https://hanumat.life/en/path/hanuman-chalisa/</loc><priority>0.95</priority></url>
-  <url><loc>https://hanumat.life/hi/path/sundar-kand/</loc><priority>0.95</priority></url>
   <url><loc>https://hanumat.life/en/path/sundar-kand/</loc><priority>0.95</priority></url>
-  <url><loc>https://hanumat.life/hi/path/valmiki-sundarakanda/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/hi/path/sundar-kand/</loc><priority>0.9</priority></url>
   <url><loc>https://hanumat.life/en/path/valmiki-sundarakanda/</loc><priority>0.9</priority></url>
-  <url><loc>https://hanumat.life/hi/listen/</loc><priority>0.8</priority></url>
-  <url><loc>https://hanumat.life/en/listen/</loc><priority>0.8</priority></url>
-  <url><loc>https://hanumat.life/hi/japa/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/shiva/en/</loc><priority>0.95</priority></url>
+  <url><loc>https://hanumat.life/shiva/hi/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/shiva/en/path/lingashtakam/</loc><priority>0.95</priority></url>
+  <url><loc>https://hanumat.life/shiva/en/path/om-namah-shivaya/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/shiva/en/path/maha-mrityunjaya/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/shiva/en/path/rudrashtakam/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/kali/en/</loc><priority>0.95</priority></url>
+  <url><loc>https://hanumat.life/kali/hi/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/kali/en/path/kalika-ashtakam/</loc><priority>0.95</priority></url>
+  <url><loc>https://hanumat.life/kali/en/path/adya-stotram/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/en/path/</loc><priority>0.85</priority></url>
   <url><loc>https://hanumat.life/en/japa/</loc><priority>0.8</priority></url>
-  <url><loc>https://hanumat.life/hi/temples/</loc><priority>0.85</priority></url>
-  <url><loc>https://hanumat.life/en/temples/</loc><priority>0.85</priority></url>
-  <url><loc>https://hanumat.life/hi/gallery/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/en/listen/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/en/temples/</loc><priority>0.8</priority></url>
   <url><loc>https://hanumat.life/en/gallery/</loc><priority>0.8</priority></url>
-  <url><loc>https://hanumat.life/hi/katha/</loc><priority>0.75</priority></url>
-  <url><loc>https://hanumat.life/en/katha/</loc><priority>0.75</priority></url>
-  <url><loc>https://hanumat.life/hi/faq/</loc><priority>0.7</priority></url>
-  <url><loc>https://hanumat.life/en/faq/</loc><priority>0.7</priority></url>
-  <url><loc>https://hanumat.life/hi/learn/</loc><priority>0.75</priority></url>
+  <url><loc>https://hanumat.life/en/faq/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/en/trust/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/en/for-temples/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/en/media-kit/</loc><priority>0.7</priority></url>
   <url><loc>https://hanumat.life/en/learn/</loc><priority>0.75</priority></url>
+  <url><loc>https://hanumat.life/en/parayan/</loc><priority>0.75</priority></url>
+  <url><loc>https://hanumat.life/en/search/</loc><priority>0.7</priority></url>
 </urlset>

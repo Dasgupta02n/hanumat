@@ -14,6 +14,8 @@ import { listCatalogLite } from "@/lib/catalog";
 import { getTextBySlug, textsForDeity } from "@/lib/content";
 import { deityHref, deities, type DeityId } from "@/lib/deities";
 import { isLocale, locales, type Locale } from "@/i18n/config";
+import { seoFor } from "@/lib/seo-paths";
+import { PathLead } from "@/components/PathLead";
 
 export function deityLocaleParams() {
   return locales.map((locale) => ({ locale }));
@@ -27,27 +29,31 @@ export function mandirPathMetadata(
   const text = getTextBySlug(slug);
   const d = deities[deity];
   const en = locale === "en";
+  const seo = seoFor(slug);
   const title = text
-    ? `${en ? text.title.en : text.title.hi} · ${en ? d.brand.en : d.brand.hi}`
+    ? `${en ? seo.title.en : seo.title.hi} · ${en ? d.brand.en : d.brand.hi}`
     : d.brand.en;
-  const description =
-    !text
-      ? d.homeBody.en
-      : typeof text.description === "string"
-        ? text.description
-        : en
-          ? text.description.en
-          : text.description.hi;
+  const description = en ? seo.description.en : seo.description.hi;
   const img = galleryPick(deity, slug.length * 7);
   const url = `https://hanumat.life${deityHref(deity, locale, `/path/${slug}/`)}`;
+  const other = locale === "en" ? "hi" : "en";
   return {
     title,
     description,
-    alternates: { canonical: url },
+    keywords: seo.keywords,
+    alternates: {
+      canonical: url,
+      languages: {
+        [locale]: url,
+        [other]: `https://hanumat.life${deityHref(deity, other, `/path/${slug}/`)}`,
+        "x-default": `https://hanumat.life${deityHref(deity, "en", `/path/${slug}/`)}`,
+      },
+    },
     openGraph: {
       title,
       description,
       url,
+      locale: en ? "en_IN" : "hi_IN",
       images: [{ url: `https://hanumat.life${img}`, width: 1200, height: 630 }],
     },
   };
@@ -201,6 +207,7 @@ export async function renderMandirPath(
         >
           ← {en ? "All paths" : "सभी पाठ"}
         </Link>
+        <PathLead deity={deity} locale={locale} text={text} />
       </div>
       <PathStudioDynamic text={text} initialSectionId={section} />
     </SiteShell>

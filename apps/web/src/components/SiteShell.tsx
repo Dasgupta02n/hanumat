@@ -6,6 +6,7 @@ import { ReactNode, useCallback, useMemo } from "react";
 import { locales, type Locale } from "@/i18n/config";
 import { deityHref } from "@/lib/deities";
 import { useDeity } from "./DeityProvider";
+import { InstallPrompt } from "@/components/InstallPrompt";
 
 export function SiteShell({
   children,
@@ -93,9 +94,9 @@ export function SiteShell({
         title: locale === "en" ? "Help" : "Sahayata",
         links: [
           { href: h("/faq/"), label: t("nav.faq") },
-          { href: h("/learn/"), label: t("nav.learn") },
-          { href: "mailto:hello@hanumat.life", label: "hello@hanumat.life" },
-          { href: "/", label: locale === "en" ? "Home courtyard" : "मुख्य आंगन" },
+          { href: h("/trust/"), label: locale === "en" ? "Trust" : "विश्वास" },
+          { href: h("/for-temples/"), label: locale === "en" ? "For temples" : "मन्दिरों हेतु" },
+          { href: h("/media-kit/"), label: locale === "en" ? "Media kit" : "मीडिया" },
         ],
       },
     ],
@@ -275,6 +276,7 @@ export function SiteShell({
       </header>
 
       <main className={wide ? "" : "shell section-pad"}>{children}</main>
+      <InstallPrompt locale={locale} />
 
       <footer
         className="mt-4 border-t"

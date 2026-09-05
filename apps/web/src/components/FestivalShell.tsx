@@ -73,6 +73,16 @@ export function FestivalShell() {
             >
               {en ? "Japa" : "जप"}
             </Link>
+            <a
+              href={`https://wa.me/?text=${encodeURIComponent(
+                `${en ? card.title.en : card.title.hi}\nhttps://hanumat.life${card.href}\nFree mandir · no ads · hanumat.life`,
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-[#1a0f2e] px-3.5 py-1.5 text-xs font-semibold text-[#fff8e7] shadow-sm transition hover:bg-[#24143d] sm:text-sm"
+            >
+              WhatsApp
+            </a>
           </div>
           <Link
             href={calendar}

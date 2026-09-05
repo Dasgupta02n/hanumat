@@ -10,6 +10,7 @@ import { SafeSceneImage } from "@/components/SafeSceneImage";
 import { imageForLeela } from "@/lib/gallery";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { PathStudioDynamic } from "../PathStudioDynamic";
+import { PathLead } from "@/components/PathLead";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -73,6 +74,7 @@ export default async function PathPage({
           </p>
         )}
         <TwinTextPanel locale={locale} activeTextId={text.id} />
+        <PathLead deity="hanuman" locale={locale} text={text} />
       </div>
       <div className="mb-8">
         <SafeSceneImage

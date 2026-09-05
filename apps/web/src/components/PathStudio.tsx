@@ -41,7 +41,7 @@ export function PathStudio({
   const [activeId, setActiveId] = useState<string | null>(null);
   const [showMeaning, setShowMeaning] = useState(true);
   const [lang, setLang] = useState<string>(uiLocale);
-  const [showIast, setShowIast] = useState(false);
+  const [showIast, setShowIast] = useState(uiLocale === "en");
   const [playing, setPlaying] = useState(false);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [mapOpen, setMapOpen] = useState(false);
@@ -496,6 +496,18 @@ export function PathStudio({
                 >
                   {t("iast")}
                 </button>
+                {uiLocale === "en" && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowIast(true);
+                      setScriptView("iast");
+                    }}
+                    className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
+                  >
+                    Roman letters
+                  </button>
+                )}
                 <button
                   type="button"
                   onClick={() =>
@@ -533,16 +545,34 @@ export function PathStudio({
                   type="button"
                   onClick={() => {
                     const url = window.location.href;
+                    const title = uiLocale === "en" ? text.title.en : text.title.hi;
+                    const line = `${title}\n${url}\nFree mandir · no ads · hanumat.life`;
                     if (navigator.share) {
-                      void navigator.share({ title: text.title.en, url });
+                      void navigator.share({ title, url, text: line });
                     } else {
-                      void navigator.clipboard.writeText(url);
+                      void navigator.clipboard.writeText(line);
                     }
                   }}
                   className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
                 >
                   {t("share")}
                 </button>
+                <a
+                  className="rounded-full border border-[var(--hanumat-gold-line)] px-3 py-1.5 text-xs text-[var(--hanumat-stone)]"
+                  href={`https://wa.me/?text=${encodeURIComponent(
+                    `${uiLocale === "en" ? text.title.en : text.title.hi} — hanumat.life`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => {
+                    const url = window.location.href;
+                    const title = uiLocale === "en" ? text.title.en : text.title.hi;
+                    const line = `${title}\n${url}\nFree mandir · no ads · hanumat.life`;
+                    e.currentTarget.href = `https://wa.me/?text=${encodeURIComponent(line)}`;
+                  }}
+                >
+                  WhatsApp
+                </a>
               </>
             )}
             {text.id === "hanuman-chalisa" && flags.ff_karaoke_chalisa && (

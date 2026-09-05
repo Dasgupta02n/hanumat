@@ -4,6 +4,7 @@ import Link from "next/link";
 import { deities } from "@/lib/deities";
 import { LandingCarousel } from "@/components/LandingCarousel";
 import { CourtyardGate } from "@/components/CourtyardGate";
+import { InstallPrompt } from "@/components/InstallPrompt";
 
 export const metadata: Metadata = {
   title: "Hanumat · Three sacred mandirs",
@@ -54,7 +55,7 @@ export default function LandingPage() {
         </p>
         <p className="landing-lead">
           Choose a gate. Hanuman, Shiva, or Maa Kali — path, meaning, and japa.
-          No ads.
+          Free seva · no ads · no accounts. English first; Hindi one tap.
         </p>
       </header>
 
@@ -94,10 +95,16 @@ export default function LandingPage() {
       </main>
 
       <CourtyardGate />
+      <InstallPrompt />
 
       <footer className="landing-foot">
         <p>
-          Free seva · no accounts · no trackers ·{" "}
+          Free seva · no accounts · no trackers · two public recensions named on
+          every path ·{" "}
+          <Link href="/en/trust/">Trust</Link>
+          {" · "}
+          <Link href="/en/for-temples/">For temples</Link>
+          {" · "}
           <a href="mailto:hello@hanumat.life">hello@hanumat.life</a>
         </p>
       </footer>

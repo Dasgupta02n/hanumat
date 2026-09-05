@@ -12,6 +12,8 @@ const kinds = [
   "sankat",
   "search",
 ];
+
+const seva = ["trust", "for-temples", "media-kit"];
 const deities = ["shiva", "kali"];
 const root = "apps/web/src/app";
 
@@ -33,6 +35,29 @@ export default async function Page({
   const { locale } = await params;
   if (isLocale(locale)) setRequestLocale(locale);
   return renderMandirExtra("${d}", locale, "${k}");
+}
+`,
+    );
+  }
+}
+for (const d of deities) {
+  for (const k of seva) {
+    const dir = path.join(root, d, "[locale]", k);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(
+      path.join(dir, "page.tsx"),
+      `import { setRequestLocale } from "next-intl/server";
+import { isLocale } from "@/i18n/config";
+import { SevaPage } from "@/components/SevaPages";
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  if (isLocale(locale)) setRequestLocale(locale);
+  return <SevaPage deity="${d}" locale={isLocale(locale) ? locale : "en"} kind="${k}" />;
 }
 `,
     );

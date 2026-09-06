@@ -6,9 +6,9 @@ test("section route loads SK section page", async ({ page }) => {
   await expect(page.getByText(/Sundar Kand/i).first()).toBeVisible();
 });
 
-test("low-data button present on chalisa path studio", async ({ page }) => {
+test("IAST control present on chalisa path studio", async ({ page }) => {
   await page.goto("/en/path/hanuman-chalisa/");
-  await expect(page.getByRole("button", { name: /low data/i })).toBeVisible({
+  await expect(page.getByRole("button", { name: /iast/i })).toBeVisible({
     timeout: 15_000,
   });
 });

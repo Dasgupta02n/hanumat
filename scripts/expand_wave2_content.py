@@ -319,13 +319,10 @@ def write_pack(
             "notes": "Expanded under PRODUCT-LOCK-v1; dual-review owner-only; not a critical edition.",
         },
         "flags": {
-            "hasAudio": False,
-            "ttsGenerated": False,
             "hasTwinText": bool(twin),
             "ff_twin_text": bool(twin),
             "needsDualReview": True,
         },
-        "audio": {},
         "stats": {
             "sectionCount": len(struct_sections),
             "verseCount": len(verses),

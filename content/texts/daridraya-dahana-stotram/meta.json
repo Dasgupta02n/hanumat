@@ -18,10 +18,7 @@
     "notes": "Public recension (Sanskrit Documents / Green Message class). Household stotra, not a tantric paddhati."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "wave": 1,

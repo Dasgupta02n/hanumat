@@ -24,12 +24,6 @@ export default async function FaqPage({
         : "हनुमान, शिव और माँ काली का निःशुल्क डिजिटल मन्दिर — पाठ, IAST, अर्थ, जप। विज्ञापन नहीं, खाता नहीं।",
     },
     {
-      q: en ? "Is the audio classical pāṭh?" : "क्या श्रवण शास्त्रीय पाठ है?",
-      a: en
-        ? "No. Neural TTS path-assist so you can follow the text. Not temple recitation."
-        : "नहीं। Neural TTS पाठ-सहायक है ताकि पाठ साथ चल सके। मंदिर पाठी नहीं।",
-    },
-    {
       q: en ? "Can I read in Roman letters?" : "रोमन अक्षरों में पढ़ सकते हैं?",
       a: en
         ? "Yes. On English Path Studio tap IAST or “Roman letters.”"

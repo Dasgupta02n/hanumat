@@ -15,7 +15,6 @@ const navNative = {
     myPath: "माझा मार्ग",
     learn: "जाणा",
     chalisa: "चालीसा",
-    listen: "श्रवण",
     sankat: "संकट",
     japa: "जप",
     calendar: "दिनदर्शिका",
@@ -30,7 +29,6 @@ const navNative = {
     myPath: "મારો માર્ગ",
     learn: "જાણો",
     chalisa: "ચાલીસા",
-    listen: "શ્રવણ",
     sankat: "સંકટ",
     japa: "જપ",
     calendar: "કેલેન્ડર",
@@ -45,7 +43,6 @@ const navNative = {
     myPath: "আমার পথ",
     learn: "জানুন",
     chalisa: "চালিসা",
-    listen: "শ্রবণ",
     sankat: "সঙ্কট",
     japa: "জপ",
     calendar: "ক্যালেন্ডার",
@@ -60,7 +57,6 @@ const navNative = {
     myPath: "என் பாதை",
     learn: "அறிய",
     chalisa: "சாலிசா",
-    listen: "கேளுங்கள்",
     sankat: "அடைக்கலம்",
     japa: "ஜெபம்",
     calendar: "நாட்காட்டி",
@@ -75,7 +71,6 @@ const navNative = {
     myPath: "నా మార్గం",
     learn: "తెలుసుకోండి",
     chalisa: "చాలీసా",
-    listen: "వినండి",
     sankat: "శరణు",
     japa: "జపం",
     calendar: "క్యాలెండర్",
@@ -90,7 +85,6 @@ const navNative = {
     myPath: "ನನ್ನ ಮಾರ್ಗ",
     learn: "ತಿಳಿಯಿರಿ",
     chalisa: "ಚಾಲೀಸಾ",
-    listen: "ಕೇಳಿ",
     sankat: "ಆಶ್ರಯ",
     japa: "ಜಪ",
     calendar: "ಕ್ಯಾಲೆಂಡರ್",
@@ -105,7 +99,6 @@ const navNative = {
     myPath: "ਮੇਰਾ ਰਸਤਾ",
     learn: "ਜਾਣੋ",
     chalisa: "ਚਾਲੀਸਾ",
-    listen: "ਸੁਣੋ",
     sankat: "ਸ਼ਰਨ",
     japa: "ਜਾਪ",
     calendar: "ਕੈਲੰਡਰ",
@@ -120,7 +113,6 @@ const navNative = {
     myPath: "ମୋ ପଥ",
     learn: "ଜାଣନ୍ତୁ",
     chalisa: "ଚାଳିସା",
-    listen: "ଶ୍ରବଣ",
     sankat: "ଶରଣ",
     japa: "ଜପ",
     calendar: "କ୍ୟାଲେଣ୍ଡର",
@@ -135,7 +127,6 @@ const navNative = {
     myPath: "എന്റെ പാത",
     learn: "അറിയുക",
     chalisa: "ചാലീസ",
-    listen: "ശ്രവണം",
     sankat: "ശരണം",
     japa: "ജപം",
     calendar: "കലണ്ടർ",
@@ -156,14 +147,14 @@ for (const [loc, nav] of Object.entries(navNative)) {
   msg.tagline = msg.tagline + ` · ${loc}`;
   msg.footer = {
     ...msg.footer,
-    ttsNote:
-      "Audio: neural TTS path-assist — not classical pāṭh. Meanings: machine-assisted draft for this locale.",
+    note:
+      "Path Studio is text: mula, IAST, meaning. Meanings: machine-assisted draft for this locale.",
   };
   msg.studio = {
     ...msg.studio,
     provisionalTitle: "Provisional / MT meanings:",
     provisionalBody:
-      "Machine-assisted draft for this locale + owner responsibility. Not scholarly ṭīkā. TTS ≠ classical pāṭh. OCR mūla ≠ Gita Press digital license.",
+      "Machine-assisted draft for this locale + owner responsibility. Not scholarly ṭīkā. OCR mūla ≠ Gita Press digital license.",
   };
   fs.writeFileSync(path.join(MSG, `${loc}.json`), JSON.stringify(msg, null, 2) + "\n");
   console.log("wrote", loc);

@@ -18,10 +18,7 @@
     "notes": "Popular Hindi aarti 'Jai Shiv Omkara'. Collated against common temple booklets; minor line-order variants exist (as with all aartis). This is the widely sung eight-couplet form."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

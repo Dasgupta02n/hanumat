@@ -18,10 +18,7 @@
     "notes": "Not a shastra quote. Short plain katha told in many North Indian homes on Monday vrata. Local tellings vary; this is a compressed seva text, not a critical edition."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "wave": 1,

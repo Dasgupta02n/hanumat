@@ -58,7 +58,7 @@ hanumat.life · hello@hanumat.life`;
     {
       title: en ? "Tuesday 60s — Chalisa" : "मंगलवार ६० सेकंड — चालीसा",
       body: en
-        ? "On screen: one chaupai (mula). Cut to IAST. One-line English meaning. End card: Open Path Studio — hanumat.life/en/path/hanuman-chalisa/ — TTS is path-assist, not temple path. Folk-leela thumbnail from the 108 gallery."
+        ? "On screen: one chaupai (mula). Cut to IAST. One-line English meaning. End card: Open Path Studio — hanumat.life/en/path/hanuman-chalisa/. Folk-leela thumbnail from the 108 gallery."
         : "स्क्रीन: एक चौपाई (मूल) → IAST → एक पंक्ति अर्थ। अंत: पाठ स्टूडियो खोलें। TTS पाठ-सहायक है, मंदिर पाठी नहीं।",
     },
     {
@@ -93,19 +93,14 @@ hanumat.life · hello@hanumat.life`;
         <div className="mt-8 max-w-2xl space-y-6 text-sm leading-relaxed" style={{ color: "var(--hanumat-stone)" }}>
           <p>
             {en
-              ? "Hanumat is a quiet digital temple for Bharat and the world. Read, listen, japa. No ads, no accounts, no trackers."
-              : "हनुमत भारत और विश्व के लिए शांत डिजिटल मन्दिर है। पाठ, श्रवण, जप। विज्ञापन, खाता, ट्रैकर नहीं।"}
+              ? "Hanumat is a quiet digital temple for Bharat and the world. Read, japa. No ads, no accounts, no trackers."
+              : "हनुमत भारत और विश्व के लिए शांत डिजिटल मन्दिर है। पाठ, जप। विज्ञापन, खाता, ट्रैकर नहीं।"}
           </p>
           <ul className="list-inside list-disc space-y-2">
             <li>
               {en
                 ? "Two public recensions named on each path (edition pin). Meanings are plain language, not scholarly ṭīkā."
                 : "प्रत्येक पाठ पर दो सार्वजनिक स्रोत (edition pin)। अर्थ साधारण भाषा — शास्त्रीय टीका नहीं।"}
-            </li>
-            <li>
-              {en
-                ? "Audio is neural path-assist, not classical temple pāṭh — unless a studio recitation is later added."
-                : "श्रवण neural पाठ-सहायक है, मंदिर पाठी नहीं — जब तक स्टूडियो पाठ न जुड़े।"}
             </li>
             <li>
               {en

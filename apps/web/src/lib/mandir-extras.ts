@@ -8,7 +8,6 @@ export type ExtraKind =
   | "temples"
   | "glossary"
   | "kids"
-  | "radio"
   | "sankat"
   | "search";
 
@@ -201,11 +200,6 @@ export function extrasFor(deity: DeityId, locale: string) {
           ],
   };
 
-  const radioNote = {
-    hi: `${d.brand.hi} पर Wave v1 पाठ-प्रथम है। जब सत्यापित पाठ-सहायक श्रवण जुड़ेगा, वह यहीं सूचीबद्ध होगा — कोई बाहरी स्ट्रीम नहीं।`,
-    en: `${d.brand.en} Wave v1 is text-first. When verified path-assist audio is added, it will list here — no external streams.`,
-  };
-
   const parayanSlugs =
     deity === "shiva"
       ? ["lingashtakam", "rudrashtakam", "om-namah-shivaya", "bilvashtakam", "jyotirlinga-stotra"]
@@ -213,5 +207,5 @@ export function extrasFor(deity: DeityId, locale: string) {
         ? ["kalika-ashtakam", "adya-stotram", "mahakali-stotra"]
         : ["hanuman-chalisa", "sundar-kand"];
 
-  return { calendar, temples, glossary, katha, kids, sankat, radioNote, parayanSlugs, h, d };
+  return { calendar, temples, glossary, katha, kids, sankat, parayanSlugs, h, d };
 }

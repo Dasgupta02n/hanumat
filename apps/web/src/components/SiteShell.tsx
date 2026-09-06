@@ -30,7 +30,6 @@ export function SiteShell({
     () => [
       { href: h("/"), label: t("nav.home") },
       { href: h("/path/"), label: t("nav.path") },
-      { href: h("/listen/"), label: t("nav.listen") },
       { href: h("/japa/"), label: t("nav.japa") },
       { href: h("/katha/"), label: t("nav.katha") },
       { href: h("/my-path/"), label: t("nav.myPath") },
@@ -43,7 +42,6 @@ export function SiteShell({
       { href: h("/gallery/"), label: t("nav.gallery") },
       { href: h("/calendar/"), label: t("nav.calendar") },
       { href: h("/parayan/"), label: t("nav.parayan") },
-      { href: h("/radio/"), label: t("nav.radio") },
       { href: h("/temples/"), label: t("nav.temples") },
       { href: h("/kids/"), label: t("nav.kids") },
       { href: h("/sankat/"), label: t("nav.sankat") },
@@ -75,7 +73,7 @@ export function SiteShell({
       {
         title: locale === "en" ? "Practice" : "Sadhana",
         links: [
-          { href: h("/listen/"), label: t("nav.listen") },
+          { href: h("/path/"), label: t("nav.path") },
           { href: h("/japa/"), label: t("nav.japa") },
           { href: h("/my-path/"), label: t("nav.myPath") },
           { href: h("/calendar/"), label: t("nav.calendar") },
@@ -339,10 +337,10 @@ export function SiteShell({
             className="mt-10 space-y-2 text-center text-[11px] leading-relaxed"
             style={{ color: "var(--hanumat-stone)" }}
           >
-            <p>{t("footer.ttsNote")}</p>
+            <p>{t("footer.note")}</p>
             <p style={{ color: "var(--hanumat-stone-light)" }}>
               Meanings provisional / owner-responsible. Mūla OCR-collated — not a
-              Gita Press digital license. TTS is path-assist, not classical pāṭh.
+              Gita Press digital license.
             </p>
             <p className="pt-2" style={{ color: "var(--hanumat-charcoal)" }}>
               Hanumat.life · {brand} · India ·{" "}

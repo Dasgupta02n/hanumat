@@ -43,12 +43,10 @@ export default async function LearnPage({
           </ul>
         </div>
         <div className="rounded-2xl border border-white/12 bg-white/5 p-5">
-          <h2 className="font-serif text-lg text-[#ffd60a]">Audio (P3)</h2>
+          <h2 className="font-serif text-lg text-[#ffd60a]">Path Studio</h2>
           <p className="mt-2">
-            <strong className="text-[#fff8e7]">Wave 0 production decision:</strong>{" "}
-            neural Hindi TTS (Edge <code>hi-IN-MadhurNeural</code>) with verse
-            cues — labeled path-assist, <em>not</em> classical pāṭh. Schema is
-            replaceable when commissioned studio recitation is delivered.
+            Text only: mūla, IAST (Roman letters), and Hindi/English meaning.
+            No recitation audio.
           </p>
         </div>
         <div className="rounded-2xl border border-white/12 bg-white/5 p-5">
@@ -56,7 +54,7 @@ export default async function LearnPage({
           <ul className="mt-2 list-inside list-disc space-y-1">
             <li>
               <strong className="text-[#fff8e7]">Wave 0:</strong> Chalisa + full
-              Sundar Kand Manas (text, IAST, HI/EN, audio, offline Chalisa)
+              Sundar Kand Manas (text, IAST, HI/EN, offline Chalisa)
             </li>
             <li>
               <strong className="text-[#fff8e7]">Wave 1:</strong> Baan, Ashtak,
@@ -79,10 +77,6 @@ export default async function LearnPage({
         <div className="rounded-2xl border border-[#ffd60a]/30 bg-[#ffd60a]/10 p-5">
           <h2 className="font-serif text-lg text-[#ffd60a]">Disclaimers (v1)</h2>
           <ul className="mt-2 list-inside list-disc space-y-1">
-            <li>
-              <strong className="text-[#fff8e7]">Audio:</strong> neural TTS
-              path-assist — not classical pāṭh
-            </li>
             <li>
               <strong className="text-[#fff8e7]">Meanings:</strong> provisional /
               owner-responsible; regional locales are{" "}

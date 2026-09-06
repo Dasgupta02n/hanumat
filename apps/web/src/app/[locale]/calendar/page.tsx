@@ -8,14 +8,14 @@ import { isLocale, type Locale } from "@/i18n/config";
 const familyMangalwarChecklist = {
   en: [
     "Light a diya together — one small flame for the whole home.",
-    "Read or listen to a few lines of the Chalisa as a family.",
+    "Read a few lines of the Chalisa as a family.",
     "Offer a simple prasad — fruit, tulsi, or whatever you share at home.",
     "Sit quietly for a short japa — even five soft rounds counts.",
     "Invite the little ones to the Kids path for gentle stories.",
   ],
   hi: [
     "एक साथ दीया जलाएँ — घर के लिए एक छोटी ज्योति।",
-    "परिवार के साथ चालीसा की कुछ पंक्तियाँ पढ़ें या सुनें।",
+    "परिवार के साथ चालीसा की कुछ पंक्तियाँ पढ़ें।",
     "सरल प्रसाद चढ़ाएँ — फल, तुलसी, या घर का साझा भोजन।",
     "थोड़ी देर शांत बैठकर जप करें — पाँच मृदु माला भी काफी है।",
     "छोटे बच्चों को सरल कथाओं के लिए बाल मार्ग पर बुलाएँ।",

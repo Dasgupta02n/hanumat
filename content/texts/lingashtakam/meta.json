@@ -18,10 +18,7 @@
     "notes": "Collated from Sanskrit Documents (lingashh, proofread Srinivas Sunder) and Green Message lingashtakam. Variant noted: निर्मलभासित vs निर्मलभाषित in v1 — भाषित kept as the majority temple recension (भासित also attested). v7 विनाशन vs विनाशित — विनाशन used (SD primary)."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

@@ -21,17 +21,7 @@
     "notes": "Corrected 2026-07-23 after 3-source FAIL: replaced corrupted/duplicate list with standard ashtottara ending सीतासमेतश्रीरामपादसेवाधुरन्धराय."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
-    "needsDualReview": true,
-    "placeholderAudio": false
-  },
-  "audio": {
-    "src": "/audio/names/hanuman_108_names.m4a",
-    "cueMapSrc": "/audio/names/hanuman_108_names_cues.json",
-    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
-    "trackId": "track-hanuman_108_names",
-    "lowDataSrc": "/audio/names/hanuman_108_names_low.m4a"
+    "needsDualReview": true
   },
   "stats": {
     "sectionCount": 1,

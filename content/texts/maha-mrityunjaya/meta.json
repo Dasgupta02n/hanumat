@@ -18,10 +18,7 @@
     "notes": "Verified against Rigveda 7.59.12 (Vasiṣṭha Maitrāvaruṇi), Taittirīya Saṃhitā 1.8.6.i, Vājasaneyi 3.60. Cross-checked Wikipedia (Mahamrityunjaya Mantra) and standard Devanagari recensions. ॐ is a later liturgical prefix, not in the ṛc itself; included as practised."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

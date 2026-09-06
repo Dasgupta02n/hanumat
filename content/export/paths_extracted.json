@@ -7,8 +7,6 @@
     "subtitle": "श्री तुलसीदास · ४० चौपाई",
     "description": "प्रभु श्री राम के परम भक्त हनुमान जी की स्तुति — पाठ, अर्थ और श्रवण एक साथ।",
     "category": "chalisa",
-    "audioSrc": "/audio/chalisa/hanuman_chalisa.m4a",
-    "cueSrc": "/audio/chalisa/hanuman_chalisa_cues.json",
     "verses": [
       {
         "id": "hc-doha-1",
@@ -321,8 +319,6 @@
     "subtitle": "संकट-नाशक स्तोत्र",
     "description": "भक्तों द्वारा संकट में पढ़ा जाने वाला प्रसिद्ध स्तोत्र — श्रद्धा और विनय सहित।",
     "category": "stotra",
-    "audioSrc": "/audio/bajrang-baan/bajrang_baan.m4a",
-    "cueSrc": "/audio/bajrang-baan/bajrang_baan_cues.json",
     "verses": [
       {
         "id": "bb-01",
@@ -369,8 +365,6 @@
     "subtitle": "तुलसीदास · आठ पद",
     "description": "संकटमोचन हनुमान जी की अष्टपदी स्तुति — सरल, गहरी, घर-घर प्रिय।",
     "category": "stotra",
-    "audioSrc": "/audio/ashtak/sankatmochan_ashtak.m4a",
-    "cueSrc": "/audio/ashtak/sankatmochan_ashtak_cues.json",
     "verses": [
       {
         "id": "sa-01",
@@ -417,8 +411,6 @@
     "subtitle": "आरती कीजै हनुमान लला की",
     "description": "पारंपरिक आरती — दीप जलाकर, परिवार संग, मंगलवार-शनिवार विशेष।",
     "category": "aarti",
-    "audioSrc": "/audio/aarti/hanuman_aarti.m4a",
-    "cueSrc": "/audio/aarti/hanuman_aarti_cues.json",
     "verses": [
       {
         "id": "ha-01",
@@ -500,8 +492,6 @@
     "subtitle": "बीज मंत्र · जप",
     "description": "सरल मूल मंत्र — ११, २१, १०८ जप के लिए।",
     "category": "mantra",
-    "audioSrc": "/audio/mantra/om_hanumate_namah.m4a",
-    "cueSrc": "/audio/mantra/om_hanumate_namah_cues.json",
     "verses": [
       {
         "id": "ohm-01",
@@ -521,8 +511,6 @@
     "subtitle": "रामचरितमानस · हनुमान केंद्रित कांड",
     "description": "हनुमान जी के सागर-लंघन, सीता-दर्शन और लंका-प्रसंग का पावन कांड। पूर्ण मूल पाठ गीताप्रेस संस्करण से मिलान के साथ खंड-खंड जोड़ा जा रहा है — नीचे आरंभिक श्रवण-नमूना।",
     "category": "kand",
-    "audioSrc": "/audio/sundar-kand/sundar_kand_sample_s01.m4a",
-    "cueSrc": "/audio/sundar-kand/sundar_kand_sample_s01_cues.json",
     "verses": [
       {
         "id": "sk-s01-v01",

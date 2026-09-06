@@ -1,4 +1,4 @@
-import type { TextPackage, Section, VerseUnit, AudioSegment } from "./content";
+import type { TextPackage, Section, VerseUnit } from "./content";
 
 type LocMap = Record<string, string>;
 
@@ -18,7 +18,6 @@ function pack(
     wave?: number;
     edition: { pin: string; notes?: string; publisher?: string };
     flags: Record<string, boolean | undefined>;
-    audio?: Record<string, unknown>;
   },
   structure: { sections: Section[] },
   versesMap: Record<
@@ -50,7 +49,6 @@ function pack(
       });
     }
   }
-  const audioMeta = meta.audio || {};
   return {
     id: meta.id,
     slug: meta.slug,
@@ -64,16 +62,6 @@ function pack(
     flags: meta.flags,
     sections,
     verses,
-    audio: {
-      src: audioMeta.src as string | undefined,
-      lowDataSrc: audioMeta.lowDataSrc as string | undefined,
-      cueMapSrc: audioMeta.cueMapSrc as string | undefined,
-      segments: (audioMeta.segments as AudioSegment[]) || undefined,
-      lowDataSegments:
-        (audioMeta.lowDataSegments as AudioSegment[]) || undefined,
-      credits: audioMeta.credits as string | undefined,
-      ttsGenerated: meta.flags.ttsGenerated,
-    },
   };
 }
 

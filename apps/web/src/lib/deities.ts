@@ -35,8 +35,8 @@ export const deities: Record<DeityId, DeityConfig> = {
       en: "Complete digital mandir of Hanuman bhakti",
     },
     homeBody: {
-      hi: "सुंदरकांड, चालीसा, स्तोत्र, जप, कथा — पाठ, अर्थ, श्रवण। बिना विज्ञापन।",
-      en: "Sundar Kand, Chalisa, stotras, japa, katha — text, meaning, listening. No ads.",
+      hi: "सुंदरकांड, चालीसा, स्तोत्र, जप, कथा — पाठ, अर्थ, IAST। बिना विज्ञापन।",
+      en: "Sundar Kand, Chalisa, stotras, japa, katha — text, meaning, IAST. No ads.",
     },
     eyebrow: { hi: "हनुमत · हनुमान धाम", en: "Hanumat · Hanuman dham" },
     mantra: {

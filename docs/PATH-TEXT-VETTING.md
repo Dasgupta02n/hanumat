@@ -57,11 +57,10 @@ Validation: **OK — 11 texts** (after pack rehash for sk-s01).
 - **Maruti slug** still `maruti-stotra` but content is trikāla smaraṇam (title updated). Rāmdās Marathi Maruti Stotra can be a future separate path.  
 - **Bhajan slug** still `hanuman-bhajan-set` but content is dwādaśa-nāma (title updated).  
 - Meanings for large packs (bahuk/kavach/108) use provisional HI seeds for regional locales; dual-review owner-only.  
-- Path audio is path-assist TTS, not classical pāṭh.
+- Path Studio is text-only (mula, IAST, meaning). No recitation audio.
 
 ---
 
-## Audio policy
+## Text policy
 
-- One mūla track per text (shared across locales).  
-- Locale = meanings only, unless product later adds per-language meaning voices.
+- Locale = meanings only. IAST is shared across locales.

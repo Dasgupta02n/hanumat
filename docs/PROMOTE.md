@@ -176,7 +176,7 @@ Free seva · not classical pāṭh
 
 Repeat Mondays with Lingashtakam, Amavasya with Kalika Ashtakam (reverent stills only — no sensational Kali).
 
-**Never say** the site audio is temple pāṭh. Say “follow the text.”
+**Never claim** recitation audio. Path Studio is text: mula, IAST, meaning.
 
 ---
 

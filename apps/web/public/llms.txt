@@ -3,10 +3,10 @@
 > Free, ad-free digital mandir — Hanuman, Shiva, Maa Kali. English default; Hindi one tap.
 
 ## What this site is
-A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Roman letters), Hindi & English meaning, optional path-assist audio, japa, parayan, galleries. No ads, no accounts, no trackers.
+A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Roman letters), Hindi & English meaning, japa, parayan, galleries. No ads, no accounts, no trackers.
 
 ## Primary offerings
-- Hanuman Chalisa (text, IAST, meanings, timed audio) — Tuesday path
+- Hanuman Chalisa (text, IAST, meanings) — Tuesday path
 - Sundar Kand (Ramcharitmanas) and Valmiki Sundarakanda
 - Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam
 - Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri (no Karpuradi, no unverified Kali Chalisa)
@@ -15,7 +15,6 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 - Locales: English (en, default), Hindi (hi)
 
 ## Important disclaimers (always true)
-- Audio is neural TTS path-assist, not classical temple pāṭh unless stated otherwise.
 - Meanings are provisional / owner-responsible; not scholarly ṭīkā.
 - Mūla collated from public recensions; no Gita Press digital license is claimed.
 - No user accounts, no ads, no paid puja, no astrology upsells.

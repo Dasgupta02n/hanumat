@@ -8,7 +8,6 @@ const kinds = [
   "temples",
   "glossary",
   "kids",
-  "radio",
   "sankat",
   "search",
 ];

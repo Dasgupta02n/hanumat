@@ -21,18 +21,7 @@
     "notes": "Corrected 2026-07-23 after 3-source vet (Kavita Kosh primary; cross-checked popular traditional path). Replaced Chalisa-fragment corruption (sa-08..10) with full 8 stanzas + closing doha."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
     "needsDualReview": true
-  },
-  "audio": {
-    "src": "/audio/ashtak/sankatmochan_ashtak.m4a",
-    "cueMapSrc": "/audio/ashtak/sankatmochan_ashtak_cues.json",
-    "lowDataSrc": "/audio/ashtak/sankatmochan_ashtak_low.m4a",
-    "credits": "TTS path-assist (hi-IN-MadhurNeural) — not classical pāṭh. Regenerated 2026-07-23 V2.",
-    "trackId": "track-sankatmochan_ashtak",
-    "engine": "edge-tts",
-    "voice": "hi-IN-MadhurNeural"
   },
   "stats": {
     "sectionCount": 1,

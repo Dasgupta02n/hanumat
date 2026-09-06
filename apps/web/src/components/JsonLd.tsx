@@ -90,7 +90,7 @@ export function siteJsonLd(locale: string) {
             name: "What is Hanumat?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Hanumat is a digital mandir (spiritual app/site) for devotees of Hanuman Ji, offering Sundar Kand, Hanuman Chalisa, stotras, japa, katha, temples, and multi-language meanings with optional path-assist audio.",
+              text: "Hanumat is a digital mandir (spiritual app/site) for devotees of Hanuman Ji, offering Sundar Kand, Hanuman Chalisa, stotras, japa, katha, temples, and multi-language meanings.",
             },
           },
           {

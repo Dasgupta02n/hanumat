@@ -39,18 +39,7 @@ def main() -> None:
         d.parent.mkdir(parents=True, exist_ok=True)
         d.write_bytes(s.read_bytes())
 
-    assets = [
-        file_meta(
-            PUBLIC / "audio/chalisa/hanuman_chalisa.m4a",
-            "/audio/chalisa/hanuman_chalisa.m4a",
-            "audio",
-        ),
-        file_meta(
-            PUBLIC / "audio/chalisa/hanuman_chalisa_cues.json",
-            "/audio/chalisa/hanuman_chalisa_cues.json",
-            "cues",
-        ),
-    ]
+    assets = []
     for name, role, locale, scheme in [
         ("meta.json", "meta", None, None),
         ("structure.json", "structure", None, None),
@@ -76,12 +65,9 @@ def main() -> None:
         "maxBytes": 26214400,
         "locales": ["hi", "en"],
         "transliterationSchemes": ["iast"],
-        "segmentIds": ["chalisa-full"],
-        "cueMapIds": ["hanuman_chalisa_cues"],
-        "trackId": "track-hanuman_chalisa",
         "assets": assets,
         "createdAt": "2026-07-22T00:00:00Z",
-        "notes": "Full OfflinePackManifest roles: audio, cues, meta, structure, verses, translations, iast",
+        "notes": "Text offline pack: meta, structure, verses, translations, iast.",
     }
     out = CONTENT / "packs" / "pack-chalisa-v1.json"
     out.write_text(json.dumps(pack, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -91,23 +77,20 @@ def main() -> None:
     )
     print("enriched pack-chalisa-v1", len(assets), "assets")
 
-    # re-hash SK packs only audio/cues (already have sha)
     sk_path = CONTENT / "packs" / "sk-section-packs.json"
-    sk = json.loads(sk_path.read_text(encoding="utf-8"))
-    for p in sk["packs"]:
-        new_assets = []
-        for a in p["assets"]:
-            rel = a["path"].lstrip("/")
-            f = PUBLIC / rel
-            if f.exists():
-                new_assets.append(file_meta(f, a["path"], a.get("role", "audio")))
-            else:
-                new_assets.append(a)
-        p["assets"] = new_assets
-        p["locales"] = p.get("locales") or ["hi", "en"]
-        p["transliterationSchemes"] = p.get("transliterationSchemes") or ["iast"]
-    sk_path.write_text(json.dumps(sk, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("enriched sk packs", len(sk["packs"]))
+    if sk_path.exists():
+        sk = json.loads(sk_path.read_text(encoding="utf-8"))
+        sk["packs"] = [
+            p
+            for p in sk.get("packs", [])
+            if any(
+                a.get("role") not in ("audio", "cues")
+                and "/audio/" not in str(a.get("path", ""))
+                for a in p.get("assets", [])
+            )
+        ]
+        sk_path.write_text(json.dumps(sk, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print("enriched sk packs", len(sk["packs"]))
 
 
 if __name__ == "__main__":

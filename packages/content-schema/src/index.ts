@@ -11,16 +11,6 @@ export const EditionSchema = z.object({
   notes: z.string().optional(),
 });
 
-export const AudioSegmentSchema = z.object({
-  id: z.string(),
-  sectionId: z.string(),
-  src: z.string(),
-  cueMapSrc: z.string(),
-  durationMs: z.number().nonnegative(),
-  order: z.number().int().optional(),
-  lowDataSrc: z.string().optional(),
-});
-
 export const TextMetaSchema = z.object({
   id: z.string().min(1),
   slug: z.string().min(1),
@@ -34,33 +24,14 @@ export const TextMetaSchema = z.object({
   edition: EditionSchema,
   flags: z
     .object({
-      hasAudio: z.boolean().optional(),
       hasOfflinePack: z.boolean().optional(),
       hasTwinText: z.boolean().optional(),
       ff_twin_text: z.boolean().optional(),
-      placeholderAudio: z.boolean().optional(),
-      ttsGenerated: z.boolean().optional(),
       needsDualReview: z.boolean().optional(),
       ocrSource: z.boolean().optional(),
       wave: z.number().optional(),
     })
     .passthrough(),
-  audio: z
-    .object({
-      src: z.string().optional(),
-      cueMapSrc: z.string().optional(),
-      segments: z.array(AudioSegmentSchema).optional(),
-      /**
-       * Optional low-data alternate segments.
-       * When present: must match `segments` length and sectionId per index (CI).
-       */
-      lowDataSegments: z.array(AudioSegmentSchema).optional(),
-      credits: z.string().optional(),
-      trackId: z.string().optional(),
-      lowDataSrc: z.string().optional(),
-    })
-    .passthrough()
-    .optional(),
   twinText: z.unknown().optional(),
   stats: z
     .object({
@@ -96,8 +67,6 @@ export const TransliterationBundleSchema = z.record(z.string());
 
 /** Offline pack asset roles used in content/packs (design CI / T12). */
 export const OFFLINE_PACK_ROLES = [
-  "audio",
-  "cues",
   "meta",
   "verses",
   "translation",
@@ -126,8 +95,6 @@ export const OfflinePackManifestSchema = z.object({
   locales: z.array(z.string()).optional(),
   transliterationSchemes: z.array(z.string()).optional(),
   segmentIds: z.array(z.string()).optional(),
-  cueMapIds: z.array(z.string()).optional(),
-  trackId: z.string().optional(),
   sectionId: z.string().optional(),
   assets: z.array(OfflinePackAssetSchema).min(1),
   createdAt: z.string().optional(),
@@ -136,7 +103,6 @@ export const OfflinePackManifestSchema = z.object({
 
 export type TextMeta = z.infer<typeof TextMetaSchema>;
 export type OfflinePackManifest = z.infer<typeof OfflinePackManifestSchema>;
-export type AudioSegment = z.infer<typeof AudioSegmentSchema>;
 
 /** Wave 0 required text ids for public matrix */
 export const WAVE0_REQUIRED_TEXT_IDS = [
@@ -146,35 +112,3 @@ export const WAVE0_REQUIRED_TEXT_IDS = [
 
 export const REQUIRED_LOCALES_MEANING = ["hi", "en"] as const;
 export const REQUIRED_TRANSLIT = ["iast"] as const;
-
-/**
- * CI helper: lowDataSegments must match segments length + sectionId per index.
- * Returns list of human-readable error strings (empty if ok / not applicable).
- */
-export function validateLowDataSegmentsParity(audio: {
-  segments?: { sectionId?: string }[];
-  lowDataSegments?: { sectionId?: string }[];
-} | null | undefined): string[] {
-  const out: string[] = [];
-  if (!audio?.lowDataSegments) return out;
-  const segs = audio.segments;
-  const low = audio.lowDataSegments;
-  if (!segs) {
-    out.push("lowDataSegments present but segments missing");
-    return out;
-  }
-  if (low.length !== segs.length) {
-    out.push(
-      `lowDataSegments length ${low.length} !== segments length ${segs.length}`,
-    );
-  }
-  const n = Math.min(low.length, segs.length);
-  for (let i = 0; i < n; i++) {
-    if (segs[i]?.sectionId !== low[i]?.sectionId) {
-      out.push(
-        `lowDataSegments[${i}].sectionId (${low[i]?.sectionId}) !== segments[${i}].sectionId (${segs[i]?.sectionId})`,
-      );
-    }
-  }
-  return out;
-}

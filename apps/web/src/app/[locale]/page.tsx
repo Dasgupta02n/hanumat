@@ -38,7 +38,7 @@ export async function generateMetadata({
       : "हनुमत — हनुमान चालीसा, सुंदरकांड व भक्ति का डिजिटल मंदिर";
   const description =
     locale === "en"
-      ? "Free digital temple of Hanuman Ji: read & listen to Sundar Kand, Hanuman Chalisa, Valmiki Sundarakanda, stotras; japa, katha, temples across India. Hindi & English. No ads."
+      ? "Free digital temple of Hanuman Ji: read Sundar Kand, Hanuman Chalisa, Valmiki Sundarakanda, stotras; japa, katha, temples across India. Hindi & English. No ads."
       : "हनुमान जी का निःशुल्क डिजिटल मंदिर: सुंदरकांड, हनुमान चालीसा, वाल्मीकि सुन्दरकाण्ड, स्तोत्र, जप, कथा, मंदिर। हिंदी व अंग्रेज़ी। विज्ञापन नहीं।";
 
   const languages = Object.fromEntries(
@@ -130,8 +130,8 @@ export default async function Home({
       title: locale === "en" ? "Sundar Kand" : "सुंदरकांड",
       body:
         locale === "en"
-          ? "Read & listen to Tulsidas Manas — section by section."
-          : "तुलसीदास मानस — खंड-खंड पाठ व श्रवण।",
+          ? "Read Tulsidas Manas — section by section."
+          : "तुलसीदास मानस — खंड-खंड पाठ।",
     },
     {
       href: `/${locale}/path/hanuman-chalisa/`,
@@ -139,8 +139,8 @@ export default async function Home({
       title: locale === "en" ? "Hanuman Chalisa" : "हनुमान चालीसा",
       body:
         locale === "en"
-          ? "Forty chaupais with meaning, IAST, and timed audio."
-          : "अर्थ, IAST और समय-युक्त ऑडियो सहित।",
+          ? "Forty chaupais with meaning and IAST."
+          : "अर्थ और IAST सहित चालीस चौपाई।",
     },
     {
       href: `/${locale}/japa/`,
@@ -221,8 +221,8 @@ export default async function Home({
       <section className="shell section-pad border-b" style={{ borderColor: "var(--hanumat-gold-line)" }}>
         <p className="seo-summary">
           {locale === "en"
-            ? "Hanumat is a free, ad-free digital mandir dedicated to Hanuman Ji. Explore Sundar Kand (Ramcharitmanas), Hanuman Chalisa, Valmiki Sundarakanda, Bajrang Baan, aarti, japa, katha, parayan planners, and temples across India — with Hindi & English meanings and optional path-assist audio."
-            : "हनुमत हनुमान जी को समर्पित निःशुल्क, विज्ञापन-रहित डिजिटल मंदिर है। सुंदरकांड, हनुमान चालीसा, वाल्मीकि सुन्दरकाण्ड, बजरंग बाण, आरती, जप, कथा, पारायण व भारत के मंदिर — हिंदी व अंग्रेज़ी अर्थ और वैकल्पिक श्रवण।"}
+            ? "Hanumat is a free, ad-free digital mandir dedicated to Hanuman Ji. Explore Sundar Kand (Ramcharitmanas), Hanuman Chalisa, Valmiki Sundarakanda, Bajrang Baan, aarti, japa, katha, parayan planners, and temples across India — with Hindi & English meanings."
+            : "हनुमत हनुमान जी को समर्पित निःशुल्क, विज्ञापन-रहित डिजिटल मंदिर है। सुंदरकांड, हनुमान चालीसा, वाल्मीकि सुन्दरकाण्ड, बजरंग बाण, आरती, जप, कथा, पारायण व भारत के मंदिर — हिंदी व अंग्रेज़ी अर्थ।"}
         </p>
         <hr className="temple-rule mt-8" />
       </section>

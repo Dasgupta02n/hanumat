@@ -18,10 +18,7 @@
     "notes": "Stable four-verse public recension of the twelve names. Cross-checked common Devanagari printings."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "wave": 1,

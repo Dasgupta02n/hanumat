@@ -18,10 +18,7 @@
     "notes": "Collated from Sanskrit Documents AdyA.html (encoded Kunal Mukherjee, proofread Sunder Hattangadi; translation at adyapeath.org/AdyaComb.pdf) and Green Message adya_stotram. Opening ॐ नम आद्यायै. Twenty verses of the vulgate plus closing namaskara."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

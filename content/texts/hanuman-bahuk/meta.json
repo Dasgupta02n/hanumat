@@ -21,17 +21,7 @@
     "notes": "Corrected 2026-07-23: replaced Chalisa/mantra garbage mix with full 44-padya traditional Bahuk."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
-    "needsDualReview": true,
-    "placeholderAudio": false
-  },
-  "audio": {
-    "src": "/audio/bahuk/hanuman_bahuk.m4a",
-    "cueMapSrc": "/audio/bahuk/hanuman_bahuk_cues.json",
-    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
-    "trackId": "track-hanuman_bahuk",
-    "lowDataSrc": "/audio/bahuk/hanuman_bahuk_low.m4a"
+    "needsDualReview": true
   },
   "stats": {
     "sectionCount": 1,

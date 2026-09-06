@@ -1,17 +1,13 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SiteShell } from "@/components/SiteShell";
 import { useDeity } from "@/components/DeityProvider";
 import { loadJapa, saveJapa, type JapaSession } from "@/lib/my-path";
 
 const TARGETS = [11, 21, 54, 108, 1008];
 const BEADS = 108;
-
-const AUDIO: Record<string, string> = {
-  hanuman: "/audio/mantra/om_hanumate_namah.m4a",
-};
 
 export function MandirJapa() {
   const locale = useLocale();
@@ -22,9 +18,6 @@ export function MandirJapa() {
   const [sessions, setSessions] = useState(0);
   const [history, setHistory] = useState<JapaSession[]>([]);
   const [done, setDone] = useState(false);
-  const [playing, setPlaying] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const audioSrc = AUDIO[deity.id];
 
   useEffect(() => {
     const s = loadJapa(deity.id);
@@ -172,27 +165,6 @@ export function MandirJapa() {
           />
         </div>
         <div className="mt-6 flex flex-wrap justify-center gap-4">
-          {audioSrc && (
-            <button
-              type="button"
-              className="text-sm"
-              style={{ color: "var(--hanumat-stone)" }}
-              onClick={() => {
-                const a = audioRef.current;
-                if (!a) return;
-                if (playing) {
-                  a.pause();
-                  setPlaying(false);
-                } else {
-                  a.loop = true;
-                  void a.play();
-                  setPlaying(true);
-                }
-              }}
-            >
-              {playing ? t("stop") : t("loop")}
-            </button>
-          )}
           <button
             type="button"
             className="text-sm"
@@ -205,9 +177,6 @@ export function MandirJapa() {
             {t("reset")}
           </button>
         </div>
-        {audioSrc && (
-          <audio ref={audioRef} src={audioSrc} preload="none" />
-        )}
       </div>
       {history.length > 0 && (
         <section className="mt-12">

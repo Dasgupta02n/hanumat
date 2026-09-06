@@ -18,10 +18,7 @@
     "notes": "Not the full Kali Sahasranama. Twenty-seven public names as an index for household remembrance. Tantric paddhati and full thousand-name dump omitted on purpose."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "wave": 1,

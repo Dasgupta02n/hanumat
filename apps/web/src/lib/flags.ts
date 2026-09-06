@@ -19,11 +19,7 @@ export const flags = {
   ff_japa: envFlag("FF_JAPA", true),
   ff_parayan_planner: envFlag("FF_PARAYAN_PLANNER", true),
   ff_my_path_sync: envFlag("FF_MY_PATH_SYNC", false),
-  ff_shravan_nav: envFlag("FF_SHRAVAN_NAV", true),
   ff_kids: envFlag("FF_KIDS", true),
-  ff_listen_together: envFlag("FF_LISTEN_TOGETHER", false),
-  ff_karaoke_chalisa: envFlag("FF_KARAOKE_CHALISA", true),
-  ff_low_data: envFlag("FF_LOW_DATA", true),
   ff_verse_virtualization: envFlag("FF_VERSE_VIRTUALIZATION", true),
 } as const;
 

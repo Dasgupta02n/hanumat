@@ -344,8 +344,6 @@ def process_sk() -> dict:
         "PDF text layer is CID-garbled so raw extract used). HI gloss from source; EN via MT of HI "
         "or provisional. Owner-responsible, not official Gita Press digital license."
     )
-    meta["flags"]["ttsGenerated"] = True
-
     save_json(SK_DIR / "verses.json", verses)
     save_json(SK_DIR / "translations" / "hi.json", hi)
     save_json(SK_DIR / "translations" / "en.json", en)

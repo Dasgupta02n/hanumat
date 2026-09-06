@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Internal structural + audio parity audit for Hanumat path texts.
+ * Internal structural audit for Hanumat path texts.
  * Writes scripts/vet-audit-report.json and prints a summary table.
  */
 import fs from "node:fs";
@@ -126,72 +126,9 @@ for (const t of texts) {
 
   const audioIssues = [];
   const cueChecks = [];
-  let totalCues = 0;
-  const allCueVerseIds = [];
-
-  if (meta.audio) {
-    const segs =
-      meta.audio.segments ||
-      [
-        {
-          id: "full",
-          src: meta.audio.src,
-          cueMapSrc: meta.audio.cueMapSrc,
-          sectionId: structure.sections[0]?.id,
-          lowDataSrc: meta.audio.lowDataSrc,
-        },
-      ];
-
-    for (const seg of segs) {
-      const cueRel = (seg.cueMapSrc || meta.audio.cueMapSrc || "").replace(/^\//, "");
-      const srcRel = (seg.src || meta.audio.src || "").replace(/^\//, "");
-      const publicCue = path.join(PUBLIC, cueRel);
-      const publicAudio = path.join(PUBLIC, srcRel);
-
-      let cueCount = 0;
-      let cueIds = [];
-      if (fs.existsSync(publicCue)) {
-        const cj = load(publicCue);
-        const cues = cj.cues || [];
-        cueCount = cues.length;
-        cueIds = cues.map((c) => c.verseId || c.id).filter(Boolean);
-        allCueVerseIds.push(...cueIds);
-      } else {
-        audioIssues.push(`missing cue ${cueRel}`);
-      }
-
-      let audioBytes = 0;
-      if (fs.existsSync(publicAudio)) {
-        audioBytes = fs.statSync(publicAudio).size;
-        if (audioBytes < 1000) audioIssues.push(`tiny audio ${srcRel} (${audioBytes}b)`);
-      } else {
-        audioIssues.push(`missing audio ${srcRel}`);
-      }
-
-      let lowBytes = 0;
-      const low = seg.lowDataSrc || meta.audio.lowDataSrc;
-      if (low) {
-        const lp = path.join(PUBLIC, low.replace(/^\//, ""));
-        if (fs.existsSync(lp)) lowBytes = fs.statSync(lp).size;
-        else audioIssues.push(`missing lowdata ${low}`);
-      }
-
-      totalCues += cueCount;
-      cueChecks.push({
-        seg: seg.id || seg.sectionId,
-        cueCount,
-        audioBytes,
-        lowBytes,
-        cueRel,
-        srcRel,
-      });
-    }
-  } else {
-    audioIssues.push("no audio meta");
-  }
-
-  const cueMissingVerses = vIds.filter((id) => !allCueVerseIds.includes(id));
-  const cueExtra = allCueVerseIds.filter((id) => id && !verses[id]);
+  const totalCues = 0;
+  const cueMissingVerses = [];
+  const cueExtra = [];
 
   report.push({
     id: t,
@@ -226,7 +163,7 @@ for (const t of texts) {
       .filter(([, v]) => v.short > 0)
       .map(([k, v]) => `${k}:${v.short}`),
     totalCues,
-    cueParity: totalCues === vIds.length ? "MATCH" : `${totalCues}!=${vIds.length}`,
+    cueParity: "n/a",
     cueMissingVerses: cueMissingVerses.length,
     cueExtra: cueExtra.length,
     cueChecks,
@@ -234,10 +171,7 @@ for (const t of texts) {
     samples,
     fullSamples,
     needsDualReview: !!meta.flags?.needsDualReview,
-    tts: !!meta.flags?.ttsGenerated,
     hasOffline: !!meta.flags?.hasOfflinePack,
-    audioEngine: meta.audio?.engine || null,
-    audioVoice: meta.audio?.voice || null,
   });
 }
 
@@ -245,18 +179,15 @@ const outPath = path.join(ROOT, "scripts", "vet-audit-report.json");
 fs.writeFileSync(outPath, JSON.stringify(report, null, 2), "utf8");
 
 // Human table
-console.log("ID | verses | cues | parity | empty | iastMiss | localeGaps | audioIssues | contam");
+console.log("ID | verses | empty | iastMiss | localeGaps | contam");
 for (const x of report) {
   console.log(
     [
       x.id,
       x.verseCount,
-      x.totalCues,
-      x.cueParity,
       x.emptyText,
       x.missingIast,
       (x.localeGaps || []).join(";") || "ok",
-      x.audioIssues.length,
       x.contaminationHits.length,
     ].join(" | "),
   );
@@ -266,18 +197,6 @@ console.log("Total texts:", report.length);
 console.log(
   "Total verses:",
   report.reduce((a, x) => a + x.verseCount, 0),
-);
-console.log(
-  "Total cues:",
-  report.reduce((a, x) => a + x.totalCues, 0),
-);
-console.log(
-  "Audio issue texts:",
-  report.filter((x) => x.audioIssues.length).map((x) => x.id),
-);
-console.log(
-  "Cue mismatch:",
-  report.filter((x) => x.cueParity !== "MATCH").map((x) => `${x.id}:${x.cueParity}`),
 );
 console.log(
   "Contamination:",

@@ -104,16 +104,6 @@ export type VerseUnit = {
   iast?: string;
 };
 
-export type AudioSegment = {
-  id: string;
-  sectionId: string;
-  src: string;
-  cueMapSrc: string;
-  durationMs: number;
-  /** Legacy per-segment low-data URL; prefer top-level audio.lowDataSegments */
-  lowDataSrc?: string;
-};
-
 export type TextPackage = {
   id: string;
   slug: string;
@@ -127,19 +117,6 @@ export type TextPackage = {
   flags: Record<string, boolean | undefined>;
   sections: Section[];
   verses: VerseUnit[];
-  audio?: {
-    src?: string;
-    lowDataSrc?: string;
-    cueMapSrc?: string;
-    segments?: AudioSegment[];
-    /**
-     * Parallel low-data track list: same length/order/sectionId as segments.
-     * Each entry uses low-bitrate src; cueMapSrc/durationMs match the default segment.
-     */
-    lowDataSegments?: AudioSegment[];
-    credits?: string;
-    ttsGenerated?: boolean;
-  };
   twinText?: unknown;
 };
 
@@ -157,7 +134,6 @@ export function pack(
     wave?: number;
     edition: { pin: string; notes?: string; publisher?: string };
     flags: Record<string, boolean | undefined>;
-    audio?: Record<string, unknown>;
     twinText?: unknown;
   },
   structure: { sections: Section[] },
@@ -190,7 +166,6 @@ export function pack(
       });
     }
   }
-  const audioMeta = meta.audio || {};
   return {
     id: meta.id,
     slug: meta.slug,
@@ -205,16 +180,6 @@ export function pack(
     sections,
     verses,
     twinText: meta.twinText,
-    audio: {
-      src: audioMeta.src as string | undefined,
-      lowDataSrc: audioMeta.lowDataSrc as string | undefined,
-      cueMapSrc: audioMeta.cueMapSrc as string | undefined,
-      segments: (audioMeta.segments as AudioSegment[]) || undefined,
-      lowDataSegments:
-        (audioMeta.lowDataSegments as AudioSegment[]) || undefined,
-      credits: audioMeta.credits as string | undefined,
-      ttsGenerated: meta.flags.ttsGenerated,
-    },
   };
 }
 

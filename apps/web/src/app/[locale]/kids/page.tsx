@@ -108,8 +108,8 @@ export default async function KidsPage({
             </p>
             <p className="mt-3 text-base text-[#cbb8e0] sm:text-lg">
               {isHi
-                ? "धीरे-धीरे पढ़ें या सुनें — जल्दबाजी नहीं।"
-                : "Read or listen slowly — no hurry."}
+                ? "धीरे-धीरे पढ़ें — जल्दबाजी नहीं।"
+                : "Read slowly — no hurry."}
             </p>
           </Link>
           <Link

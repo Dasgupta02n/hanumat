@@ -162,6 +162,7 @@ export function MandirMyPath() {
               readyLabel={t("packReady")}
             />
           </section>
+          {packs.length > 0 && (
           <section className="mt-6 temple-card p-5">
             <h2 className="font-serif text-lg">{t("skPacks")}</h2>
             <p className="mt-2 text-sm" style={{ color: "var(--hanumat-stone)" }}>{t("skPacksBody")}</p>
@@ -194,6 +195,7 @@ export function MandirMyPath() {
               </ul>
             )}
           </section>
+          )}
         </>
       )}
 

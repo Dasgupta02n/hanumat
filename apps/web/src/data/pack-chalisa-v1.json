@@ -14,31 +14,12 @@
   "transliterationSchemes": [
     "iast"
   ],
-  "segmentIds": [
-    "chalisa-full"
-  ],
-  "cueMapIds": [
-    "hanuman_chalisa_cues"
-  ],
-  "trackId": "track-hanuman_chalisa",
   "assets": [
-    {
-      "path": "/audio/chalisa/hanuman_chalisa.m4a",
-      "role": "audio",
-      "bytes": 4068964,
-      "sha256": "6be2865feeb9508cbf1b7415f679b2b6f7f47ce9a9b107513c4f096ba3a5387e"
-    },
-    {
-      "path": "/audio/chalisa/hanuman_chalisa_cues.json",
-      "role": "cues",
-      "bytes": 4255,
-      "sha256": "d21a7c54eb38210232d318aa29021207fde30785cf1fd8af4c39e9f1f50b4cdb"
-    },
     {
       "path": "/content/texts/hanuman-chalisa/meta.json",
       "role": "meta",
-      "bytes": 1973,
-      "sha256": "ab107c3dd45e89569e436b22a0397840c8b9fce0e84db2b03795a69c2fc60ecc"
+      "bytes": 1121,
+      "sha256": "633b8561ea0cc3815094dce89194c24fa90fbb13280f5a8092760b813a157356"
     },
     {
       "path": "/content/texts/hanuman-chalisa/structure.json",
@@ -75,5 +56,5 @@
     }
   ],
   "createdAt": "2026-07-22T00:00:00Z",
-  "notes": "Full OfflinePackManifest roles: audio, cues, meta, structure, verses, translations, iast"
+  "notes": "Text offline pack: meta, structure, verses, translations, iast."
 }

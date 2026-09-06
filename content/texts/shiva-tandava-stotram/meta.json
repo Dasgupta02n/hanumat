@@ -18,10 +18,7 @@
     "notes": "Ravana recension collated from Sanskrit Documents shivTAND_meaning and Green Message. Meanings provisional."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "wave": 1,

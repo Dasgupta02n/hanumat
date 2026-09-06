@@ -26,12 +26,12 @@ const FALLBACK: SeoCopy = {
 const MAP: Record<string, SeoCopy> = {
   "hanuman-chalisa": {
     title: {
-      hi: "हनुमान चालीसा अर्थ सहित — पाठ, IAST, श्रवण",
+      hi: "हनुमान चालीसा अर्थ सहित — पाठ, IAST",
       en: "Hanuman Chalisa in English — meaning, IAST, free Path Studio",
     },
     description: {
-      hi: "तुलसीदास की हनुमान चालीसा — मूल, IAST, हिंदी-अंग्रेज़ी अर्थ, पाठ-सहायक श्रवण। बिना विज्ञापन। मंगलवार का पाठ।",
-      en: "Tulsidas’ Hanuman Chalisa with English meaning, IAST (Roman letters), and path-assist audio. Free, no ads. Tuesday path.",
+      hi: "तुलसीदास की हनुमान चालीसा — मूल, IAST, हिंदी-अंग्रेज़ी अर्थ। बिना विज्ञापन। मंगलवार का पाठ।",
+      en: "Tulsidas’ Hanuman Chalisa with English meaning and IAST (Roman letters). Free, no ads. Tuesday path.",
     },
     keywords: [
       "Hanuman Chalisa",
@@ -52,8 +52,8 @@ const MAP: Record<string, SeoCopy> = {
       en: "Sundar Kand with meaning — Ramcharitmanas Path Studio",
     },
     description: {
-      hi: "तुलसीदास सुंदरकांड — खंडों में पाठ, अर्थ, श्रवण। पारायण ७/४० दिन। बिना विज्ञापन।",
-      en: "Tulsidas Sundar Kand in sections — text, meaning, listening. 7/40-day parayan. Free, no ads.",
+      hi: "तुलसीदास सुंदरकांड — खंडों में पाठ व अर्थ। पारायण ७/४० दिन। बिना विज्ञापन।",
+      en: "Tulsidas Sundar Kand in sections — text and meaning. 7/40-day parayan. Free, no ads.",
     },
     keywords: ["Sundar Kand", "Sundar Kand meaning", "सुंदरकांड पाठ", "Ramcharitmanas"],
     how: {

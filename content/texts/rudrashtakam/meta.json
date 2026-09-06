@@ -18,10 +18,7 @@
     "notes": "Collated from multiple Devanagari printings (sanatan-dharm, BhajanSangam, India TV GP-style, stotra.in). v1 भजेऽहम्; v8 आपन्नमामीश शम्भो. Phalaśruti (verse 9) included as traditionally appended."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

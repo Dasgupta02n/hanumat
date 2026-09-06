@@ -21,18 +21,7 @@
     "notes": "Corrected 2026-07-23 after 3-source vet (BhaktiBharat, Navbharat Times, Webdunia). Replaced incomplete/wrong local mix with full traditional aarti (14 units incl. closing refrain)."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
     "needsDualReview": true
-  },
-  "audio": {
-    "src": "/audio/aarti/hanuman_aarti.m4a",
-    "cueMapSrc": "/audio/aarti/hanuman_aarti_cues.json",
-    "lowDataSrc": "/audio/aarti/hanuman_aarti_low.m4a",
-    "credits": "TTS path-assist (hi-IN-MadhurNeural) — not classical pāṭh. Regenerated 2026-07-23 V2.",
-    "trackId": "track-hanuman_aarti",
-    "engine": "edge-tts",
-    "voice": "hi-IN-MadhurNeural"
   },
   "stats": {
     "sectionCount": 1,

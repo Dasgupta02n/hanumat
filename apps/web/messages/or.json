@@ -7,7 +7,6 @@
     "myPath": "ମୋ ପଥ",
     "learn": "ଜାଣନ୍ତୁ",
     "chalisa": "ଚାଳିସା",
-    "listen": "ଶ୍ରବଣ",
     "sankat": "ଶରଣ",
     "japa": "ଜପ",
     "calendar": "କ୍ୟାଲେଣ୍ଡର",
@@ -16,14 +15,14 @@
     "temples": "କ୍ଷେତ୍ର",
     "kids": "ଶିଶୁ ପଥ",
     "gallery": "108 Images",
-    "radio": "Radio",
     "glossary": "Glossary",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "search": "Search"
   },
   "home": {
     "eyebrow": "hanumat.life · waves 0–3",
     "title": "Complete digital mandir of Hanuman bhakti",
-    "body": "Sundar Kand, Chalisa, stotras, japa, katha, parayan, kshetras — text, meaning, listening. No ads.",
+    "body": "Sundar Kand, Chalisa, stotras, japa, katha, parayan, kshetras — text, meaning, IAST. No ads.",
     "ctaSk": "Sundar Kand",
     "ctaCh": "Chalisa",
     "ctaMy": "My Path",
@@ -42,18 +41,23 @@
   "studio": {
     "section": "Section",
     "full": "Full",
-    "listen": "Listen only",
     "episodes": "Episodes",
     "meaning": "Meaning",
     "hideMeaning": "Hide meaning",
     "iast": "IAST",
-    "audio": "Audio",
+    "edition": "Edition",
+    "textOnly": "Mula, IAST, and meaning — read in Path Studio.",
     "reportError": "Report a textual error",
-    "live": "live",
     "twinText": "Twin-text",
     "twinNote": "Valmiki–Manas alignment (sample)",
     "provisionalTitle": "Provisional / MT meanings:",
-    "provisionalBody": "Machine-assisted draft for this locale + owner responsibility. Not scholarly ṭīkā. TTS ≠ classical pāṭh. OCR mūla ≠ Gita Press digital license."
+    "provisionalBody": "Machine-assisted draft for this locale + owner responsibility. Not scholarly ṭīkā. OCR mūla ≠ Gita Press digital license.",
+    "focus": "Focus",
+    "print": "Print / PDF",
+    "share": "Share verse",
+    "scriptAll": "Mula + meaning",
+    "scriptMula": "Hindi only",
+    "scriptIast": "IAST only"
   },
   "myPath": {
     "title": "My Path",
@@ -61,11 +65,11 @@
     "continue": "Continue",
     "bookmarks": "Bookmarks",
     "offline": "Chalisa offline",
-    "offlineBody": "Download pack for offline listening.",
+    "offlineBody": "Download pack for offline reading.",
     "downloadPack": "Offline pack",
     "packReady": "Pack ready",
     "skPacks": "Sundar Kand section packs",
-    "skPacksBody": "Wave 1 — offline listen per section.",
+    "skPacksBody": "Wave 1 — offline text per section.",
     "clear": "Clear local data",
     "empty": "Nothing yet.",
     "export": "Export data (JSON)",
@@ -75,15 +79,13 @@
   },
   "learn": {
     "title": "Learn · Sources",
-    "intro": "Edition, audio, principles."
+    "intro": "Edition, sources, principles."
   },
   "japa": {
     "title": "Japa mala",
     "mantra": "Om Hanumate Namah",
     "reset": "Reset",
-    "session": "Session complete",
-    "loop": "Mantra loop",
-    "stop": "Stop"
+    "session": "Session complete"
   },
   "calendar": {
     "title": "Bhakti calendar",
@@ -97,10 +99,6 @@
     "title": "Katha · Leela",
     "intro": "Major arcs in plain language.",
     "minutes": "min"
-  },
-  "listen": {
-    "title": "Listen",
-    "intro": "Neural Hindi TTS path-assist · not classical path · credits on Learn."
   },
   "sankat": {
     "title": "Refuge room",
@@ -129,7 +127,7 @@
   },
   "footer": {
     "blurb": "One mandir · every path. Seva — no ads in path.",
-    "ttsNote": "Audio: neural TTS path-assist — not classical pāṭh. Meanings: machine-assisted draft for this locale."
+    "note": "Path Studio is text: mula, IAST, meaning. Meanings: machine-assisted draft for this locale."
   },
   "common": {
     "episodes": "episodes",

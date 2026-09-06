@@ -4,8 +4,6 @@
  * Usage: node scripts/validate-content.mjs
  *
  * Design-CI checks (T12):
- *  - lowDataSegments parity with segments (length + sectionId)
- *  - cueMapSrc JSON under apps/web/public has cues[]; warn if missing
  *  - Chalisa offline pack: sha256 + bytes required; role set complete
  *  - No duplicate verse ids within a text
  */
@@ -29,7 +27,6 @@ const MetaSchema = z.object({
   category: z.string(),
   edition: z.object({ pin: z.string().min(1) }).passthrough(),
   flags: z.record(z.any()).optional(),
-  audio: z.any().optional(),
   wave: z.number().optional(),
 }).passthrough();
 
@@ -49,8 +46,6 @@ const StructureSchema = z.object({
 
 /** Roles required on the Chalisa offline pack (design CI / T12). */
 const CHALISA_PACK_REQUIRED_ROLES = new Set([
-  "audio",
-  "cues",
   "meta",
   "verses",
   "translation",
@@ -79,66 +74,6 @@ function readJson(p) {
 function sha256File(abs) {
   const buf = fs.readFileSync(abs);
   return createHash("sha256").update(buf).digest("hex");
-}
-
-/** Resolve a public-root path like /audio/... → apps/web/public/... */
-function publicPath(urlPath) {
-  if (!urlPath || typeof urlPath !== "string") return null;
-  const rel = urlPath.replace(/^\//, "");
-  return path.join(PUBLIC, rel);
-}
-
-/**
- * Validate cueMapSrc: if file exists under public, parse JSON with cues[];
- * missing file is a warning (does not block build).
- */
-function checkCueMapSrc(label, cueMapSrc) {
-  if (!cueMapSrc || typeof cueMapSrc !== "string") return;
-  const abs = publicPath(cueMapSrc);
-  if (!abs || !fs.existsSync(abs)) {
-    warn(`${label}: cueMapSrc missing on disk ${cueMapSrc}`);
-    return;
-  }
-  try {
-    const data = readJson(abs);
-    if (!data || !Array.isArray(data.cues)) {
-      fail(`${label}: cueMapSrc ${cueMapSrc} must be JSON with a cues array`);
-    }
-  } catch (e) {
-    fail(`${label}: cueMapSrc ${cueMapSrc} invalid JSON — ${e.message}`);
-  }
-}
-
-/**
- * If lowDataSegments is present: same length as segments + matching sectionId per index.
- */
-function checkLowDataSegments(metaId, audio) {
-  if (!audio || audio.lowDataSegments == null) return;
-  const segs = Array.isArray(audio.segments) ? audio.segments : null;
-  const low = audio.lowDataSegments;
-  if (!Array.isArray(low)) {
-    fail(`${metaId}: audio.lowDataSegments must be an array when present`);
-    return;
-  }
-  if (!segs) {
-    fail(`${metaId}: audio.lowDataSegments present but audio.segments missing`);
-    return;
-  }
-  if (low.length !== segs.length) {
-    fail(
-      `${metaId}: lowDataSegments length ${low.length} !== segments length ${segs.length}`,
-    );
-  }
-  const n = Math.min(low.length, segs.length);
-  for (let i = 0; i < n; i++) {
-    const a = segs[i]?.sectionId;
-    const b = low[i]?.sectionId;
-    if (a !== b) {
-      fail(
-        `${metaId}: lowDataSegments[${i}].sectionId (${b}) !== segments[${i}].sectionId (${a})`,
-      );
-    }
-  }
 }
 
 /**
@@ -219,35 +154,8 @@ for (const dir of dirs) {
     if (!iast[vid]) fail(`${meta.id}: missing iast for ${vid}`);
   }
 
-  // Audio: lowDataSegments parity + cue maps
-  const audio = meta.audio;
-  if (audio) {
-    checkLowDataSegments(meta.id, audio);
-
-    if (audio.cueMapSrc) {
-      checkCueMapSrc(`${meta.id} (track)`, audio.cueMapSrc);
-    }
-
-    const segs = audio.segments;
-    if (Array.isArray(segs)) {
-      for (const seg of segs) {
-        const label = `${meta.id} segment ${seg.id ?? seg.sectionId ?? "?"}`;
-        if (seg.cueMapSrc) {
-          checkCueMapSrc(label, seg.cueMapSrc);
-        }
-      }
-    }
-  }
-
-  if (WAVE0.has(meta.id)) {
-    if (meta.flags?.placeholderAudio === true) {
-      fail(`${meta.id}: Wave 0 text has placeholderAudio=true`);
-    }
-    const segs = meta.audio?.segments;
-    const src = meta.audio?.src;
-    if (!src && !(segs && segs.length)) {
-      fail(`${meta.id}: Wave 0 requires audio`);
-    }
+  if (WAVE0.has(meta.id) && !structure.sections.length) {
+    fail(`${meta.id}: Wave 0 requires at least one section`);
   }
 }
 

@@ -42,10 +42,7 @@ function writeText(spec) {
     script: "Deva",
     edition: spec.edition,
     flags: {
-      hasAudio: false,
       hasOfflinePack: false,
-      placeholderAudio: false,
-      ttsGenerated: false,
       needsDualReview: true,
     },
     stats: {

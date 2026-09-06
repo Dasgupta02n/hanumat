@@ -21,17 +21,7 @@
     "notes": "Corrected 2026-07-23: previous pack was Sanskrit collage under wrong Maruti Stotra title. Replaced with authentic Hanumat Trikala Smaranam (3 shlokas). Note: Samarth Ramdas Marathi Maruti Stotra is a separate work."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
-    "needsDualReview": true,
-    "placeholderAudio": false
-  },
-  "audio": {
-    "src": "/audio/maruti/maruti_stotra.m4a",
-    "cueMapSrc": "/audio/maruti/maruti_stotra_cues.json",
-    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
-    "trackId": "track-maruti_stotra",
-    "lowDataSrc": "/audio/maruti/maruti_stotra_low.m4a"
+    "needsDualReview": true
   },
   "stats": {
     "sectionCount": 1,

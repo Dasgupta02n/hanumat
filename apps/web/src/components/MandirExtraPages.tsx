@@ -5,7 +5,6 @@ import { extrasFor, type ExtraKind } from "@/lib/mandir-extras";
 import { deityHref, deities, type DeityId } from "@/lib/deities";
 import { galleryPick } from "@/lib/gallery";
 import { getTextBySlug } from "@/lib/content";
-import { listCatalogLite } from "@/lib/catalog";
 import type { Locale } from "@/i18n/config";
 import { SiteSearch } from "@/components/SiteSearch";
 
@@ -39,7 +38,6 @@ export function MandirExtraPage({
     temples: { hi: "क्षेत्र / मंदिर", en: "Kshetras / temples" },
     glossary: { hi: "शब्दकोश", en: "Glossary" },
     kids: { hi: "बाल मार्ग", en: "Kids path" },
-    radio: { hi: "श्रवण सूची", en: "Listen list" },
     sankat: { hi: "सङ्कट पाठ", en: "In distress" },
     search: { hi: "खोज", en: "Search" },
   };
@@ -160,17 +158,6 @@ export function MandirExtraPage({
           </div>
         )}
 
-        {kind === "radio" && (
-          <div className="mt-8">
-            <p className="max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
-              {t(x.radioNote.hi, x.radioNote.en)}
-            </p>
-            <Link href={h("/listen/")} className="btn-gold mt-6 inline-flex">
-              {en ? "Open Listen" : "श्रवण खोलें"}
-            </Link>
-          </div>
-        )}
-
         {kind === "parayan" && (
           <div className="mt-10 space-y-12">
             {x.parayanSlugs.map((slug) => {
@@ -240,59 +227,6 @@ export function MandirExtraPage({
               : "स्थानीय पंचांग और घर की रीति मान्य। विज्ञापन नहीं।"}
           </p>
         )}
-      </div>
-    </SiteShell>
-  );
-}
-
-export function MandirListenPlayer({
-  deity,
-  locale,
-}: {
-  deity: DeityId;
-  locale: Locale;
-}) {
-  const en = locale === "en";
-  const catalog = listCatalogLite(undefined, deity);
-  const h = (p: string) => deityHref(deity, locale, p);
-  const d = deities[deity];
-
-  return (
-    <SiteShell wide>
-      <div className="shell section-pad">
-        <p className="section-kicker">{en ? d.eyebrow.en : d.eyebrow.hi}</p>
-        <h1 className="section-title mt-2 text-4xl">{en ? "Listen" : "श्रवण"}</h1>
-        <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
-          {en
-            ? "Same player as Hanumat. Paths without recitation audio stay “read until audio exists.”"
-            : "हनुमत जैसा वादक। जिन पाठों पर श्रवण नहीं, वे ‘पाठ तक श्रवण’ रहेंगे।"}
-        </p>
-        <ul className="mt-10 space-y-4">
-          {catalog.map((p) => {
-            const pack = getTextBySlug(p.slug);
-            const src =
-              pack?.audio?.src ||
-              pack?.audio?.segments?.[0]?.src ||
-              "";
-            return (
-              <li key={p.id} className="temple-card temple-card-frame p-4">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h2 className="font-serif text-lg">{en ? p.title.en : p.title.hi}</h2>
-                  <Link href={h(`/path/${p.slug}/`)} className="text-xs" style={{ color: "var(--hanumat-vermillion-deep)" }}>
-                    Path Studio →
-                  </Link>
-                </div>
-                {src ? (
-                  <audio className="mt-3 w-full" controls preload="none" src={src} />
-                ) : (
-                  <p className="mt-3 text-xs" style={{ color: "var(--hanumat-stone)" }}>
-                    {en ? "Read until audio exists — open Path Studio." : "श्रवण आने तक पाठ करें — पाठ स्टूडियो खोलें।"}
-                  </p>
-                )}
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </SiteShell>
   );

@@ -24,8 +24,6 @@ export type OfflinePackManifest = {
   locales?: string[];
   transliterationSchemes?: string[];
   segmentIds?: string[];
-  cueMapIds?: string[];
-  trackId?: string;
   sectionId?: string;
   assets: OfflinePackAsset[];
   createdAt?: string;
@@ -73,8 +71,6 @@ function asManifest(raw: unknown): OfflinePackManifest | null {
     locales: p.locales as string[] | undefined,
     transliterationSchemes: p.transliterationSchemes as string[] | undefined,
     segmentIds: p.segmentIds as string[] | undefined,
-    cueMapIds: p.cueMapIds as string[] | undefined,
-    trackId: p.trackId as string | undefined,
     sectionId: p.sectionId as string | undefined,
     assets: (p.assets as OfflinePackAsset[]).map((a) => ({
       path: a.path,
@@ -109,7 +105,7 @@ const DHAM_PACKS: OfflinePackManifest[] = [
       { path: "/shiva/en/path/shiv-aarti/", role: "html" },
       { path: "/shiva/hi/path/lingashtakam/", role: "html" },
     ],
-    notes: "Dham text pack. Recitation audio later uses the same sha256 verify as Chalisa.",
+    notes: "Dham text pack — Path Studio pages for offline reading.",
   },
   {
     id: "pack-kali-v1",
@@ -123,7 +119,7 @@ const DHAM_PACKS: OfflinePackManifest[] = [
       { path: "/kali/en/path/kali-aarti/", role: "html" },
       { path: "/kali/hi/path/kalika-ashtakam/", role: "html" },
     ],
-    notes: "Dham text pack. Recitation audio later uses the same sha256 verify as Chalisa.",
+    notes: "Dham text pack — Path Studio pages for offline reading.",
   },
 ];
 

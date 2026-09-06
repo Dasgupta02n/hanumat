@@ -8,7 +8,7 @@ import { MandirHome } from "@/components/MandirHome";
 import { MandirGalleryIndex, MandirGalleryDetail } from "@/components/MandirGallery";
 import { getGallery, galleryPick } from "@/lib/gallery";
 import { PathStudioDynamic } from "@/components/PathStudioDynamic";
-import { MandirExtraPage, MandirListenPlayer } from "@/components/MandirExtraPages";
+import { MandirExtraPage } from "@/components/MandirExtraPages";
 import type { ExtraKind } from "@/lib/mandir-extras";
 import { listCatalogLite } from "@/lib/catalog";
 import { getTextBySlug, textsForDeity } from "@/lib/content";
@@ -214,11 +214,6 @@ export async function renderMandirPath(
   );
 }
 
-export async function renderMandirListen(deity: DeityId, rawLocale: string) {
-  const locale = await parseLocale(rawLocale);
-  return <MandirListenPlayer deity={deity} locale={locale} />;
-}
-
 export async function renderMandirExtra(
   deity: DeityId,
   rawLocale: string,
@@ -253,7 +248,7 @@ export async function renderMandirLearn(deity: DeityId, rawLocale: string) {
           <h2 className="font-serif text-lg">{en ? "Disclaimers" : "अस्वीकरण"}</h2>
           <ul className="mt-2 list-inside list-disc space-y-1" style={{ color: "var(--hanumat-stone)" }}>
             <li>{en ? "Meanings are provisional plain language — not scholarly ṭīkā." : "अर्थ साधारण भाषा में हैं — शास्त्रीय टीका नहीं।"}</li>
-            <li>{en ? "No TTS path-assist on this dham yet; Path Studio is text + meaning." : "इस धाम पर अभी TTS नहीं; पाठ स्टूडियो मूल + अर्थ है।"}</li>
+            <li>{en ? "Path Studio is text + meaning — mula, IAST, and plain language." : "पाठ स्टूडियो मूल + IAST + अर्थ है।"}</li>
             <li>{en ? "Traditions vary; report errors to hello@hanumat.life." : "परम्पराएँ भिन्न हैं; त्रुटि hello@hanumat.life पर लिखें।"}</li>
           </ul>
         </div>

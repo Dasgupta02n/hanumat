@@ -48,10 +48,7 @@ function writePack(slug, meta, verses) {
 }
 
 const flags = {
-  hasAudio: false,
   hasOfflinePack: false,
-  placeholderAudio: false,
-  ttsGenerated: false,
   needsDualReview: true,
 };
 

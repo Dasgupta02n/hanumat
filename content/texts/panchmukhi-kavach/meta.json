@@ -21,17 +21,7 @@
     "notes": "Corrected 2026-07-23: replaced wrong-bija pseudo-kavach with traditional structure (ह्रीं/श्रीं/क्रौं seeds, five-face mantras, phala)."
   },
   "flags": {
-    "hasAudio": true,
-    "ttsGenerated": true,
-    "needsDualReview": true,
-    "placeholderAudio": false
-  },
-  "audio": {
-    "src": "/audio/kavach/panchmukhi_kavach.m4a",
-    "cueMapSrc": "/audio/kavach/panchmukhi_kavach_cues.json",
-    "credits": "TTS path-assist (Edge hi-IN-MadhurNeural) — not classical pāṭh",
-    "trackId": "track-panchmukhi_kavach",
-    "lowDataSrc": "/audio/kavach/panchmukhi_kavach_low.m4a"
+    "needsDualReview": true
   },
   "stats": {
     "sectionCount": 1,

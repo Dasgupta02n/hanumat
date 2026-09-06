@@ -18,10 +18,7 @@
     "notes": "Popular Hindi aarti 'Jai Kali Mata'. Line-order varies by region (as with Hanuman aarti). This is a widely printed eight-couplet temple form, not a tantric paddhati."
   },
   "flags": {
-    "hasAudio": false,
     "hasOfflinePack": false,
-    "placeholderAudio": false,
-    "ttsGenerated": false,
     "needsDualReview": true
   },
   "stats": {

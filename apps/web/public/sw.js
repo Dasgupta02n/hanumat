@@ -1,7 +1,7 @@
 /* Hanumat SW — pack caches with sha256 verify (Workbox-class integrity)
  * Pack cache keys: pack:{id}:v{version} (design Appendix F)
  */
-const SHELL = "hanumat-shell-v7";
+const SHELL = "hanumat-shell-v8";
 const PACK_PREFIX = "pack:";
 const LEGACY_PACK_PREFIX = "hanumat-pack:";
 
@@ -158,12 +158,7 @@ self.addEventListener("message", (event) => {
     event.waitUntil(
       cachePack(
         "pack-chalisa-v1",
-        Array.isArray(data.assets)
-          ? data.assets
-          : [
-              { path: "/audio/chalisa/hanuman_chalisa.m4a" },
-              { path: "/audio/chalisa/hanuman_chalisa_cues.json" },
-            ],
+        Array.isArray(data.assets) ? data.assets : [],
         data.version ?? 2,
       ).then(async () => {
         const clients = await self.clients.matchAll();

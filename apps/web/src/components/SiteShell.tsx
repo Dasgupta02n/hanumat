@@ -30,6 +30,7 @@ export function SiteShell({
     () => [
       { href: h("/"), label: t("nav.home") },
       { href: h("/path/"), label: t("nav.path") },
+      { href: `/${locale}/scripture/`, label: locale === "en" ? "Scripture" : "शास्त्र" },
       { href: h("/japa/"), label: t("nav.japa") },
       { href: h("/katha/"), label: t("nav.katha") },
       { href: h("/my-path/"), label: t("nav.myPath") },

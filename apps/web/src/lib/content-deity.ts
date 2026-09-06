@@ -212,6 +212,20 @@ import kabHi from "../../../../content/texts/kali-aarti-bengal/translations/hi.j
 import kabEn from "../../../../content/texts/kali-aarti-bengal/translations/en.json";
 import kabIast from "../../../../content/texts/kali-aarti-bengal/transliteration/iast.json";
 
+import smpMeta from "../../../../content/texts/shiva-manasa-puja/meta.json";
+import smpStructure from "../../../../content/texts/shiva-manasa-puja/structure.json";
+import smpVerses from "../../../../content/texts/shiva-manasa-puja/verses.json";
+import smpHi from "../../../../content/texts/shiva-manasa-puja/translations/hi.json";
+import smpEn from "../../../../content/texts/shiva-manasa-puja/translations/en.json";
+import smpIast from "../../../../content/texts/shiva-manasa-puja/transliteration/iast.json";
+
+import dsMeta from "../../../../content/texts/durga-saptashloki/meta.json";
+import dsStructure from "../../../../content/texts/durga-saptashloki/structure.json";
+import dsVerses from "../../../../content/texts/durga-saptashloki/verses.json";
+import dsHi from "../../../../content/texts/durga-saptashloki/translations/hi.json";
+import dsEn from "../../../../content/texts/durga-saptashloki/translations/en.json";
+import dsIast from "../../../../content/texts/durga-saptashloki/transliteration/iast.json";
+
 function P(
   meta: object,
   structure: object,
@@ -251,4 +265,6 @@ export const deityTexts: TextPackage[] = [
   P(mkMeta, mkStructure, mkVerses, mkHi, mkEn, mkIast),
   P(ksnMeta, ksnStructure, ksnVerses, ksnHi, ksnEn, ksnIast),
   P(kabMeta, kabStructure, kabVerses, kabHi, kabEn, kabIast),
+  P(smpMeta, smpStructure, smpVerses, smpHi, smpEn, smpIast),
+  P(dsMeta, dsStructure, dsVerses, dsHi, dsEn, dsIast),
 ];

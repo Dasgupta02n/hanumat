@@ -76,6 +76,7 @@ import bhajanEn from "../../../../content/texts/hanuman-bhajan-set/translations/
 import bhajanIast from "../../../../content/texts/hanuman-bhajan-set/transliteration/iast.json";
 
 import { deityTexts } from "./content-deity";
+import { sarvaTexts } from "./content-sarva";
 
 import kathaData from "../../../../content/katha/stories.json";
 import templesData from "../../../../content/places/temples.json";
@@ -299,6 +300,7 @@ export const allTexts: TextPackage[] = [
     bhajanIast as never,
   ),
   ...deityTexts,
+  ...sarvaTexts,
 ];
 
 export const wave0Texts = allTexts.filter((t) => t.wave === 0);
@@ -307,8 +309,17 @@ export function getTextBySlug(slug: string): TextPackage | undefined {
   return allTexts.find((t) => t.slug === slug);
 }
 
+export function isHanumanHosted(deity?: string): boolean {
+  const d = deity || "hanuman";
+  return d === "hanuman" || d === "sarva";
+}
+
 export function textsForDeity(deity: string): TextPackage[] {
-  return allTexts.filter((t) => (t.deity || "hanuman") === deity);
+  return allTexts.filter((t) => {
+    const d = t.deity || "hanuman";
+    if (deity === "hanuman") return d === "hanuman" || d === "sarva";
+    return d === deity;
+  });
 }
 
 export function listCatalog(wave?: number) {
@@ -327,7 +338,9 @@ export function listCatalog(wave?: number) {
       badge:
         t.category === "chalisa"
           ? "Living"
-          : t.category === "kand" && t.wave === 0
+          : t.category === "gita"
+            ? "Gita"
+            : t.category === "kand" && t.wave === 0
             ? "ध्वज"
             : t.wave > 0
               ? `W${t.wave}`

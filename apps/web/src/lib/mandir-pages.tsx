@@ -171,7 +171,11 @@ export async function renderMandirPath(
 ) {
   const locale = await parseLocale(rawLocale);
   const text = getTextBySlug(slug);
-  if (!text || (text.deity || "hanuman") !== deity) notFound();
+  if (!text) notFound();
+  const owned = text.deity || "hanuman";
+  const allowed =
+    owned === deity || (deity === "hanuman" && owned === "sarva");
+  if (!allowed) notFound();
   const h = (p: string) => deityHref(deity, locale, p);
   const en = locale === "en";
   const desc =

@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "madhurashtakam-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "md-1",
+        "md-2",
+        "md-3",
+        "md-4",
+        "md-5",
+        "md-6",
+        "md-7",
+        "md-8"
+      ],
+      "order": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "ganesha-pancharatnam",
+  "slug": "ganesha-pancharatnam",
+  "deity": "sarva",
+  "title": {
+    "hi": "गणेश पञ्चरत्नम्",
+    "en": "Ganesha Pancharatnam"
+  },
+  "subtitle": {
+    "hi": "शङ्कर · ५ रत्न",
+    "en": "Shankara · five jewels"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GANESHA-PANCHARATNAM-SHANKARA-GM",
+    "notes": "Adi Shankara Ganesha Pancharatnam collated against Green Message / Vignanam class. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 5
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "गणेश की पाँच रत्न-श्लोक स्तुति। पाठ आरम्भ।",
+    "en": "Five-jewel hymn to Ganesha. Opening of any path."
+  }
+}

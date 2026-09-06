@@ -1,0 +1,33 @@
+{
+  "id": "gayatri-mantra",
+  "slug": "gayatri-mantra",
+  "deity": "sarva",
+  "title": {
+    "hi": "गायत्री मन्त्र",
+    "en": "Gayatri mantra"
+  },
+  "subtitle": {
+    "hi": "ऋग्वेद ३.६२.१०",
+    "en": "Rigveda 3.62.10"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GAYATRI-RV-3-62-10",
+    "notes": "Rigveda 3.62.10. ॐ भूर्भुवः स्वः is the traditional vyāhṛti prefix, collated against Green Message and standard smārta recitation. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  },
+  "wave": 1,
+  "category": "mantra",
+  "description": {
+    "hi": "सवितृ देवता की गायत्री — जप का मूल मन्त्र।",
+    "en": "The Gayatri of Savitr — the root mantra of japa."
+  }
+}

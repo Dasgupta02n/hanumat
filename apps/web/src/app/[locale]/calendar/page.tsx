@@ -2,6 +2,8 @@ import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { SiteShell } from "@/components/SiteShell";
+import { PanchangCard } from "@/components/PanchangCard";
+import { PanchangMonth } from "@/components/PanchangMonth";
 import { jayantiTraditions } from "@/lib/content";
 import { isLocale, type Locale } from "@/i18n/config";
 
@@ -42,6 +44,11 @@ export default async function CalendarPage({
       <p className="text-xs text-[#6b5a80]">Wave 1 · Family W3</p>
       <h1 className="font-serif text-4xl text-[#fff8e7]">{t("title")}</h1>
       <p className="mt-2 max-w-xl text-sm text-[#a994c4]">{t("intro")}</p>
+
+      <div id="panchang" className="mt-8 space-y-6">
+        <PanchangCard locale={locale} monthLink={false} />
+        <PanchangMonth locale={locale} />
+      </div>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="rounded-2xl border border-[#f48c06]/40 bg-[#f48c06]/10 p-6">

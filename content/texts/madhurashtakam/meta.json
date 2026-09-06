@@ -1,0 +1,33 @@
+{
+  "id": "madhurashtakam",
+  "slug": "madhurashtakam",
+  "deity": "sarva",
+  "title": {
+    "hi": "मधुराष्टकम्",
+    "en": "Madhurashtakam"
+  },
+  "subtitle": {
+    "hi": "वल्लभाचार्य · ८ श्लोक",
+    "en": "Vallabhacharya · 8 verses"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "MADHURASHTAKAM-VALLABHA-GM",
+    "notes": "Vallabhacharya Madhurashtakam. Public recension (Green Message / Vignanam class). Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 8
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "कृष्ण की मधुरता के आठ श्लोक — अधर से गो तक सब मधुर।",
+    "en": "Eight verses on Krishna’s sweetness — from the lip to the cow, all is sweet."
+  }
+}

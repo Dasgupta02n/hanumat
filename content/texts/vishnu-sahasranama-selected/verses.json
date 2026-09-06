@@ -1,0 +1,188 @@
+{
+  "vs-dhyana": {
+    "id": "vs-dhyana",
+    "kind": "dhyana",
+    "text": "शान्ताकारं भुजगशयनं पद्मनाभं सुरेशं\nविश्वाधारं गगनसदृशं मेघवर्णं शुभाङ्गम्।\nलक्ष्मीकान्तं कमलनयनं योगिभिर्ध्यानगम्यं\nवन्दे विष्णुं भवभयहरं सर्वलोकैकनाथम्॥",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-01": {
+    "id": "vs-01",
+    "kind": "nama",
+    "text": "ॐ विश्वम् नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-02": {
+    "id": "vs-02",
+    "kind": "nama",
+    "text": "ॐ विष्णुः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-03": {
+    "id": "vs-03",
+    "kind": "nama",
+    "text": "ॐ वषट्कारः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-04": {
+    "id": "vs-04",
+    "kind": "nama",
+    "text": "ॐ भूतभव्यभवत्प्रभुः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-05": {
+    "id": "vs-05",
+    "kind": "nama",
+    "text": "ॐ पूतात्मा नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-06": {
+    "id": "vs-06",
+    "kind": "nama",
+    "text": "ॐ परमात्मा नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-07": {
+    "id": "vs-07",
+    "kind": "nama",
+    "text": "ॐ अव्ययः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-08": {
+    "id": "vs-08",
+    "kind": "nama",
+    "text": "ॐ पुरुषः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-09": {
+    "id": "vs-09",
+    "kind": "nama",
+    "text": "ॐ साक्षी नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-10": {
+    "id": "vs-10",
+    "kind": "nama",
+    "text": "ॐ क्षेत्रज्ञः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-11": {
+    "id": "vs-11",
+    "kind": "nama",
+    "text": "ॐ अक्षरः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-12": {
+    "id": "vs-12",
+    "kind": "nama",
+    "text": "ॐ योगः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-13": {
+    "id": "vs-13",
+    "kind": "nama",
+    "text": "ॐ केशवः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-14": {
+    "id": "vs-14",
+    "kind": "nama",
+    "text": "ॐ नारायणः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-15": {
+    "id": "vs-15",
+    "kind": "nama",
+    "text": "ॐ माधवः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-16": {
+    "id": "vs-16",
+    "kind": "nama",
+    "text": "ॐ गोविन्दः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-17": {
+    "id": "vs-17",
+    "kind": "nama",
+    "text": "ॐ मधुसूदनः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-18": {
+    "id": "vs-18",
+    "kind": "nama",
+    "text": "ॐ त्रिविक्रमः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-19": {
+    "id": "vs-19",
+    "kind": "nama",
+    "text": "ॐ वामनः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-20": {
+    "id": "vs-20",
+    "kind": "nama",
+    "text": "ॐ श्रीधरः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-21": {
+    "id": "vs-21",
+    "kind": "nama",
+    "text": "ॐ हृषीकेशः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-22": {
+    "id": "vs-22",
+    "kind": "nama",
+    "text": "ॐ पद्मनाभः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-23": {
+    "id": "vs-23",
+    "kind": "nama",
+    "text": "ॐ दामोदरः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-24": {
+    "id": "vs-24",
+    "kind": "nama",
+    "text": "ॐ वासुदेवः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-25": {
+    "id": "vs-25",
+    "kind": "nama",
+    "text": "ॐ रामः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-26": {
+    "id": "vs-26",
+    "kind": "nama",
+    "text": "ॐ कृष्णः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-27": {
+    "id": "vs-27",
+    "kind": "nama",
+    "text": "ॐ हरिः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-28": {
+    "id": "vs-28",
+    "kind": "nama",
+    "text": "ॐ अच्युतः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-29": {
+    "id": "vs-29",
+    "kind": "nama",
+    "text": "ॐ जनार्दनः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  },
+  "vs-30": {
+    "id": "vs-30",
+    "kind": "nama",
+    "text": "ॐ चक्रपाणिः नमः",
+    "sectionId": "vishnu-sahasranama-selected-full"
+  }
+}

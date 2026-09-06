@@ -1,0 +1,33 @@
+{
+  "id": "vishnu-sahasranama-selected",
+  "slug": "vishnu-sahasranama-selected",
+  "deity": "sarva",
+  "title": {
+    "hi": "विष्णु सहस्रनाम · चयन",
+    "en": "Vishnu Sahasranama · selected names"
+  },
+  "subtitle": {
+    "hi": "ध्यान + ३० नाम · पूर्ण सहस्र नहीं",
+    "en": "Dhyana + 30 names · not the full thousand"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "VISHNU-SAHASRANAMA-DOOR-30",
+    "notes": "Doorway to the Vishnu Sahasranama (Mahabharata Anushasana Parva class). Opening dhyana Shantakaram plus thirty public names. Not a dump of one thousand. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 31
+  },
+  "wave": 1,
+  "category": "nama",
+  "description": {
+    "hi": "सहस्रनाम का द्वार — शान्ताकारं ध्यान और तीस नाम। पूरी सूची नहीं।",
+    "en": "A doorway to the sahasranama — the Shantakaram dhyana and thirty names. Not the full list."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "shiva-manasa-puja",
+  "slug": "shiva-manasa-puja",
+  "deity": "shiva",
+  "title": {
+    "hi": "शिव मानस पूजा",
+    "en": "Shiva manasa puja"
+  },
+  "subtitle": {
+    "hi": "शङ्कर · ५ श्लोक",
+    "en": "Shankara · 5 verses"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "SHIVA-MANASA-PUJA-GM-SD",
+    "notes": "Adi Shankara recension collated against Green Message and Sanskrit Documents shivamAnasa. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 5
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "मन से शिव की पूजा — रत्नसिंहासन से आरती तक।",
+    "en": "Worship of Shiva in the mind — from the jewel-throne to aarti."
+  }
+}

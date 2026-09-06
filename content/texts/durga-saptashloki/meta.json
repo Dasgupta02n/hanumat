@@ -1,0 +1,33 @@
+{
+  "id": "durga-saptashloki",
+  "slug": "durga-saptashloki",
+  "deity": "kali",
+  "title": {
+    "hi": "दुर्गासप्तश्लोकी",
+    "en": "Durga Saptashloki"
+  },
+  "subtitle": {
+    "hi": "देवी माहात्म्य से सात श्लोक",
+    "en": "Seven verses from the Devi Mahatmya"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "DURGA-SAPTASHLOKI-DM-GM",
+    "notes": "Seven household verses drawn from Devi Mahatmya (Markandeya Purana), collated against Green Message saptashloki. Not the full 700-verse Durga Saptashati. Meanings provisional. Not a tantric paddhati."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 7
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "देवी माहात्म्य के सात घर-पाठ श्लोक — पूर्ण सप्तशती नहीं।",
+    "en": "Seven household verses from the Devi Mahatmya — not the full Saptashati."
+  }
+}

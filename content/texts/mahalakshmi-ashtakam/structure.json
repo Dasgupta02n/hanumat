@@ -1,0 +1,23 @@
+{
+  "sections": [
+    {
+      "id": "mahalakshmi-ashtakam-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "ml-1",
+        "ml-2",
+        "ml-3",
+        "ml-4",
+        "ml-5",
+        "ml-6",
+        "ml-7",
+        "ml-8"
+      ],
+      "order": 1
+    }
+  ]
+}

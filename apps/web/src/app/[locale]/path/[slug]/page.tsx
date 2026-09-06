@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { mandirPathMetadata } from "@/lib/mandir-pages";
 import { SiteShell } from "@/components/SiteShell";
-import { allTexts, getTextBySlug } from "@/lib/content";
+import { allTexts, getTextBySlug, isHanumanHosted } from "@/lib/content";
 import { TwinTextPanel } from "@/components/TwinTextPanel";
 import { SafeSceneImage } from "@/components/SafeSceneImage";
 import { imageForLeela } from "@/lib/gallery";
@@ -15,7 +15,7 @@ import { PathLead } from "@/components/PathLead";
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
   for (const locale of locales) {
-    for (const p of allTexts.filter((t) => (t.deity || "hanuman") === "hanuman")) {
+    for (const p of allTexts.filter((t) => isHanumanHosted(t.deity))) {
       params.push({ locale, slug: p.slug });
     }
   }
@@ -41,7 +41,7 @@ export default async function PathPage({
   const locale = raw as Locale;
   setRequestLocale(locale);
   const text = getTextBySlug(slug);
-  if (!text || (text.deity || "hanuman") !== "hanuman") notFound();
+  if (!text || !isHanumanHosted(text.deity)) notFound();
 
   const desc =
     typeof text.description === "string"

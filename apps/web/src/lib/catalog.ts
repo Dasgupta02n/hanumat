@@ -34,6 +34,20 @@ import kgMeta from "../../../../content/texts/kali-gayatri/meta.json";
 import mkMeta from "../../../../content/texts/mahakali-stotra/meta.json";
 import ksnMeta from "../../../../content/texts/kali-sahasranama-selected/meta.json";
 import kabMeta from "../../../../content/texts/kali-aarti-bengal/meta.json";
+import gitaMeta from "../../../../content/texts/bhagavad-gita/meta.json";
+import gyMeta from "../../../../content/texts/gayatri-mantra/meta.json";
+import ganeshMeta from "../../../../content/texts/ganesha-prarthana/meta.json";
+import mlMeta from "../../../../content/texts/mahalakshmi-ashtakam/meta.json";
+import saraMeta from "../../../../content/texts/saraswati-stotram/meta.json";
+import guruMeta from "../../../../content/texts/guru-stotram/meta.json";
+import acMeta from "../../../../content/texts/achyutashtakam/meta.json";
+import smpMeta from "../../../../content/texts/shiva-manasa-puja/meta.json";
+import dsMeta from "../../../../content/texts/durga-saptashloki/meta.json";
+import vsMeta from "../../../../content/texts/vishnu-sahasranama-selected/meta.json";
+import gpnMeta from "../../../../content/texts/ganesha-pancharatnam/meta.json";
+import mdMeta from "../../../../content/texts/madhurashtakam/meta.json";
+import amMeta from "../../../../content/texts/asato-ma/meta.json";
+import kpMeta from "../../../../content/texts/krishna-prarthana/meta.json";
 
 type MetaLite = {
   id: string;
@@ -80,6 +94,20 @@ const metas: MetaLite[] = [
   mkMeta as MetaLite,
   ksnMeta as MetaLite,
   kabMeta as MetaLite,
+  gitaMeta as MetaLite,
+  gyMeta as MetaLite,
+  ganeshMeta as MetaLite,
+  mlMeta as MetaLite,
+  saraMeta as MetaLite,
+  guruMeta as MetaLite,
+  acMeta as MetaLite,
+  smpMeta as MetaLite,
+  dsMeta as MetaLite,
+  vsMeta as MetaLite,
+  gpnMeta as MetaLite,
+  mdMeta as MetaLite,
+  amMeta as MetaLite,
+  kpMeta as MetaLite,
 ];
 
 export type CatalogItem = {
@@ -98,7 +126,12 @@ export type CatalogItem = {
 
 export function listCatalogLite(wave?: number, deity = "hanuman"): CatalogItem[] {
   return metas
-    .filter((t) => (t.deity || "hanuman") === deity)
+    .filter((t) => {
+      const d = t.deity || "hanuman";
+      if (deity === "hanuman") return d === "hanuman" || d === "sarva";
+      if (deity === "all") return true;
+      return d === deity;
+    })
     .filter((t) => wave === undefined || (t.wave ?? 0) === wave)
     .map((t) => ({
       id: t.id,
@@ -114,7 +147,9 @@ export function listCatalogLite(wave?: number, deity = "hanuman"): CatalogItem[]
       badge:
         t.category === "chalisa"
           ? "Living"
-          : t.category === "kand" && (t.wave ?? 0) === 0
+          : t.category === "gita"
+            ? "Gita"
+            : t.category === "kand" && (t.wave ?? 0) === 0
             ? "ध्वज"
             : (t.wave ?? 0) > 0
               ? `W${t.wave}`

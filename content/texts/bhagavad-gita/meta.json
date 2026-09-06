@@ -1,0 +1,34 @@
+{
+  "id": "bhagavad-gita",
+  "slug": "bhagavad-gita",
+  "deity": "sarva",
+  "title": {
+    "hi": "श्रीमद्भगवद्गीता",
+    "en": "Bhagavad Gita"
+  },
+  "subtitle": {
+    "hi": "१८ अध्याय · कुरुक्षेत्र संवाद",
+    "en": "18 chapters · the dialogue at Kurukshetra"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "BG-GITA-JSON-PUROHIT-TEJO-2026",
+    "publisher": "Public-domain / Unlicense compilation (gita/gita)",
+    "notes": "Mula and IAST from the Unlicense gita/gita verse.json (ancient Sanskrit). This recension has 701 verses (adhyaya 13 has 35). Many printed Gitas, including the common 700-verse count, treat 13.1 as unnumbered. English meaning: Shri Purohit Swami (1935, public domain). Hindi meaning: Tejomayananda attribution in the same public dataset — owner-responsible plain language, not a Chinmaya or Gita Press digital license. Not scholarly ṭīkā. Dual-check against a printed Gita when possible."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 18,
+    "verseCount": 701
+  },
+  "wave": 0,
+  "category": "gita",
+  "description": {
+    "hi": "कृष्ण-अर्जुन संवाद — कर्म, भक्ति, ज्ञान। मूल, IAST, हिंदी-अंग्रेज़ी अर्थ।",
+    "en": "The Krishna–Arjuna dialogue — action, devotion, knowledge. Mula, IAST, Hindi and English meaning."
+  }
+}

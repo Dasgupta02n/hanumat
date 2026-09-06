@@ -1,0 +1,17 @@
+{
+  "sections": [
+    {
+      "id": "guru-stotram-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "gs-1",
+        "gs-2"
+      ],
+      "order": 1
+    }
+  ]
+}

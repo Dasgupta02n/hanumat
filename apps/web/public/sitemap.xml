@@ -25,7 +25,18 @@
     <xhtml:link rel="alternate" hreflang="hi" href="https://hanumat.life/hi/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://hanumat.life/en/"/>
   </url>
+  <url><loc>https://hanumat.life/en/path/bhagavad-gita/</loc><priority>1.0</priority></url>
+  <url><loc>https://hanumat.life/hi/path/bhagavad-gita/</loc><priority>0.95</priority></url>
   <url><loc>https://hanumat.life/en/path/hanuman-chalisa/</loc><priority>1.0</priority></url>
+  <url><loc>https://hanumat.life/en/scripture/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/hi/scripture/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/en/calendar/</loc><priority>0.95</priority></url>
+  <url><loc>https://hanumat.life/hi/calendar/</loc><priority>0.9</priority></url>
+  <url><loc>https://hanumat.life/en/path/gayatri-mantra/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/en/path/vishnu-sahasranama-selected/</loc><priority>0.85</priority></url>
+  <url><loc>https://hanumat.life/en/path/mahalakshmi-ashtakam/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/en/path/ganesha-pancharatnam/</loc><priority>0.8</priority></url>
+  <url><loc>https://hanumat.life/en/path/madhurashtakam/</loc><priority>0.8</priority></url>
   <url><loc>https://hanumat.life/hi/path/hanuman-chalisa/</loc><priority>0.95</priority></url>
   <url><loc>https://hanumat.life/en/path/sundar-kand/</loc><priority>0.95</priority></url>
   <url><loc>https://hanumat.life/hi/path/sundar-kand/</loc><priority>0.9</priority></url>

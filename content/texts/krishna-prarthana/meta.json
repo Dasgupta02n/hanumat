@@ -1,0 +1,33 @@
+{
+  "id": "krishna-prarthana",
+  "slug": "krishna-prarthana",
+  "deity": "sarva",
+  "title": {
+    "hi": "कृष्ण प्रार्थना",
+    "en": "Krishna prayer"
+  },
+  "subtitle": {
+    "hi": "कृष्णाय वासुदेवाय · जगद्गुरु",
+    "en": "Krishnaya Vasudevaya · Jagadguru"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "KRISHNA-PRARTHANA-HOUSEHOLD",
+    "notes": "Two household Krishna verses plus the Vasudeva dwadashakshari. Bhagavata / smarta recitation class. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 3
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "घर का कृष्ण नमन — जन्माष्टमी और एकादशी।",
+    "en": "Household Krishna salutations — Janmashtami and Ekadashi."
+  }
+}

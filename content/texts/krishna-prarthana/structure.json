@@ -1,0 +1,18 @@
+{
+  "sections": [
+    {
+      "id": "krishna-prarthana-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "kp-1",
+        "kp-2",
+        "kp-3"
+      ],
+      "order": 1
+    }
+  ]
+}

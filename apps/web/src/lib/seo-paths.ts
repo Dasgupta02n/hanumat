@@ -24,6 +24,27 @@ const FALLBACK: SeoCopy = {
 };
 
 const MAP: Record<string, SeoCopy> = {
+  "bhagavad-gita": {
+    title: {
+      hi: "भगवद्गीता अर्थ सहित — १८ अध्याय, IAST",
+      en: "Bhagavad Gita in English — 18 chapters, IAST, free Path Studio",
+    },
+    description: {
+      hi: "श्रीमद्भगवद्गीता — मूल, IAST, हिंदी-अंग्रेज़ी अर्थ। बिना विज्ञापन, बिना खाता।",
+      en: "Bhagavad Gita — mula, IAST, Hindi and English meaning. Free, no ads, no account.",
+    },
+    keywords: [
+      "Bhagavad Gita",
+      "Bhagavad Gita English meaning",
+      "Bhagavad Gita IAST",
+      "भगवद्गीता अर्थ",
+      "Gita Path Studio",
+    ],
+    how: {
+      hi: "अध्याय चुनें, मूल-IAST-अर्थ साथ पढ़ें। एकादशी पर एक अध्याय।",
+      en: "Pick a chapter. Read mula, IAST, and meaning together. One chapter on Ekadashi.",
+    },
+  },
   "hanuman-chalisa": {
     title: {
       hi: "हनुमान चालीसा अर्थ सहित — पाठ, IAST",
@@ -149,6 +170,54 @@ const MAP: Record<string, SeoCopy> = {
       en: "Brahma Yamala Adya Stotram with meaning and IAST. Public recension, not a tantric paddhati.",
     },
     keywords: ["Adya Stotram", "आद्या स्तोत्र", "Adya Kali"],
+    how: FALLBACK.how,
+  },
+  "gayatri-mantra": {
+    title: {
+      hi: "गायत्री मन्त्र अर्थ सहित — ऋग्वेद",
+      en: "Gayatri mantra — meaning, IAST, Rigveda 3.62.10",
+    },
+    description: {
+      hi: "तत्सवितुर्वरेण्यम् — मूल, IAST, अर्थ। बिना विज्ञापन।",
+      en: "Tat savitur varenyam — mula, IAST, meaning. Free, no ads.",
+    },
+    keywords: ["Gayatri mantra", "गायत्री मन्त्र", "Gayatri IAST"],
+    how: FALLBACK.how,
+  },
+  "vishnu-sahasranama-selected": {
+    title: {
+      hi: "विष्णु सहस्रनाम · चयन — ध्यान व नाम",
+      en: "Vishnu Sahasranama selected names — dhyana and Path Studio",
+    },
+    description: {
+      hi: "शान्ताकारं ध्यान और तीस नाम। पूर्ण सहस्र नहीं। मूल, IAST, अर्थ।",
+      en: "Shantakaram dhyana and thirty names. Not the full thousand. Mula, IAST, meaning.",
+    },
+    keywords: ["Vishnu Sahasranama", "विष्णु सहस्रनाम", "Vishnu 108 names"],
+    how: FALLBACK.how,
+  },
+  "ganesha-pancharatnam": {
+    title: {
+      hi: "गणेश पञ्चरत्नम् अर्थ सहित",
+      en: "Ganesha Pancharatnam — meaning, IAST",
+    },
+    description: {
+      hi: "शङ्कर गणेश पञ्चरत्न — मूल, IAST, अर्थ। पाठ आरम्भ।",
+      en: "Shankara’s five-jewel hymn to Ganesha. Mula, IAST, meaning.",
+    },
+    keywords: ["Ganesha Pancharatnam", "गणेश पञ्चरत्न"],
+    how: FALLBACK.how,
+  },
+  madhurashtakam: {
+    title: {
+      hi: "मधुराष्टकम् अर्थ सहित — वल्लभाचार्य",
+      en: "Madhurashtakam — Vallabhacharya, meaning and IAST",
+    },
+    description: {
+      hi: "अधरं मधुरं — कृष्ण की मधुरता। मूल, IAST, अर्थ।",
+      en: "Adharam madhuram — Krishna’s sweetness. Mula, IAST, meaning.",
+    },
+    keywords: ["Madhurashtakam", "मधुराष्टकम्", "Adharam madhuram"],
     how: FALLBACK.how,
   },
   "kali-gayatri": {

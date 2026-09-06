@@ -1,0 +1,50 @@
+{
+  "ml-1": {
+    "id": "ml-1",
+    "kind": "shloka",
+    "text": "नमस्तेऽस्तु महामाये श्रीपीठे सुरपूजिते।\nशङ्खचक्रगदाहस्ते महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-2": {
+    "id": "ml-2",
+    "kind": "shloka",
+    "text": "नमस्ते गरुडारूढे कोलासुरभयंकरि।\nसर्वपापहरे देवि महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-3": {
+    "id": "ml-3",
+    "kind": "shloka",
+    "text": "सर्वज्ञे सर्ववरदे सर्वदुष्टभयंकरि।\nसर्वदुःखहरे देवि महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-4": {
+    "id": "ml-4",
+    "kind": "shloka",
+    "text": "सिद्धिबुद्धिप्रदे देवि भुक्तिमुक्तिप्रदायिनि।\nमन्त्रमूर्ते सदा देवि महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-5": {
+    "id": "ml-5",
+    "kind": "shloka",
+    "text": "आद्यन्तरहिते देवि आद्यशक्ति महेश्वरि।\nयोगजे योगसम्भूते महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-6": {
+    "id": "ml-6",
+    "kind": "shloka",
+    "text": "स्थूलसूक्ष्ममहारौद्रे महाशक्ति महोदरे।\nमहापापहरे देवि महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-7": {
+    "id": "ml-7",
+    "kind": "shloka",
+    "text": "पद्मासनस्थिते देवि परब्रह्मस्वरूपिणि।\nपरमेशि जगनमातर्महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  },
+  "ml-8": {
+    "id": "ml-8",
+    "kind": "shloka",
+    "text": "श्वेताम्बरधरे देवि नानालङ्कारभूषिते।\nजगत्स्थिते जगन्मातर्महालक्ष्मि नमोऽस्तु ते॥",
+    "sectionId": "mahalakshmi-ashtakam-full"
+  }
+}

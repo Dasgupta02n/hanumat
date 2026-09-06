@@ -1,0 +1,33 @@
+{
+  "id": "saraswati-stotram",
+  "slug": "saraswati-stotram",
+  "deity": "sarva",
+  "title": {
+    "hi": "सरस्वती स्तोत्र",
+    "en": "Saraswati stotra"
+  },
+  "subtitle": {
+    "hi": "या कुन्देन्दु · शारदा",
+    "en": "Yā kundendu · Sharada"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "SARASWATI-YAKUNDENDU-GM",
+    "notes": "Opening dhyana Yā kundendu plus Sharada verse — Green Message / school-book recension. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "विद्या की देवी सरस्वती का ध्यान-श्लोक।",
+    "en": "Dhyana verses of Saraswati, goddess of learning."
+  }
+}

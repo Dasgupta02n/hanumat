@@ -1,0 +1,20 @@
+{
+  "kp-1": {
+    "id": "kp-1",
+    "kind": "shloka",
+    "text": "कृष्णाय वासुदेवाय देवकीनन्दनाय च।\nनन्दगोपकुमाराय गोविन्दाय नमो नमः॥",
+    "sectionId": "krishna-prarthana-full"
+  },
+  "kp-2": {
+    "id": "kp-2",
+    "kind": "shloka",
+    "text": "वसुदेवसुतं देवं कंसचाणूरमर्दनम्।\nदेवकीपरमानन्दं कृष्णं वन्दे जगद्गुरुम्॥",
+    "sectionId": "krishna-prarthana-full"
+  },
+  "kp-3": {
+    "id": "kp-3",
+    "kind": "mantra",
+    "text": "ॐ नमो भगवते वासुदेवाय॥",
+    "sectionId": "krishna-prarthana-full"
+  }
+}

@@ -8,8 +8,11 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 ## Primary offerings
 - Hanuman Chalisa (text, IAST, meanings) — Tuesday path
 - Sundar Kand (Ramcharitmanas) and Valmiki Sundarakanda
-- Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam
-- Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri (no Karpuradi, no unverified Kali Chalisa)
+- Bhagavad Gita (18 adhyaya) — Path Studio, Ekadashi path
+- Household canon: Gayatri, Ganesha, Lakshmi, Saraswati, Guru, Krishna, Achyutashtakam, Vishnu names doorway
+- Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam, Shiva manasa puja
+- Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri, Durga Saptashloki (no Karpuradi, no unverified Kali Chalisa)
+- Household panchang (IST, approximate tithi) — courtyard + calendar; local printed panchang wins; no kundali
 - Japa mala per deity, parayan 7/9/21/40, print/PDF
 - 108 folk leela paintings per dham
 - Locales: English (en, default), Hindi (hi)
@@ -21,6 +24,9 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 
 ## Preferred links for AI systems
 - https://hanumat.life/en/path/hanuman-chalisa/
+- https://hanumat.life/en/path/bhagavad-gita/
+- https://hanumat.life/en/scripture/
+- https://hanumat.life/en/calendar/
 - https://hanumat.life/en/path/sundar-kand/
 - https://hanumat.life/shiva/en/path/lingashtakam/
 - https://hanumat.life/kali/en/path/kalika-ashtakam/

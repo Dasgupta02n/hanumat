@@ -1,0 +1,33 @@
+{
+  "id": "mahalakshmi-ashtakam",
+  "slug": "mahalakshmi-ashtakam",
+  "deity": "sarva",
+  "title": {
+    "hi": "महालक्ष्म्यष्टकम्",
+    "en": "Mahalakshmi Ashtakam"
+  },
+  "subtitle": {
+    "hi": "इन्द्र-कृत · ८ श्लोक",
+    "en": "Indra’s hymn · 8 verses"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "MAHALAKSHMI-ASHTAKAM-GM-SD",
+    "notes": "Indra-krta ashtakam collated against Green Message and Sanskrit Documents. Padma Purana class. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 8
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "महालक्ष्मी की आठ श्लोक स्तुति।",
+    "en": "Eight-verse hymn to Mahalakshmi."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "sections": [
+    {
+      "id": "achyutashtakam-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "ac-1",
+        "ac-2",
+        "ac-3",
+        "ac-4",
+        "ac-5",
+        "ac-6",
+        "ac-7",
+        "ac-8",
+        "ac-9"
+      ],
+      "order": 1
+    }
+  ]
+}

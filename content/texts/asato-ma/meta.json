@@ -1,0 +1,33 @@
+{
+  "id": "asato-ma",
+  "slug": "asato-ma",
+  "deity": "sarva",
+  "title": {
+    "hi": "असतो मा सद्गमय",
+    "en": "Asato ma sad gamaya"
+  },
+  "subtitle": {
+    "hi": "बृहदारण्यक १.३.२८ · पवमान",
+    "en": "Brihadaranyaka 1.3.28 · Pavamana"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "ASATO-MA-BAU-1-3-28",
+    "notes": "Brihadaranyaka Upanishad 1.3.28. Traditional pavamana recitation. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 1
+  },
+  "wave": 1,
+  "category": "mantra",
+  "description": {
+    "hi": "असत से सत्, तम से ज्योति, मृत्यु से अमृत — तीन पंक्तियों का वैदिक मन्त्र।",
+    "en": "From the unreal to the real, darkness to light, death to the deathless — three Vedic lines."
+  }
+}

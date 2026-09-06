@@ -1,0 +1,46 @@
+{
+  "sections": [
+    {
+      "id": "vishnu-sahasranama-selected-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "vs-dhyana",
+        "vs-01",
+        "vs-02",
+        "vs-03",
+        "vs-04",
+        "vs-05",
+        "vs-06",
+        "vs-07",
+        "vs-08",
+        "vs-09",
+        "vs-10",
+        "vs-11",
+        "vs-12",
+        "vs-13",
+        "vs-14",
+        "vs-15",
+        "vs-16",
+        "vs-17",
+        "vs-18",
+        "vs-19",
+        "vs-20",
+        "vs-21",
+        "vs-22",
+        "vs-23",
+        "vs-24",
+        "vs-25",
+        "vs-26",
+        "vs-27",
+        "vs-28",
+        "vs-29",
+        "vs-30"
+      ],
+      "order": 1
+    }
+  ]
+}

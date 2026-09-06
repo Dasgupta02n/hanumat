@@ -1,0 +1,33 @@
+{
+  "id": "achyutashtakam",
+  "slug": "achyutashtakam",
+  "deity": "sarva",
+  "title": {
+    "hi": "अच्युताष्टकम्",
+    "en": "Achyutashtakam"
+  },
+  "subtitle": {
+    "hi": "शङ्कर · ८ श्लोक + फलश्रुति",
+    "en": "Shankara · 8 verses + phala"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "ACHYUTASHTAKAM-SHANKARA-GM-VV-2026",
+    "notes": "Adi Shankara recension collated against Vignanam Devanagari/IAST class and Green Message. Meanings provisional. Dual-check a printed stotra book."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 9
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "अच्युत-केशव-राम-गोविन्द नामों की आठ श्लोक स्तुति।",
+    "en": "Eight-verse hymn of the names Achyuta, Keshava, Rama, Govinda."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "id": "gayatri-mantra-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "gy-1"
+      ],
+      "order": 1
+    }
+  ]
+}

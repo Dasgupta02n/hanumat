@@ -1,0 +1,33 @@
+{
+  "id": "ganesha-prarthana",
+  "slug": "ganesha-prarthana",
+  "deity": "sarva",
+  "title": {
+    "hi": "गणेश प्रार्थना",
+    "en": "Ganesha prayer"
+  },
+  "subtitle": {
+    "hi": "वक्रतुण्ड · शुक्लाम्बर",
+    "en": "Vakratunda · Shuklambaradharam"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GANESHA-HOUSEHOLD-GM-SD",
+    "notes": "Two household invocatory verses, stable across Green Message / Sanskrit Documents class. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 2
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "पाठ आरम्भ की गणेश प्रार्थना।",
+    "en": "Opening prayer to Ganesha before any path."
+  }
+}

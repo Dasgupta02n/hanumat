@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "id": "saraswati-stotram-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "ss-1"
+      ],
+      "order": 1
+    }
+  ]
+}

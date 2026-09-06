@@ -1,0 +1,20 @@
+{
+  "sections": [
+    {
+      "id": "shiva-manasa-puja-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "smp-1",
+        "smp-2",
+        "smp-3",
+        "smp-4",
+        "smp-5"
+      ],
+      "order": 1
+    }
+  ]
+}

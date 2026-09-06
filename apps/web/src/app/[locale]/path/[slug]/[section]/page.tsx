@@ -2,14 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { SiteShell } from "@/components/SiteShell";
-import { allTexts, getTextBySlug } from "@/lib/content";
+import { allTexts, getTextBySlug, isHanumanHosted } from "@/lib/content";
 import { isLocale, locales, type Locale } from "@/i18n/config";
 import { PathStudioDynamic } from "../../PathStudioDynamic";
 
 export function generateStaticParams() {
   const params: { locale: string; slug: string; section: string }[] = [];
   for (const locale of locales) {
-    for (const p of allTexts.filter((t) => (t.deity || "hanuman") === "hanuman")) {
+    for (const p of allTexts.filter((t) => isHanumanHosted(t.deity))) {
       for (const s of p.sections) {
         params.push({ locale, slug: p.slug, section: s.id });
       }
@@ -28,7 +28,7 @@ export default async function PathSectionPage({
   const locale = raw as Locale;
   setRequestLocale(locale);
   const text = getTextBySlug(slug);
-  if (!text || (text.deity || "hanuman") !== "hanuman") notFound();
+  if (!text || !isHanumanHosted(text.deity)) notFound();
   const sec = text.sections.find((s) => s.id === section);
   if (!sec) notFound();
 

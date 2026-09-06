@@ -1,0 +1,16 @@
+{
+  "sections": [
+    {
+      "id": "asato-ma-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "am-1"
+      ],
+      "order": 1
+    }
+  ]
+}

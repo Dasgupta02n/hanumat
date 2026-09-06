@@ -1,0 +1,33 @@
+{
+  "id": "guru-stotram",
+  "slug": "guru-stotram",
+  "deity": "sarva",
+  "title": {
+    "hi": "गुरु स्तोत्रम्",
+    "en": "Guru stotram"
+  },
+  "subtitle": {
+    "hi": "अखण्डमण्डलाकारम्",
+    "en": "Akhanda-mandalakaram"
+  },
+  "originalLang": "sa",
+  "script": "Deva",
+  "edition": {
+    "pin": "GURU-STOTRAM-HOUSEHOLD",
+    "notes": "Two opening verses of the Guru Gita / household guru-stotra class. Green Message and Vedanta recensions agree on these lines. Meanings provisional."
+  },
+  "flags": {
+    "hasOfflinePack": false,
+    "needsDualReview": true
+  },
+  "stats": {
+    "sectionCount": 1,
+    "verseCount": 2
+  },
+  "wave": 1,
+  "category": "stotra",
+  "description": {
+    "hi": "गुरु को ब्रह्म रूप में नमन।",
+    "en": "Salutation to the Guru as Brahman."
+  }
+}

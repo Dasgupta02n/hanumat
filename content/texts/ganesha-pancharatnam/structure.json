@@ -1,0 +1,20 @@
+{
+  "sections": [
+    {
+      "id": "ganesha-pancharatnam-full",
+      "kind": "editorial-episode",
+      "title": {
+        "hi": "पूर्ण पाठ",
+        "en": "Full path"
+      },
+      "verseIds": [
+        "gpn-1",
+        "gpn-2",
+        "gpn-3",
+        "gpn-4",
+        "gpn-5"
+      ],
+      "order": 1
+    }
+  ]
+}

@@ -36,16 +36,16 @@ export default async function ParayanPage({
 
   return (
     <SiteShell>
-      <p className="text-xs text-[#6b5a80]">Wave 3</p>
-      <h1 className="font-serif text-4xl text-[#fff8e7]">{t("title")}</h1>
-      <p className="mt-2 max-w-xl text-sm text-[#a994c4]">{t("intro")}</p>
+      <p className="section-kicker">Wave 3</p>
+      <h1 className="section-title mt-2 text-4xl">{t("title")}</h1>
+      <p className="mt-2 max-w-xl text-sm text-[var(--hanumat-stone)]">{t("intro")}</p>
 
       <div className="mt-8 space-y-10">
         {plans.map((plan) => {
           const chunks = chunkSections(sections, plan.days);
           return (
             <section key={plan.days}>
-              <h2 className="font-serif text-2xl text-[#ffd60a]">{plan.label}</h2>
+              <h2 className="font-serif text-2xl text-[var(--hanumat-vermillion-deep)]">{plan.label}</h2>
               <ol className="mt-4 space-y-2">
                 {chunks.map((chunk, i) => {
                   const first = chunk[0];
@@ -56,13 +56,13 @@ export default async function ParayanPage({
                   return (
                     <li
                       key={i}
-                      className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+                      className="temple-card flex flex-wrap items-center justify-between gap-2 px-4 py-3"
                     >
                       <div>
-                        <p className="text-sm text-[#fff8e7]">
+                        <p className="text-sm text-[var(--hanumat-shadow)]">
                           {t("day")} {i + 1}
                         </p>
-                        <p className="text-xs text-[#a994c4]">
+                        <p className="text-xs text-[var(--hanumat-stone)]">
                           {first
                             ? locale === "en"
                               ? first.title.en
@@ -76,7 +76,7 @@ export default async function ParayanPage({
                       </div>
                       <Link
                         href={href}
-                        className="rounded-full bg-[#f48c06]/20 px-3 py-1 text-xs text-[#ffd60a]"
+                        className="btn-ghost !px-3 !py-1 text-xs"
                       >
                         {t("start")}
                       </Link>

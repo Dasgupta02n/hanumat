@@ -57,7 +57,15 @@
     "share": "Share verse",
     "scriptAll": "Mula + meaning",
     "scriptMula": "Hindi only",
-    "scriptIast": "IAST only"
+    "scriptIast": "IAST only",
+    "translate": "Meaning language",
+    "translatePacked": "On this path",
+    "translateLive": "More languages (on-device)",
+    "translating": "Translating meanings…",
+    "translateModel": "Downloading language pack…",
+    "translateUnavailable": "This language is not on this device. Chrome or Edge can translate on-device — no account, no ads.",
+    "translateUnsupported": "Live translation runs on-device in Chrome or Edge. Hindi and English meanings are always here.",
+    "translateMtNote": "On-device machine translation of the Hindi/English meaning. Not a ṭīkā. Mula stays in the original script."
   },
   "myPath": {
     "title": "My Path",

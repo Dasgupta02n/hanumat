@@ -67,28 +67,28 @@ export function TwinTextPanel({
   const verseById = new Map(val.verses.map((v) => [v.id, v]));
 
   return (
-    <div className="mt-4 rounded-2xl border border-[#f48c06]/30 bg-[#f48c06]/10 p-4">
+    <div className="temple-card mt-4 p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <p className="text-xs uppercase tracking-widest text-[#ffd60a]">
+        <p className="text-xs uppercase tracking-widest text-[var(--hanumat-vermillion-deep)]">
           Twin-text · Manas ‖ Valmiki
         </p>
         <div className="flex flex-wrap gap-3 text-[11px]">
           <Link
             href={`/${locale}/path/sundar-kand/`}
-            className="text-[#a994c4] hover:text-[#ffd60a]"
+            className="text-[var(--hanumat-stone)] hover:text-[var(--hanumat-vermillion)]"
           >
             {locale === "en" ? manas.title.en : manas.title.hi}
           </Link>
-          <span className="text-[#6b5a80]">·</span>
+          <span className="text-[var(--hanumat-sacred-ash)]">·</span>
           <Link
             href={`/${locale}/path/valmiki-sundarakanda/`}
-            className="text-[#a994c4] hover:text-[#ffd60a]"
+            className="text-[var(--hanumat-stone)] hover:text-[var(--hanumat-vermillion)]"
           >
             {locale === "en" ? val.title.en : val.title.hi}
           </Link>
         </div>
       </div>
-      <p className="mt-1 text-sm text-[#efe6ff]">
+      <p className="mt-1 text-sm text-[var(--hanumat-charcoal)]">
         {locale === "en"
           ? "Paired Manas sections with aligned Valmiki verses — open either pane."
           : "मानस खंड और संरेखित वाल्मीकि पद — किसी भी ओर से खोलें।"}
@@ -104,15 +104,15 @@ export function TwinTextPanel({
           return (
             <li
               key={pair.manasHint}
-              className="rounded-xl border border-white/10 bg-[#1a0f2e]/60 p-2.5"
+              className="rounded-xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-gold-wash)] p-2.5"
             >
-              <p className="mb-2 text-[10px] uppercase tracking-wide text-[#f48c06]/90">
+              <p className="mb-2 text-[10px] uppercase tracking-wide text-[var(--hanumat-vermillion-deep)]/90">
                 {pair.manasHint}
               </p>
               <div className="grid gap-2 md:grid-cols-2">
                 {/* Manas pane */}
-                <div className="min-w-0 rounded-lg border border-white/5 bg-black/20 px-2.5 py-2">
-                  <p className="text-[9px] uppercase tracking-wider text-[#a994c4]">
+                <div className="min-w-0 rounded-lg border border-[var(--hanumat-gold-line)] bg-[rgba(255,252,247,0.95)] px-2.5 py-2">
+                  <p className="text-[9px] uppercase tracking-wider text-[var(--hanumat-vermillion-deep)]">
                     Manas
                   </p>
                   {manasSecs.length ? (
@@ -126,11 +126,11 @@ export function TwinTextPanel({
                           <li key={s.id}>
                             <Link
                               href={href}
-                              className="font-serif text-sm text-[#fff8e7] hover:text-[#ffd60a]"
+                              className="font-serif text-sm text-[var(--hanumat-shadow)] hover:text-[var(--hanumat-vermillion)]"
                             >
                               {sectionTitle(s, locale)}
                             </Link>
-                            <span className="ml-1.5 text-[10px] text-[#6b5a80]">
+                            <span className="ml-1.5 text-[10px] text-[var(--hanumat-sacred-ash)]">
                               {s.id}
                             </span>
                           </li>
@@ -138,13 +138,13 @@ export function TwinTextPanel({
                       })}
                     </ul>
                   ) : (
-                    <p className="mt-1 text-xs text-[#cbb8e0]">{pair.manasHint}</p>
+                    <p className="mt-1 text-xs text-[var(--hanumat-stone)]">{pair.manasHint}</p>
                   )}
                 </div>
 
                 {/* Valmiki pane */}
-                <div className="min-w-0 rounded-lg border border-white/5 bg-black/20 px-2.5 py-2">
-                  <p className="text-[9px] uppercase tracking-wider text-[#a994c4]">
+                <div className="min-w-0 rounded-lg border border-[var(--hanumat-gold-line)] bg-[rgba(255,252,247,0.95)] px-2.5 py-2">
+                  <p className="text-[9px] uppercase tracking-wider text-[var(--hanumat-vermillion-deep)]">
                     Valmiki
                   </p>
                   {valVerses.length ? (
@@ -153,10 +153,10 @@ export function TwinTextPanel({
                         <li key={v.id}>
                           <Link
                             href={`/${locale}/path/valmiki-sundarakanda/?verse=${encodeURIComponent(v.id)}`}
-                            className="block font-serif text-xs leading-snug text-[#efe6ff] hover:text-[#ffd60a]"
+                            className="block font-serif text-xs leading-snug text-[var(--hanumat-charcoal)] hover:text-[var(--hanumat-vermillion)]"
                             lang="sa"
                           >
-                            <span className="mr-1.5 text-[10px] text-[#f48c06]">
+                            <span className="mr-1.5 text-[10px] text-[var(--hanumat-vermillion-deep)]">
                               {v.id}
                             </span>
                             {clip(v.text)}
@@ -165,7 +165,7 @@ export function TwinTextPanel({
                       ))}
                     </ul>
                   ) : (
-                    <p className="mt-1 text-xs text-[#6b5a80]">—</p>
+                    <p className="mt-1 text-xs text-[var(--hanumat-sacred-ash)]">—</p>
                   )}
                 </div>
               </div>

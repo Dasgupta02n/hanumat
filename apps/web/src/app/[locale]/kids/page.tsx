@@ -49,20 +49,20 @@ export default async function KidsPage({
 
   return (
     <SiteShell>
-      <p className="text-xs text-[#6b5a80]">Wave 3 · kids-safe</p>
-      <h1 className="font-serif text-5xl text-[#fff8e7] sm:text-6xl">
+      <p className="section-kicker">Wave 3 · kids-safe</p>
+      <h1 className="section-title mt-2 text-5xl sm:text-6xl">
         {t("title")}
       </h1>
-      <p className="mt-3 max-w-xl text-lg text-[#cbb8e0] sm:text-xl">
+      <p className="mt-3 max-w-xl text-lg text-[var(--hanumat-stone)] sm:text-xl">
         {t("intro")}
       </p>
 
       {/* Three kid-safe leela blurbs — large type */}
       <section className="mt-10">
-        <h2 className="font-serif text-3xl text-[#ffd60a] sm:text-4xl">
+        <h2 className="font-serif text-3xl text-[var(--hanumat-vermillion-deep)] sm:text-4xl">
           {isHi ? "तीन छोटी लीलाएँ" : "Three short leelas"}
         </h2>
-        <p className="mt-2 text-base text-[#a994c4] sm:text-lg">
+        <p className="mt-2 text-base text-[var(--hanumat-stone)] sm:text-lg">
           {isHi
             ? "सरल शब्द · कोमल भाव · कोई भय की भाषा नहीं।"
             : "Simple words · gentle feelings · no fear language."}
@@ -71,16 +71,16 @@ export default async function KidsPage({
           {leelas.map((leela, i) => (
             <li
               key={leela.id}
-              className="rounded-3xl border border-white/15 bg-white/5 p-6 sm:p-8"
+              className="temple-card rounded-3xl p-6 sm:p-8"
             >
-              <p className="text-sm font-medium uppercase tracking-wide text-[#f48c06]">
+              <p className="text-sm font-medium uppercase tracking-wide text-[var(--hanumat-vermillion-deep)]">
                 {isHi ? `लीला ${i + 1}` : `Leela ${i + 1}`}
               </p>
-              <h3 className="mt-2 font-serif text-2xl text-[#fff8e7] sm:text-3xl">
+              <h3 className="mt-2 font-serif text-2xl text-[var(--hanumat-shadow)] sm:text-3xl">
                 {isHi ? leela.titleHi : leela.titleEn}
               </h3>
               <p
-                className="mt-4 text-xl leading-relaxed text-[#e8dcf5] sm:text-2xl"
+                className="mt-4 text-xl leading-relaxed text-[var(--hanumat-charcoal)] sm:text-2xl"
                 lang={isHi ? "hi" : "en"}
               >
                 {isHi ? leela.bodyHi : leela.bodyEn}
@@ -92,21 +92,21 @@ export default async function KidsPage({
 
       {/* Safe path links — large type */}
       <section className="mt-12">
-        <h2 className="font-serif text-3xl text-[#ffd60a] sm:text-4xl">
+        <h2 className="font-serif text-3xl text-[var(--hanumat-vermillion-deep)] sm:text-4xl">
           {isHi ? "आगे बढ़ें" : "Soft next steps"}
         </h2>
         <div className="mt-6 grid gap-5">
           <Link
             href={`/${locale}/path/hanuman-chalisa/`}
-            className="rounded-3xl border-2 border-[#f48c06]/50 bg-[#f48c06]/15 p-8 text-center sm:p-10"
+            className="temple-card temple-card-frame rounded-3xl p-8 text-center sm:p-10"
           >
-            <p className="font-serif text-3xl text-[#fff8e7] sm:text-4xl">
+            <p className="font-serif text-3xl text-[var(--hanumat-shadow)] sm:text-4xl">
               {t("chalisa")}
             </p>
-            <p className="mt-2 text-xl text-[#ffd60a] sm:text-2xl" lang="hi">
+            <p className="mt-2 text-xl text-[var(--hanumat-vermillion-deep)] sm:text-2xl" lang="hi">
               जय हनुमान ज्ञान गुन सागर
             </p>
-            <p className="mt-3 text-base text-[#cbb8e0] sm:text-lg">
+            <p className="mt-3 text-base text-[var(--hanumat-stone)] sm:text-lg">
               {isHi
                 ? "धीरे-धीरे पढ़ें — जल्दबाजी नहीं।"
                 : "Read slowly — no hurry."}
@@ -114,15 +114,15 @@ export default async function KidsPage({
           </Link>
           <Link
             href={`/${locale}/japa/`}
-            className="rounded-3xl border-2 border-white/20 bg-white/5 p-8 text-center sm:p-10"
+            className="temple-card rounded-3xl p-8 text-center sm:p-10"
           >
-            <p className="font-serif text-3xl text-[#fff8e7] sm:text-4xl">
+            <p className="font-serif text-3xl text-[var(--hanumat-shadow)] sm:text-4xl">
               {t("mantra")}
             </p>
-            <p className="mt-2 text-3xl text-[#f48c06] sm:text-4xl" lang="hi">
+            <p className="mt-2 text-3xl text-[var(--hanumat-vermillion-deep)] sm:text-4xl" lang="hi">
               ॐ हनुमते नमः
             </p>
-            <p className="mt-3 text-base text-[#cbb8e0] sm:text-lg">
+            <p className="mt-3 text-base text-[var(--hanumat-stone)] sm:text-lg">
               {isHi
                 ? "एक नाम, शांत साँस — घर पर अभ्यास करें।"
                 : "One name, quiet breath — practice at home."}
@@ -130,17 +130,17 @@ export default async function KidsPage({
           </Link>
           <Link
             href={`/${locale}/katha/`}
-            className="rounded-3xl border-2 border-white/20 bg-white/5 p-8 text-center sm:p-10"
+            className="temple-card rounded-3xl p-8 text-center sm:p-10"
           >
-            <p className="font-serif text-3xl text-[#fff8e7] sm:text-4xl">
+            <p className="font-serif text-3xl text-[var(--hanumat-shadow)] sm:text-4xl">
               {t("katha")}
             </p>
-            <p className="mt-2 text-lg text-[#cbb8e0] sm:text-xl">
+            <p className="mt-2 text-lg text-[var(--hanumat-stone)] sm:text-xl">
               {isHi
                 ? "बल और भक्ति की सरल कथाएँ"
                 : "Stories of strength and kindness"}
             </p>
-            <p className="mt-3 text-base text-[#a994c4] sm:text-lg">
+            <p className="mt-3 text-base text-[var(--hanumat-stone)] sm:text-lg">
               {isHi
                 ? "और कोमल कथाएँ यहाँ मिलेंगी।"
                 : "More gentle stories live here."}

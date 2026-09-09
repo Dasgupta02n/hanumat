@@ -9,6 +9,16 @@ import { meaningFor } from "@/lib/content";
 import { saveResume, toggleBookmark, loadBookmarks } from "@/lib/my-path";
 import { flags } from "@/lib/flags";
 import { machineAssistedLocales, type Locale } from "@/i18n/config";
+import {
+  LIVE_LANGS,
+  cacheKey,
+  cachedMeaning,
+  createTranslator,
+  langLabel,
+  storeMeaning,
+  translatorSupported,
+  type TranslatorStatus,
+} from "@/lib/translator";
 
 type Mode = "full" | "section";
 
@@ -32,6 +42,16 @@ export function PathStudio({
   const [showMeaning, setShowMeaning] = useState(true);
   const [lang, setLang] = useState<string>(uiLocale);
   const [showIast, setShowIast] = useState(uiLocale === "en");
+  const [mtStatus, setMtStatus] = useState<TranslatorStatus>("idle");
+  const [mtProgress, setMtProgress] = useState(0);
+  const [mtTick, setMtTick] = useState(0);
+  const [bootId, setBootId] = useState(0);
+  const translatorRef = useRef<{
+    lang: string;
+    source: string;
+    translate: (input: string) => Promise<string>;
+    destroy?: () => void;
+  } | null>(null);
   const [bookmarks, setBookmarks] = useState<string[]>([]);
   const [mapOpen, setMapOpen] = useState(false);
   const [focus, setFocus] = useState(false);
@@ -62,6 +82,30 @@ export function PathStudio({
     return text.verses.filter((v) => v.sectionId === sectionId);
   }, [mode, sectionId, text.verses]);
 
+  const packedLangs = useMemo(() => {
+    const s = new Set<string>(["en", "hi"]);
+    for (const v of text.verses) {
+      for (const k of Object.keys(v.meanings || {})) {
+        if (v.meanings[k]) s.add(k);
+      }
+    }
+    return ["en", "hi", ...[...s].filter((k) => k !== "en" && k !== "hi").sort()];
+  }, [text.verses]);
+
+  const langIsPacked = packedLangs.includes(lang);
+
+  function packedMeaning(v: VerseUnit, locale: string): string {
+    if (locale === "en") return v.meanings.en || v.meaningEn || "";
+    if (locale === "hi") return v.meanings.hi || v.meaningHi || "";
+    return v.meanings[locale] || "";
+  }
+
+  function displayMeaning(v: VerseUnit): string {
+    const packed = packedMeaning(v, lang);
+    if (packed) return packed;
+    return cachedMeaning(cacheKey(text.id, v.id, lang)) || "";
+  }
+
   const rowVirtualizer = useVirtualizer({
     count: visibleVerses.length,
     getScrollElement: () => parentRef.current,
@@ -69,6 +113,52 @@ export function PathStudio({
     overscan: 8,
     enabled: flags.ff_verse_virtualization,
   });
+
+  const windowStart = rowVirtualizer.range?.startIndex ?? 0;
+  const windowEnd = rowVirtualizer.range?.endIndex ?? Math.min(24, visibleVerses.length);
+
+  useEffect(() => {
+    if (langIsPacked) {
+      setMtStatus("packed");
+      return;
+    }
+    let cancelled = false;
+    const slice = visibleVerses.slice(
+      Math.max(0, windowStart),
+      Math.max(windowEnd + 1, Math.min(visibleVerses.length, windowStart + 24)),
+    );
+    const run = async () => {
+      const tr = translatorRef.current;
+      if (!tr || tr.lang !== lang) return;
+      const missing = slice.filter(
+        (v) => !cachedMeaning(cacheKey(text.id, v.id, lang)),
+      );
+      if (!missing.length) {
+        setMtStatus("ready");
+        return;
+      }
+      setMtStatus("translating");
+      for (const v of missing.length ? missing : slice) {
+        if (cancelled) return;
+        const key = cacheKey(text.id, v.id, lang);
+        if (cachedMeaning(key)) continue;
+        const sourceText = packedMeaning(v, tr.source) || meaningFor(v, "en");
+        if (!sourceText) continue;
+        try {
+          const out = await tr.translate(sourceText);
+          storeMeaning(key, out);
+          if (!cancelled) setMtTick((n) => n + 1);
+        } catch {
+          /* skip verse */
+        }
+      }
+      if (!cancelled) setMtStatus("ready");
+    };
+    void run();
+    return () => {
+      cancelled = true;
+    };
+  }, [lang, langIsPacked, text.id, visibleVerses, windowStart, windowEnd, bootId]);
 
   useEffect(() => {
     setBookmarks(
@@ -111,19 +201,22 @@ export function PathStudio({
     Boolean(text.flags?.needsDualReview) ||
     text.id === "sundar-kand-manas" ||
     text.wave >= 1 ||
-    machineAssistedLocales.includes(lang as Locale);
+    machineAssistedLocales.includes(lang as Locale) ||
+    (!langIsPacked && (mtStatus === "ready" || mtStatus === "translating"));
 
   function renderVerseCard(v: VerseUnit, i: number) {
     const on = activeId === v.id;
     const bookmarked = bookmarks.includes(v.id);
+    void mtTick;
+    const meaningNow = displayMeaning(v);
     return (
       <div
         key={v.id}
         id={`verse-${v.id}`}
         className={`rounded-2xl border p-4 transition ${
           on
-            ? "border-[#f48c06] bg-[var(--hanumat-vermillion-deep)]/15 shadow-[0_0_40px_rgba(244,140,6,0.12)]"
-            : "border-white/10 bg-[var(--hanumat-gold-wash)]"
+            ? "border-[var(--hanumat-vermillion-deep)] bg-[color-mix(in_srgb,var(--hanumat-vermillion)_10%,var(--hanumat-cream))]"
+            : "border-[var(--hanumat-gold-line)] bg-[rgba(255,252,247,0.98)]"
         }`}
       >
         <div className="mb-1 flex items-center justify-between gap-2">
@@ -157,19 +250,30 @@ export function PathStudio({
                   ? "text-xl text-[var(--hanumat-shadow)]"
                   : "text-lg text-[var(--hanumat-charcoal)]"
               }`}
-              lang="hi"
+              lang="sa"
+              translate="no"
             >
               {v.text}
             </p>
           )}
           {(scriptView === "iast" || showIast) && v.iast && (
-            <p className={`mt-1 italic text-[var(--hanumat-stone-light)] ${focus ? "text-base" : "text-xs"}`}>
+            <p
+              className={`mt-1 italic text-[var(--hanumat-stone-light)] ${focus ? "text-base" : "text-xs"}`}
+              translate="no"
+            >
               {v.iast}
             </p>
           )}
           {scriptView === "all" && showMeaning && (
-            <p className="mt-2 text-sm leading-relaxed text-[var(--hanumat-stone)]">
-              {meaningFor(v, lang)}
+            <p
+              className="mt-2 text-sm leading-relaxed text-[var(--hanumat-stone)]"
+              lang={lang}
+              translate="yes"
+            >
+              {meaningNow ||
+                (mtStatus === "translating" || mtStatus === "downloading"
+                  ? "…"
+                  : meaningFor(v, "en"))}
             </p>
           )}
         </button>
@@ -181,7 +285,7 @@ export function PathStudio({
     <div className={focus ? "path-studio-focus" : undefined}>
       {provisional && (
         <div
-          className="mb-4 rounded-xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-gold-wash)] px-4 py-3 text-xs leading-relaxed text-[var(--hanumat-charcoal)]"
+          className="mb-4 rounded-xl border border-[var(--hanumat-gold-line)] bg-[rgba(255,252,247,0.98)] px-4 py-3 text-xs leading-relaxed text-[var(--hanumat-charcoal)]"
           role="status"
         >
           <strong className="text-[var(--hanumat-gold-deep)]">{t("provisionalTitle")}</strong>{" "}
@@ -198,7 +302,7 @@ export function PathStudio({
       >
         {!focus && (
           <aside className="hidden lg:block">
-            <div className="sticky top-24 rounded-2xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-gold-wash)] p-3">
+            <div className="sticky top-24 rounded-2xl border border-[var(--hanumat-gold-line)] bg-[rgba(255,252,247,0.98)] p-3">
               <p className="mb-2 text-[10px] uppercase tracking-widest text-[var(--hanumat-vermillion-deep)]">
                 {t("episodes")}
               </p>
@@ -210,11 +314,17 @@ export function PathStudio({
                       onClick={() => setSectionId(s.id)}
                       className={`w-full rounded-xl px-3 py-2 text-left transition ${
                         sectionId === s.id
-                          ? "bg-[var(--hanumat-gold-wash)] text-[var(--hanumat-shadow)]"
+                          ? "bg-[var(--hanumat-vermillion-deep)] text-[var(--hanumat-cream)]"
                           : "text-[var(--hanumat-stone)] hover:bg-[var(--hanumat-gold-wash)]"
                       }`}
                     >
-                      <span className="text-[10px] text-[var(--hanumat-vermillion-deep)]">
+                      <span
+                        className={`text-[10px] ${
+                          sectionId === s.id
+                            ? "text-[var(--hanumat-cream)]/85"
+                            : "text-[var(--hanumat-vermillion-deep)]"
+                        }`}
+                      >
                         {s.order}.
                       </span>{" "}
                       {s.title.hi}
@@ -257,21 +367,61 @@ export function PathStudio({
               {showMeaning ? t("hideMeaning") : t("meaning")}
             </button>
             <select
-              className="rounded-full border px-2 py-1 text-xs uppercase font-semibold"
+              className="max-w-[16rem] rounded-full border px-2 py-1 text-xs font-semibold"
               style={{
                 borderColor: "var(--hanumat-gold-line)",
                 color: "var(--hanumat-charcoal)",
                 background: "var(--hanumat-cream)",
               }}
               value={lang}
-              onChange={(e) => setLang(e.target.value)}
-              aria-label="Meaning locale"
+              onChange={(e) => {
+                const next = e.target.value;
+                setLang(next);
+                if (packedLangs.includes(next)) {
+                  setMtStatus("packed");
+                  return;
+                }
+                if (!translatorSupported()) {
+                  setMtStatus("unsupported");
+                  return;
+                }
+                setMtStatus("downloading");
+                setMtProgress(0);
+                const boot = (source: "en" | "hi") =>
+                  createTranslator(source, next, (pct) => {
+                    setMtProgress(pct);
+                    setMtStatus("downloading");
+                  }).then((inst) => {
+                    translatorRef.current?.destroy?.();
+                    translatorRef.current = {
+                      lang: next,
+                      source,
+                      translate: (input) => inst.translate(input),
+                      destroy: inst.destroy,
+                    };
+                    setMtStatus("translating");
+                    setBootId((n) => n + 1);
+                  });
+                void boot("en").catch(() =>
+                  boot("hi").catch(() => setMtStatus("unavailable")),
+                );
+              }}
+              aria-label={t("translate")}
             >
-              {(["en", "hi"] as const).map((l) => (
-                <option key={l} value={l}>
-                  {l}
-                </option>
-              ))}
+              <optgroup label={t("translatePacked")}>
+                {packedLangs.map((l) => (
+                  <option key={l} value={l}>
+                    {langLabel(l)}
+                  </option>
+                ))}
+              </optgroup>
+              <optgroup label={t("translateLive")}>
+                {LIVE_LANGS.filter((l) => !packedLangs.includes(l.code)).map((l) => (
+                  <option key={l.code} value={l.code}>
+                    {l.native} · {l.en}
+                  </option>
+                ))}
+              </optgroup>
             </select>
             <button
               type="button"
@@ -358,9 +508,22 @@ export function PathStudio({
               WhatsApp
             </a>
           </div>
+          {!langIsPacked && (
+            <p className="mb-3 text-[11px] leading-relaxed" style={{ color: "var(--hanumat-stone)" }}>
+              {mtStatus === "unsupported"
+                ? t("translateUnsupported")
+                : mtStatus === "unavailable"
+                  ? t("translateUnavailable")
+                  : mtStatus === "downloading"
+                    ? `${t("translateModel")} ${mtProgress ? mtProgress + "%" : ""}`
+                    : mtStatus === "translating"
+                      ? t("translating")
+                      : t("translateMtNote")}
+            </p>
+          )}
 
           {mapOpen && (
-            <div className="mb-4 rounded-2xl border border-[var(--hanumat-gold-line)] bg-[#24143d] p-3 lg:hidden">
+            <div className="mb-4 rounded-2xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-cream)] p-3 lg:hidden">
               <ul className="grid max-h-48 gap-1 overflow-y-auto text-sm">
                 {text.sections.map((s) => (
                   <li key={s.id}>
@@ -426,7 +589,7 @@ export function PathStudio({
 
         {!focus && (
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <div className="rounded-2xl border border-[var(--hanumat-gold-line)] bg-[#24143d]/95 p-4 backdrop-blur">
+            <div className="rounded-2xl border border-[var(--hanumat-gold-line)] bg-[var(--hanumat-cream)] p-4 backdrop-blur">
               <p className="text-xs uppercase tracking-widest text-[var(--hanumat-vermillion-deep)]">
                 {t("edition")}
               </p>

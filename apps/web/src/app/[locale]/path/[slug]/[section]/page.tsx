@@ -35,18 +35,18 @@ export default async function PathSectionPage({
   return (
     <SiteShell>
       <div className="mb-6">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#f48c06]">
+        <p className="section-kicker">
           {text.category} · section route
         </p>
-        <h1 className="mt-1 font-serif text-3xl text-[#fff8e7]">
+        <h1 className="section-title mt-1 text-3xl">
           {locale === "en" ? text.title.en : text.title.hi}
         </h1>
-        <p className="mt-2 text-sm text-[#f48c06]">
+        <p className="mt-2 text-sm text-[var(--hanumat-vermillion-deep)]">
           {locale === "en" ? sec.title.en : sec.title.hi}
         </p>
         <Link
           href={`/${locale}/path/${text.slug}/`}
-          className="mt-3 inline-block text-xs text-[#a994c4] hover:text-[#f48c06]"
+          className="mt-3 inline-block text-xs text-[var(--hanumat-stone)] hover:text-[var(--hanumat-vermillion)]"
         >
           ← full path
         </Link>

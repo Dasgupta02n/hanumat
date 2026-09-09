@@ -178,7 +178,7 @@ export function OfflinePackButton({
         type="button"
         onClick={download}
         disabled={busy || ready}
-        className="mt-3 rounded-full bg-[#f48c06] px-4 py-2 text-sm font-semibold text-[#1a0f2e] disabled:opacity-60"
+        className="btn-primary mt-3 !px-4 !py-2 text-sm disabled:opacity-60"
       >
         {ready
           ? readyLabel
@@ -188,7 +188,7 @@ export function OfflinePackButton({
               ? `${label} (${sizeLabel})`
               : label}
       </button>
-      {error && <p className="mt-1 text-[11px] text-[#ff6b6b]">{error}</p>}
+      {error && <p className="mt-1 text-xs" style={{ color: "var(--hanumat-vermillion-deep)" }}>{error}</p>}
     </div>
   );
 }

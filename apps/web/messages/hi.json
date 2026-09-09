@@ -57,7 +57,15 @@
     "share": "श्लोक बाँटें",
     "scriptAll": "मूल + अर्थ",
     "scriptMula": "केवल हिंदी",
-    "scriptIast": "केवल IAST"
+    "scriptIast": "केवल IAST",
+    "translate": "अर्थ की भाषा",
+    "translatePacked": "इस पाठ पर",
+    "translateLive": "और भाषाएँ (डिवाइस पर)",
+    "translating": "अर्थ अनुवाद हो रहा है…",
+    "translateModel": "भाषा पैक आ रहा है…",
+    "translateUnavailable": "यह भाषा इस डिवाइस पर नहीं है। Chrome या Edge डिवाइस पर अनुवाद कर सकते हैं — खाता नहीं, विज्ञापन नहीं।",
+    "translateUnsupported": "लाइव अनुवाद Chrome या Edge पर डिवाइस में चलता है। हिंदी व अंग्रेज़ी अर्थ सदा यहाँ हैं।",
+    "translateMtNote": "हिंदी/अंग्रेज़ी अर्थ का डिवाइस-पर यंत्रानुवाद। टीका नहीं। मूल मूल लिपि में रहता है।"
   },
   "myPath": {
     "title": "मेरा पथ",

@@ -30,7 +30,7 @@ export function PanchangCard({
       <p className="section-kicker">{en ? "Today’s panchang" : "आज का पञ्चाङ्ग"}</p>
       <h2 className="section-title mt-1 text-2xl">
         {en ? p.vara.en : p.vara.hi}
-        <span className="mx-2 text-sm font-sans" style={{ color: "var(--hanumat-stone)" }}>
+        <span className="mx-2 text-sm font-sans" style={{ color: "var(--hanumat-charcoal)" }}>
           · {p.iso}
         </span>
       </h2>
@@ -65,7 +65,7 @@ export function PanchangCard({
           </Link>
         </p>
       )}
-      <p className="mt-4 text-[11px]" style={{ color: "var(--hanumat-stone-light)" }}>
+      <p className="mt-4 text-xs" style={{ color: "var(--hanumat-stone)" }}>
         {en
           ? "Household panchang (IST, approximate tithi). Local printed panchang wins. No kundali, no ads, no paid muhurat."
           : "गृह पञ्चाङ्ग (IST, तिथि अनुमानित)। स्थानीय मुद्रित पञ्चाङ्ग मान्य। कुंडली, विज्ञापन, सशुल्क मुहूर्त नहीं।"}

@@ -29,9 +29,9 @@ export default async function KathaPage({
 
   return (
     <SiteShell>
-      <p className="text-xs text-[#6b5a80]">Wave 2</p>
-      <h1 className="font-serif text-4xl text-[#fff8e7]">{t("title")}</h1>
-      <p className="mt-2 max-w-xl text-sm text-[#a994c4]">{t("intro")}</p>
+      <p className="section-kicker">Wave 2</p>
+      <h1 className="section-title mt-2 text-4xl">{t("title")}</h1>
+      <p className="mt-2 max-w-xl text-sm text-[var(--hanumat-stone)]">{t("intro")}</p>
       <div className="mt-6">
         <SafeSceneImage
           src={imageForLeela("katha")}
@@ -45,7 +45,7 @@ export default async function KathaPage({
         />
       </div>
       <p className="mt-3 text-xs">
-        <Link href={`/${locale}/gallery/`} className="text-[#f48c06] hover:underline">
+        <Link href={`/${locale}/gallery/`} className="text-[var(--hanumat-vermillion-deep)] hover:underline">
           {locale === "en" ? "108 Images gallery →" : "१०८ चित्र गैलरी →"}
         </Link>
       </p>
@@ -62,7 +62,7 @@ export default async function KathaPage({
             <article
               key={s.slug}
               id={s.slug}
-              className="overflow-hidden rounded-2xl border border-white/12 bg-white/5"
+              className="temple-card overflow-hidden"
             >
               <div className="relative">
                 <SafeSceneImage
@@ -73,14 +73,14 @@ export default async function KathaPage({
               </div>
               <div className="p-6">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
-                <h2 className="font-serif text-2xl text-[#fff8e7]">
+                <h2 className="font-serif text-2xl text-[var(--hanumat-shadow)]">
                   {locale === "en" ? s.title.en : s.title.hi}
                 </h2>
-                <span className="text-xs text-[#f48c06]">
+                <span className="text-xs text-[var(--hanumat-vermillion-deep)]">
                   ~{s.minutes} {t("minutes")}
                 </span>
               </div>
-              <p className="mt-3 text-sm leading-relaxed text-[#cbb8e0]">
+              <p className="mt-3 text-sm leading-relaxed text-[var(--hanumat-stone)]">
                 {locale === "en" ? s.body.en : s.body.hi}
               </p>
               </div>

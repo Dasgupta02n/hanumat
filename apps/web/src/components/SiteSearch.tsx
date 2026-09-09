@@ -44,15 +44,15 @@ export function SiteSearch({
         }
         className="w-full rounded-full border px-4 py-3 text-sm"
         style={{
-          borderColor: compact ? "rgba(224,201,136,0.35)" : "var(--hanumat-gold-line)",
-          background: compact ? "rgba(20,16,12,0.45)" : "var(--hanumat-cream)",
-          color: compact ? "var(--hanumat-cream)" : "var(--hanumat-shadow)",
+          borderColor: "var(--hanumat-gold-line)",
+          background: "var(--hanumat-cream)",
+          color: "var(--hanumat-shadow)",
         }}
       />
       {q.trim().length >= 2 && (
         <ul className="mt-4 space-y-2">
           {hits.length === 0 && (
-            <li className="text-sm" style={{ color: compact ? "rgba(251,247,240,0.6)" : "var(--hanumat-stone)" }}>
+            <li className="text-sm" style={{ color: "var(--hanumat-stone)" }}>
               {en ? "No matches." : "कोई मेल नहीं।"}
             </li>
           )}
@@ -60,11 +60,7 @@ export function SiteSearch({
             <li key={h.id}>
               <Link
                 href={h.href}
-                className={
-                  compact
-                    ? "block rounded-xl border border-white/10 bg-black/25 px-4 py-3"
-                    : "temple-card block px-4 py-3"
-                }
+                className="temple-card block px-4 py-3"
               >
                 <p className="text-[10px] uppercase tracking-wider" style={{ color: "var(--hanumat-gold-deep)" }}>
                   {kindLabel[h.kind]} · {en ? deities[h.deity].brand.en : deities[h.deity].brand.hi}
@@ -72,7 +68,7 @@ export function SiteSearch({
                 <p className="font-serif text-base" lang={en ? undefined : "hi"}>
                   {en ? h.title : h.titleHi}
                 </p>
-                <p className="mt-0.5 text-xs" style={{ color: compact ? "rgba(251,247,240,0.65)" : "var(--hanumat-stone)" }}>
+                <p className="mt-0.5 text-xs" style={{ color: "var(--hanumat-stone)" }}>
                   {h.snippet}
                 </p>
               </Link>

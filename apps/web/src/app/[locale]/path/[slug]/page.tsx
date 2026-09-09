@@ -53,21 +53,21 @@ export default async function PathPage({
   return (
     <SiteShell>
       <div className="mb-8">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#f48c06]">
+        <p className="section-kicker">
           {text.category} · wave {text.wave}
         </p>
-        <h1 className="mt-1 font-serif text-4xl text-[#fff8e7]">
+        <h1 className="section-title mt-1 text-4xl">
           {locale === "en" ? text.title.en : text.title.hi}
         </h1>
-        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#cbb8e0]">
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed" style={{ color: "var(--hanumat-stone)" }}>
           {desc}
         </p>
-        <p className="mt-2 text-[11px] text-[#6b5a80]">{text.edition.pin}</p>
+        <p className="mt-2 text-[11px]" style={{ color: "var(--hanumat-stone)" }}>{text.edition.pin}</p>
         {text.sections.length > 1 && (
-          <p className="mt-2 text-xs text-[#a994c4]">
+          <p className="mt-2 text-xs text-[var(--hanumat-stone)]">
             <Link
               href={`/${locale}/path/${text.slug}/${text.sections[0].id}/`}
-              className="text-[#f48c06] hover:underline"
+              className="text-[var(--hanumat-vermillion-deep)] hover:underline"
             >
               Open first section route →
             </Link>

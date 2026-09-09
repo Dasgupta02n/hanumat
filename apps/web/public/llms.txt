@@ -12,6 +12,7 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 - Household canon: Gayatri, Ganesha, Lakshmi, Saraswati, Guru, Krishna, Achyutashtakam, Vishnu names doorway
 - Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam, Shiva manasa puja
 - Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri, Durga Saptashloki (no Karpuradi, no unverified Kali Chalisa)
+- Path Studio meaning language: Hindi/English always; more languages on-device in Chrome/Edge (no account, no ads). Mula stays in the original script.
 - Household panchang (IST, approximate tithi) — courtyard + calendar; local printed panchang wins; no kundali
 - Japa mala per deity, parayan 7/9/21/40, print/PDF
 - 108 folk leela paintings per dham

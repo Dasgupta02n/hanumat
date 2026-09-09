@@ -41,9 +41,9 @@ export default async function CalendarPage({
 
   return (
     <SiteShell>
-      <p className="text-xs text-[#6b5a80]">Wave 1 · Family W3</p>
-      <h1 className="font-serif text-4xl text-[#fff8e7]">{t("title")}</h1>
-      <p className="mt-2 max-w-xl text-sm text-[#a994c4]">{t("intro")}</p>
+      <p className="section-kicker">Wave 1 · Family W3</p>
+      <h1 className="section-title mt-2 text-4xl">{t("title")}</h1>
+      <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>{t("intro")}</p>
 
       <div id="panchang" className="mt-8 space-y-6">
         <PanchangCard locale={locale} monthLink={false} />
@@ -51,54 +51,36 @@ export default async function CalendarPage({
       </div>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
-        <div className="rounded-2xl border border-[#f48c06]/40 bg-[#f48c06]/10 p-6">
-          <h2 className="font-serif text-2xl text-[#ffd60a]">{t("tue")}</h2>
-          <p className="mt-2 text-sm text-[#e8dcf5]">
+        <div className="temple-card temple-card-frame p-6">
+          <h2 className="section-title text-2xl">{t("tue")}</h2>
+          <p className="mt-2 text-sm" style={{ color: "var(--hanumat-stone)" }}>
             Chalisa · japa · aarti · prasad
           </p>
           <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <Link
-              href={`/${locale}/path/hanuman-chalisa/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/path/hanuman-chalisa/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Chalisa
             </Link>
-            <Link
-              href={`/${locale}/japa/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/japa/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Japa
             </Link>
-            <Link
-              href={`/${locale}/path/hanuman-aarti/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/path/hanuman-aarti/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Aarti
             </Link>
           </div>
         </div>
-        <div className="rounded-2xl border border-white/15 bg-white/5 p-6">
-          <h2 className="font-serif text-2xl text-[#fff8e7]">{t("sat")}</h2>
-          <p className="mt-2 text-sm text-[#cbb8e0]">
+        <div className="temple-card temple-card-frame p-6">
+          <h2 className="section-title text-2xl">{t("sat")}</h2>
+          <p className="mt-2 text-sm" style={{ color: "var(--hanumat-stone)" }}>
             Sundar Kand · Sankatmochan · aarti
           </p>
           <div className="mt-4 flex flex-wrap gap-2 text-xs">
-            <Link
-              href={`/${locale}/path/sundar-kand/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/path/sundar-kand/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Sundar Kand
             </Link>
-            <Link
-              href={`/${locale}/path/sankatmochan-ashtak/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/path/sankatmochan-ashtak/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Ashtak
             </Link>
-            <Link
-              href={`/${locale}/parayan/`}
-              className="rounded-full bg-white/10 px-3 py-1 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/parayan/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               Parayan
             </Link>
           </div>
@@ -106,16 +88,16 @@ export default async function CalendarPage({
       </div>
 
       {/* Family · Mangalwar checklist + kids-safe links (W3) */}
-      <section className="mt-10 rounded-2xl border border-[#ffd60a]/25 bg-[#ffd60a]/5 p-6">
-        <h2 className="font-serif text-2xl text-[#ffd60a]">
+      <section className="temple-card temple-card-frame mt-10 p-6">
+        <h2 className="section-title text-2xl">
           {isHi ? "परिवार · मंगलवार सूची" : "Family · Mangalwar checklist"}
         </h2>
-        <p className="mt-2 max-w-2xl text-sm text-[#cbb8e0]">
+        <p className="mt-2 max-w-2xl text-sm" style={{ color: "var(--hanumat-stone)" }}>
           {isHi
             ? "मंगलवार को घर का छोटा मंदिर — जल्दबाजी नहीं, केवल साझा भक्ति। परंपराएँ भिन्न हो सकती हैं।"
             : "A small home mandir on Tuesday — no rush, only shared devotion. Traditions may vary."}
         </p>
-        <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm text-[#e8dcf5]">
+        <ol className="mt-5 list-decimal space-y-3 pl-5 text-sm" style={{ color: "var(--hanumat-charcoal)" }}>
           {checklist.map((item) => (
             <li key={item} className="pl-1 leading-relaxed">
               {item}
@@ -124,32 +106,20 @@ export default async function CalendarPage({
         </ol>
 
         <div className="mt-6">
-          <p className="text-xs font-medium uppercase tracking-wide text-[#6b5a80]">
+          <p className="section-kicker">
             {isHi ? "बाल-सुरक्षित कड़ियाँ" : "Kids-safe links"}
           </p>
           <div className="mt-3 flex flex-wrap gap-2 text-xs">
-            <Link
-              href={`/${locale}/kids/`}
-              className="rounded-full border border-[#f48c06]/40 bg-[#f48c06]/15 px-3 py-1.5 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/kids/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               {isHi ? "बाल मार्ग" : "Kids path"}
             </Link>
-            <Link
-              href={`/${locale}/path/hanuman-chalisa/`}
-              className="rounded-full bg-white/10 px-3 py-1.5 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/path/hanuman-chalisa/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               {isHi ? "कोमल चालीसा" : "Gentle Chalisa"}
             </Link>
-            <Link
-              href={`/${locale}/japa/`}
-              className="rounded-full bg-white/10 px-3 py-1.5 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/japa/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               {isHi ? "मंत्र जप" : "Mantra japa"}
             </Link>
-            <Link
-              href={`/${locale}/katha/`}
-              className="rounded-full bg-white/10 px-3 py-1.5 text-[#fff8e7]"
-            >
+            <Link href={`/${locale}/katha/`} className="btn-ghost !px-3 !py-1.5 text-xs">
               {isHi ? "सरल कथा" : "Gentle katha"}
             </Link>
           </div>
@@ -157,18 +127,18 @@ export default async function CalendarPage({
       </section>
 
       <section className="mt-10">
-        <h2 className="font-serif text-xl text-[#ffd60a]">{t("jayanti")}</h2>
-        <p className="mt-2 text-xs text-[#6b5a80]">{t("traditionsVary")}</p>
+        <h2 className="section-title text-xl">{t("jayanti")}</h2>
+        <p className="mt-2 text-xs" style={{ color: "var(--hanumat-stone)" }}>{t("traditionsVary")}</p>
         <ul className="mt-4 space-y-3">
           {jayantiTraditions.map(
             (tr: { region: string; rule: string; note: string }) => (
               <li
                 key={tr.region}
-                className="rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+                className="temple-card px-4 py-3"
               >
-                <p className="font-medium text-[#fff8e7]">{tr.region}</p>
-                <p className="text-sm text-[#f48c06]">{tr.rule}</p>
-                <p className="text-xs text-[#a994c4]">{tr.note}</p>
+                <p className="font-medium" style={{ color: "var(--hanumat-shadow)" }}>{tr.region}</p>
+                <p className="text-sm" style={{ color: "var(--hanumat-vermillion-deep)" }}>{tr.rule}</p>
+                <p className="text-xs" style={{ color: "var(--hanumat-stone)" }}>{tr.note}</p>
               </li>
             ),
           )}

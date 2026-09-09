@@ -98,12 +98,12 @@ export function PanchangMonth({ locale }: { locale: Locale }) {
           →
         </button>
       </div>
-      <p className="mt-1 text-[11px]" style={{ color: "var(--hanumat-stone-light)" }}>
+      <p className="mt-1 text-xs" style={{ color: "var(--hanumat-stone)" }}>
         {en
           ? "Household month (IST, approximate tithi). Tap a day. Local printed panchang wins."
           : "गृह मास (IST, तिथि अनुमानित)। दिन चुनें। स्थानीय मुद्रित पञ्चाङ्ग मान्य।"}
       </p>
-      <div className="mt-4 grid grid-cols-7 gap-1 text-center text-[10px] sm:text-xs" style={{ color: "var(--hanumat-stone)" }}>
+      <div className="mt-4 grid grid-cols-7 gap-1 text-center text-[10px] sm:text-xs" style={{ color: "var(--hanumat-charcoal)" }}>
         {(en ? WD_EN : WD_HI).map((w) => (
           <div key={w} className="py-1 font-medium">
             {w}
@@ -130,7 +130,7 @@ export function PanchangMonth({ locale }: { locale: Locale }) {
               }}
             >
               <span className="block text-sm font-serif">{Number(d.iso.slice(-2))}</span>
-              <span className="block truncate" style={{ color: "var(--hanumat-stone)" }}>
+              <span className="block truncate" style={{ color: "var(--hanumat-charcoal)" }}>
                 {en ? d.tithi.en.slice(0, 4) : d.tithi.hi.slice(0, 4)}
               </span>
             </Link>

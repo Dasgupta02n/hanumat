@@ -47,8 +47,30 @@ figcaption {
   color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--hanumat-shadow);
+}
+
 a {
   color: inherit;
+}
+
+input,
+select,
+textarea {
+  color: var(--hanumat-charcoal);
+  background-color: var(--hanumat-cream);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--hanumat-sacred-ash);
+  opacity: 1;
 }
 
 .seo-summary,
@@ -121,6 +143,7 @@ a {
 
 .temple-card {
   background: linear-gradient(165deg, rgba(255, 252, 247, 0.98) 0%, rgba(246, 241, 231, 0.95) 100%);
+  color: var(--hanumat-charcoal);
   border: 1px solid var(--hanumat-gold-line);
   border-radius: var(--radius-card);
   box-shadow:
@@ -404,7 +427,7 @@ a {
 .landing-lead {
   margin: 1rem auto 0;
   max-width: 36rem;
-  color: rgba(251, 247, 240, 0.78);
+  color: rgba(251, 247, 240, 0.9);
   font-size: 1.02rem;
   line-height: 1.55;
 }
@@ -514,7 +537,7 @@ a {
   margin-top: 0.55rem;
   font-size: 0.86rem;
   line-height: 1.5;
-  color: rgba(251, 247, 240, 0.72);
+  color: rgba(251, 247, 240, 0.88);
   min-height: 3.6em;
 }
 
@@ -551,7 +574,7 @@ a {
   text-align: center;
   padding: 0 1.25rem 2.5rem;
   font-size: 0.78rem;
-  color: rgba(251, 247, 240, 0.55);
+  color: rgba(251, 247, 240, 0.8);
 }
 
 .landing-foot a {

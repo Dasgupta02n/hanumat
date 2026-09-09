@@ -57,24 +57,24 @@ export default async function GlossaryPage({
 
   return (
     <SiteShell>
-      <p className="text-xs text-[#6b5a80]">Wave 1 · Knowledge</p>
-      <h1 className="font-serif text-4xl text-[#fff8e7]">Glossary</h1>
-      <p className="mt-2 text-sm text-[#a994c4]">
+      <p className="section-kicker">Wave 1 · Knowledge</p>
+      <h1 className="section-title mt-2 text-4xl">Glossary</h1>
+      <p className="mt-2 text-sm text-[var(--hanumat-stone)]">
         Short terms for devotees — not a scholarly dictionary.
       </p>
       <ul className="mt-8 space-y-4">
         {TERMS.map((t) => (
           <li
             key={t.term}
-            className="rounded-2xl border border-white/12 bg-white/5 p-5"
+            className="temple-card p-5"
           >
-            <h2 className="font-serif text-xl text-[#fff8e7]">
+            <h2 className="font-serif text-xl text-[var(--hanumat-shadow)]">
               {t.term}{" "}
-              <span className="text-base text-[#f48c06]" lang="hi">
+              <span className="text-base text-[var(--hanumat-vermillion-deep)]" lang="hi">
                 {t.hi}
               </span>
             </h2>
-            <p className="mt-2 text-sm text-[#cbb8e0]">{t.body}</p>
+            <p className="mt-2 text-sm text-[var(--hanumat-stone)]">{t.body}</p>
           </li>
         ))}
       </ul>

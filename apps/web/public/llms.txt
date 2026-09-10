@@ -13,7 +13,7 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 - Shivayatan: Lingashtakam, Om Namah Shivaya, Mahamrityunjaya, Rudrashtakam, Shiva manasa puja
 - Kalika Dham: Kalika Ashtakam, Adya Stotram, Kali Gayatri, Durga Saptashloki (no Karpuradi, no unverified Kali Chalisa)
 - Path Studio meaning language: Hindi/English always; more languages on-device in Chrome/Edge (no account, no ads). Mula stays in the original script.
-- Household panchang (IST, approximate tithi) — courtyard + calendar; local printed panchang wins; no kundali
+- Household panchang (IST, approximate tithi) — standalone courtyard /panchang/ with Hindi, Bengali panjika, Gujarati, Marathi, Tamil and more; muhurat windows; year festivals; rituals linked to Hanuman, Shiva, Kali. Not repeated inside the three mandirs. Local printed panjika wins; no kundali, no paid muhurat
 - Japa mala per deity, parayan 7/9/21/40, print/PDF
 - 108 folk leela paintings per dham
 - Locales: English (en, default), Hindi (hi)
@@ -27,6 +27,7 @@ A quiet digital temple (PWA) for devotees worldwide. Path Studio: mula, IAST (Ro
 - https://hanumat.life/en/path/hanuman-chalisa/
 - https://hanumat.life/en/path/bhagavad-gita/
 - https://hanumat.life/en/scripture/
+- https://hanumat.life/panchang/
 - https://hanumat.life/en/calendar/
 - https://hanumat.life/en/path/sundar-kand/
 - https://hanumat.life/shiva/en/path/lingashtakam/

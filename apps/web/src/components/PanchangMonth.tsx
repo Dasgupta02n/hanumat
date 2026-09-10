@@ -1,12 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import {
   panchangFor,
   panchangMonth,
   type PanchangDay,
 } from "@/lib/panchang";
+import { monthLabel, tithiLabel, type PanjikaId } from "@/lib/panchang-regions";
 import type { Locale } from "@/i18n/config";
 
 const WD_EN = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -40,9 +40,16 @@ const MONTH_HI = [
   "दिसम्बर",
 ];
 
-export function PanchangMonth({ locale }: { locale: Locale }) {
+export function PanchangMonth({
+  locale,
+  panjika = "hindi",
+}: {
+  locale: Locale;
+  panjika?: PanjikaId;
+}) {
   const [today, setToday] = useState<PanchangDay | null>(null);
   const [cursor, setCursor] = useState<{ y: number; m: number } | null>(null);
+  const [picked, setPicked] = useState<PanchangDay | null>(null);
   const en = locale === "en";
 
   useEffect(() => {
@@ -83,7 +90,11 @@ export function PanchangMonth({ locale }: { locale: Locale }) {
       y += 1;
     }
     setCursor({ y, m });
+    setPicked(null);
   };
+
+  const shown = picked || today;
+  const shukla = shown.paksha.en.startsWith("Shukla");
 
   return (
     <article className="temple-card temple-card-frame p-5 sm:p-6">
@@ -100,8 +111,8 @@ export function PanchangMonth({ locale }: { locale: Locale }) {
       </div>
       <p className="mt-1 text-xs" style={{ color: "var(--hanumat-stone)" }}>
         {en
-          ? "Household month (IST, approximate tithi). Tap a day. Local printed panchang wins."
-          : "गृह मास (IST, तिथि अनुमानित)। दिन चुनें। स्थानीय मुद्रित पञ्चाङ्ग मान्य।"}
+          ? "Household month (IST, approximate tithi). Tap a day. Local printed panjika wins."
+          : "गृह मास (IST, तिथि अनुमानित)। दिन चुनें। स्थानीय मुद्रित पञ्जिका मान्य।"}
       </p>
       <div className="mt-4 grid grid-cols-7 gap-1 text-center text-[10px] sm:text-xs" style={{ color: "var(--hanumat-charcoal)" }}>
         {(en ? WD_EN : WD_HI).map((w) => (
@@ -112,31 +123,41 @@ export function PanchangMonth({ locale }: { locale: Locale }) {
         {cells.map((d, i) => {
           if (!d) return <div key={`e-${i}`} />;
           const isToday = d.iso === today.iso;
+          const isPicked = picked?.iso === d.iso;
           const mark = d.festivals.length > 0 || d.flags.ekadashi || d.flags.purnima || d.flags.amavasya;
           return (
-            <Link
+            <button
+              type="button"
               key={d.iso}
-              href={`/${locale}/calendar/#panchang`}
               title={`${d.iso} · ${en ? d.tithi.en : d.tithi.hi}${d.festivals[0] ? " · " + (en ? d.festivals[0].en : d.festivals[0].hi) : ""}`}
               className="rounded-lg px-0.5 py-1.5 leading-tight"
               style={{
-                background: isToday
+                background: isToday || isPicked
                   ? "color-mix(in srgb, var(--hanumat-vermillion) 18%, transparent)"
                   : mark
                     ? "color-mix(in srgb, var(--hanumat-gold, #c9a227) 12%, transparent)"
                     : "transparent",
                 color: "var(--hanumat-charcoal)",
-                outline: isToday ? "1px solid var(--hanumat-vermillion-deep)" : undefined,
+                outline: isToday || isPicked ? "1px solid var(--hanumat-vermillion-deep)" : undefined,
               }}
+              onClick={() => setPicked(d)}
             >
               <span className="block text-sm font-serif">{Number(d.iso.slice(-2))}</span>
               <span className="block truncate" style={{ color: "var(--hanumat-charcoal)" }}>
-                {en ? d.tithi.en.slice(0, 4) : d.tithi.hi.slice(0, 4)}
+                {tithiLabel(d.tithiNum, d.paksha.en.startsWith("Shukla"), panjika, en ? "en" : "hi").slice(0, 4)}
               </span>
-            </Link>
+            </button>
           );
         })}
       </div>
+      <p className="mt-4 text-sm" style={{ color: "var(--hanumat-charcoal)" }}>
+        <strong>{shown.iso}</strong>
+        {" · "}
+        {monthLabel(shown.iso, panjika, en ? "en" : "hi")}
+        {" · "}
+        {tithiLabel(shown.tithiNum, shukla, panjika, en ? "en" : "hi")}
+        {shown.festivals[0] ? ` · ${en ? shown.festivals[0].en : shown.festivals[0].hi}` : ""}
+      </p>
     </article>
   );
 }

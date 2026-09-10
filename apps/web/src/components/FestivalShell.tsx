@@ -25,7 +25,7 @@ export function FestivalShell() {
   if (!card) return null;
 
   const en = locale === "en";
-  const calendar = deityHref(deity.id, locale, "/calendar/");
+  const calendar = "/panchang/#festivals";
 
   return (
     <aside
@@ -88,7 +88,7 @@ export function FestivalShell() {
             href={calendar}
             className="text-[11px] font-medium text-[#1a0f2e]/75 underline-offset-2 hover:underline"
           >
-            {en ? "Calendar" : "कैलेंडर"} →
+            {en ? "Panchang" : "पञ्चाङ्ग"} →
           </Link>
         </div>
       </div>

@@ -104,6 +104,19 @@ const TITHI_HI = [
 const KRISHNA_15_EN = "Amavasya";
 const KRISHNA_15_HI = "अमावस्या";
 
+export type DeityTag = "hanuman" | "shiva" | "kali" | "sarva";
+
+export type NamedFestival = {
+  start: string;
+  end: string;
+  hi: string;
+  en: string;
+  deity?: DeityTag;
+  href?: string;
+  /** Regional lenses this row is most at home in. Omit = every panjika. */
+  panjika?: string[];
+};
+
 export type PanchangDay = {
   iso: string;
   weekday: number;
@@ -118,7 +131,7 @@ export type PanchangDay = {
     amavasya: boolean;
     pradosha: boolean;
   };
-  festivals: { hi: string; en: string }[];
+  festivals: NamedFestival[];
   approximate: true;
 };
 
@@ -158,30 +171,45 @@ function lunarAgeDays(epochMs: number): number {
   return ((days % SYNODIC) + SYNODIC) % SYNODIC;
 }
 
+/** 0–29 from the last new moon. 0–14 shukla, 15–29 krishna. */
+export function tithiIndexFromEpoch(epochMs: number): { tithiIndex0: number; shukla: boolean } {
+  const age = lunarAgeDays(epochMs);
+  const tithiIndex0 = Math.min(29, Math.floor(age / (SYNODIC / 30)));
+  return { tithiIndex0, shukla: tithiIndex0 < 15 };
+}
+
+export const SYNODIC_DAYS = SYNODIC;
+
 /**
  * Named festivals only. Collated against Drik Panchang Indian Calendar
  * (https://www.drikpanchang.com/calendars/indian/indiancalendar.html) and a
  * second public calendar (India TV / Hindu Blog / Times of India / Hindustan Times).
  * Tithi-overlap days are a window; local printed panchang wins.
  */
-const FESTIVALS: { start: string; end: string; hi: string; en: string }[] = [
-  { start: "2026-01-14", end: "2026-01-14", hi: "मकर संक्रान्ति", en: "Makar Sankranti" },
-  { start: "2026-02-15", end: "2026-02-16", hi: "महाशिवरात्रि", en: "Maha Shivaratri" },
-  { start: "2026-03-03", end: "2026-03-04", hi: "होली", en: "Holi" },
-  { start: "2026-03-19", end: "2026-03-19", hi: "गुड़ी पड़वा / उगादि", en: "Gudi Padwa / Ugadi" },
-  { start: "2026-03-26", end: "2026-03-27", hi: "राम नवमी", en: "Ram Navami" },
-  { start: "2026-04-01", end: "2026-04-02", hi: "हनुमान जयन्ती", en: "Hanuman Jayanti" },
-  { start: "2026-04-19", end: "2026-04-19", hi: "अक्षय तृतीया", en: "Akshaya Tritiya" },
-  { start: "2026-08-13", end: "2026-09-11", hi: "श्रावण मास", en: "Shravan month" },
-  { start: "2026-08-28", end: "2026-08-28", hi: "रक्षा बन्धन", en: "Raksha Bandhan" },
-  { start: "2026-09-03", end: "2026-09-04", hi: "जन्माष्टमी", en: "Janmashtami" },
-  { start: "2026-09-14", end: "2026-09-14", hi: "गणेश चतुर्थी", en: "Ganesh Chaturthi" },
-  { start: "2026-10-11", end: "2026-10-19", hi: "शरद नवरात्रि", en: "Sharad Navaratri" },
-  { start: "2026-10-20", end: "2026-10-20", hi: "दशहरा", en: "Dussehra" },
-  { start: "2026-11-08", end: "2026-11-10", hi: "दीपावली / काली पूजा", en: "Deepavali / Kali puja" },
-  { start: "2026-11-24", end: "2026-11-24", hi: "गुरु नानक जयन्ती", en: "Guru Nanak Jayanti" },
-  { start: "2027-03-06", end: "2027-03-07", hi: "महाशिवरात्रि", en: "Maha Shivaratri" },
-  { start: "2027-04-20", end: "2027-04-20", hi: "हनुमान जयन्ती", en: "Hanuman Jayanti" },
+export const YEAR_FESTIVALS: NamedFestival[] = [
+  { start: "2026-01-14", end: "2026-01-14", hi: "मकर संक्रान्ति / उत्तरायण / पोंगल", en: "Makar Sankranti / Uttarayan / Pongal", deity: "sarva", panjika: ["hindi", "gujarati", "tamil", "punjabi", "bengali"] },
+  { start: "2026-01-23", end: "2026-01-23", hi: "वसन्त पञ्चमी", en: "Vasant Panchami", deity: "sarva", href: "/en/path/saraswati-stotram/" },
+  { start: "2026-02-15", end: "2026-02-16", hi: "महाशिवरात्रि", en: "Maha Shivaratri", deity: "shiva", href: "/shiva/en/path/shiva-manasa-puja/" },
+  { start: "2026-03-03", end: "2026-03-04", hi: "होली", en: "Holi", deity: "sarva" },
+  { start: "2026-03-19", end: "2026-03-19", hi: "गुड़ी पड़वा / उगादि / चैत्र शुक्ल", en: "Gudi Padwa / Ugadi / Chaitra Shukla", deity: "sarva", panjika: ["marathi", "telugu", "kannada", "hindi"], href: "/en/path/gayatri-mantra/" },
+  { start: "2026-03-26", end: "2026-03-27", hi: "राम नवमी", en: "Ram Navami", deity: "sarva", href: "/en/path/hanuman-chalisa/" },
+  { start: "2026-04-01", end: "2026-04-02", hi: "हनुमान जयन्ती", en: "Hanuman Jayanti", deity: "hanuman", href: "/en/path/hanuman-chalisa/" },
+  { start: "2026-04-14", end: "2026-04-14", hi: "वैशाखी / पुथाण्डु / विषु", en: "Baisakhi / Puthandu / Vishu", deity: "sarva", panjika: ["punjabi", "tamil", "malayalam"] },
+  { start: "2026-04-15", end: "2026-04-15", hi: "পহেলা বৈশাখ · बंगाली नववर्ष", en: "Pohela Boishakh · Bengali new year", deity: "sarva", panjika: ["bengali"], href: "/kali/en/" },
+  { start: "2026-04-19", end: "2026-04-19", hi: "अक्षय तृतीया", en: "Akshaya Tritiya", deity: "sarva", href: "/en/path/mahalakshmi-ashtakam/" },
+  { start: "2026-08-13", end: "2026-09-11", hi: "श्रावण मास", en: "Shravan month", deity: "shiva", href: "/shiva/en/path/om-namah-shivaya/" },
+  { start: "2026-08-26", end: "2026-08-26", hi: "ओणम्", en: "Onam", deity: "sarva", panjika: ["malayalam"] },
+  { start: "2026-08-28", end: "2026-08-28", hi: "रक्षा बन्धन", en: "Raksha Bandhan", deity: "sarva" },
+  { start: "2026-09-03", end: "2026-09-04", hi: "जन्माष्टमी", en: "Janmashtami", deity: "sarva", href: "/en/path/krishna-prarthana/" },
+  { start: "2026-09-14", end: "2026-09-14", hi: "गणेश चतुर्थी", en: "Ganesh Chaturthi", deity: "sarva", href: "/en/path/ganesha-pancharatnam/", panjika: ["marathi", "hindi", "gujarati", "kannada", "telugu"] },
+  { start: "2026-10-11", end: "2026-10-19", hi: "शरद नवरात्रि", en: "Sharad Navaratri", deity: "kali", href: "/kali/en/path/durga-saptashloki/" },
+  { start: "2026-10-20", end: "2026-10-20", hi: "दशहरा / विजयादशमी", en: "Dussehra / Vijayadashami", deity: "kali", href: "/kali/en/path/durga-saptashloki/" },
+  { start: "2026-11-08", end: "2026-11-08", hi: "दीपावली / लक्ष्मी पूजा", en: "Deepavali / Lakshmi puja", deity: "sarva", href: "/en/path/mahalakshmi-ashtakam/" },
+  { start: "2026-11-08", end: "2026-11-10", hi: "काली पूजा", en: "Kali puja", deity: "kali", href: "/kali/en/path/kalika-ashtakam/", panjika: ["bengali", "hindi"] },
+  { start: "2026-11-09", end: "2026-11-09", hi: "बेस्तु वरस / अन्नकूट", en: "Bestu Varas / Annakut", deity: "sarva", panjika: ["gujarati", "hindi"], href: "/en/path/mahalakshmi-ashtakam/" },
+  { start: "2026-11-24", end: "2026-11-24", hi: "गुरु नानक जयन्ती", en: "Guru Nanak Jayanti", deity: "sarva", panjika: ["punjabi", "hindi"] },
+  { start: "2027-03-06", end: "2027-03-07", hi: "महाशिवरात्रि", en: "Maha Shivaratri", deity: "shiva", href: "/shiva/en/path/shiva-manasa-puja/" },
+  { start: "2027-04-20", end: "2027-04-20", hi: "हनुमान जयन्ती", en: "Hanuman Jayanti", deity: "hanuman", href: "/en/path/hanuman-chalisa/" },
 ];
 
 function panchangAt(iso: string, weekday: number, epochMs: number): PanchangDay {
@@ -195,10 +223,7 @@ function panchangAt(iso: string, weekday: number, epochMs: number): PanchangDay 
   const tithiHi = !shukla && tithiInPaksha === 15 ? KRISHNA_15_HI : TITHI_HI[tithiInPaksha - 1];
   const nak = Math.min(26, Math.floor((age / SYNODIC) * 27));
   const pradosha = tithiInPaksha === 13;
-  const festivals = FESTIVALS.filter((f) => iso >= f.start && iso <= f.end).map((f) => ({
-    hi: f.hi,
-    en: f.en,
-  }));
+  const festivals = YEAR_FESTIVALS.filter((f) => iso >= f.start && iso <= f.end);
 
   return {
     iso,

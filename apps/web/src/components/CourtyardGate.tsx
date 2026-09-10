@@ -13,7 +13,7 @@ import { getGallery, gallerySrc } from "@/lib/gallery";
 import { SiteSearch } from "@/components/SiteSearch";
 import { isDeityId } from "@/lib/deities";
 import { defaultLocale } from "@/i18n/config";
-import { PanchangCard } from "@/components/PanchangCard";
+import { CourtyardPanchangTiles } from "@/components/PanchangHub";
 
 export function CourtyardGate() {
   const locale = defaultLocale;
@@ -52,14 +52,13 @@ export function CourtyardGate() {
           </p>
         )}
 
-        <div style={{ maxWidth: 720, margin: "2.5rem auto 0" }}>
-          <PanchangCard locale={locale} />
-        </div>
-        <p className="landing-card-copy" style={{ textAlign: "center", marginTop: "0.75rem" }}>
-          <Link href={`/${locale}/calendar/`} className="landing-enter">
-            Full calendar · Gita on Ekadashi →
-          </Link>
+        <h2 className="landing-sub" style={{ marginTop: "2.5rem" }}>
+          Panchang · muhurat · year
+        </h2>
+        <p className="landing-card-copy" style={{ textAlign: "center", marginBottom: "1.25rem" }}>
+          Standalone courtyard calendar — Hindi, Bengali panjika, Gujarati, Marathi and more
         </p>
+        <CourtyardPanchangTiles locale={locale} />
 
         <h2 className="landing-sub" style={{ marginTop: "2.5rem" }}>
           Today in the three dhams

@@ -640,6 +640,24 @@ body.path-focus .skip-link {
   margin-inline: auto;
 }
 
+.courtyard-panchang-tiles {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .courtyard-panchang-tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  .courtyard-panchang-tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @media print {
   header,
   footer,

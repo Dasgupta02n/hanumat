@@ -2,8 +2,6 @@ import Link from "next/link";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { SiteShell } from "@/components/SiteShell";
-import { PanchangCard } from "@/components/PanchangCard";
-import { PanchangMonth } from "@/components/PanchangMonth";
 import { jayantiTraditions } from "@/lib/content";
 import { isLocale, type Locale } from "@/i18n/config";
 
@@ -45,10 +43,11 @@ export default async function CalendarPage({
       <h1 className="section-title mt-2 text-4xl">{t("title")}</h1>
       <p className="mt-2 max-w-xl text-sm" style={{ color: "var(--hanumat-stone)" }}>{t("intro")}</p>
 
-      <div id="panchang" className="mt-8 space-y-6">
-        <PanchangCard locale={locale} monthLink={false} />
-        <PanchangMonth locale={locale} />
-      </div>
+      <p className="mt-6">
+        <Link href="/panchang/" className="btn-ghost !px-4 !py-2 text-sm">
+          {isHi ? "आंगन पञ्चाङ्ग · मुहूर्त · त्यौहार →" : "Courtyard panchang · muhurat · festivals →"}
+        </Link>
+      </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
         <div className="temple-card temple-card-frame p-6">

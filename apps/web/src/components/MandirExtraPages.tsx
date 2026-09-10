@@ -7,8 +7,6 @@ import { galleryPick } from "@/lib/gallery";
 import { getTextBySlug } from "@/lib/content";
 import type { Locale } from "@/i18n/config";
 import { SiteSearch } from "@/components/SiteSearch";
-import { PanchangCard } from "@/components/PanchangCard";
-import { PanchangMonth } from "@/components/PanchangMonth";
 
 function chunk<T>(items: T[], days: number): T[][] {
   if (days <= 1) return [items];
@@ -57,10 +55,11 @@ export function MandirExtraPage({
         )}
 
         {kind === "calendar" && (
-          <div id="panchang" className="mt-8 space-y-6">
-            <PanchangCard locale={locale} monthLink={false} />
-            <PanchangMonth locale={locale} />
-          </div>
+          <p className="mt-6">
+            <Link href="/panchang/" className="btn-ghost !px-4 !py-2 text-sm">
+              {en ? "Courtyard panchang · muhurat · festivals →" : "आंगन पञ्चाङ्ग · मुहूर्त · त्यौहार →"}
+            </Link>
+          </p>
         )}
 
         {kind === "calendar" && (

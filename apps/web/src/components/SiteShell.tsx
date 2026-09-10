@@ -41,6 +41,7 @@ export function SiteShell({
   const moreNav = useMemo(
     () => [
       { href: h("/gallery/"), label: t("nav.gallery") },
+      { href: "/panchang/", label: locale === "en" ? "Panchang" : "पञ्चाङ्ग" },
       { href: h("/calendar/"), label: t("nav.calendar") },
       { href: h("/parayan/"), label: t("nav.parayan") },
       { href: h("/temples/"), label: t("nav.temples") },
@@ -77,6 +78,7 @@ export function SiteShell({
           { href: h("/path/"), label: t("nav.path") },
           { href: h("/japa/"), label: t("nav.japa") },
           { href: h("/my-path/"), label: t("nav.myPath") },
+          { href: "/panchang/", label: locale === "en" ? "Panchang" : "पञ्चाङ्ग" },
           { href: h("/calendar/"), label: t("nav.calendar") },
         ],
       },

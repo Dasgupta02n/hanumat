@@ -99,7 +99,7 @@ export default function LandingPage() {
 
       <footer className="landing-foot">
         <p>
-          Free seva · no accounts · no trackers · two public recensions named on
+          Free seva · no accounts · no ads · two public recensions named on
           every path ·{" "}
           <Link href="/en/trust/">Trust</Link>
           {" · "}

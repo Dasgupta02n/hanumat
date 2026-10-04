@@ -335,8 +335,8 @@ export function MandirHome({
           <p className="seo-summary mt-6">
             {en ? d.learnNote.en : d.learnNote.hi}{" "}
             {en
-              ? "No accounts, no trackers, no advertisements."
-              : "बिना खाता, ट्रैकर या विज्ञापन।"}
+              ? "No accounts, no advertisements."
+              : "बिना खाता या विज्ञापन।"}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href={h("/calendar/")} className="btn-ghost text-sm">

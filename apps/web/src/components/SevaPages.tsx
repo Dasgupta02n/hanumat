@@ -93,8 +93,8 @@ hanumat.life · hello@hanumat.life`;
         <div className="mt-8 max-w-2xl space-y-6 text-sm leading-relaxed" style={{ color: "var(--hanumat-stone)" }}>
           <p>
             {en
-              ? "Hanumat is a quiet digital temple for Bharat and the world. Read, japa. No ads, no accounts, no trackers."
-              : "हनुमत भारत और विश्व के लिए शांत डिजिटल मन्दिर है। पाठ, जप। विज्ञापन, खाता, ट्रैकर नहीं।"}
+              ? "Hanumat is a quiet digital temple for Bharat and the world. Read, japa. No ads, no accounts. Anonymous Google Analytics counts visits."
+              : "हनुमत भारत और विश्व के लिए शांत डिजिटल मन्दिर है। पाठ, जप। विज्ञापन और खाता नहीं। भ्रमण संख्या के लिए अनाम Google Analytics।"}
           </p>
           <ul className="list-inside list-disc space-y-2">
             <li>

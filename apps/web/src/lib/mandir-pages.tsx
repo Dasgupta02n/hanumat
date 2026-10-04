@@ -290,8 +290,8 @@ export async function renderMandirFaq(deity: DeityId, rawLocale: string) {
           {
             q: en ? "What is a jyotirlinga?" : "ज्योतिर्लिङ्ग क्या है?",
             a: en
-              ? "Twelve light-form lingas of Shiva. This mandir lists principal kshetras (Somnath, Kedarnath, Mahakaleshwar, Kashi, Rameshwaram…) as a quiet map — no trackers."
-              : "शिव के द्वादश ज्योति-रूप लिङ्ग। यहाँ प्रधान क्षेत्र सूची हैं — बिना ट्रैकर।",
+              ? "Twelve light-form lingas of Shiva. This mandir lists principal kshetras (Somnath, Kedarnath, Mahakaleshwar, Kashi, Rameshwaram…) as a quiet map."
+              : "शिव के द्वादश ज्योति-रूप लिङ्ग। यहाँ प्रधान क्षेत्र सूची हैं।",
           },
           {
             q: en ? "When is Pradosha / Shivaratri?" : "प्रदोष / शिवरात्रि कब?",
@@ -301,7 +301,7 @@ export async function renderMandirFaq(deity: DeityId, rawLocale: string) {
           },
           {
             q: en ? "Does this mandir show ads?" : "क्या विज्ञापन हैं?",
-            a: en ? "No. Pure seva — no ads, no accounts, no trackers." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन, खाता या ट्रैकर।",
+            a: en ? "No. Pure seva — no ads, no accounts." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन या खाता।",
           },
         ]
       : [
@@ -320,12 +320,12 @@ export async function renderMandirFaq(deity: DeityId, rawLocale: string) {
           {
             q: en ? "Which Kali kshetras are listed?" : "कौन-से काली क्षेत्र हैं?",
             a: en
-              ? "Kalighat, Dakshineswar, Kamakhya, Tarapith, Adyapeath — as a quiet temple list, no maps that track you."
-              : "कालीघाट, दक्षिणेश्वर, कामाख्या, तारापीठ, आद्यापीठ — शांत सूची, बिना ट्रैकर।",
+              ? "Kalighat, Dakshineswar, Kamakhya, Tarapith, Adyapeath — as a quiet temple list."
+              : "कालीघाट, दक्षिणेश्वर, कामाख्या, तारापीठ, आद्यापीठ — शांत सूची।",
           },
           {
             q: en ? "Does this mandir show ads?" : "क्या विज्ञापन हैं?",
-            a: en ? "No. Pure seva — no ads, no accounts, no trackers." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन, खाता या ट्रैकर।",
+            a: en ? "No. Pure seva — no ads, no accounts." : "नहीं। निःशुल्क सेवा — बिना विज्ञापन या खाता।",
           },
         ];
 

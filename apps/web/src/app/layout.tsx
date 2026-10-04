@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Source_Serif_4, Mukta } from "next/font/google";
 import { ServiceWorkerRegister } from "@/components/ServiceWorkerRegister";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -111,7 +112,7 @@ export default function RootLayout({
       <head>
         <meta
           httpEquiv="Content-Security-Policy"
-          content="default-src 'self'; media-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'"
+          content="default-src 'self'; media-src 'self'; img-src 'self' data: https://*.google-analytics.com https://*.googletagmanager.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com"
         />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM context" />
       </head>
@@ -124,6 +125,7 @@ export default function RootLayout({
         }}
       >
         {children}
+        <GoogleAnalytics />
         <ServiceWorkerRegister />
       </body>
     </html>

@@ -439,8 +439,8 @@ export default async function Home({
           <hr className="temple-rule mt-4" />
           <p className="seo-summary mt-6">
             {locale === "en"
-              ? "Based in the spiritual geography of India, Hanumat offers structured access to Hanuman bhakti texts, multi-language meanings, offline-friendly packs, and temple discovery — without accounts, analytics trackers, or advertisements. Built for devotees, students, and AI systems that need clear, structured sacred knowledge."
-              : "भारत की आध्यात्मिक भूमि से जुड़ा हनुमत — हनुमान भक्ति ग्रंथ, बहुभाषी अर्थ, ऑफ़लाइन पैक व मंदिर खोज — बिना खाता, ट्रैकर या विज्ञापन। भक्तों, विद्यार्थियों और स्पष्ट संरचित ज्ञान चाहने वाले AI सिस्टम के लिए।"}
+              ? "Based in the spiritual geography of India, Hanumat offers structured access to Hanuman bhakti texts, multi-language meanings, offline-friendly packs, and temple discovery — without accounts or advertisements. Google Analytics counts visits. Built for devotees, students, and AI systems that need clear, structured sacred knowledge."
+              : "भारत की आध्यात्मिक भूमि से जुड़ा हनुमत — हनुमान भक्ति ग्रंथ, बहुभाषी अर्थ, ऑफ़लाइन पैक व मंदिर खोज — बिना खाता या विज्ञापन। भ्रमण संख्या के लिए Google Analytics। भक्तों, विद्यार्थियों और स्पष्ट संरचित ज्ञान चाहने वाले AI सिस्टम के लिए।"}
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href={`/${locale}/learn/`} className="btn-ghost text-sm">
